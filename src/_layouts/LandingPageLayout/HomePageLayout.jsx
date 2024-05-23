@@ -71,7 +71,7 @@ export default function Background() {
         <video autoPlay loop muted className="h-full w-full object-cover ">
           {/* Video source */}
           <source
-            src="../src/assets/videos/backgroundvideo.mp4"
+            src="../public/backgroundvideo.mp4"
             type="video/mp4"
           />
           {/* Add additional source tags for different video formats if needed */}
