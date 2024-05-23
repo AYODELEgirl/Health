@@ -2,11 +2,12 @@ import React from "react";
 import logo1 from "../../assets/images/logo1.png";
 import { Link, NavLink } from "react-router-dom";
 import NavBar from "./NavBar";
-import backgroundVideo from "../../assets/videos/backgroundvideo.mp4"
+import backgroundVideo from "../../assets/videos/backgroundvideo.mp4";
+
 export default function Background() {
   return (
-    <div className=" max-w-screen h-screen overflow-x-hidden">
-      <nav className="absolute h-screen overflow-x-hidden w-full z-10 pt-6">
+    <div className="relative max-w-screen h-screen overflow-x-hidden">
+      <nav className="absolute h-screen w-full z-20 pt-6">
         <aside className="px-10 flex justify-between">
           <figure>
             <img src={logo1} alt="" width={150} />
@@ -31,11 +32,11 @@ export default function Background() {
               </li>
             </NavLink>
             <NavLink to="/BookACall">
-            <li>
-              <button className="bg-green-500 px-3 py-1 rounded-md text-[14px] text-white ">
-                Book a call
-              </button>
-            </li>
+              <li>
+                <button className="bg-green-500 px-3 py-1 rounded-md text-[14px] text-white ">
+                  Book a call
+                </button>
+              </li>
             </NavLink>
           </ul>
         </aside>
@@ -43,7 +44,7 @@ export default function Background() {
         <div className="text-white px-10">
           <p
             style={{ lineHeight: "80px" }}
-            className="mb-7  mt-20 font-medium text-[5rem]"
+            className="mb-7 mt-20 font-medium text-[5rem]"
           >
             Unlocking African <br /> Healthcare
           </p>
@@ -56,7 +57,7 @@ export default function Background() {
             insights and robust business support
           </p>
           <div>
-            <button className="text-[13px]  px-14 mr-7 p-3 text-white rounded-md border-none bg-[#FF784B]">
+            <button className="text-[13px] px-14 mr-7 p-3 text-white rounded-md border-none bg-[#FF784B]">
               Watch video
             </button>
             <button className="text-[12px] font-bold px-14 mr-7 p-3 text-black rounded-md border-none bg-[#FFFFFF]">
@@ -65,16 +66,14 @@ export default function Background() {
           </div>
         </div>
       </nav>
-      {/* <NavBar/> */}
-      {/* Video element */}
-      <div className="bg-black/20 w-full h-screen absolute left-0 top-0">
-        <video autoPlay loop muted className="h-full w-full object-cover ">
-          {/* Video source */}
-          <source
-            src={backgroundVideo}
-            type="video/mp4"
-            controls
-          />
+
+      {/* Video and overlay container */}
+      <div className="absolute w-full h-full top-0 left-0 z-10">
+        {/* Dark overlay */}
+        <div className="absolute w-full h-full bg-black opacity-50"></div>
+        {/* Video element */}
+        <video autoPlay loop muted className="h-full w-full object-cover">
+          <source src={backgroundVideo} type="video/mp4" />
           {/* Add additional source tags for different video formats if needed */}
         </video>
       </div>
