@@ -1,4 +1,5 @@
 import React from 'react'
+import orientationvideo from "../../../assets/videos/orientationvideo.mp4"
 import React, { useRef, useState } from "react";
 import { FaCirclePlay } from "react-icons/fa6";
 export default function pictureAndText() {
@@ -31,7 +32,7 @@ export default function pictureAndText() {
           onClick={handlePlay}
         >
           <source
-            src="../src/assets/videos/orientationvideo.mp4"
+            src={orientationvideo}
             type="video/mp4"
           />
         </video>
