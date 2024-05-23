@@ -41,7 +41,7 @@ export default function VideoSection() {
         onClick={handlePlay}
       >
         <source
-          src="orientationvideo"
+          src={orientationvideo}
           type="video/mp4"
         />
       </video>
