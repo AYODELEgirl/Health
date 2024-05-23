@@ -13,21 +13,21 @@ export default function Background() {
             <img src={logo1} alt="" width={150} />
           </figure>
           <ul className="flex justify-between gap-8">
-            <li className="text-white hover:text-green-700 cursor-pointer">
+            <li className="text-white hover:text-green-300 cursor-pointer">
               Home
             </li>
             <NavLink to="/aboutus">
-              <li className="text-white hover:text-green-700 cursor-pointer">
+              <li className="text-white hover:text-green-300 cursor-pointer">
                 About Us
               </li>
             </NavLink>
             <NavLink to="/products">
-              <li className="text-white hover:text-green-700 cursor-pointer">
+              <li className="text-white hover:text-green-300 cursor-pointer">
                 Product
               </li>
             </NavLink>
             <NavLink to="/insight">
-              <li className="text-white hover:text-green-700 cursor-pointer">
+              <li className="text-white hover:text-green-300 cursor-pointer">
                 Insight
               </li>
             </NavLink>
