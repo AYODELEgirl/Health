@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { MdPauseCircle } from "react-icons/md";
+import orientationvideo from "../../../assets/videos/orientationvideo.mp4"
 
 export default function VideoSection() {
   const videoRef = useRef(null);
@@ -40,7 +41,7 @@ export default function VideoSection() {
         onClick={handlePlay}
       >
         <source
-          src="../../src/assets/videos/orientationvideo.mp4"
+          src="orientationvideo"
           type="video/mp4"
         />
       </video>
