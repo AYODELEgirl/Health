@@ -2,7 +2,7 @@ import React from "react";
 import logo1 from "../../assets/images/logo1.png";
 import { Link, NavLink } from "react-router-dom";
 import NavBar from "./NavBar";
-
+import backgroundVideo from "../../assets/videos/backgroundvideo.mp4"
 export default function Background() {
   return (
     <div className=" max-w-screen h-screen overflow-x-hidden">
@@ -71,7 +71,7 @@ export default function Background() {
         <video autoPlay loop muted className="h-full w-full object-cover ">
           {/* Video source */}
           <source
-            src="../public/backgroundvideo.mp4"
+            src={backgroundVideo}
             type="video/mp4"
             controls
           />

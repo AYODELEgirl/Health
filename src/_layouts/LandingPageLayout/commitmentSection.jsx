@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { FaCirclePlay } from "react-icons/fa6";
+import orientationvideo from "../../assets/videos/orientationvideo.mp4"
 import insightaction from "../../assets/images/insightaction.png";
 import growthreserach from "../../assets/images/growthreserach.png";
 import Localexpertise from "../../assets/images/Localexpertise.png";
@@ -39,7 +40,7 @@ export default function CommitmentSection() {
           onClick={handlePlay}
         >
           <source
-            src="../src/assets/videos/orientationvideo.mp4"
+            src={orientationvideo}
             type="video/mp4"
           />
         </video>

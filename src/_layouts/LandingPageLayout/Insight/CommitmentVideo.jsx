@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { FaCirclePlay } from "react-icons/fa6";
 import FooterSection from "../FooterSection";
+import orientationvideo from "../../../assets/videos/orientationvideo.mp4"
 
 export default function CommitmentVideo() {
   const videoRef = useRef(null);
@@ -37,7 +38,7 @@ export default function CommitmentVideo() {
           onClick={handlePlay}
         >
           <source
-            src="../../src/assets/videos/orientationvideo.mp4"
+            src={orientationvideo}
             type="video/mp4"
           />
         </video>
