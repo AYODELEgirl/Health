@@ -8,7 +8,7 @@ export default function Vision() {
   return (
     <div>
       <div>
-        <div className="flex flex-row p-14 ">
+        <div className="flex flex-row mt-0 ">
           <div className="w-[50%] mt-28 px-16">
             <p className="text-red-500">Our vision</p>
             <p className="text-[35px] font-bold mb-5">
@@ -70,7 +70,7 @@ export default function Vision() {
             </figure>
           </div>
         </div>
-        <div className="flex justify-center p-4">
+        <div className="flex justify-center p-4 mt-20 mb-20">
           <div
             className="bg-[#69BD45] rounded-md mb-5 w-[80%] p-10 "
             style={{
@@ -81,7 +81,7 @@ export default function Vision() {
             <div>
               <img src={footerlogo} alt="" width={110} className="mb-5" />
             </div>
-            <div>
+            <div className="flex flex-row gap-48">
               <div className=" fle flex-col gap-3 mb-3">
                 <p className="text-white">Join 2,000 plus subscribers</p>
                 <p className="text-white">
@@ -104,6 +104,7 @@ export default function Vision() {
                     Subscribe
                   </button>
                 </div>
+                <p className="text-white text-[10px] mt-2">We care about your data in our <span className="underline">Privacy Policy</span></p>
               </div>
             </div>
           </div>

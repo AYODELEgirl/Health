@@ -1,11 +1,11 @@
 import { useState } from "react";
-import Onboard from "../../LandingPageLayout/Onboard";
-import Markett from "../../LandingPageLayout/Markett"; 
-import Launch from "../../LandingPageLayout/Launch"; 
+import Onboard from "./Onboard";
+import Markett from "./Markett"; // your import location could be different
+import Launch from "./Launch"; // your import location could be different
 // import analyticsbackground from '../../assets/images/analyticsbackground.png'
-import analyticsbakground from "../../../assets/images/analyticsbackground.png";
+import analyticsbakground from "../../assets/images/analyticsbackground.png";
 
-const OnboardSection = () => {
+const Datatest = () => {
   const [activeTab, setActiveTab] = useState("Onboard");
   const [activeContent, setActiveContent] = useState(<Onboard />);
 
@@ -47,4 +47,4 @@ const OnboardSection = () => {
   );
 };
 
-export default OnboardSection;
+export default Datatest;

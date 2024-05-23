@@ -6,6 +6,7 @@ import QuestionsSection from "../_layouts/LandingPageLayout/QuestionsSection";
 import CommitmentSection from "../_layouts/LandingPageLayout/commitmentSection";
 import DataAndAnalytics from "../_layouts/LandingPageLayout/dataAndAnalytics";
 import FooterSection from "../_layouts/LandingPageLayout/FooterSection";
+import Datatest from "../_layouts/LandingPageLayout/Datatest";
 
 export default function LandingPage() {
   return (
@@ -13,7 +14,8 @@ export default function LandingPage() {
       <HomePageLayout />
       <PictureAndTextGrid />
       <CommitmentSection />
-      <DataAndAnalytics />
+      <Datatest />
+      {/* <DataAndAnalytics /> */}
       <PublicationSection />
       <EnablementSection />
       <QuestionsSection />

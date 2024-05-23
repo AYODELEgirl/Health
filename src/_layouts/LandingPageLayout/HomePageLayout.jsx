@@ -6,7 +6,7 @@ import NavBar from "./NavBar";
 export default function Background() {
   return (
     <div className=" max-w-screen h-screen overflow-x-hidden">
-      <nav className="absolute h-screen overflow-x-hidden w-full z-10">
+      <nav className="absolute h-screen overflow-x-hidden w-full z-10 pt-6">
         <aside className="px-10 flex justify-between">
           <figure>
             <img src={logo1} alt="" width={150} />
@@ -30,11 +30,13 @@ export default function Background() {
                 Insight
               </li>
             </NavLink>
+            <NavLink to="/BookACall">
             <li>
               <button className="bg-green-500 px-3 py-1 rounded-md text-[14px] text-white ">
                 Book a call
               </button>
             </li>
+            </NavLink>
           </ul>
         </aside>
 

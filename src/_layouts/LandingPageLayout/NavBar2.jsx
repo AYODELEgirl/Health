@@ -12,7 +12,7 @@ export default function NavBar2() {
               <img src={logo1} alt="" width={150} />
             </figure>
           </NavLink>
-          <ul className="flex justify-between  gap-8">
+          <ul className="flex items-center justify-between  gap-8">
             <NavLink to="/">
               <li className="text-black hover:text-green-700 cursor-pointer">
                 Home
@@ -24,18 +24,22 @@ export default function NavBar2() {
               </li>
             </NavLink>
             <NavLink to="/products">
-              <li className="text-white hover:text-green-700 cursor-pointer">
+              <li className="text-black  hover:text-green-700 cursor-pointer">
                 Product
               </li>
             </NavLink>
+            <NavLink to="/insight">
             <li className="text-black hover:text-green-700 cursor-pointer">
               Insight
             </li>
+            </NavLink>
+            <NavLink to="/BookACall">
             <li>
               <button className="bg-green-500 px-3 py-1 rounded-md text-[14px] text-white ">
                 Book a call
               </button>
             </li>
+            </NavLink>
           </ul>
         </aside>
       </nav>
