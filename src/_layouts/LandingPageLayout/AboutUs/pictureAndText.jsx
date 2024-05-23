@@ -15,6 +15,9 @@ export default function pictureAndText() {
         setShow(true);
       }
     };
+
+
+    /*  */
   return (
     <div>
         <div className="flex relative justify-center pt-10">
