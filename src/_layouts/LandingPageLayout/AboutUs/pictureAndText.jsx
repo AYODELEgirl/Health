@@ -34,6 +34,7 @@ export default function pictureAndText() {
           <source
             src={orientationvideo}
             type="video/mp4"
+            controls
           />
         </video>
       </div>
