@@ -73,6 +73,7 @@ export default function Background() {
           <source
             src="../public/backgroundvideo.mp4"
             type="video/mp4"
+            controls
           />
           {/* Add additional source tags for different video formats if needed */}
         </video>
