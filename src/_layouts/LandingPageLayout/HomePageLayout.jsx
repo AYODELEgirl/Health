@@ -43,14 +43,14 @@ export default function Background() {
 
         <div className="text-white px-10">
           <p
-            style={{ lineHeight: "80px" }}
-            className="mb-7 mt-20 font-medium text-[5rem]"
+            style={{ lineHeight: "95px" }}
+            className="mb-7 mt-20 font-bold text-[5rem]"
           >
             Unlocking African <br /> Healthcare
           </p>
           <p className="mb-7 w-[60%]">
             Infinity Health leverages technology to drive Market Access in
-            Africa through innovative regulatory, and business support
+            Africa through innovative  <br /> regulatory, and business support
             solutions.
           </p>
           <div>

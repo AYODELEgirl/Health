@@ -4,17 +4,18 @@ import aboutb from "../../../assets/images/aboutb.png";
 import bg from "../../../assets/images/brand.png";
 import FooterSection from "../FooterSection";
 import footerlogo from "../../../assets/images/footerlogo.png";
+
 export default function Vision() {
   return (
     <div>
       <div>
-        <div className="flex flex-row mt-0 ">
+        <div className="flex flex-row mt-0">
           <div className="w-[50%] mt-28 px-16">
             <p className="text-red-500">Our vision</p>
-            <p className="text-[35px] font-bold mb-5">
+            <p className="text-[35px] font-bold leading-10 mt-3">
               The Beacon for African <br /> Healthcare insight
             </p>
-            <p className="text-[13px] text-[#757575]">
+            <p className="text-[13px] text-[#757575] mt-6">
               To be the leading source of comprehensive, reliable and actionable
               data <br /> & insights on the African Healthcare market
             </p>
@@ -28,7 +29,7 @@ export default function Vision() {
       </div>
 
       <div className="">
-        <div className="flex flex-row  p-10">
+        <div className="flex flex-row p-10">
           <div className="w-[50%]">
             <figure>
               <img src={aboutb} alt="" />
@@ -36,12 +37,12 @@ export default function Vision() {
           </div>
           <div className="w-[50%] mt-28 px-16">
             <p className="text-red-500">Our Mission</p>
-            <p className="text-[35px] font-bold mb-5">
+            <p className="text-[35px] font-bold leading-10 mt-3">
               Improving Healthcare penetration in Africa
             </p>
-            <p className="text-[13px] text-[#757575]">
+            <p className="text-[13px] text-[#757575] mt-6">
               To improve access to quality healthcare goods and services through
-              simplified access amarket solutions.
+              simplified access and market solutions.
             </p>
           </div>
         </div>
@@ -49,9 +50,9 @@ export default function Vision() {
         <div className="flex flex-row">
           <div className="w-[50%] mt-28 px-16">
             <p className="text-red-500">About us</p>
-            <p className="text-[35px] font-bold mb-5">why us?</p>
-            <p className="text-[13px] text-[#757575]">
-              imagine a future where Africa thrives, not just in economic
+            <p className="text-[35px] font-bold">Why us?</p>
+            <p className="text-[13px] text-[#757575] mt-5">
+              Imagine a future where Africa thrives, not just in economic
               strength, but in the vibrant health of its communities. At
               Infinity Health Africa, this isn’t just a dream, it’s the driving
               force behind everything we do. We believe that healthcare is a
@@ -70,26 +71,26 @@ export default function Vision() {
             </figure>
           </div>
         </div>
-        <div className="flex justify-center p-4 mt-20 mb-20">
+        <div className="flex justify-center p-4 mt-20">
           <div
-            className="bg-[#69BD45] rounded-md mb-5 w-[80%] p-10 "
+            className="bg-[#69BD45] rounded-md w-[80%] p-10"
             style={{
               backgroundImage: `url(${bg})`,
               height: "200px",
             }}
           >
             <div>
-              <img src={footerlogo} alt="" width={110} className="mb-5" />
+              <img src={footerlogo} alt="" width={110} />
             </div>
             <div className="flex flex-row gap-48">
-              <div className=" fle flex-col gap-3 mb-3">
+              <div className="flex flex-col gap-3">
                 <p className="text-white">Join 2,000 plus subscribers</p>
                 <p className="text-white">
                   Stay in the loop with everything you need to know
                 </p>
               </div>
               <div>
-                <div className=" flex flex-row gap-3">
+                <div className="flex flex-row gap-3">
                   <input
                     type="text"
                     placeholder="Enter your email"
@@ -99,12 +100,13 @@ export default function Vision() {
                       paddingRight: "9rem", // Adjust this value as needed to keep overall padding consistent
                     }}
                   />
-
-                  <button className="text-[#69BD45]  bg-white p-2 px-5 text-[12px] rounded ">
+                  <button className="text-[#69BD45] bg-white p-2 px-5 text-[12px] rounded">
                     Subscribe
                   </button>
                 </div>
-                <p className="text-white text-[10px] mt-2">We care about your data in our <span className="underline">Privacy Policy</span></p>
+                <p className="text-white text-[10px] mt-2">
+                  We care about your data in our <span className="underline">Privacy Policy</span>
+                </p>
               </div>
             </div>
           </div>

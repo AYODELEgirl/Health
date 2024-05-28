@@ -1,6 +1,6 @@
 import React from "react";
 import { LiaLongArrowAltRightSolid } from "react-icons/lia";
-import mask from "../../assets/images/mask.png";
+import onboardONE from "../../assets/images/onboardONE.png";
 import { NavLink } from "react-router-dom";
 import analyticsbakground from "../../assets/images/analyticsbackground.png";
 
@@ -19,13 +19,15 @@ export default function Onboard() {
             Our Products
           </button>
           <p className="font-medium text-[36px]  mb-5 whitespace-nowrap text-white">
-            HELBA (Healthcare Business in Africa)
+            Regulatory Compliance Support
           </p>
           <p className="text-white mb-5 text-[18px]">
-            Infinity Health is a Business and Market Intelligence company <br />
-            focused on supporting growth in the African Healthcare industry{" "}
-            <br />
-            with local, practical, and actionable data and insights.
+            ONBOARD helps healthcare and life science businesses connects and
+            comply with regulatory standards more easily. </p>
+            <p className="text-white mb-5 text-[18px]">    
+            We help you meet the
+            regulatory requirements, register, renew and obtain the right
+            certifications for all parts of your business.
           </p>
           <NavLink to="/products">
             <div
@@ -35,14 +37,14 @@ export default function Onboard() {
                 color: "#69BD45",
               }}
             >
-              <p>Visit Product page </p>
+              <p> Contact Us </p>
               <LiaLongArrowAltRightSolid />
             </div>
           </NavLink>
         </div>
         <div className="w-[50%] mt-8">
           <figure>
-            <img src={mask} alt="" width={300} />
+            <img src={onboardONE} alt="" width={500} />
           </figure>
         </div>
       </div>

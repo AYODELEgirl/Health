@@ -9,7 +9,7 @@ export default function AboutUs() {
     <div className=" max-w-screen h-screen overflow-x-hidden">
       <Background />
       <VideoSection />
-      <WhoWeAre />
+      <WhoWeAre /> 
       <Vision />
     </div>
   )

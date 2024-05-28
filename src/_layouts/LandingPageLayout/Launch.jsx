@@ -19,12 +19,10 @@ export default function Launch() {
             Our Products
           </button>
           <p className="font-medium text-[36px]  mb-5 whitespace-nowrap text-white">
-            Onboard
+            Powering Growth
           </p>
           <p className="text-white mb-5 text-[15px]">
-            Find the perfect sales strategy and partnership for your healthcare
-            organization to launch and scale across Africa with{" "}
-            <span className="font-medium text-[17px]">AKSELLERATE</span>
+            Find the right partnerships to launch and scale across Africa
           </p>
           <NavLink to="/products">
             <div
@@ -34,7 +32,7 @@ export default function Launch() {
                 color: "#69BD45",
               }}
             >
-              <p>Visit Product page </p>
+              <p>Contact Us</p>
               <LiaLongArrowAltRightSolid />
             </div>
           </NavLink>

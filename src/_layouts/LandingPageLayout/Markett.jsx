@@ -19,14 +19,11 @@ export default function Market() {
             Our Products
           </button>
           <p className="font-medium text-[36px]  mb-5 whitespace-nowrap text-white">
-            Onboard
+            Insights For Market Access
           </p>
           <p className="text-white mb-5 text-[18px]">
-            <span className="font-medium">Onboard</span> by infinity Health
-            caters to new and already existing <br /> healthcare and related
-            businessess, guiding them through the proper  framework for
-            registration and expansion of their products and  services across
-            Africa, starting from Nigeria
+            On-demand African Market Insights accessible via charts, Dashboards,
+            and Direct Supports.
           </p>
           <NavLink to="/products">
             <div

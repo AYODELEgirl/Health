@@ -5,6 +5,7 @@ import AboutUs from "./Pages/AboutUs";
 import Insight from "./Pages/Insight";
 import Products from "./Pages/Products";
 import BookACall from "./Pages/BookACall";
+import ReadMore from "./Pages/ReadMore";
 
 
 export default function App() {
@@ -18,6 +19,8 @@ export default function App() {
             <Route path="/insight" element={<Insight />} />
             <Route path="/products" element={<Products />} />
             <Route path="/BookACall"element={<BookACall/>} />
+            <Route path="/ReadMore"element={<ReadMore />} />
+          
           </Route>
         </Routes>
       </BrowserRouter>

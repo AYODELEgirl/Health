@@ -7,16 +7,20 @@ import FormSection from '../_layouts/LandingPageLayout/BookACall/FormSection'
 import SubscribeSection from '../_layouts/LandingPageLayout/Products/SubscribeSection'
 import FooterSection from '../_layouts/LandingPageLayout/FooterSection'
 import Information from '../_layouts/LandingPageLayout/BookACall/Information'
+import HealtheirSection from '../_layouts/LandingPageLayout/BookACall/HealtheirSection'
+import WelcomeSection from '../_layouts/LandingPageLayout/BookACall/WelcomeSection'
 
 export default function BookACall() {
   return (
     <div>
         <Background />
         <BookHomePage />
-        <Elevation />
-        <Calendly />
-        <FormSection />
-        <Information />
+        <HealtheirSection />
+        <WelcomeSection />
+        {/* <Elevation /> */}
+        {/* <Calendly /> */}
+        {/* <FormSection /> */}
+        {/* <Information /> */}
         <SubscribeSection />
         <FooterSection />
     </div>
