@@ -12,7 +12,7 @@ export default function Background() {
           <figure>
             <img src={logo1} alt="" width={150} />
           </figure>
-          <ul className="flex justify-between gap-8">
+          <ul className="flex justify-between gap-20">
             <li className="text-white hover:text-green-300 cursor-pointer">
               Home
             </li>
@@ -50,11 +50,8 @@ export default function Background() {
           </p>
           <p className="mb-7 w-[60%]">
             Infinity Health leverages technology to drive Market Access in
-            Africa healthcare through <br /> innovative data and analytics,
-            regulatory support and business solutions. Our mission is <br />{" "}
-            simple: to improve quality healthcare across the continent by
-            providing actionable <br />
-            insights and robust business support
+            Africa through innovative regulatory, and business support
+            solutions.
           </p>
           <div>
             <button className="text-[13px] px-14 mr-7 p-3 text-white rounded-md border-none bg-[#FF784B]">
