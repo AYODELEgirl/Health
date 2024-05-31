@@ -16,6 +16,7 @@ export default function Background() {
 
   return (
     <div className="relative max-w-screen h-screen overflow-x-hidden">
+      {/* jjj */}
       <nav className="absolute h-screen w-full z-20 pt-6">
         <aside className="px-10 flex justify-between">
           <figure>
