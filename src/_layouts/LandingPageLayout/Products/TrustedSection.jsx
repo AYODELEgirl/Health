@@ -5,7 +5,7 @@ export default function TrustedSection() {
   return (
     <div className="flex justify-center">
       <div
-        className="bg-[#E8FFDE]  rounded-md mb-5 w-[80%] p-10 flex flex-row gap-16 "
+        className="bg-[#E8FFDE]  rounded-md w-[80%] p-10 flex flex-row gap-16 mb-14 "
         style={{ height: "150px" }}
         
       >

@@ -6,6 +6,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { TbLetterX } from "react-icons/tb";
 import { IoLogoLinkedin } from "react-icons/io5";
+import { NavLink } from "react-router-dom";
 
 export default function FooterSection() {
   return (
@@ -13,9 +14,9 @@ export default function FooterSection() {
       <div
         className="pr-16 pl-11 pt-10 "
         style={{
-
           backgroundImage: `url(${analyticsbakground})`,
-          height: "450px",
+          backgroundRepeat: 'no-repeat',
+          backgroundSize:'cover',
         }}
       >
         <div className="flex flex-row gap-48  border-b h-[300px]">
@@ -46,17 +47,29 @@ export default function FooterSection() {
             </p>
           </div>
 
-          <div className="w-[55%] flex flex-row gap-32 leading-10 mt-10">
+          <div className="w-[55%] flex lg:flex-row flex-col gap-32 leading-10 mt-10">
             <div className="text-white">
               <h1 className="text-[21px] font-semibold">Company</h1>
-              <p>About us</p>
-              <p className="whitespace-nowrap">Our products</p>
+              <NavLink to="/aboutus">
+                <p>About us</p>
+              </NavLink>
+              <NavLink to="/products">
+                <p className="whitespace-nowrap">Our products</p>
+              </NavLink>
             </div>
             <div className="text-white">
-              <h1 className="text-[21px] font-semibold whitespace-nowrap">Our products</h1>
-              <p>On board</p>
-              <p>Helba</p>
-              <p>Aksellerate</p>
+              <h1 className="text-[21px] font-semibold whitespace-nowrap">
+                Our products
+              </h1>
+              <a href="#data">
+                <p>Onboard</p>
+                </a>
+                <a href="#data">
+                <p>Insight</p>
+                </a>
+                <a href="#data">
+                <p>Launch support</p>
+                </a>
             </div>
             <div className="text-white">
               <h1 className="text-[21px] font-semibold">Follow us</h1>
@@ -72,17 +85,19 @@ export default function FooterSection() {
                 <FaXTwitter />
                 <TbLetterX className="w-6" />
               </div>
-              <div  className="flex items-center gap-4 mb-3">
-              <IoLogoLinkedin />
-              <p>Linkednl</p>
+              <div className="flex items-center gap-4 mb-3">
+                <IoLogoLinkedin />
+                <p>Linkedln</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="flex justify-between gap-96 mt-8">  
+        <div className="flex justify-between gap-96 mt-8">
           <div>
-            <p className="text-white text-[12px]">2024 infinity health. All rights reserved</p>
+            <p className="text-white text-[12px]">
+              2024 infinity health. All rights reserved
+            </p>
           </div>
           <div className="flex flex-row gap-10 ">
             <p className="underline text-[12px] text-white">Privacy Policy</p>

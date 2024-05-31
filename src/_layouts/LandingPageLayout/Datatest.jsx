@@ -11,7 +11,7 @@ const Datatest = () => {
 
   const tabs = [
     { label: "Onboard", content: <Onboard /> },
-    { label: "Market Access", content: <Markett /> },
+    { label: "Insight", content: <Markett /> },
     { label: "Launch Support", content: <Launch /> },
   ];
 
@@ -21,7 +21,8 @@ const Datatest = () => {
   };
 
   return (
-    <section className="p-4">
+    <section id="data" className="p-4">
+
       <div className="flex justify-between text-center ">
         {tabs.map((tab) => (
           <div
@@ -31,7 +32,7 @@ const Datatest = () => {
             }}
             key={tab.label}
             className={`border flex-1 p-4 cursor-pointer ${
-              activeTab === tab.label ? "bg-black text-white" : "bg-gray-200"
+              activeTab === tab.label ? "bg-black text-white" : "bg-white"
             }`}
             onClick={() => {
               setActiveContent(tab.content);

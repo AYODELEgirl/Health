@@ -1,26 +1,25 @@
 import React from "react";
 import onboardONE from "../../../assets/images/onboardONE.png";
-import greenIcon from "../../../assets/images/greenIcon.png";
+import onboardlogo from "../../../assets/images/onboardlogo.png";
 
 export default function RegulatorySection() {
   return (
-    <div className="flex flex-row gap-12 p-12">
+    <div className="flex flex-row gap-12 p-12 mb-14">
       <section className="w-[50%] ">
-        <div className="mb-5">
+        <div className="mb-1">
           <figure>
-            <img src={greenIcon} alt="" width={40} />
+            <img src={onboardlogo} alt="" width={90} />
           </figure>
         </div>
         <div>
-          <p className="text-[#69BD45] text-[16px] font-medium mb-5">Onboard</p>
           <p className="text-[34px] font-bold leading-10 mb-5">Regulatory Compliance  <br /> Made Easy</p>
           <p className="text-[#757575] mb-5">
             Onboard helps healthcare businesses understand, navigate andmeet up
             with business and product regulatory standards.{" "}
           </p>
           <p className="text-[#757575] mb-5">
-            We do this by guiding you through regulatory requirements for
-            registration, renewal and all certifications required for your
+            We do this by guiding you through regulatory requirements for <br />
+            registration, renewal and all certifications required for your  <br />
             business.
           </p>
           <div className="flex flex-row gap-4 mb-5">

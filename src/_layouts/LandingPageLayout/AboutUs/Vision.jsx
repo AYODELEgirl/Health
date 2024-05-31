@@ -47,7 +47,7 @@ export default function Vision() {
           </div>
         </div>
 
-        <div className="flex flex-row">
+        <div className="flex flex-row mb-16">
           <div className="w-[50%] mt-28 px-16">
             <p className="text-red-500">About us</p>
             <p className="text-[35px] font-bold">Why us?</p>
@@ -71,7 +71,7 @@ export default function Vision() {
             </figure>
           </div>
         </div>
-        <div className="flex justify-center p-4 mt-20">
+        {/* <div className="flex justify-center p-4 mt-20">
           <div
             className="bg-[#69BD45] rounded-md w-[80%] p-10"
             style={{
@@ -110,7 +110,7 @@ export default function Vision() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <FooterSection />
       </div>
     </div>

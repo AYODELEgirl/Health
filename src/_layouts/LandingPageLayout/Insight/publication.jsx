@@ -14,6 +14,18 @@ export default function publication() {
           African Healthcare market
         </p>
       </div>
+      <div className="flex flex-row justify-between p-3 px-8">
+        <div className="flex flex-row gap-8">
+          <p className="text-[14px] text-[#667085]">All posts</p>
+          <p className="text-[14px] text-[#667085]">Case study</p>
+          <p className="text-[14px] text-[#667085]">Infographics</p>
+          <p className="text-[14px] text-[#667085]">News</p>
+          <p className="text-[14px] text-[#667085]">Market report</p>
+        </div>
+        <div>
+          <input type="text" placeholder="Search" className="p-1 px-7  rounded border border-gray-100 "/>
+        </div>
+      </div>
 
       <div className="p-7 bg-[#F5F6F9j]">
         <div className="flex flex-row gap-6">
@@ -47,6 +59,11 @@ export default function publication() {
           </div>
 
           <div>
+          <div className=" absolute flex justify-between p-3">
+            <button className="bg-[#FFF6E5]  text-[#667085] p-2 mt-3 font-semibold z-10 backdrop-filter rounded-2xl px-4 text-[12px]">
+              Case Studies
+            </button>
+          </div>
             <figure>
               <img src={public2} alt="" width={400} className="mb-5" />
             </figure>

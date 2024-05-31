@@ -3,19 +3,19 @@ import first from "../../assets/images/first.png";
 import second from "../../assets/images/second.png";
 import third from "../../assets/images/third.png";
 
-export default function pictureAndTextGrid() {
+export default function PictureAndTextGrid() {
   return (
     <div className="mt-20">
-      <p className="text-[12px] text-red-400 text-center">Our Products</p>
+      <p className="text-[12px] text-red-400 text-center">Our Mission</p>
       <p className="font-bold text-[28px] text-center">
         We want to redefine{" "}
         <span className="text-[#69BD45]"> access to quality healthcare</span>{" "}
         with <br />
         local insights, regulatory and business support
       </p>
-      <div className="flex flex-row gap-7 p-14 justify-center">
-        <div className="flex flex-col gap-5">
-          <div className="bg-[#F6FFF2] w-[500px] h-[330px] flex flex-col gap-7 p-5">
+      <div className="m-auto s900:flex  gap-7 p-14 justify-center items-center ">
+        <div className="flex flex-col   gap-5">
+          <div className="bg-[#F9FDFF] w-[500px] h-[330px] flex flex-col gap-7 p-5">
             <div className="">
               <figure>
                 <img src={first} alt="" width={50} />

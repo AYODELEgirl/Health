@@ -41,11 +41,11 @@ export default function ExploreSection() {
               </figure>
             </div>
           </div>
-          <div className="relative h-24">
+          {/* <div className="relative h-24">
             <figure className="absolute right-0 top-0">
               <img src={exploreonenote} alt="" width={80} />
             </figure>
-          </div>
+          </div> */}
         </div>
 
         <div className="bg-[#E9FFDF99] p-5 w-[25%] h-72 rounded-md">
@@ -68,11 +68,11 @@ export default function ExploreSection() {
               </figure>
             </div>
           </div>
-          <div className="relative h-28">
+          {/* <div className="relative h-28">
             <figure className="absolute right-0 top-0">
               <img src={exploretwonote} alt="" width={80} />
             </figure>
-          </div>
+          </div> */}
         </div>
 
         <div className="bg-[#E9FFDF99] p-5 w-[25%] h-72 rounded-md">
@@ -90,16 +90,16 @@ export default function ExploreSection() {
             </p>
             <div className="flex flex-row">
               <p className="text-red-400">Register a Product</p>
-              <figure>
-                <img src={iconwrap} alt="" />
+              <figure className="text-red-400">
+                <img src={iconwrap} alt="" className="text-red-400"/>
               </figure>
             </div>
           </div>
-          <div className="relative h-28">
+          {/* <div className="relative h-28">
             <figure className="absolute right-0 top-0">
               <img src={explorethreenote} alt="" width={80} />
             </figure>
-          </div>
+          </div> */}
         </div>
 
         <div className="bg-[#E9FFDF99] p-5 w-[25%] h-72 rounded-md">

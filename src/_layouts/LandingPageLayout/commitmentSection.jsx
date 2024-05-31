@@ -1,8 +1,8 @@
 import React, { useRef, useState } from "react";
 import { FaCirclePlay } from "react-icons/fa6";
 import orientationvideo from "../../assets/videos/orientationvideo.mp4"
-import insightaction from "../../assets/images/insightaction.png";
-import growthreserach from "../../assets/images/growthreserach.png";
+import actionn from "../../assets/images/actionn.png";
+import research from "../../assets/images/research.png";
 import Localexpertise from "../../assets/images/Localexpertise.png";
 
 export default function CommitmentSection() {
@@ -34,7 +34,7 @@ export default function CommitmentSection() {
           loop
           muted
           style={{
-            width: "70%",
+            width: "85%",
           }}
           className="rounded-xl"
           onClick={handlePlay}
@@ -56,11 +56,11 @@ export default function CommitmentSection() {
           join us as we forge a better future for all
         </p>
       </div>
-      <div className="flex flex-row gap-8 p-10">
-        <section className="bg-[#69BD450A] rounded-3xl w-[424px] h-[382px]  items-center justify-center  flex flex-col gap-6 ">
+      <div className="flex flex-row gap-16 p-10 justify-center">
+        <section className="bg-[#69BD450A] rounded-3xl w-[280px] h-[280px]  items-center justify-center  flex flex-col gap-6 ">
           <div className="">
             <figure>
-              <img src={Localexpertise} alt="" />
+              <img src={actionn} alt="" width={40} />
             </figure>
           </div>
           <div className="justify-center text-center">
@@ -71,10 +71,10 @@ export default function CommitmentSection() {
             </p>
           </div>
         </section>
-        <section className="bg-[#69BD450A] rounded-3xl w-[424px] h-[382px]  items-center justify-center  flex flex-col gap-6 ">
+        <section className="bg-[#69BD450A] rounded-3xl w-[280px] h-[280px] items-center justify-center  flex flex-col gap-6 ">
           <div className="">
             <figure>
-              <img src={Localexpertise} alt="" />
+              <img src={Localexpertise} alt="" width={40} />
             </figure>
           </div>
           <div className="justify-center text-center">
@@ -86,10 +86,10 @@ export default function CommitmentSection() {
             </p>
           </div>
         </section>
-        <section className="bg-[#69BD450A] rounded-3xl w-[424px] h-[382px]  items-center justify-center  flex flex-col gap-6 ">
+        <section className="bg-[#69BD450A] rounded-3xl w-[280px] h-[280px] items-center justify-center  flex flex-col gap-6 ">
           <div className="">
             <figure>
-              <img src={Localexpertise} alt="" />
+              <img src={research} alt="" width={40} />
             </figure>
           </div>
           <div className="justify-center text-center">

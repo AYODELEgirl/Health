@@ -9,7 +9,7 @@ export default function NavBar2() {
         <aside className="px-10 flex justify-between p-4 ">
           <NavLink to="/">
             <figure>
-              <img src={logo1} alt="" width={150} />
+              <img src={logo1} alt="" width={130} />
             </figure>
           </NavLink>
           <ul className="flex items-center justify-between  gap-8">
