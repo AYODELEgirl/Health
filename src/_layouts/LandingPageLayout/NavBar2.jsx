@@ -14,24 +14,24 @@ export default function NavBar2() {
           </NavLink>
           <ul className="flex items-center justify-between  gap-8">
             <NavLink to="/">
-              <li className="text-black hover:text-green-700 cursor-pointer">
+            <li className={`text-black hover:text-green-700 ${window.location.pathname === "/home" ? "text-green-500":""}  cursor-pointer`}>
                 Home
               </li>
             </NavLink>
             <NavLink to="/aboutus">
-              <li className="text-black hover:text-green-700 cursor-pointer">
+              <li className={`text-black hover:text-green-700 ${window.location.pathname === "/aboutus" ? "text-green-500":""}  cursor-pointer`}>
                 About Us
               </li>
             </NavLink>
             <NavLink to="/products">
-              <li className="text-black  hover:text-green-700 cursor-pointer">
-                Product
+            <li className={`text-black hover:text-green-700 ${window.location.pathname === "/products" ? "text-green-500":""}  cursor-pointer`}>
+                Products
               </li>
             </NavLink>
             <NavLink to="/insight">
-            <li className="text-black hover:text-green-700 cursor-pointer">
-              Insight
-            </li>
+            <li className={`text-black hover:text-green-700 ${window.location.pathname === "/insight" ? "text-green-500":""}  cursor-pointer`}>
+                Insight
+              </li>
             </NavLink>
             <NavLink to="/BookACall">
             <li>
