@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import { FaCirclePlay } from "react-icons/fa6";
-import orientationvideo from "../../assets/videos/orientationvideo.mp4"
+import orientationvideo from "../../assets/videos/orientationvideo.mp4";
 import actionn from "../../assets/images/actionn.png";
 import research from "../../assets/images/research.png";
 import Localexpertise from "../../assets/images/Localexpertise.png";
@@ -20,9 +20,9 @@ export default function CommitmentSection() {
   };
 
   return (
-    <div>
+    <div className="max-w-screen-lg mx-auto overflow-x-auto">
       <h1 className="font-bold flex flex-col gap-10 items-center justify-center text-[2rem] text-center mt-24">
-        We are commited to expanding healthcare access <br /> in africa with our
+        We are committed to expanding healthcare access <br /> in Africa with our
         market access solution
       </h1>
       <div className="flex relative justify-center pt-10">
@@ -34,15 +34,14 @@ export default function CommitmentSection() {
           loop
           muted
           style={{
-            width: "85%",
+            maxWidth: "100%", // Adjusted to fit within the container
+            height: "auto", // Maintain aspect ratio
+            borderRadius: "15px" // Added border radius for aesthetics
           }}
           className="rounded-xl"
           onClick={handlePlay}
         >
-          <source
-            src={orientationvideo}
-            type="video/mp4"
-          />
+          <source src={orientationvideo} type="video/mp4" />
         </video>
       </div>
       <div className="text-center mt-20">
@@ -97,7 +96,7 @@ export default function CommitmentSection() {
             <p className="text-[12px] text-[#757575]">
               We're committed to helping <br /> healthcare businesses expand
               their <br />
-              reach, ensuring quality healthcare is <br /> more accesible across
+              reach, ensuring quality healthcare is <br /> more accessible across
               the <br />
               continent
             </p>

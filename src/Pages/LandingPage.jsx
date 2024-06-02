@@ -16,14 +16,14 @@ export default function LandingPage() {
     <main>
       <HomePageLayout />
       <New />
-      <PictureAndTextGrid />
-      <CommitmentSection />
-      <Datatest />
+     <PictureAndTextGrid /> 
+     <CommitmentSection />  
+      <Datatest /> 
       {/* <DataAndAnalytics /> */}
-      <PublicationSection />
-      <EnablementSection />
+      <PublicationSection /> 
+       <EnablementSection /> 
       <QuestionsSection />
-      <FooterSections />
+      {/* <FooterSections />/  */}
     </main>
   );
 }
