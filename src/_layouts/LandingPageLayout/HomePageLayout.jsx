@@ -115,7 +115,7 @@ export default function Background() {
           </p> */}
             <p
               style={{ lineHeight: "70px" }}
-              className="mb-7 mt-28 font-bold text-2xl md:text-4xl lg:text-6xl xl:text-10xl"
+              className="mb-7 mt-28 font-bold text-lg md:text-4xl lg:text-6xl xl:text-10xl"
             >
               Unlocking African <br /> Healthcare
             </p>
