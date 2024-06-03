@@ -21,12 +21,12 @@ export default function CommitmentSection() {
 
   return (
     <div className="max-w-screen-lg mx-auto overflow-x-auto">
-      <h1 className="font-bold flex flex-col gap-10 items-center justify-center text-[2rem] text-center mt-24">
-        We are committed to expanding healthcare access <br /> in Africa with our
-        market access solution
+      <h1 className="font-bold flex flex-col md:gap-10  items-center justify-center lg:text-[2rem] text-lg text-center mt-24 ">
+        We are committed to expanding healthcare access <br /> <span> in Africa with our
+        market access solution </span>
       </h1>
       <div className="flex relative justify-center pt-10">
-        <div className="absolute top-80">
+        <div className=" absolute flex items-center justify-center h-full ">
           {show && <FaCirclePlay size={120} style={{ color: "white" }} />}
         </div>
         <video
@@ -50,12 +50,12 @@ export default function CommitmentSection() {
         </h1>
         <p className="">
           By integrating our mission and vision into every strategy and
-          decision, we're <br /> not just participating in Africa's healthcare
+          decision, we're <br  className="hidden lg:block"/> not just participating in Africa's healthcare
           journey. We're actively shaping it, <br />
           join us as we forge a better future for all
         </p>
       </div>
-      <div className="flex flex-row gap-16 p-10 justify-center">
+      <div className="flex md:flex-row gap-16 p-10 justify-center flex-col items-center">
         <section className="bg-[#69BD450A] rounded-3xl w-[280px] h-[280px]  items-center justify-center  flex flex-col gap-6 ">
           <div className="">
             <figure>

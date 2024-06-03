@@ -2,25 +2,25 @@ import React from "react";
 import abouta from "../../../assets/images/abouta.png";
 import aboutb from "../../../assets/images/aboutb.png";
 import bg from "../../../assets/images/brand.png";
-import FooterSection from "../FooterSection";
+import FooterSections from "../FooterSections";
 import footerlogo from "../../../assets/images/footerlogo.png";
 
 export default function Vision() {
   return (
     <div>
       <div>
-        <div className="flex flex-row mt-0">
-          <div className="w-[50%] mt-28 px-16">
+        <div className="flex lg:flex-row flex-col mt-0 gap-y-5">
+          <div className="lg:w-[50%] w-full mt-28 lg:px-16 px-5">
             <p className="text-red-500">Our vision</p>
             <p className="text-[35px] font-bold leading-10 mt-3">
               The Beacon for African <br /> Healthcare insight
             </p>
             <p className="text-[13px] text-[#757575] mt-6">
               To be the leading source of comprehensive, reliable and actionable
-              data <br /> & insights on the African Healthcare market
+              data  & insights on the African Healthcare market
             </p>
           </div>
-          <div className="w-[50%]">
+          <div className="lg:w-[50%] w-full ">
             <figure>
               <img src={abouta} alt="" />
             </figure>
@@ -29,13 +29,13 @@ export default function Vision() {
       </div>
 
       <div className="">
-        <div className="flex flex-row p-10">
-          <div className="w-[50%]">
+        <div className="flex lg:flex-row flex-col lg:p-10 py-10">
+          <div className="lg-w-[50%] w-full ">
             <figure>
               <img src={aboutb} alt="" />
             </figure>
           </div>
-          <div className="w-[50%] mt-28 px-16">
+          <div className="lg-w-[50%] w-full lg:mt-28  mt-14 lg:px-16 px-5">
             <p className="text-red-500">Our Mission</p>
             <p className="text-[35px] font-bold leading-10 mt-3">
               Improving Healthcare penetration in Africa
@@ -47,8 +47,8 @@ export default function Vision() {
           </div>
         </div>
 
-        <div className="flex flex-row mb-16">
-          <div className="w-[50%] mt-28 px-16">
+        <div className="flex lg:flex-row gap-y-5 flex-col mb-16">
+          <div className="lg:w-[50%] w-full mt-28 px-16">
             <p className="text-red-500">About us</p>
             <p className="text-[35px] font-bold">Why us?</p>
             <p className="text-[13px] text-[#757575] mt-5">
@@ -65,7 +65,7 @@ export default function Vision() {
               Read more
             </button>
           </div>
-          <div className="w-[50%]">
+          <div className="lg:w-[50%] w-full">
             <figure>
               <img src={abouta} alt="" />
             </figure>
@@ -111,7 +111,7 @@ export default function Vision() {
             </div>
           </div>
         </div> */}
-        <FooterSection />
+        <FooterSections />
       </div>
     </div>
   );

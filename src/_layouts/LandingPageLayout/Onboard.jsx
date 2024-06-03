@@ -12,7 +12,7 @@ export default function Onboard() {
           backgroundImage: `url(${analyticsbackground})`,
           height: "500px",
         }}
-        className="flex flex-col md:flex-row gap-10 md:gap-40 p-6 bg-red-500"
+        className="flex flex-col md:flex-row gap-10 md:gap-40 md:p-6 bg-red-500"
       >
         <div className="md:w-1/2 p-7 mt-8">
           <button className="bg-[#FF784B] text-white text-lg rounded-full py-3 px-5 mb-5">
@@ -30,7 +30,7 @@ export default function Onboard() {
             obtain the right certifications for all parts of your business.
           </p>
           <div className="flex gap-2 items-center text-[#69BD45]">
-            <NavLink to="/BookACall">
+            <NavLink to="/BookACall">  
               <p>Contact Us</p>
             </NavLink>
             <LiaLongArrowAltRightSolid />

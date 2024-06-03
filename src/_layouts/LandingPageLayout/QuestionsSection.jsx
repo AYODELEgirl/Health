@@ -35,11 +35,11 @@ export default function QuestionsSection() {
         <p className="text-[25px] font-bold mb-5">Frequently asked questions</p>
         <p className="text-[15px] text-[#757575] text-center">
           Answers to question you may have. We're here to help you make an{" "}
-          <br /> informed decision
+          <br className="hidden md:block"/> informed decision
         </p>
       </div>
-      <div className="flex items-start px-28 py-20  gap-10">
-      <div className="grid grid-cols-1 w-1/2 gap-10">
+      <div className="flex items-start px-5 lg:px-28 py-20 gap-10 flex-col lg:flex-row">
+      <div className="grid grid-cols-1 lg:w-1/2  w-full gap-10">
         {Question.slice(0,3).map((d, index) => {
           return (
             <div className="gap-40  border-solid border-2 border-gainsboro-100 p-5 rounded-lg">
@@ -59,7 +59,7 @@ export default function QuestionsSection() {
         })}
       </div>
 
-      <div className=" grid grid-cols-1 gap-10 w-1/2">
+      <div className=" grid grid-cols-1 gap-10 lg:w-1/2 w-full">
         {Question.slice(3,6).map((d, index) => {
           return (
             <div className="gap-40  border-solid border-2 border-gainsboro-100 p-5 rounded-lg">

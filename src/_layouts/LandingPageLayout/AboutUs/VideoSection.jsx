@@ -18,19 +18,20 @@ export default function VideoSection() {
 
   return (
     <div className="relative flex">
-      <div className="absolute inset-0 p-20  mt-36 ">
-        <p className="text-[13px] text-orange-500 mb-8">About Us</p>
-        <p className="text-[50px] font-bold text-white mb-4">
-          615M Africans don't have access <br />
-          to the healthcare products & <br /> services they need
+      <div className="absolute inset-0 lg:p-20 p-5 lg:mt-20">
+        <p className="text-[13px] text-orange-500 md:mb-8 mb-3">About Us</p>
+        <p className="lg:text-[50px] text-lg font-bold text-white mb-4 flex flex-col lg:gap-1">
+         <span>615M Africans don't have access</span>  < br className="hidden lg:block" />
+         <span>to the healthcare products &</span>  <br   className="hidden lg:block"/> 
+         <span>services they need</span>
         </p>
-        <p className="text-white text-[14px]">
+        <p className="text-white md:text-[14px] text-xs lg:mt-10">
           We're on a mission to change that international conference
           report,"Executive summary: The state of universal health converge in
           Africa,(2021)
         </p>
       </div>
-      <div className="absolute top-80 mt-40 p-20">
+      <div className="absolute lg:top-80 top-28 lg:mt-40 py-[90px] px-5 lg:p-20">
         {show && <MdPauseCircle size={40} style={{ color: "#69BD45" }} />}
       </div>
       <video

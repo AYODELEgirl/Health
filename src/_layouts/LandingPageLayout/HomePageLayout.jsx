@@ -114,23 +114,23 @@ export default function Background() {
             Unlocking African <br /> Healthcare
           </p> */}
             <p
-              style={{ lineHeight: "70px" }}
-              className="mb-7 mt-28 font-bold text-xl md:text-4xl lg:text-6xl xl:text-10xl"
+              
+              className="mb-7 mt-28 font-bold text-2xl md:text-4xl lg:text-6xl xl:text-10xl leading-10 md:leading-[70px]"
             >
               Unlocking African <br /> Healthcare
             </p>
 
-            <p className="mb-7 w-[60%] hidden s450:flex">
+            <p className="mb-7 md:w-[60%] w-full flex text-sm md:text-base ">
               Infinity Health leverages technology to drive Market Access in
               Africa through innovative <br /> regulatory, and business support
               solutions.
             </p>
-            <div>
-              <button className="test text-[13px] px-14 mr-7 p-3 text-white rounded-md border-none bg-[#FF784B]">
+            <div className="flex items-center gap-7 flex-col lg:flex-row  ">
+              <button className="text-[13px] px-14 p-3 text-white rounded-md border-none bg-[#FF784B] w-full md:w-auto">
                 Watch video
               </button>
-              <NavLink to="/aboutus">
-                <button className="text-[12px] font-bold px-14 mr-7 p-3 text-black rounded-md border-none bg-[#FFFFFF]">
+              <NavLink to="/aboutus" className="text-[12px] font-bold flex items-center justify-center p-3 text-black rounded-md border-none bg-[#FFFFFF] w-full md:w-auto lg:px-14">
+                <button >
                   More about us
                 </button>
               </NavLink>

@@ -20,7 +20,7 @@ function FooterSections() {
         }}
       >
         <div className="flex flex-col lg:flex-row justify-between border-b lg:h-[300px]">
-          <div className="p-6 lg:w-[45%] ">
+          <div className="p-6 lg:w-[45%]">
             <img src={footerlogo} alt="" width={150} />
             <p className="text-white mb-10 mt-5">
               Join our newsletter to get updated on the latest on African health
@@ -47,7 +47,7 @@ function FooterSections() {
             </p>
           </div>
 
-          <div className="w-[55%] flex flex-col lg:flex-row gap-12 leading-10 mt-10">
+          <div className="w-[45%] flex flex-col lg:flex-row gap-y-12 justify-between leading-10 mt-10">
             <div className="text-white">
               <h1 className="text-[21px] font-semibold">Company</h1>
               <NavLink to="/aboutus">

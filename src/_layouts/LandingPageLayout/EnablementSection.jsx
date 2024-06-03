@@ -3,8 +3,8 @@ import hands from "../../assets/images/hands.png";
 import { NavLink } from "react-router-dom";
 export default function EnablementSection() {
   return (
-    <div className="flex flex-row">
-      <section className="bg-[#E8FFDE] w-[50%]">
+    <div className="flex md:flex-row flex-col">
+      <section className="bg-[#E8FFDE] md:w-[50%] w-full">
         <div className="mt-16 p-10">
           <p className="text-[15px]  text-red-400 mb-3">
             Health system enablers
@@ -24,7 +24,7 @@ export default function EnablementSection() {
           </NavLink>
         </div>
       </section>
-      <section className="w-[50%]">
+      <section className="md:w-[50%] w-full">
         <figure>
           <img src={hands} alt="" className="w-full h-[500px] object-cover" />
         </figure>

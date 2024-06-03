@@ -27,7 +27,7 @@ export default function PublicationSection() {
               <img src={publicone} alt="" width={400} className="mb-5" />
             </figure>
             <div className="flex flex-row gap-10">
-              <p className="font-bold text-[24px] mb-3">
+              <p className="font-bold text-xl md:text-[24px] mb-3">
                 We want to redefine access to quality healthcare
               </p>
               <figure>
@@ -52,11 +52,11 @@ export default function PublicationSection() {
                 Infographics
               </button>
             </div>
-            <figure>
+            <figure className="flex">
               <img src={public2} alt="" width={400} className="mb-5" />
             </figure>
             <div className="flex flex-row gap-10">
-              <p className="font-bold text-[24px] mb-3">
+              <p className="font-bold md:text-[24px] text-xl mb-3">
                 We want to redefine access to <br />
                 quality healthcare
               </p>
@@ -87,7 +87,7 @@ export default function PublicationSection() {
                 <img src={public3} alt="" width={400} className="mb-5" />
               </figure>
               <div className="flex flex-row gap-10">
-                <p className="font-bold text-[24px] mb-3">
+                <p className="font-bold text-xl md:text-[24px] mb-3">
                   We want to redefine access to <br />
                   quality healthcare
                 </p>

@@ -27,8 +27,8 @@ export default function publication() {
         </div>
       </div>
 
-      <div className="p-7 bg-[#F5F6F9j]">
-        <div className="flex flex-row gap-6">
+      <div className="bg-[#F5F6F9]">
+        <div className="flex lg:flex-row flex-col gap-6">
           <div className=" absolute flex justify-between p-3">
             <button className="bg-[#FFF6E5]  text-[#667085] p-2 mt-3 font-semibold z-10 backdrop-filter rounded-2xl px-4 text-[12px]">
               Case Studies
@@ -36,7 +36,7 @@ export default function publication() {
           </div>
           <div>
             <figure>
-              <img src={publicone} alt="" width={400} className="mb-5" />
+              <img src={publicone} alt="" className="mb-5 lg:w-[400px] w-full" />
             </figure>
             <div className="flex flex-row gap-10">
               <p className="font-bold text-[24px] mb-3">
@@ -65,7 +65,7 @@ export default function publication() {
             </button>
           </div>
             <figure>
-              <img src={public2} alt="" width={400} className="mb-5" />
+              <img src={public2} alt="" className="mb-5 lg:w-[400px] w-full" />
             </figure>
             <div className="flex flex-row gap-10">
               <p className="font-bold text-[24px] mb-3">
@@ -95,7 +95,7 @@ export default function publication() {
           </div>
           <div>
             <figure>
-              <img src={public3} alt="" width={400} className="mb-5" />
+              <img src={public3} alt=""className="mb-5 lg:w-[400px] w-full" />
             </figure>
             <div className="flex flex-row gap-10">
               <p className="font-bold text-[24px] mb-3">
@@ -119,8 +119,8 @@ export default function publication() {
           </div>
         </div>
 
-        <div className="p-7">
-          <div className="flex flex-row gap-6">
+        <div >
+          <div className="flex lg:flex-row flex-col gap-6">
             <div className=" absolute flex justify-between p-3">
               <button className="bg-[#FFF6E5]  text-[#667085] p-2 mt-3 font-semibold z-10 backdrop-filter rounded-2xl px-4 text-[12px]">
                 Case Studies
@@ -128,7 +128,7 @@ export default function publication() {
             </div>
             <div>
               <figure>
-                <img src={publicone} alt="" width={400} className="mb-5" />
+                <img src={publicone} alt="" className="mb-5 lg:w-[450px] w-full" />
               </figure>
               <div className="flex flex-row gap-10">
                 <p className="font-bold text-[24px] mb-3">
@@ -152,7 +152,7 @@ export default function publication() {
 
             <div>
               <figure>
-                <img src={public2} alt="" width={400} className="mb-5" />
+                <img src={public2} alt="" className="mb-5 lg:w-[400px] w-full" />
               </figure>
               <div className="flex flex-row gap-10">
                 <p className="font-bold text-[24px] mb-3">
@@ -182,7 +182,7 @@ export default function publication() {
             </div>
             <div>
               <figure>
-                <img src={public3} alt="" width={400} className="mb-5" />
+                <img src={public3} alt=""className="mb-5 lg:w-[400px] w-full" />
               </figure>
               <div className="flex flex-row gap-10">
                 <p className="font-bold text-[24px] mb-3">

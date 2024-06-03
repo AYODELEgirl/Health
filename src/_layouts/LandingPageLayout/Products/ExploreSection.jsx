@@ -19,8 +19,8 @@ export default function ExploreSection() {
           tackle the challenges of doing business in Africa by
         </p>
       </div>
-      <div className="flex flex-row gap-6 mb-20">
-        <div className="bg-[#E9FFDF99] p-5 w-[25%] h-72 rounded-md">
+      <div className="flex lg:flex-row flex-col gap-6 mb-20">
+        <div className="bg-[#E9FFDF99] p-5 lg:w-[25%] w-full h-72 rounded-md">
           <div className="mb-4">
             <figure>
               <img src={exploreone} alt="" width={40} />
@@ -48,7 +48,7 @@ export default function ExploreSection() {
           </div> */}
         </div>
 
-        <div className="bg-[#E9FFDF99] p-5 w-[25%] h-72 rounded-md">
+        <div className="bg-[#E9FFDF99] p-5 lg:w-[25%] w-full h-72 rounded-md">
           <div className="mb-4">
             <figure>
               <img src={exploretwo} alt="" width={40} />
@@ -75,7 +75,7 @@ export default function ExploreSection() {
           </div> */}
         </div>
 
-        <div className="bg-[#E9FFDF99] p-5 w-[25%] h-72 rounded-md">
+        <div className="bg-[#E9FFDF99] p-5 lg:w-[25%] w-full h-72 rounded-md">
           <div className="mb-4">
             <figure>
               <img src={explorethree} alt="" width={40} />
@@ -102,7 +102,7 @@ export default function ExploreSection() {
           </div> */}
         </div>
 
-        <div className="bg-[#E9FFDF99] p-5 w-[25%] h-72 rounded-md">
+        <div className="bg-[#E9FFDF99] p-5 lg:w-[25%] w-full h-72 rounded-md">
           <div className="mb-4">
             <figure>
               <img src={explorefour} alt="" width={40} />

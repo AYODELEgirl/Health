@@ -4,8 +4,8 @@ import onboardlogo from "../../../assets/images/onboardlogo.png";
 
 export default function RegulatorySection() {
   return (
-    <div className="flex flex-row gap-12 p-12 mb-14">
-      <section className="w-[50%] ">
+    <div className="flex lg:flex-row flex-col gap-12 p-12 mb-14">
+      <section className="lg:w-[50%] w-full ">
         <div className="mb-1">
           <figure>
             <img src={onboardlogo} alt="" width={90} />
@@ -32,7 +32,7 @@ export default function RegulatorySection() {
           </div>
         </div>
       </section>
-      <section className="w-[50%]">
+      <section className="lg:w-[50%]  w-full">
         <figure>
           <img src={onboardONE} alt="" width={500} />
         </figure>

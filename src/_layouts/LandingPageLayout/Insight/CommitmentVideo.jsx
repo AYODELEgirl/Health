@@ -1,7 +1,8 @@
 import React, { useRef, useState } from "react";
 import { FaCirclePlay } from "react-icons/fa6";
-import FooterSection from "../FooterSection";
+// import FooterSection from "../FooterSection";
 import orientationvideo from "../../../assets/videos/orientationvideo.mp4"
+import FooterSections from "../FooterSections";
 
 export default function CommitmentVideo() {
   const videoRef = useRef(null);
@@ -19,8 +20,8 @@ export default function CommitmentVideo() {
 
   return (
     <div>
-      <h1 className="font-bold flex flex-col gap-10 items-center justify-center text-[2rem] text-center mt-24">
-        We are commited to expanding healthcare access <br /> in africa with our
+      <h1 className="font-bold flex flex-col gap-10 items-center justify-center lg:text-[2rem] md:text-[1.5rem] text-[1rem] text-center mt-24">
+        We are commited to expanding healthcare access <br/> in africa with our
         market access solution
       </h1>
       <div className="flex relative justify-center pt-10">
@@ -45,7 +46,7 @@ export default function CommitmentVideo() {
       </div>
       <div className="mt-14">
 
-      <FooterSection />
+      <FooterSections />
       </div>
     </div>
   );
