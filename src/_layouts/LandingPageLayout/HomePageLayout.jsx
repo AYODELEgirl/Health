@@ -66,7 +66,7 @@ export default function Background() {
 
           {showModal && (
             <div className="bg-[rgba(0,0,0,0.3)] fixed h-[100vh] w-[100vw] top-0 left-0 bottom-0 right-0 flex justify-end  items-center ">
-              <div className="bg-white w-[35%] h-full ">
+              <div className="bg-white w-[55%] h-full ">
                 <div onClick={() => setShowModal(false)}>
                   <LiaTimesSolid
                     className="ml-5 pt-5 "
@@ -106,7 +106,7 @@ export default function Background() {
             </div>
           )}
 
-          <div className="text-white px-10">
+          <div className="text-white px-10 sm:mt-40">
             {/* <p
             style={{ lineHeight: "95px" }}
             className="mb-7 mt-20 font-bold text-[5rem] sm:text-sm"
