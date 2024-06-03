@@ -36,9 +36,9 @@ export default function Onboard() {
             <LiaLongArrowAltRightSolid />
           </div>
         </div>
-        <div className="hidden md:flex md:w-1/2 mt-8 justify-center md:justify-end">
+        <div className="hidden md:flex md:w-1/2 mt-8 justify-center md:justify-end ">
           <figure>
-            <img src={onboardONE} alt="Onboard" className="w-full h-auto max-w-xs md:max-w-none" />
+            <img src={onboardONE} alt="Onboard" className="w-[450px] h-auto max-w-xs md:max-w-none" />
           </figure>
         </div>
       </div>
