@@ -30,7 +30,7 @@ export default function MarketAccess() {
           </figure>
         </div>
         <div>
-          <p className="font-bold text-[24px]">Improved Forecasting</p>
+          <p className="font-bold text-[24px]">Process Optimization</p>
           <p className="text-[#667085] text-12px mt-5">
             Lorem Ipsum Lorem Ipsum Lorem <br /> Ipsum Lorem Ipsum Lorem Ipsum
             Lorem Ipsum
@@ -44,7 +44,7 @@ export default function MarketAccess() {
           </figure>
         </div>
         <div>
-          <p className="font-bold text-[24px]">Improved Forecasting</p>
+          <p className="font-bold text-[24px]">Growth and Research</p>
           <p className="text-[#667085] text-12px mt-5">
             Lorem Ipsum Lorem Ipsum Lorem <br /> Ipsum Lorem Ipsum Lorem Ipsum
             Lorem Ipsum

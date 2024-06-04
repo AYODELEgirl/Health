@@ -16,7 +16,7 @@ export default function Onboard() {
       >
         <div className="md:w-1/2 p-7 mt-8">
           <button className="bg-[#FF784B] text-white text-lg rounded-full py-3 px-5 mb-5">
-            Our Products
+            ONBOARD LOGO
           </button>
           <p className="font-medium text-2xl md:text-3xl lg:text-4xl mb-5 text-white">
             Regulatory Compliance made easy
