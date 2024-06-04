@@ -22,7 +22,11 @@ export default function Launch() {
             Powering Growth
           </p>
           <p className="text-white mb-5 text-lg">
-            Find the right partnerships to launch and scale across Africa.
+            Expand your reach and forge strategic partnerships through our
+            comprehensive marketplace and expertise. We connect healthcare
+            businesses to a network of potential collaborators and clients,
+            fostering new opportunities in marketing, business development, and
+            partnerships.
           </p>
           <div className="flex gap-2 items-center text-[#69BD45]">
             <NavLink to="/products">

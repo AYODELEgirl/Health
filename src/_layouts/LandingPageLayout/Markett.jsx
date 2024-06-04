@@ -19,22 +19,28 @@ export default function Market() {
             Our Products
           </button>
           <p className="font-medium text-2xl md:text-3xl lg:text-4xl mb-5 text-white">
-            Insights For Market Access
+            Local Insights & Analytics
           </p>
           <p className="text-white mb-5 text-lg">
-            On-demand African Market Insights accessible via charts, Dashboards,
-            and Direct Supports.
+            Analytics Make informed decisions with our invaluable local
+            insights, market data, and analytics. Gain a deeper understanding of
+            the African healthcare landscape to guide your market entry,
+            strategic planning, and growth.
           </p>
           <div className="flex gap-2 items-center text-[#69BD45]">
             <NavLink to="/products">
-              <p>Visit Product page</p>
+              <p>Contact Us</p>
             </NavLink>
             <LiaLongArrowAltRightSolid />
           </div>
         </div>
         <div className="hidden md:flex md:w-1/2 mt-8 justify-center md:justify-end">
           <figure>
-            <img src={markett} alt="Market" className="w-full h-auto max-w-xs md:max-w-none" />
+            <img
+              src={markett}
+              alt="Market"
+              className="w-full h-auto max-w-xs md:max-w-none"
+            />
           </figure>
         </div>
       </div>

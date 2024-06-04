@@ -3,7 +3,7 @@ import insight from "../../../assets/images/insight.png";
 
 export default function infinityVideo() {
   return (
-    <div>
+    <div className="mb-0">
       <div
         className="bg-[#69BD45] w-full  p-10 "
         style={{

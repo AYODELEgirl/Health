@@ -19,19 +19,17 @@ export default function Onboard() {
             Our Products
           </button>
           <p className="font-medium text-2xl md:text-3xl lg:text-4xl mb-5 text-white">
-            Regulatory Compliance Support
+            Regulatory Compliance made easy
           </p>
           <p className="text-white mb-5 text-lg">
-            ONBOARD helps healthcare and life science businesses connect and
-            comply with regulatory standards more easily.
+          Navigate the complexities of market entry, expansion, and compliance with our streamlined regulatory support platform. We connect you with the necessary resources and expertise to ensure adherence to regulatory standards in the healthcare and life sciences sectors.
+
+
           </p>
-          <p className="text-white mb-5 text-lg">
-            We help you meet the regulatory requirements, register, renew, and
-            obtain the right certifications for all parts of your business.
-          </p>
+         
           <div className="flex gap-2 items-center text-[#69BD45]">
-            <NavLink to="/BookACall">  
-              <p>Contact Us</p>
+            <NavLink to="/products">  
+              <p>Visit Product Page</p>
             </NavLink>
             <LiaLongArrowAltRightSolid />
           </div>

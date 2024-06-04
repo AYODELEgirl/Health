@@ -9,7 +9,7 @@ import diss from "../../../assets/images/diss.png"
 
 export default function Global() {
   return (
-    <div className=" p-16">
+    <div className=" p-16 mb-24 mt-0">
       <div>
         <p className="text-[#FF784B] text-[13px]">Our data solution</p>
         <p className="font-bold text-[30px]">
