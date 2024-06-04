@@ -47,7 +47,7 @@ function FooterSections() {
             </p>
           </div>
 
-          <div className="w-[45%] flex flex-col lg:flex-row gap-y-12 justify-between leading-10 mt-10">
+          <div className="w-[45%] sm:p-6 flex flex-col lg:flex-row gap-y-12 justify-between leading-10 mt-10">
             <div className="text-white">
               <h1 className="text-[21px] font-semibold">Company</h1>
               <NavLink to="/aboutus">
