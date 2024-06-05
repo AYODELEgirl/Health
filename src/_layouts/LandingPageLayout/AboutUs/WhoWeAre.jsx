@@ -41,7 +41,7 @@ export default function WhoWeAre() {
         </div>
         <div className="">
           <p className="font-semibold text-[17px]">
-            Join us in building a healtheir Africa
+            Join us in building a healthier Africa
           </p>
           <p className="mb-4">
             Are you a healthcare business poised to make a difference in Africa?

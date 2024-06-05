@@ -3,6 +3,7 @@ import { LiaLongArrowAltRightSolid } from "react-icons/lia";
 import onboardONE from "../../assets/images/onboardONE.png";
 import { NavLink } from "react-router-dom";
 import analyticsbackground from "../../assets/images/analyticsbackground.png";
+import onboardlogo from "../../assets/images/onboardlogo.png"
 
 export default function Onboard() {
   return (
@@ -15,9 +16,11 @@ export default function Onboard() {
         className="flex flex-col md:flex-row gap-10 md:gap-40 md:p-6 bg-red-500"
       >
         <div className="md:w-1/2 p-7 mt-8">
-          <button className="bg-[#FF784B] text-white text-lg rounded-full py-3 px-5 mb-5">
-            ONBOARD LOGO
-          </button>
+        <div>
+          <figure>
+            <img src={onboardlogo} alt="" width={100} className="" />
+          </figure>
+        </div>
           <p className="font-medium text-2xl md:text-3xl lg:text-4xl mb-5 text-white">
             Regulatory Compliance made easy
           </p>
