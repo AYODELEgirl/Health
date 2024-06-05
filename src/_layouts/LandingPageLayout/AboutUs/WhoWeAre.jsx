@@ -50,12 +50,12 @@ export default function WhoWeAre() {
             our solutions and how we can help you navigate the exciting
             opportunities within the African healthcare market.
           </p>
-          <p>
+          {/* <p>
             {" "}
             Join us as embark on this transformative journey to redefine access
             to quality healthcare in Africa. Together, we can make a difference
             and forge a brighter, healthier future for generations to come.
-          </p>
+          </p> */}
         </div>
       </div>
     </div>
