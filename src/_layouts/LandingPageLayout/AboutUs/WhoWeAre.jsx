@@ -41,13 +41,14 @@ export default function WhoWeAre() {
         </div>
         <div className="">
           <p className="font-semibold text-[17px]">
-            Join us in shaping a healthier future
+            Join us in building a healtheir Africa
           </p>
           <p className="mb-4">
-            Together, we can build a future where quality healthcare is
-            accessible to everyone in Africa. Whether you are a new startup or
-            an established player, Infinity Health is your partner in this
-            journey.
+            Are you a healthcare business poised to make a difference in Africa?
+            We invite you to explore how Infinity Health Africa can be your
+            partner on the path to success. Contact us today to learn more about
+            our solutions and how we can help you navigate the exciting
+            opportunities within the African healthcare market.
           </p>
           <p>
             {" "}

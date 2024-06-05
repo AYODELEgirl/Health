@@ -11,7 +11,7 @@ const Datatest = () => {
 
   const tabs = [
     { label: "Onboard", content: <Onboard /> },
-    { label: "Insight", content: <Markett /> },
+    { label: "Insights", content: <Markett /> },
     { label: "Launch Support", content: <Launch /> },
   ];
 

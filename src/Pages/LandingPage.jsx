@@ -23,7 +23,7 @@ export default function LandingPage() {
       <PublicationSection /> 
        <EnablementSection /> 
       <QuestionsSection />
-      {/* <FooterSections />/  */}
+      <FooterSections />
     </main>
   );
 }

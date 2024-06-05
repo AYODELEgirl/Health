@@ -13,7 +13,7 @@ export default function Vision() {
       <div>
         <div className="flex lg:flex-row flex-col mt-0 gap-y-5">
           <div className="lg:w-[50%] w-full mt-28 lg:px-16 px-5">
-            <p className="text-red-500">Our team</p>
+            <p className="text-red-500">Vision</p>
             <p className="font-bold text-[35px] leading-10 mt-3">
               The Beacon for African <br /> Healthcare
             </p>

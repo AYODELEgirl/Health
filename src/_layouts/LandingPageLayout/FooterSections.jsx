@@ -65,10 +65,10 @@ function FooterSections() {
                 <p>Onboard</p>
                 </a>
                 <a href="#data">
-                <p>Insight</p>
+                <p>Insights</p>
                 </a>
                 <a href="#data">
-                <p>Launch support</p>
+                <p>Launch Support</p>
                 </a>
             </div>
             <div className="text-white">
@@ -87,7 +87,7 @@ function FooterSections() {
               </div>
               <div className="flex items-center gap-4 mb-3">
                 <IoLogoLinkedin />
-                <p>Linkedln</p>
+                <p>Linkedin</p>
               </div>
             </div>
           </div>
