@@ -46,7 +46,7 @@ export default function Background() {
               </NavLink>
               <NavLink to="/insight">
                 <li className="text-white hover:text-green-300 cursor-pointer">
-                  Insight
+                  Insights
                 </li>
               </NavLink>
               <NavLink to="/BookACall">

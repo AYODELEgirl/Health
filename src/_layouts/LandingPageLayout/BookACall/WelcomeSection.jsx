@@ -9,7 +9,7 @@ import styled from "styled-components";
 
 export default function WelcomeSection() {
   return (
-    <div className="flex justify-center">
+    <div className="flex justify-center mb-20">
       <div
         className="bg-[#E8FFDE]  rounded-md mb-5 w-[80%] p-10 gap-16 "
         style={{ height: "300px" }}

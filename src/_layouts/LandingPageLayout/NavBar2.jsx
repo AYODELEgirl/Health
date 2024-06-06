@@ -6,13 +6,13 @@ export default function NavBar2() {
   return (
     <div>
       <nav className="overflow-x-hidden w-full z-10">
-        <aside className="px-10 flex justify-between p-4 ">
+        <aside className="px-10 flex justify-between  p-4 ">
           <NavLink to="/">
             <figure>
               <img src={logo1} alt="" width={130} />
             </figure>
           </NavLink>
-          <ul className="flex items-center justify-between  gap-8">
+          <ul className="flex items-center justify-between  gap-20">
             <NavLink to="/">
             <li className={`text-black hover:text-green-700 ${window.location.pathname === "/home" ? "text-green-500":""}  cursor-pointer`}>
                 Home
@@ -30,7 +30,7 @@ export default function NavBar2() {
             </NavLink>
             <NavLink to="/insight">
             <li className={`text-black hover:text-green-700 ${window.location.pathname === "/insight" ? "text-green-500":""}  cursor-pointer`}>
-                Insight
+                Insights
               </li>
             </NavLink>
             <NavLink to="/BookACall">

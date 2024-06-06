@@ -5,7 +5,7 @@ import public3 from "../../../assets/images/public3.jpg";
 import public2 from "../../../assets/images/public2.jpg";
 export default function publication() {
   return (
-    <div>
+    <div className="p-16">
       <div className="p-7">
         <p className=" text-red-400 text-[12px]">Insights and resources</p>
         <h2 className="font-bold text-[30px]">Latest Publications</h2>
@@ -23,12 +23,12 @@ export default function publication() {
           <p className="text-[14px] text-[#667085]">Market report</p>
         </div>
         <div>
-          <input type="text" placeholder="Search" className="p-1 px-7  rounded border border-gray-100 "/>
+          <input type="text" placeholder="Search" className="p-1 px-11  rounded border border-gray-200 text-start"/>
         </div>
       </div>
 
-      <div className="bg-[#F5F6F9]">
-        <div className="flex lg:flex-row flex-col gap-6">
+      <div className="bg-[#F5F6F9] p-7 ">
+        <div className="flex lg:flex-row pb-10 flex-col gap-6">
           <div className=" absolute flex justify-between p-3">
             <button className="bg-[#FFF6E5]  text-[#667085] p-2 mt-3 font-semibold z-10 backdrop-filter rounded-2xl px-4 text-[12px]">
               Case Studies
@@ -39,7 +39,7 @@ export default function publication() {
               <img src={publicone} alt="" className="mb-5 lg:w-[400px] w-full" />
             </figure>
             <div className="flex flex-row gap-10">
-              <p className="font-bold text-[24px] mb-3">
+              <p className="font-bold text-[22px] mb-3">
                 We want to redefine access to quality healthcare
               </p>
               <figure>
@@ -50,15 +50,15 @@ export default function publication() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
               nemo laudantium nostrum modi quis! em quidem unde.
             </p>
-            <div className="flex flex-row">
-              <p className="text-red-400">Learn more</p>
+            <div className="flex flex-row gap-3">
+              <p className="text-red-400 mt-2">Learn more</p>
               <figure>
-                <img src={iconwrap} alt="" />
+                <img src={iconwrap} alt="" className="mt-1"/>
               </figure>
             </div>
           </div>
 
-          <div>
+          <div >
           <div className=" absolute flex justify-between p-3">
             <button className="bg-[#FFF6E5]  text-[#667085] p-2 mt-3 font-semibold z-10 backdrop-filter rounded-2xl px-4 text-[12px]">
               Case Studies
@@ -69,7 +69,7 @@ export default function publication() {
             </figure>
             <div className="flex flex-row gap-10">
               <p className="font-bold text-[24px] mb-3">
-                We want to redefine access to <br />
+                We want to redefine access to
                 quality healthcare
               </p>
               <figure>
@@ -80,10 +80,10 @@ export default function publication() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
               nemo laudantium nostrum modi quis! em quidem unde.
             </p>
-            <div className="flex flex-row">
-              <p className="text-red-400">Learn more</p>
+            <div className="flex flex-row gap-3">
+              <p className="text-red-400 mt-2">Learn more</p>
               <figure>
-                <img src={iconwrap} alt="" />
+                <img src={iconwrap} alt=""className="mt-1" />
               </figure>
             </div>
           </div>
@@ -99,7 +99,7 @@ export default function publication() {
             </figure>
             <div className="flex flex-row gap-10">
               <p className="font-bold text-[24px] mb-3">
-                We want to redefine access to <br />
+                We want to redefine access to
                 quality healthcare
               </p>
               <figure>
@@ -110,10 +110,10 @@ export default function publication() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
               nemo laudantium nostrum modi quis! em quidem unde.
             </p>
-            <div className="flex flex-row">
-              <p className="text-red-400">Learn more</p>
+            <div className="flex flex-row gap-3">
+              <p className="text-red-400 mt-2">Learn more</p>
               <figure>
-                <img src={iconwrap} alt="" />
+                <img src={iconwrap} alt=""className="mt-1" />
               </figure>
             </div>
           </div>
@@ -142,10 +142,10 @@ export default function publication() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
                 nemo laudantium nostrum modi quis! em quidem unde.
               </p>
-              <div className="flex flex-row">
-                <p className="text-red-400">Learn more</p>
+              <div className="flex flex-row gap-3">
+                <p className="text-red-400 mt-2">Learn more</p>
                 <figure>
-                  <img src={iconwrap} alt="" />
+                  <img src={iconwrap} alt=""  className="mt-1"/>
                 </figure>
               </div>
             </div>
@@ -156,7 +156,7 @@ export default function publication() {
               </figure>
               <div className="flex flex-row gap-10">
                 <p className="font-bold text-[24px] mb-3">
-                  We want to redefine access to <br />
+                  We want to redefine access to 
                   quality healthcare
                 </p>
                 <figure>
@@ -167,10 +167,10 @@ export default function publication() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
                 nemo laudantium nostrum modi quis! em quidem unde.
               </p>
-              <div className="flex flex-row">
-                <p className="text-red-400">Learn more</p>
+              <div className="flex flex-row gap-3">
+                <p className="text-red-400 mt-2">Learn more</p>
                 <figure>
-                  <img src={iconwrap} alt="" />
+                  <img src={iconwrap} alt="" className="mt-1"/>
                 </figure>
               </div>
             </div>
@@ -186,7 +186,7 @@ export default function publication() {
               </figure>
               <div className="flex flex-row gap-10">
                 <p className="font-bold text-[24px] mb-3">
-                  We want to redefine access to <br />
+                  We want to redefine access to 
                   quality healthcare
                 </p>
                 <figure>
@@ -197,10 +197,10 @@ export default function publication() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
                 nemo laudantium nostrum modi quis! em quidem unde.
               </p>
-              <div className="flex flex-row">
-                <p className="text-red-400">Learn more</p>
+              <div className="flex flex-row gap-3">
+                <p className="text-red-400 mt-2">Learn more</p>
                 <figure>
-                  <img src={iconwrap} alt="" />
+                  <img src={iconwrap} alt=""className="mt-1" />
                 </figure>
               </div>
             </div>

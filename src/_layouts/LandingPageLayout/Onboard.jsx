@@ -16,9 +16,9 @@ export default function Onboard() {
         className="flex flex-col md:flex-row gap-10 md:gap-40 md:p-6 bg-red-500"
       >
         <div className="md:w-1/2 p-7 mt-8">
-        <div>
+        <div className="mb-5">
           <figure>
-            <img src={onboardlogo} alt="" width={100} className="" />
+            <img src={onboardlogo} alt="" width={100}/>
           </figure>
         </div>
           <p className="font-medium text-2xl md:text-3xl lg:text-4xl mb-5 text-white">
