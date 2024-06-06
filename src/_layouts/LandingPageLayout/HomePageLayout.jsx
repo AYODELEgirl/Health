@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import logo1 from "../../assets/images/logo1.png";
 import { Link, NavLink } from "react-router-dom";
 import NavBar from "./NavBar";
-import vid from "../../assets/videos/vid.mp4";
+import theVideo from "../../assets/videos/theVideo.mp4";
 import { CiMenuFries } from "react-icons/ci";
 import { LiaTimesSolid } from "react-icons/lia";
 import styled from "styled-components";
@@ -145,7 +145,7 @@ export default function Background() {
           <div className="absolute w-full h-full bg-black opacity-50"></div>
           {/* Video element */}
           <video autoPlay loop muted className="h-full w-full object-cover">
-            <source src={vid} type="video/mp4" />
+            <source src={theVideo} type="video/mp4" />
             {/* Add additional source tags for different video formats if needed */}
           </video>
         </div>
