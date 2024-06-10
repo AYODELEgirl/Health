@@ -17,9 +17,9 @@ export default function VideoSection() {
   };
 
   return (
-    <div className="relative flex">
-      <div className="absolute inset-0 lg:p-20 p-5 lg:mt-20">
-        <p className="text-[13px] text-orange-500 md:mb-8 mb-3">About Us</p>
+    <div className="relative flex ">
+      <div className="absolute inset-0 lg:p-20 p-5 lg:mt-20 px-8 pt-5">
+        <p className="text-[13px] text-orange-500 md:mb-8 mb-3 pt-5">About Us</p>
         <p className="lg:text-[50px] text-lg font-bold text-white mb-4 flex flex-col lg:gap-1">
          <span>615M Africans don't have access</span>  < br className="hidden lg:block" />
          <span>to the healthcare products &</span>  <br   className="hidden lg:block"/> 
@@ -31,7 +31,7 @@ export default function VideoSection() {
           Africa,(2021)
         </p>
       </div>
-      <div className="absolute lg:top-80 top-28 lg:mt-40 py-[90px] px-5 lg:p-20">
+      <div className="absolute lg:top-80 top-28 lg:mt-20 py-[90px] px-5 lg:p-20">
         {show && <MdPauseCircle size={40} style={{ color: "#69BD45" }} />}
       </div>
       <video

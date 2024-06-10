@@ -29,8 +29,8 @@ export default function QuestionsSection() {
 
   ];
   return (
-    <div>
-      <div className="flex flex-col items-center justify-center pt-20">
+    <div className="mb-20 mt-28">
+      <div className="flex flex-col items-center justify-center  ">
         <p className="text-red-500 text-[12px] mb-11">FAQ</p>
         <p className="text-[25px] font-bold mb-5">Frequently asked questions</p>
         <p className="text-[15px] text-[#757575] text-center">
@@ -38,7 +38,7 @@ export default function QuestionsSection() {
           <br className="hidden md:block"/> informed decision
         </p>
       </div>
-      <div className="flex items-start px-5 lg:px-28 py-20 gap-10 flex-col lg:flex-row">
+      <div className="flex items-start px-16 gap-10 flex-col lg:flex-row pt-8">
       <div className="grid grid-cols-1 lg:w-1/2  w-full gap-10">
         {Question.slice(0,3).map((d, index) => {
           return (

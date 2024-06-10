@@ -12,7 +12,7 @@ function FooterSections() {
   return (
     <div>
       <div
-        className="pr-16 pl-11 pt-10 "
+        className="pr-16 pl-11 px-8 pt-5 "
         style={{
           backgroundImage: `url(${analyticsbakground})`,
           backgroundRepeat: 'no-repeat',
@@ -94,7 +94,7 @@ function FooterSections() {
         </div>
 
         <div className="flex justify-between gap-96 mt-8">
-          <div>
+          <div className="mb-8">
             <p className="text-white text-[12px]">
               2024 infinity health. All rights reserved
             </p>

@@ -15,7 +15,7 @@ export default function Insight() {
         <InfinityVideo />
         <MarketAccess />
         <Global />
-        <PicsAndText />
+        {/* <PicsAndText /> */}
         <Publication />
         <CommitmentVideo />
         

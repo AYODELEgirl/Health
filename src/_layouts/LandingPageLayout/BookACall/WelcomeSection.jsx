@@ -9,9 +9,9 @@ import styled from "styled-components";
 
 export default function WelcomeSection() {
   return (
-    <div className="flex justify-center mb-20">
+    <div className="flex justify-center mb-20 px-16">
       <div
-        className="bg-[#E8FFDE]  rounded-md mb-5 w-[80%] p-10 gap-16 "
+        className="bg-[#E8FFDE]  rounded-md mb-5 w-[100%] p-10 gap-16 "
         style={{ height: "300px" }}
       >
         <div>
@@ -119,7 +119,7 @@ export default function WelcomeSection() {
               <AiOutlineDown className="absolute top-0 right-0 m-2" />
             </div>
             <div>
-              <button className="bg-[#69BD45] text-white h-full p-3 rounded-md">
+              <button className="bg-[#69BD45] text-white h-full py-3 px-24 rounded-md whitespace-nowrap">
                 Book Appointment
               </button>
             </div>

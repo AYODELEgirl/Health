@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 export default function EnablementSection() {
   return (
     <div className="flex md:flex-row flex-col">
-      <section className="bg-[#E8FFDE] md:w-[50%] w-full">
+      <section className="bg-[#E8FFDE] md:w-[50%] w-full px-8 pt-5">
         <div className="mt-16 p-10">
           <p className="text-[15px]  text-red-400 mb-3">
             Health system enablers
@@ -12,13 +12,13 @@ export default function EnablementSection() {
           <p className="font-bold text-[25px] mb-6">We can help</p>
           <p className=" text-11px text-[#667085] mb-6">
             We understand the complexities of African healthcare systems. Our
-            teams <br /> of seasoned experts brings a wealth of expoerience and
-            local knowledge <br /> to the table. This allows us to provide
-            actionable data and strategies <br /> specifically tailored to the
+            teams of seasoned experts brings a wealth of expoerience and
+            local knowledge to the table. This allows us to provide
+            actionable data and strategies specifically tailored to the
             African context
           </p>
           <NavLink to="/BookACall">
-            <button className="bg-[#69BD45] p-3 px-4 text-[11px] text-white rounded-md">
+            <button className="bg-[#69BD45] p-3 px-7 text-[12px] text-white rounded-md">
               Contact us
             </button>
           </NavLink>

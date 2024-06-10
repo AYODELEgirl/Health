@@ -4,6 +4,10 @@ import aboutb from "../../../assets/images/aboutb.png";
 import bg from "../../../assets/images/brand.png";
 import FooterSections from "../FooterSections";
 import team from "../../../assets/images/team.png";
+import pix1 from "../../../assets/images/pix1.png"
+import pix2 from "../../../assets/images/pix2.png"
+import pix3 from "../../../assets/images/pix3.png"
+import woman from "../../../assets/images/woman.png"
 import charter from "../../../assets/images/charter.png";
 import footerlogo from "../../../assets/images/footerlogo.png";
 
@@ -11,20 +15,19 @@ export default function Vision() {
   return (
     <div>
       <div>
-        <div className="flex lg:flex-row flex-col mt-0 gap-y-5">
-          
-          <div className="lg:w-[50%] w-full mt-28 lg:px-16 px-5">
-            <p className="text-red-500">Vision</p>
+      <div className="flex lg:flex-row flex-col mt-0 gap-10 px-20">
+      <div className="lg:w-[50%] w-full lg:mt-28  mt-14">
+            <p className="text-red-500">Our Vision</p>
             <p className="font-bold text-[35px] leading-10 mt-3">
               The Beacon for African <br /> Healthcare
             </p>
             <p className="text-[13px] text-[#757575] mt-6">
-            To be the leading digital ecosystem, empowering a thriving and accessible healthcare landscape across Africa.
+            To be the leading digital ecosystem, empowering a thriving and <br />  accessible healthcare landscape across Africa.
             </p>
           </div>
           <div className="lg:w-[50%] w-full ">
             <figure>
-              <img src={abouta} alt="" />
+              <img src={pix1} alt=""/>
             </figure>
           </div>
         </div>
@@ -34,7 +37,7 @@ export default function Vision() {
         <div className="flex lg:flex-row flex-col mt-5 gap-y-5 px-20">
           <div className="lg-w-[50%] w-full ">
             <figure>
-              <img src={aboutb} alt="" />
+              <img src={pix2} alt="" />
             </figure>
           </div>
           <div className="lg-w-[50%] w-full lg:mt-28  mt-14 lg:px-16 px-5">
@@ -69,7 +72,7 @@ export default function Vision() {
           </div>
           <div className="lg:w-[50%] w-full">
             <figure>
-              <img src={abouta} alt="" />
+              <img src={pix3} alt="" />
             </figure>
           </div>
         </div>
@@ -103,7 +106,7 @@ export default function Vision() {
             <div className="flex lg:flex-row flex-col mt-0 gap-y-5 gap-x-5 p-[80px]">
               <div className="lg:w-[50%] w-full ">
                 <figure>
-                  <img src={team} alt="" />
+                  <img src={woman} alt="" />
                 </figure>
               </div>
               <div className="lg:w-[50%] w-full mt-28 lg:px-16 px-5 ">

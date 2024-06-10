@@ -4,15 +4,16 @@ import Markett from "./Markett"; // your import location could be different
 import Launch from "./Launch"; // your import location could be different
 // import analyticsbackground from '../../assets/images/analyticsbackground.png'
 import analyticsbakground from "../../assets/images/analyticsbackground.png";
+import llogo from "../../assets/images/lloggo.png";
 
 const Datatest = () => {
   const [activeTab, setActiveTab] = useState("Onboard");
   const [activeContent, setActiveContent] = useState(<Onboard />);
 
   const tabs = [
-    { label: "Onboard", content: <Onboard /> },
-    { label: "Insights", content: <Markett /> },
-    { label: "Launch Support", content: <Launch /> },
+    {id:1, label: "Onboard", content: <Onboard />, icon:llogo },
+    { id:2,label: "Insights", content: <Markett /> },
+    { id:3,label: "Launch Support", content: <Launch /> },
   ];
 
   const renderContent = () => {
@@ -31,7 +32,7 @@ const Datatest = () => {
 
             }}
             key={tab.label}
-            className={`border flex-1 p-4 cursor-pointer ${
+            className={`border flex justify-center flex-1 p-4 cursor-pointer ${
               activeTab === tab.label ? "bg-black text-white" : "bg-white"
             }`}
             onClick={() => {
@@ -39,7 +40,8 @@ const Datatest = () => {
               setActiveTab(tab.label);
             }}
           >
-            {tab.label.toUpperCase()}
+            {tab.id === 1 ? "":tab.label.toUpperCase()}
+           {tab.id === 1 && <img src={llogo} alt=""/>}
           </div>
         ))}
       </div>

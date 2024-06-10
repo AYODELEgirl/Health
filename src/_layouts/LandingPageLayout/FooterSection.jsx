@@ -94,7 +94,7 @@ export default function FooterSection() {
         </div>
 
         <div className="flex justify-between gap-96 mt-8">
-          <div>
+          <div className="mb-8">
             <p className="text-white text-[12px]">
               2024 infinity health. All rights reserved
             </p>

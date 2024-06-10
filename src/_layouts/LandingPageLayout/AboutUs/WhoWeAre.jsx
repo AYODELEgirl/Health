@@ -3,7 +3,7 @@ import React from "react";
 export default function WhoWeAre() {
   return (
     <div className="bg-[#F5FFF0] flex lg:flex-row flex-col gap-10 lg:h-[480px] p-10">
-      <div className=" flex flex-col gap-10">
+      <div className=" flex flex-col gap-10 px-8 pt-5">
         <div className="">
           <p className="font-bold text-[27px] mb-5">Who we are</p>
           <p>
@@ -26,7 +26,7 @@ export default function WhoWeAre() {
         </div>
       </div>
 
-      <div className="mt-14 flex flex-col  gap-8">
+      <div className="mt-14 flex flex-col gap-8">
         <div className="">
           <p className="font-semibold text-[17px]">
             More than Data, we're a partner

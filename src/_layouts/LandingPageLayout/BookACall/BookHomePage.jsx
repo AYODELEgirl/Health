@@ -11,7 +11,7 @@ export default function BookHomePage() {
         }}
         className="w-full bg-cover bg-center relative"
       >
-        <div className="absolute inset-0 flex flex-col justify-center items-start p-36">
+        <div className="absolute inset-0 flex flex-col justify-center items-start p-16">
           <p className="font-bold text-[55px] text-white mb-2">
             Contact Us
           </p>

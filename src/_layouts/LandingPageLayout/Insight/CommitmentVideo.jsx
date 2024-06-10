@@ -33,7 +33,7 @@ export default function CommitmentVideo() {
           loop
           muted
           style={{
-            width: "70%",
+            width: "90%",
           }}
           className="rounded-xl"
           onClick={handlePlay}

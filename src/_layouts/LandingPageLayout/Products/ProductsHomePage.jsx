@@ -11,7 +11,7 @@ export default function ProductsHomePage() {
         }}
         className="lg:w-full bg-cover bg-center relative"
       >
-        <div className="absolute inset-0 flex flex-col justify-center items-start p-10">
+        <div className="absolute inset-0 flex flex-col justify-center items-start px-16 pt-5">
           <p className="font-bold text-xl lg:text-[45px] md:text-[30px] xl-text-[60px]  text-white mb-4 md:leading-[65px]">
             Unlocking Opportunities with Infinity <br /> health's solution
           </p>

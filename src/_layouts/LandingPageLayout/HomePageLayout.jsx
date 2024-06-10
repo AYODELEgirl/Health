@@ -18,9 +18,9 @@ export default function Background() {
 
   return (
     <HomepPageStyle>
-      <div className="relative max-w-screen h-screen overflow-x-hidden">
+      <div className="relative max-w-screen  h-screen overflow-x-hidden">
         {/*  */}
-        <nav className="absolute h-screen w-full z-20 pt-6">
+        <nav className="absolute h-screen w-full z-20 pt-6 px-8" >
           <aside className="px-10 flex justify-between">
             <figure>
               <img src={logo1} alt="" width={130} />
@@ -107,7 +107,7 @@ export default function Background() {
             </div>
           )}
 
-          <div className="text-white px-10 sm:mt-40">
+          <div className="text-white m-auto max-w-screen-xl px-8 sm:mt-40">
             {/* <p
             style={{ lineHeight: "95px" }}
             className="mb-7 mt-20 font-bold text-[5rem] sm:text-sm"
@@ -142,7 +142,7 @@ export default function Background() {
         {/* Video and overlay container */}
         <div className="absolute w-full h-full top-0 left-0 z-10">
           {/* Dark overlay */}
-          <div className="absolute w-full h-full bg-black opacity-50"></div>
+          {/* <div className="absolute w-full h-full bg-black opacity-50"></div> */}
           {/* Video element */}
           <video autoPlay loop muted className="h-full w-full object-cover">
             <source src={theVideo} type="video/mp4" />

@@ -6,14 +6,15 @@ import ca from "../../../assets/images/ca.png"
 import market from "../../../assets/images/market.png"
 import clinical from "../../../assets/images/clinical.png"
 import diss from "../../../assets/images/diss.png"
+import { NavLink } from "react-router-dom";
 
 export default function Global() {
   return (
-    <div className=" p-16 mb-24 mt-0">
+    <div className=" p-16 mb-0 mt-0">
       <div>
         <p className="text-[#FF784B] text-[13px]">Our data solution</p>
         <p className="font-bold text-[30px]">
-          Built for global organizations to succeed{" "}
+          Built for healthcare and life sciences <br /> organizations to succeed{" "}
         </p>
       </div>
       <div className="flex flex-row justify-around mt-8  gap-20">
@@ -61,9 +62,11 @@ export default function Global() {
             </div>
             <div className=""></div>
         <div>
+        <NavLink to="/BookACall">
           <button className="bg-[#FF784B] p-2 text-white text-[13px] rounded-lg px-7">
             Request Demo
           </button>
+          </NavLink>
         </div>
           </div>
 

@@ -5,44 +5,44 @@ import third from "../../assets/images/third.png";
 
 export default function PictureAndTextGrid() {
   return (
-    <div className="mt-20 overflow-x-auto">
-      <p className="text-[12px] text-red-400 text-center">Our Mission</p>
+    <div className="mt-20 overflow-x-auto m-auto max-w-screen-xl">
+      {/* <p className="text-[12px] text-red-400 text-center">Our Mission</p> */}
       <p className="font-bold md:text-[28px] mt-5 md:mt-0 text-center">
         We want to redefine{" "}
         <span className="text-[#69BD45]"> access to quality healthcare</span>{" "}
         with <br />
         local insights, regulatory and business support
       </p>
-      <div className="m-auto flex gap-7 p-14 justify-center items-center flex-col md:flex-row">
+      <div className="m-auto flex gap-7 pt-5 justify-center items-center flex-col md:flex-row">
         <div className="flex flex-col gap-5">
-          <div className="bg-[#F9FDFF] max-w-[500px] lg:h-[330px]  flex flex-col gap-7 p-5">
+          <div className="bg-[#F9FDFF] max-w-[600px] lg:h-[330px]  flex flex-col gap-7 pt-8 px-12">
             <div>
               <figure>
                 <img src={first} alt="" width={50} />
               </figure>
             </div>
             <div>
-              <p className="text-red-500 text-[14px]">
+              <p className="text-red-500 text-[14px] mb-3">
                 Quality Healthcare across board
               </p>
-              <p className="font-bold text-2xl  lg:text-[32px]">
+              <p className="font-bold text-2xl mb-5  lg:text-[32px]">
                 Technology and Data Powering quality Healthcare
               </p>
-              <p className="text-[14px] mt-5 text-[#757575]">
+              <p className="text-[14px] mt-8 text-[#757575]">
                 Infinity Health leverages technology to drive Market Access in
-                African healthcare through innovative data and analytics,
+                African healthcare and life sciences through innovative data and analytics,
                 regulatory support and business solutions
               </p>
             </div>
           </div>
-          <div className="bg-[#FFF3F2] max-w-[500px] lg:h-[330px] flex flex-col gap-7 p-5">
+          <div className="bg-[#FFF3F2] max-w-[600px] lg:h-[330px] flex flex-col gap-5 pt-8 px-12">
             <div>
               <figure>
                 <img src={second} alt="" width={70} />
               </figure>
             </div>
             <div>
-              <p className="text-red-400 text-[14px]">
+              <p className="text-red-400 text-[14px] mb-2">
                 Build meaningful Health Improvement
               </p>
               <p className="font-bold text-2xl  lg:text-[32px]">Wide Product Offering</p>
@@ -54,7 +54,7 @@ export default function PictureAndTextGrid() {
             </div>
           </div>
         </div>
-        <div className="bg-[#F6FFF2] max-w-[500px] lg:h-[680px] p-5">
+        <div className="bg-[#F6FFF2] max-w-[600px] lg:h-[680px] pt-8 px-12">
           <div className="mb-11">
             <figure>
               <img src={third} alt="" width={60} />
@@ -69,21 +69,21 @@ export default function PictureAndTextGrid() {
               We delivered targeted insights across multiple domains:
             </p>
             <ul className="list-disc leading-7 flex flex-col gap-5 text-[#757575]">
-              <li className="text-[12px]">
-                <span className="text-[14px] font-medium">Pharmaceuticals:</span> From drug safety and efficacy to local
+              <li className="text-[14px]">
+                <span className="text-[16px] font-medium">Pharmaceuticals:</span> From drug safety and efficacy to local
                 manufacturing insights
               </li>
-              <li className="text-[12px]">
-                <span className="text-[14px] font-medium">Bioscience Products:</span> Market access insights on foods, Herbals
+              <li className="text-[14px]">
+                <span className="text-[16px] font-medium">Bioscience Products:</span> Market access insights on foods, Herbals
                 and Wellness, Medical consumables and diagnostics products
               </li>
-              <li className="text-[12px]">
-                <span className="text-[14px] font-medium">Infrastructure and Surveillance:</span> Insight into healthcare
+              <li className="text-[14px]">
+                <span className="text-[16px] font-medium">Infrastructure and Surveillance:</span> Insight into healthcare
                 facilities, medical equipment availability, and public health
                 surveillance metrics
               </li>
-              <li className="text-[12px]">
-                <span className="text-[14px] font-medium">Regulatory Insights:</span> Guidance on compliance with ever-evolving
+              <li className="text-[14px]">
+                <span className="text-[16px] font-medium">Regulatory Insights:</span> Guidance on compliance with ever-evolving
                 regulatory requirements and policies
               </li>
             </ul>

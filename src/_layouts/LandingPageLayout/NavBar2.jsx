@@ -5,8 +5,8 @@ import logo1 from "../../assets/images/logo1.png";
 export default function NavBar2() {
   return (
     <div>
-      <nav className="overflow-x-hidden w-full z-10">
-        <aside className="px-10 flex justify-between  p-4 ">
+      <nav className="overflow-x-hidden w-full z-10 pt-5 px-16 mb-1">
+        <aside className="flex justify-between ">
           <NavLink to="/">
             <figure>
               <img src={logo1} alt="" width={130} />

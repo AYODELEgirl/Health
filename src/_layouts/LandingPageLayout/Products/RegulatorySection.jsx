@@ -5,16 +5,16 @@ import onboardlogo from "../../../assets/images/onboardlogo.png";
 export default function RegulatorySection() {
   return (
     <div className="flex lg:flex-row flex-col gap-12 p-12 mb-14">
-      <section className="lg:w-[50%] w-full ">
+      <section className="lg:w-[50%] w-full px-8 pt-5 ">
         <div className="mb-1">
           <figure>
             <img src={onboardlogo} alt="" width={90} />
           </figure>
         </div>
         <div>
-          <p className="text-[34px] font-bold leading-10 mb-5">Regulatory Compliance  <br /> Made Easy</p>
+          <p className="text-[39px] text-[#3C592F] font-bold leading-[50px] mb-5">REGULATORY COMPLIANCE.  <br /> <span className="text-[#69BD45]">MADE EASY</span></p>
           <p className="text-[#757575] mb-5">
-            Onboard helps healthcare businesses understand, navigate andmeet up
+            Onboard helps healthcare and life sciences understand, navigate and comply
             with business and product regulatory standards.{" "}
           </p>
           <p className="text-[#757575] mb-5">
@@ -32,7 +32,7 @@ export default function RegulatorySection() {
           </div>
         </div>
       </section>
-      <section className="lg:w-[50%]  w-full">
+      <section className="lg:w-[50%]  w-full px-8 pl-24 pt-5">
         <figure>
           <img src={onboardONE} alt="" width={500} />
         </figure>
