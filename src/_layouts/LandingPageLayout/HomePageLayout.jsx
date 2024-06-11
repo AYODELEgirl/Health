@@ -115,7 +115,7 @@ export default function Background() {
           </p> */}
             <p
               
-              className="mb-7 mt-16 font-bold text-2xl md:text-4xl lg:text-6xl xl:text-10xl leading-10 md:leading-[70px] lg:leading-[75px]"
+              className="mb-7 md:mt-16 mt-48 font-bold text-2xl md:text-4xl lg:text-6xl xl:text-10xl leading-10 md:leading-[70px] lg:leading-[75px]"
             >
               Unlocking African <br /> Healthcare
             </p>

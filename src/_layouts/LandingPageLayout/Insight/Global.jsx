@@ -13,7 +13,7 @@ export default function Global() {
     <div className=" p-16 mb-0 mt-0">
       <div>
         <p className="text-[#FF784B] text-[13px]">Our data solution</p>
-        <p className="font-bold text-[30px]">
+        <p className="font-bold md:text-[30px] text-[17px]">
           Built for healthcare and life sciences <br /> organizations to succeed{" "}
         </p>
       </div>

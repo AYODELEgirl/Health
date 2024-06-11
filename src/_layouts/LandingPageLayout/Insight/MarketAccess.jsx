@@ -5,7 +5,7 @@ export default function MarketAccess() {
   return (
     <div className="bg-[#F9F9F9] mt-0 ">
         <div >
-            <p className="font-bold text-[30px] text-center mt-5 ">Market Access and Data Insights tailored to your <br />  healthcare business needs</p>
+            <p className="font-bold md:text-[30px] text-[17px] text-center mt-5 ">Market Access and Data Insights tailored to your <br />  healthcare business needs</p>
         </div>
     <div className="flex md:flex-row gap-5 mt-16 p-8 justify-center items-center flex-col ">
       <div className="bg-white h-[230px] flex flex-col  gap-4 w-auto rounded-xl p-5">

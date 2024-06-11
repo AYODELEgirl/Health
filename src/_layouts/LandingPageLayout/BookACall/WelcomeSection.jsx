@@ -9,7 +9,7 @@ import styled from "styled-components";
 
 export default function WelcomeSection() {
   return (
-    <div className="flex justify-center mb-20 px-16">
+    <div className="flex justify-center mb-20 md:px-16 px-5">
       <div
         className="bg-[#E8FFDE]  rounded-md mb-5 w-[100%] md:p-10 p-4 gap-16 "
         

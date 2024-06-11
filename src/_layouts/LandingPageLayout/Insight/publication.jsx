@@ -9,7 +9,7 @@ export default function publication() {
     <div className="p-16">
       <div className="p-7">
         <p className=" text-red-400 text-[12px]">Insights and resources</p>
-        <h2 className="font-bold text-[30px]">Latest Publications</h2>
+        <h2 className="font-bold md:text-[30px] text-[20px]">Latest Publications</h2>
         <p className="text-[14px] text-[#667085]">
           We're constantly curating the insight you need to understand the
           African Healthcare market
@@ -32,7 +32,7 @@ export default function publication() {
         </div>
       </div>
 
-      <div className="bg-[#F5F6F9] p-7 ">
+      <div className="bg-[#F5F6F9] md:p-7 p-2">
         <div className="flex lg:flex-row pb-10 flex-col gap-6">
         <div className="grid lg:grid-cols-3 gap-10">
 
@@ -47,7 +47,7 @@ export default function publication() {
             </figure>
             <div className="flex flex-row gap-1">
               <div className="flex jusify-between">
-                <p className="font-bold text-xl md:text-[24px] mb-3">
+                <p className="font-bold text-lg md:text-[24px] mb-3">
                   We want to redefine access to quality healthcare
                 </p>
             <MdOutlineArrowOutward style={{color:"black"}} size={20}/>
@@ -137,7 +137,7 @@ export default function publication() {
             </figure>
             <div className="flex flex-row gap-1">
               <div className="flex jusify-between">
-                <p className="font-bold text-xl md:text-[24px] mb-3">
+                <p className="font-bold text-lg md:text-[24px] mb-3">
                   We want to redefine access to quality healthcare
                 </p>
             <MdOutlineArrowOutward style={{color:"black"}} size={20}/>

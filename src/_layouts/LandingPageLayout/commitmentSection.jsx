@@ -45,7 +45,7 @@ export default function CommitmentSection() {
         </video>
       </div>
       <div className="text-center mt-20 ">
-        <h1 className="font-bold text-[2rem] mb-3">
+        <h1 className="font-bold md:text-[2rem] text-[1.5rem] mb-3">
           Our Commitment to Transformation
         </h1>
         <p className="">
