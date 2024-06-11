@@ -41,7 +41,7 @@ const Datatest = () => {
             }}
           >
             {tab.id === 1 ? "":tab.label.toUpperCase()}
-           {tab.id === 1 && <img src={llogo} alt=""/>}
+           {tab.id === 1 && <img src={llogo} alt="" className="w-15 md:w-auto h-15"/>}
           </div>
         ))}
       </div>

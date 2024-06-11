@@ -11,8 +11,8 @@ export default function WelcomeSection() {
   return (
     <div className="flex justify-center mb-20 px-16">
       <div
-        className="bg-[#E8FFDE]  rounded-md mb-5 w-[100%] p-10 gap-16 "
-        style={{ height: "300px" }}
+        className="bg-[#E8FFDE]  rounded-md mb-5 w-[100%] md:p-10 p-4 gap-16 "
+        
       >
         <div>
           <p className="font-bold text-[20px] mb-3">Welcome!</p>
@@ -40,9 +40,9 @@ export default function WelcomeSection() {
               </div>
              
             </div> */}
-          <div className="grid grid-cols-3 gap-5">
+          <div className="grid lg:grid-cols-3 gap-5">
             <div className="flex bg-white rounded gap-5 p-2">
-              <div className="flex align-center gap-4">
+              <div className="flex align-center gap-4 ">
                 <figure>
                   <img src={welcomeone} alt="" width={25} />
                 </figure>

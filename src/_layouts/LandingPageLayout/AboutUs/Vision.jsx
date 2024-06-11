@@ -10,12 +10,13 @@ import pix3 from "../../../assets/images/pix3.png"
 import woman from "../../../assets/images/woman.png"
 import charter from "../../../assets/images/charter.png";
 import footerlogo from "../../../assets/images/footerlogo.png";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Vision() {
   return (
     <div>
       <div>
-      <div className="flex lg:flex-row flex-col mt-0 gap-10 px-20">
+      <div className="flex lg:flex-row flex-col mt-0 gap-10 md:px-20 px-9">
       <div className="lg:w-[50%] w-full lg:mt-28  mt-14">
             <p className="text-red-500">Our Vision</p>
             <p className="font-bold text-[35px] leading-10 mt-3">
@@ -34,13 +35,13 @@ export default function Vision() {
       </div>
 
       <div className="">
-        <div className="flex lg:flex-row flex-col mt-5 gap-y-5 px-20">
+        <div className="flex lg:flex-row flex-col mt-5 gap-y-5 md:px-20 px-9">
           <div className="lg-w-[50%] w-full ">
             <figure>
               <img src={pix2} alt="" />
             </figure>
           </div>
-          <div className="lg-w-[50%] w-full lg:mt-28  mt-14 lg:px-16 px-5">
+          <div className="lg-w-[50%] w-full lg:mt-28  mt-14  md:px-20 ">
             <p className="text-red-500">Our Mission</p>
             <p className="text-[35px] font-bold leading-10 mt-3">
               Improving Healthcare penetration in Africa
@@ -52,7 +53,7 @@ export default function Vision() {
           </div>
         </div>
 
-        <div className="flex lg:flex-row flex-col mt-5 gap-10 px-20">
+        <div className="flex lg:flex-row flex-col mt-5 gap-10 md:px-20 px-9">
           <div className="lg:w-[50%] w-full lg:mt-28  mt-14">
             <p className="text-red-500">About us</p>
             <p className="text-[35px] font-bold">Why us?</p>
@@ -66,9 +67,11 @@ export default function Vision() {
               know the challenges - fragmented systems, data gaps, and a complex
               regulatory environment.
             </p>
+            <NavLink to="/ReadMore"> 
             <button className="text-white text-[13px] rounded-md bg-[#69BD45] p-2 px-5 mt-5">
               Read more
             </button>
+            </NavLink>
           </div>
           <div className="lg:w-[50%] w-full">
             <figure>
@@ -78,13 +81,13 @@ export default function Vision() {
         </div>
 
         <div>
-          <div className="flex lg:flex-row flex-col mt-5 gap-y-5 px-20">
+          <div className="flex lg:flex-row flex-col mt-5 gap-y-5 md:px-20 px-9">
             <div className="lg:w-[50%] w-full ">
               <figure>
                 <img src={charter} alt="" />
               </figure>
             </div>
-            <div className="lg:w-[50%] w-full mt-28 lg:px-16 px-5">
+            <div className="lg:w-[50%] w-full mt-28 md:px-20 mb-3">
               <p className="text-[35px] font-bold leading-10 mt-3">
                 Our Charter
               </p>
@@ -95,21 +98,19 @@ export default function Vision() {
                 ensuring healthcare businesses have the tools and support they
                 need to achieve success.
               </p>
-              <button className="text-white text-[13px] rounded-md bg-[#69BD45] p-2 px-5 mt-5">
-                Read more
-              </button>
+
             </div>
           </div>
         </div>
         <div className="bg-[#F9F9F9] h-auto p-24px">
           <div>
-            <div className="flex lg:flex-row flex-col mt-0 gap-y-5 gap-x-5 p-[80px]">
-              <div className="lg:w-[50%] w-full ">
+            <div className="flex lg:flex-row items-center flex-col mt-0 gap-y-5 gap-x-5 p-[80px] md:px-20 px-9">
+              <div className="lg:w-[50%] w-full  md:px-20 ">
                 <figure>
                   <img src={woman} alt="" />
                 </figure>
               </div>
-              <div className="lg:w-[50%] w-full mt-28 lg:px-16 px-5 ">
+              <div className="lg:w-[50%] w-full lg:px-16  ">
               <p className="text-red-500">Our team</p>
             <p className="text-[13px] text-[#757575] mt-6">
               Our  team led by Irene Nwaukwa and Uduak XXXXXX are healthcare
@@ -123,9 +124,9 @@ export default function Vision() {
               and new product launches using a streamlined  process that helps
               them launch and scale quickly while minimizing risk.
             </p>
-                <button className="text-white text-[13px] rounded-md bg-[#69BD45] p-2 px-5 mt-5">
+                {/* <button className="text-white text-[13px] rounded-md bg-[#69BD45] p-2 px-5 mt-5">
                   Read more
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

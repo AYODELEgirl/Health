@@ -15,7 +15,7 @@ export default function publication() {
           African Healthcare market
         </p>
       </div>
-      <div className="flex flex-row justify-between p-3 px-8">
+      <div className="hidden flex-row justify-between p-3 px-8 sm:flex">
         <div className="flex flex-row gap-8">
           <p className="text-[14px] text-[#667085]">All posts</p>
           <p className="text-[14px] text-[#667085]">Case study</p>
@@ -27,14 +27,14 @@ export default function publication() {
           <input
             type="text"
             placeholder="Search"
-            className="p-1 px-11  rounded border border-gray-200 text-start"
+            className="p-1 px-11  rounded border border-gray-200 text-start sm:flex hidden"
           />
         </div>
       </div>
 
       <div className="bg-[#F5F6F9] p-7 ">
         <div className="flex lg:flex-row pb-10 flex-col gap-6">
-        <div className="grid grid-cols-3 gap-10">
+        <div className="grid lg:grid-cols-3 gap-10">
 
           <div className=" absolute flex justify-between p-3">
             <button className="bg-[#FFF6E5]  text-[#667085] p-2 mt-3 font-semibold z-10 backdrop-filter rounded-2xl px-4 text-[12px]">
@@ -125,7 +125,7 @@ export default function publication() {
         
         
       </div>
-      <div className="grid grid-cols-3 gap-10">
+      <div className="grid lg:grid-cols-3 gap-10">
           <div className=" absolute flex justify-between p-3">
             <button className="bg-[#FFF6E5]  text-[#667085] p-2 mt-3 font-semibold z-10 backdrop-filter rounded-2xl px-4 text-[12px]">
               Case Studies

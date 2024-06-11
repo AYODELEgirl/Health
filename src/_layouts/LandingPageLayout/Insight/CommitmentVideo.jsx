@@ -25,7 +25,7 @@ export default function CommitmentVideo() {
         market access solution
       </h1>
       <div className="flex relative justify-center pt-10">
-        <div className="absolute top-80">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           {show && <FaCirclePlay size={120} style={{ color: "white" }} />}
         </div>
         <video

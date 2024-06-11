@@ -14,14 +14,14 @@ export default function ExploreSection() {
     <div className="px-16">
       <div className="text-center mb-12">
         <p className="text-[21px] mb-4 font-bold mt-10">Explore Our Services</p>
-        <p className="text-[#757575] text-[15px]">
+        <p className="text-[#757575] text-[15px] ">
           Discover how ONBOARD can support your business in achieving regulatory
           compliance and unlocking <br /> new opportunities for growth. We
           tackle the challenges of doing business in Africa by
         </p>
       </div>
       <div className="flex lg:flex-row flex-col gap-6 mb-20">
-        <div className="bg-[#E9FFDF99] p-5 lg:w-[25%] w-full rounded-md">
+        <div className="bg-[#E9FFDF99] p-2 lg:w-[25%] w-full rounded-md">
           <div className="mb-4">
             <figure>
               <img src={exploreone} alt="" width={40} />

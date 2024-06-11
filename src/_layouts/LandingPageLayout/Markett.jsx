@@ -10,7 +10,7 @@ export default function Market() {
       <div
         style={{
           backgroundImage: `url(${analyticsbackground})`,
-          height: "500px",
+          
         }}
         className="flex flex-col md:flex-row gap-10 md:gap-40 pt-5 px-8 bg-red-500"
       >

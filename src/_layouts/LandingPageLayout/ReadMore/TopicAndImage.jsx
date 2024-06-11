@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 export default function TopicAndImage() {
   return (
-    <div className="p-14 items-center text-center">
+    <div className="md:p-14 p-6 items-center text-center">
       <div className="flex flex-row gap-3 items-center">
         <FaArrowLeftLong />
         <NavLink to="/products">
@@ -13,7 +13,7 @@ export default function TopicAndImage() {
         </NavLink>
       </div>
       <div>
-        <p className="font-bold text-[30px] mb-5">Why choose Infinity Healthcare</p>
+        <p className="font-bold md:text-[30px] text-[20px] mb-5">Why choose Infinity Healthcare</p>
 
       </div>
       <div>
@@ -32,7 +32,7 @@ export default function TopicAndImage() {
           fragmented systems, <br /> data gaps, and a complex regulatory
           environment.
         </p>
-        <p className="text-[23px] font-bold mt-8 mb-8">
+        <p className="md:text-[23px] text-[19px] font-bold mt-8 mb-8">
           That’s why we’re here to help you navigate it. Here’s why you should
           choose us:
         </p>

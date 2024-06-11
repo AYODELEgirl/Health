@@ -17,10 +17,9 @@ export default function Background() {
   };
 
   return (
-    <HomepPageStyle>
-      <div className="relative max-w-screen  h-screen overflow-x-hidden">
+      <div className="relative max-w-screen  sm:h-screen h-[100vh] ">
         {/*  */}
-        <nav className="absolute h-screen w-full z-20 pt-6 px-8" >
+        <nav className="absolute top-0 w-full z-20 pt-6 md:px-8 px:4" >
           <aside className="px-10 flex justify-between">
             <figure>
               <img src={logo1} alt="" width={130} />
@@ -150,11 +149,6 @@ export default function Background() {
           </video>
         </div>
       </div>
-    </HomepPageStyle>
   );
 }
 
-const HomepPageStyle = styled.div`
-  .test {
-  }
-`;

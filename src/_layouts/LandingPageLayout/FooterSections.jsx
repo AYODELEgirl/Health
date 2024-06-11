@@ -20,7 +20,7 @@ function FooterSections() {
         }}
       >
         <div className="flex flex-col lg:flex-row justify-between border-b lg:h-[300px]">
-          <div className="p-6 lg:w-[45%]">
+          <div className="p-3 lg:w-[45%]">
             <img src={footerlogo} alt="" width={150} />
             <p className="text-white mb-10 mt-5">
               Join our newsletter to get updated on the latest on African health
@@ -93,13 +93,13 @@ function FooterSections() {
           </div>
         </div>
 
-        <div className="flex justify-between gap-96 mt-8">
+        <div className="flex lg:flex-row flex-col-reverse gap-10 justify-between  mt-8">
           <div className="mb-8">
             <p className="text-white text-[12px]">
               2024 infinity health. All rights reserved
             </p>
           </div>
-          <div className="flex flex-row gap-10 ">
+          <div className=" lg:flex-row gap-10  sm:p-6 flex flex-col ">
             <p className="underline text-[12px] text-white">Privacy Policy</p>
             <p className="underline text-[12px] text-white">Terms of service</p>
             <p className="underline text-[12px] text-white">Cookies settings</p>

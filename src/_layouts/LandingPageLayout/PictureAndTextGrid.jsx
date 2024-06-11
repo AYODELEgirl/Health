@@ -15,7 +15,7 @@ export default function PictureAndTextGrid() {
       </p>
       <div className="m-auto flex gap-7 pt-5 justify-center items-center flex-col md:flex-row">
         <div className="flex flex-col gap-5">
-          <div className="bg-[#F9FDFF] max-w-[600px] lg:h-[330px]  flex flex-col gap-7 pt-8 px-12">
+          <div className="bg-[#F9FDFF] max-w-[600px] lg:h-[330px]  flex flex-col gap-7 pt-8 px-16 pb-2">
             <div>
               <figure>
                 <img src={first} alt="" width={50} />
@@ -35,7 +35,7 @@ export default function PictureAndTextGrid() {
               </p>
             </div>
           </div>
-          <div className="bg-[#FFF3F2] max-w-[600px] lg:h-[330px] flex flex-col gap-5 pt-8 px-12">
+          <div className="bg-[#FFF3F2] max-w-[600px] lg:h-[330px] flex flex-col gap-5 pt-8 px-12 pb-2">
             <div>
               <figure>
                 <img src={second} alt="" width={70} />
@@ -54,7 +54,7 @@ export default function PictureAndTextGrid() {
             </div>
           </div>
         </div>
-        <div className="bg-[#F6FFF2] max-w-[600px] lg:h-[680px] pt-8 px-12">
+        <div className="bg-[#F6FFF2] max-w-[600px] lg:h-[680px] pt-8 px-12 pb-2">
           <div className="mb-11">
             <figure>
               <img src={third} alt="" width={60} />

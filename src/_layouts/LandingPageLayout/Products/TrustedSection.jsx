@@ -4,9 +4,9 @@ import { NavLink } from "react-router-dom";
 export default function TrustedSection() {
   return (
     <div className="flex justify-center">
-      <div className="bg-[#E8FFDE] rounded-md w-[80%] p-10 flex flex-row gap-2 lg:h-[150px] h-auto">
+      <div className="bg-[#E8FFDE] rounded-md w-[80%] lg:p-10 p-5 flex lg:flex-row  flex-col gap-3 lg:h-[150px] h-auto">
         <section className="lg:w-[65%] w-full">
-          <p className="lg:text-[23px] md:text-[20px] text-xs font-bold lg:leading-[35px]">
+          <p className="lg:text-[23px] md:text-[20px] text-xs font-bold lg:leading-[35px] mb-3">
             YOUR <span className="text-[#69BD45] "> TRUSTED PARTNER FOR REGULATORY <br/> COMPLIANCE{" "}
             </span>
             IN AFRICAN HEALTHCARE

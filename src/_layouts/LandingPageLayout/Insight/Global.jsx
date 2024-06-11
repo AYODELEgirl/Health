@@ -18,7 +18,9 @@ export default function Global() {
         </p>
       </div>
       <div className="flex flex-row justify-around mt-8  gap-20">
-        <div className="flex flex-row gap-14">
+      <div>
+
+        <div className="flex lg:flex-row flex-col gap-14 ">
           <div className="flex flex-col gap-5">
             <div className="flex flex-col gap-2">
               <div className="flex flex-row gap-5 items-center">
@@ -62,11 +64,7 @@ export default function Global() {
             </div>
             <div className=""></div>
         <div>
-        <NavLink to="/BookACall">
-          <button className="bg-[#FF784B] p-2 text-white text-[13px] rounded-lg px-7">
-            Request Demo
-          </button>
-          </NavLink>
+       
         </div>
           </div>
 
@@ -112,12 +110,19 @@ export default function Global() {
                 </p>
               </div>
             </div>
-            <div className=""></div>
+        
           </div>
+        
         </div>
+        <NavLink to="/BookACall">
+          <button className="bg-[#FF784B] p-2 text-white text-[13px] rounded-lg px-7 mt-4">
+            Request Demo
+          </button>
+          </NavLink>
+          </div>
 
 
-        <div>
+        <div className="sm:flex hidden">
           <figure>
             <img src={charrt} alt="" />
           </figure>

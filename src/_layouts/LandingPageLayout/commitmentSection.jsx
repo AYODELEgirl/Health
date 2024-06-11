@@ -21,7 +21,7 @@ export default function CommitmentSection() {
 
   return (
     <div className="max-w-screen-xl px-4 mx-auto overflow-x-auto m-auto">
-      <h1 className="font-bold flex flex-col md:gap-10  items-center justify-center lg:text-[2rem] text-lg text-center mt-24 leading-[10px]">
+      <h1 className="font-bold flex flex-col md:gap-10  items-center justify-center lg:text-[2rem] text-lg text-center mt-24 md:leading-[10px]">
         We are committed to expanding healthcare access <br /> <span> in Africa with our
         market access solutions </span>
       </h1>
@@ -55,8 +55,8 @@ export default function CommitmentSection() {
           join us as we forge a better future for all
         </p>
       </div>
-      <div className="flex md:flex-row pt-20 pb-24 justify-between flex-col items-center">
-        <section className="bg-[#69BD450A] rounded-3xl w-[350px] h-[280px]  items-center justify-center  flex flex-col gap-6 ">
+      <div className="flex md:flex-row pt-20 pb-24 justify-between flex-col  gap-4 items-center">
+        <section className="bg-[#69BD450A] rounded-3xl w-[350px] h-[280px]  items-center justify-center flex flex-col gap-6 ">
           <div className="">
             <figure>
               <img src={actionn} alt="" width={40} />
