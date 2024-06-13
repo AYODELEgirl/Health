@@ -22,8 +22,8 @@ export default function CommitmentSection() {
   return (
     <div className="max-w-screen-xl px-4 mx-auto overflow-x-auto m-auto">
       <h1 className="font-bold flex flex-col md:gap-10  items-center justify-center lg:text-[2rem] text-lg text-center mt-24 md:leading-[10px]">
-        We are committed to expanding healthcare access <br /> <span> in Africa with our
-        market access solutions </span>
+        We are committed to expanding healthcare access <br />{" "}
+        <span> in Africa with our market access solutions </span>
       </h1>
       <div className="flex relative justify-center pt-10">
         <div className=" absolute flex items-center justify-center h-full ">
@@ -36,7 +36,7 @@ export default function CommitmentSection() {
           style={{
             maxWidth: "98%", // Adjusted to fit within the container
             height: "auto", // Maintain aspect ratio
-            borderRadius: "15px" // Added border radius for aesthetics
+            borderRadius: "15px", // Added border radius for aesthetics
           }}
           className="rounded-xl"
           onClick={handlePlay}
@@ -50,8 +50,9 @@ export default function CommitmentSection() {
         </h1>
         <p className="">
           By integrating our mission and vision into every strategy and
-          decision, we're <br  className="hidden lg:block"/> not just participating in Africa's healthcare
-          journey. We're actively shaping it, <br />
+          decision, we're <br className="hidden lg:block" /> not just
+          participating in Africa's healthcare journey. We're actively shaping
+          it, <br />
           join us as we forge a better future for all
         </p>
       </div>
@@ -96,8 +97,8 @@ export default function CommitmentSection() {
             <p className="text-[12px] text-[#757575]">
               We're committed to helping <br /> healthcare businesses expand
               their <br />
-              reach, ensuring quality healthcare is <br /> more accessible across
-              the <br />
+              reach, ensuring quality healthcare is <br /> more accessible
+              across the <br />
               continent
             </p>
           </div>
