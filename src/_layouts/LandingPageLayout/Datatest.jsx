@@ -4,14 +4,14 @@ import Markett from "./Markett"; // your import location could be different
 import Launch from "./Launch"; // your import location could be different
 // import analyticsbackground from '../../assets/images/analyticsbackground.png'
 import analyticsbakground from "../../assets/images/analyticsbackground.png";
-import llogo from "../../assets/images/lloggo.png";
+import newlogo from "../../assets/images/newlogo.png";
 
 const Datatest = () => {
   const [activeTab, setActiveTab] = useState("Onboard");
   const [activeContent, setActiveContent] = useState(<Onboard />);
 
   const tabs = [
-    {id:1, label: "Onboard", content: <Onboard />, icon:llogo },
+    {id:1, label: "Onboard", content: <Onboard />, icon:newlogo },
     { id:2,label: "Insights", content: <Markett /> },
     { id:3,label: "Launch Support", content: <Launch /> },
   ];
@@ -41,7 +41,7 @@ const Datatest = () => {
             }}
           >
             {tab.id === 1 ? "":tab.label.toUpperCase()}
-           {tab.id === 1 && <img src={llogo} alt="" className="w-15 md:w-auto h-15"/>}
+           {tab.id === 1 && <img src={newlogo} alt="" className="w-15 md:w-auto h-15"/>}
           </div>
         ))}
       </div>

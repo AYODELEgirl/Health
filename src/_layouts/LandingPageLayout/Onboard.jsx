@@ -4,7 +4,7 @@ import onboardONE from "../../assets/images/onboardONE.png";
 import { NavLink } from "react-router-dom";
 import analyticsbackground from "../../assets/images/analyticsbackground.png";
 import onboardlogo from "../../assets/images/onboardlogo.png";
-import lloggo from "../../assets/images/lloggo.png";
+import newlogo from "../../assets/images/newlogo.png";
 
 export default function Onboard() {
   return (
@@ -19,7 +19,7 @@ export default function Onboard() {
         <div className="md:w-1/2 px-8 pt-5 mt-8">
           <div className="mb-5">
             <figure>
-              <img src={lloggo} alt="" width={120} />
+              <img src={newlogo} alt="" width={120} />
             </figure>
           </div>
           <p className="font-medium text-2xl md:text-3xl lg:text-4xl mb-5 text-white">

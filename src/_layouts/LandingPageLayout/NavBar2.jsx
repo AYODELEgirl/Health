@@ -21,7 +21,7 @@ export default function NavBar2() {
             </figure>
           </NavLink>
           <ul className="hidden justify-between s900:flex  gap-20">
-            <NavLink to="/Home">
+            <NavLink to="/">
             <li className={`text-black hover:text-green-700 ${window.location.pathname === "/home" ? "text-green-500":""}  cursor-pointer`}>
                 Home
               </li>

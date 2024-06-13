@@ -19,7 +19,7 @@ export default function Vision() {
       <div className="flex lg:flex-row flex-col mt-0 gap-10 md:px-20 px-9">
       <div className="lg:w-[50%] w-full lg:mt-28  mt-14">
             <p className="text-red-500">Our Vision</p>
-            <p className="font-bold text-[35px] leading-10 mt-3">
+            <p className="font-bold md:text-[35px] text-[25px] leading-10 mt-3">
               The Beacon for African <br /> Healthcare
             </p>
             <p className="text-[13px] text-[#757575] mt-6">
@@ -43,7 +43,7 @@ export default function Vision() {
           </div>
           <div className="lg-w-[50%] w-full lg:mt-28  mt-14  md:px-20 ">
             <p className="text-red-500">Our Mission</p>
-            <p className="text-[35px] font-bold leading-10 mt-3">
+            <p className="md:text-[35px] text-[25px] font-bold leading-10 mt-3">
               Improving Healthcare penetration in Africa
             </p>
             <p className="text-[13px] text-[#757575] mt-6">
@@ -105,12 +105,12 @@ export default function Vision() {
         <div className="bg-[#F9F9F9] h-auto p-24px">
           <div>
             <div className="flex lg:flex-row items-center flex-col mt-0 gap-y-5 gap-x-5 p-[80px] md:px-20 px-9">
-              <div className="lg:w-[50%] w-full  md:px-20 ">
+              <div className="lg:w-[50%] w-full">
                 <figure>
                   <img src={woman} alt="" />
                 </figure>
               </div>
-              <div className="lg:w-[50%] w-full lg:px-16  ">
+              <div className="lg:w-[50%] w-full md:px-16  ">
               <p className="text-red-500">Our team</p>
             <p className="text-[13px] text-[#757575] mt-6">
               Our  team led by Irene Nwaukwa and Uduak XXXXXX are healthcare
