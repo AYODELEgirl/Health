@@ -10,12 +10,11 @@ export default function Launch() {
       <div
         style={{
           backgroundImage: `url(${analyticsbackground})`,
-        
         }}
         className="flex flex-col md:flex-row gap-10 md:gap-40 p-6 bg-red-500"
       >
         <div className="md:w-1/2 p-7 mt-8">
-          <button className="bg-[#FF784B] text-white text-lg rounded-full py-3 px-8 pt-5 mb-5 ">
+          <button className="bg-[#FF784B] text-white text-lg rounded-full py-2 px-5 mb-5">
             Our Sevices
           </button>
           <p className="font-medium text-2xl md:text-3xl lg:text-4xl mb-5 text-white">
@@ -24,15 +23,16 @@ export default function Launch() {
           <p className="text-white mb-5 text-lg">
             Expand your reach and forge strategic partnerships through our
             comprehensive marketplace and expertise.
-            <p className="mt-3">We connect healthcare
-            businesses to a network of potential collaborators and clients,
-            fostering new opportunities in marketing, business development, and
-            partnerships.</p>
+            <p className="mt-3">
+              We connect healthcare businesses to a network of potential
+              collaborators and clients, fostering new opportunities in
+              marketing, business development, and partnerships.
+            </p>
           </p>
           <div className="flex gap-2 items-center text-[#69BD45]">
-            <NavLink to="/products">
+            <a href="/BookACall">
               <p>Contact Us</p>
-            </NavLink>
+            </a>
             <LiaLongArrowAltRightSolid />
           </div>
         </div>

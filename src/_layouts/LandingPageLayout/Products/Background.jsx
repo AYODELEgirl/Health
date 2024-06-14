@@ -3,8 +3,8 @@ import NavBar2 from '../NavBar2'
 
 export default function Background() {
   return (
-    <div>
+    <section id="main">    
         <NavBar2 />
-    </div>
+    </section>
   )
 }

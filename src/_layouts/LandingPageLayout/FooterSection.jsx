@@ -53,9 +53,9 @@ export default function FooterSection() {
               <NavLink to="/aboutus">
                 <p>About us</p>
               </NavLink>
-              <NavLink to="/products">
+              <a href="/products">
                 <p className="whitespace-nowrap">Our products</p>
-              </NavLink>
+              </a>
             </div>
             <div className="text-white">
               <h1 className="text-[21px] font-semibold whitespace-nowrap">
@@ -64,7 +64,7 @@ export default function FooterSection() {
               <a href="#data">
                 <p>Onboard</p>
                 </a>
-                <a href="#data">
+                <a href="#insight">
                 <p>Insight</p>
                 </a>
                 <a href="#data">

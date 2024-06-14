@@ -13,16 +13,16 @@ export default function TrustedSection() {
           </p>
         </section>
         <section className="w-[35%] flex flex-row gap-2 items-center">
-          <NavLink to="/ReadMore">
+        <a href="/ReadMore">
             <button className="bg-[#69BD45] text-white lg:p-2 p-1 lg:px-5 px-3 lg:text-[12px] text-[11px]  whitespace-nowrap rounded">
               Read more
             </button>
-          </NavLink>
-          <NavLink to="/ReadMore">
+          </a>
+          <a href="/BookACall">
             <button className="bg-[#FF784B] text-white lg:p-2 p-1 lg:px-5 px-3 lg:text-[12px] text-[11px]  whitespace-nowrap rounded">
               Request demo
             </button>
-          </NavLink>
+          </a>
         </section>
       </div>
     </div>

@@ -26,9 +26,11 @@ export default function RegulatorySection() {
             <button className="bg-[#69BD45] text-white p-2 px-5 text-[12px] rounded ">
               How it works
             </button>
+            <a href="/BookACall">
             <button className="text-[#69BD45] bg-white p-2 px-5 text-[12px] rounded border border-solid border-[#69BD45]">
               create a request
             </button>
+            </a>
           </div>
         </div>
       </section>

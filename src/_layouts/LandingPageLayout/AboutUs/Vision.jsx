@@ -2,12 +2,13 @@ import React from "react";
 import abouta from "../../../assets/images/abouta.png";
 import aboutb from "../../../assets/images/aboutb.png";
 import bg from "../../../assets/images/brand.png";
+
 import FooterSections from "../FooterSections";
 import team from "../../../assets/images/team.png";
 import pix1 from "../../../assets/images/pix1.png"
 import pix2 from "../../../assets/images/pix2.png"
 import pix3 from "../../../assets/images/pix3.png"
-import woman from "../../../assets/images/woman.png"
+import sis from "../../../assets/images/sis.jpg"
 import charter from "../../../assets/images/charter.png";
 import footerlogo from "../../../assets/images/footerlogo.png";
 import { Link, NavLink } from "react-router-dom";
@@ -107,7 +108,7 @@ export default function Vision() {
             <div className="flex lg:flex-row items-center flex-col mt-0 gap-y-5 gap-x-5 p-[80px] md:px-20 px-9">
               <div className="lg:w-[50%] w-full">
                 <figure>
-                  <img src={woman} alt="" />
+                  <img src={sis} alt=""  />
                 </figure>
               </div>
               <div className="lg:w-[50%] w-full md:px-16  ">

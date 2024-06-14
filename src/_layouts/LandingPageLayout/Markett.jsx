@@ -7,7 +7,7 @@ import analyticsbackground from "../../assets/images/analyticsbackground.png";
 export default function Market() {
   return (
     <div>
-      <div
+      <div id="insight"
         style={{
           backgroundImage: `url(${analyticsbackground})`,
           
@@ -28,9 +28,9 @@ export default function Market() {
             strategic planning, and growth.
           </p>
           <div className="flex gap-2 items-center text-[#69BD45]">
-            <NavLink to="/products">
+          <a href="/BookACall">
               <p>Contact Us</p>
-            </NavLink>
+            </a>
             <LiaLongArrowAltRightSolid />
           </div>
         </div>

@@ -114,11 +114,11 @@ export default function Global() {
           </div>
         
         </div>
-        <NavLink to="/BookACall">
+        <a href="/BookACall">
           <button className="bg-[#FF784B] p-2 text-white text-[13px] rounded-lg px-7 mt-4">
             Request Demo
           </button>
-          </NavLink>
+          </a>
           </div>
 
 

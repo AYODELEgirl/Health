@@ -21,7 +21,7 @@ export default function ExploreSection() {
         </p>
       </div>
       <div className="flex lg:flex-row flex-col gap-6 mb-20">
-        <div className="bg-[#E9FFDF99] p-2 lg:w-[25%] w-full rounded-md">
+        <div className="bg-[#E9FFDF99] p-5 lg:w-[25%] w-full rounded-md">
           <div className="mb-4">
             <figure>
               <img src={exploreone} alt="" width={40} />
@@ -35,10 +35,12 @@ export default function ExploreSection() {
               Navigate regulatory hurdles and get your products to market
               faster.
             </p>
-             <div className="flex flex-row  gap-4 mt-4 items-center">
-              <p className="text-red-400">Register a product</p>
-              <MdOutlineArrowOutward style={{ color: "#FF784B" }} />
-            </div>
+            <a href="/BookACall">
+              <div className="flex flex-row  gap-4 mt-4 items-center">
+                <p className="text-red-400">Register a product </p>
+                <MdOutlineArrowOutward style={{ color: "#FF784B" }} />
+              </div>
+            </a>
           </div>
           {/* <div className="relative h-24">
             <figure className="absolute right-0 top-0">
@@ -60,10 +62,12 @@ export default function ExploreSection() {
             <p className="mb-5 text-[14px]">
               Ensure Compliance and operational efficiency with ease.
             </p>
+            <a href="/BookACall">
             <div className="flex flex-row  gap-4 mt-4 items-center">
               <p className="text-red-400">Register a product</p>
               <MdOutlineArrowOutward style={{ color: "#FF784B" }} />
             </div>
+            </a>
           </div>
           {/* <div className="relative h-28">
             <figure className="absolute right-0 top-0">
@@ -85,10 +89,12 @@ export default function ExploreSection() {
             <p className="mb-5 text-[14px]">
               Get support for clinical trial projects with local expertise.
             </p>
+            <a href="/BookACall">
             <div className="flex flex-row  gap-4 mt-4 items-center">
               <p className="text-red-400">Register a product</p>
               <MdOutlineArrowOutward style={{ color: "#FF784B" }} />
             </div>
+            </a>
           </div>
           {/* <div className="relative h-28">
             <figure className="absolute right-0 top-0">
@@ -110,10 +116,12 @@ export default function ExploreSection() {
             <p className="mb-5 text-[14px]">
               Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
             </p>
+            <a href="/BookACall">
             <div className="flex flex-row  gap-4 mt-4 items-center">
               <p className="text-red-400">Register a product</p>
               <MdOutlineArrowOutward style={{ color: "#FF784B" }} />
             </div>
+            </a>
           </div>
         </div>
       </div>

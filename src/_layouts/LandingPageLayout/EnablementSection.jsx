@@ -17,11 +17,11 @@ export default function EnablementSection() {
             actionable data and strategies specifically tailored to the
             African context
           </p>
-          <NavLink to="/BookACall">
+          <a href="/BookACall">
             <button className="bg-[#69BD45] p-3 px-7 text-[12px] text-white rounded-md">
               Contact us
             </button>
-          </NavLink>
+          </a>
         </div>
       </section>
       <section className="md:w-[50%] w-full">

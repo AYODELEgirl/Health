@@ -9,21 +9,24 @@ import DataAndAnalytics from "../_layouts/LandingPageLayout/dataAndAnalytics";
 import Datatest from "../_layouts/LandingPageLayout/Datatest";
 import New from "../_layouts/LandingPageLayout/New";
 import FooterSections from "../_layouts/LandingPageLayout/FooterSections";
+import { useState } from "react";
 // import FooterSection from "../_layouts/LandingPageLayout/footerSection";
 
 export default function LandingPage() {
+  const [activeTab, setActiveTab] = useState("Regulatory Support");
+
   return (
     <main>
       <HomePageLayout />
       <New />
      <PictureAndTextGrid /> 
      <CommitmentSection />  
-      <Datatest /> 
+      <Datatest activeTab={activeTab} setActiveTab={setActiveTab} /> 
       {/* <DataAndAnalytics /> */}
       <PublicationSection /> 
        <EnablementSection /> 
       <QuestionsSection />
-      <FooterSections />
+      <FooterSections activeTab={activeTab} setActiveTab={setActiveTab}  />
     </main>
   );
 }

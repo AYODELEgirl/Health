@@ -23,7 +23,7 @@ export default function Onboard() {
             </figure>
           </div>
           <p className="font-medium text-2xl md:text-3xl lg:text-4xl mb-5 text-white">
-           <span>REGULATORY COMPLIANCE.</span>{" "}
+            <span>REGULATORY COMPLIANCE.</span>{" "}
             <span className="text-[#69BD45]">MADE EASY</span>
           </p>
           <p className="text-white mb-5 text-lg">
@@ -34,9 +34,9 @@ export default function Onboard() {
           </p>
 
           <div className="flex gap-2 items-center text-[#69BD45]">
-            <NavLink to="/products">
+            <a href="/products">
               <p>Visit Product Page</p>
-            </NavLink>
+            </a>
             <LiaLongArrowAltRightSolid />
           </div>
         </div>

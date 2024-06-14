@@ -20,7 +20,7 @@ export default function Background() {
       <div className="relative max-w-screen  sm:h-screen h-[100vh] ">
         {/*  */}
         <nav className="absolute top-0 w-full z-20 pt-6 md:px-8 px:4" >
-          <aside className="px-10 flex justify-between">
+          <aside className="p-10 fixed top-0 left-0 w-full flex justify-between">
             <figure>
               <img src={logo1} alt="" width={130} />
             </figure>

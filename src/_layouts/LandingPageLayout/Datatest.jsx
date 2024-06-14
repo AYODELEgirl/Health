@@ -6,18 +6,21 @@ import Launch from "./Launch"; // your import location could be different
 import analyticsbakground from "../../assets/images/analyticsbackground.png";
 import newlogo from "../../assets/images/newlogo.png";
 
-const Datatest = () => {
-  const [activeTab, setActiveTab] = useState("Onboard");
-  const [activeContent, setActiveContent] = useState(<Onboard />);
+const Datatest = ({activeTab="Regulatory Support", setActiveTab}) => {
+const isCurrent = localStorage.getItem("current")
+console.log(isCurrent);
 
   const tabs = [
-    {id:1, label: "Onboard", content: <Onboard />, icon:newlogo },
+    {id:1, label: "Regulatory Support", content: <Onboard /> },
     { id:2,label: "Insights", content: <Markett /> },
     { id:3,label: "Launch Support", content: <Launch /> },
   ];
 
   const renderContent = () => {
     const activeTabData = tabs.find((tab) => tab.label === activeTab);
+    if (isCurrent === "market") {
+      return <Markett/>
+    }
     return activeTabData?.content;
   };
 
@@ -36,16 +39,19 @@ const Datatest = () => {
               activeTab === tab.label ? "bg-black text-white" : "bg-white"
             }`}
             onClick={() => {
-              setActiveContent(tab.content);
               setActiveTab(tab.label);
             }}
           >
-            {tab.id === 1 ? "":tab.label.toUpperCase()}
-           {tab.id === 1 && <img src={newlogo} alt="" className="w-15 md:w-auto h-15"/>}
+            {tab.label.toUpperCase()}
           </div>
         ))}
       </div>
-      <div className="mt-4">{activeContent}</div>
+      <div className="mt-4">
+
+        {activeTab==='Regulatory Support'&&<Onboard />}
+        {activeTab==='Insights'&&<Markett />}
+        {activeTab==='Launch Support'&&<Launch />}
+      </div>
     </section>
   );
 };

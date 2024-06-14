@@ -8,7 +8,7 @@ import { TbLetterX } from "react-icons/tb";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 
-function FooterSections() {
+function FooterSections({activeTab,setActiveTab}) {
   return (
     <div>
       <div
@@ -53,21 +53,28 @@ function FooterSections() {
               <NavLink to="/aboutus">
                 <p>About us</p>
               </NavLink>
-              <NavLink to="/products">
+              <a href="/products">
                 <p className="whitespace-nowrap">Our products</p>
-              </NavLink>
+              </a>
             </div>
             <div className="text-white">
               <h1 className="text-[21px] font-semibold whitespace-nowrap">
                 Our products
               </h1>
-              <a href="#data">
+            
+              <a href="#data" onClick={() =>{
+                setActiveTab("Regulatory Support")
+              }}>
                 <p>Onboard</p>
                 </a>
-                <a href="#data">
+                <a href="#data" onClick={() => {
+                setActiveTab("Insights")
+                localStorage.setItem("current","market")}}>
                 <p>Insights</p>
                 </a>
-                <a href="#data">
+                <a href="#data" onClick={() =>{
+                setActiveTab("Launch Support")
+              }}>
                 <p>Launch Support</p>
                 </a>
             </div>
