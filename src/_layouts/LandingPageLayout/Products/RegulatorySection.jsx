@@ -1,6 +1,6 @@
 import React from "react";
 import onboardONE from "../../../assets/images/onboardONE.png";
-import onboardlogo from "../../../assets/images/onboardlogo.png";
+import newlogo from "../../../assets/images/newlogo.png";
 
 export default function RegulatorySection() {
   return (
@@ -8,7 +8,7 @@ export default function RegulatorySection() {
       <section className="lg:w-[50%] w-full lg:px-8  px-0 pt-5 ">
         <div className="mb-1">
           <figure>
-            <img src={onboardlogo} alt="" width={90} />
+            <img src={newlogo} alt="" width={90} />
           </figure>
         </div>
         <div>

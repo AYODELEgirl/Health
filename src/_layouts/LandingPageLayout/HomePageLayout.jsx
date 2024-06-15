@@ -20,18 +20,18 @@ export default function Background() {
       <div className="relative max-w-screen  sm:h-screen h-[100vh] ">
         {/*  */}
         <nav className="absolute top-0 w-full z-20 pt-6 md:px-8 px:4" >
-          <aside className="p-10 fixed top-0 left-0 w-full flex justify-between">
+          <aside className="md:p-4 top-0 left-0 w-full flex justify-between">
             <figure>
               <img src={logo1} alt="" width={130} />
             </figure>
             <ul className="hidden justify-between s900:flex gap-20">
-              <li className="text-white hover:text-green-300 cursor-pointer">
+              <li className="text-black hover:text-green-300 cursor-pointer">
                 Home
               </li>
               <NavLink to="/aboutus">
                 <li
                   className={`cursor-pointer ${
-                    clicked ? "text-green-700" : "text-white"
+                    clicked ? "text-green-700" : "text-black"
                   } hover:text-green-500`}
                   onClick={handleClick}
                 >
@@ -39,25 +39,25 @@ export default function Background() {
                 </li>
               </NavLink>
               <NavLink to="/products">
-                <li className="text-white hover:text-green-300 cursor-pointer">
+                <li className="text-black hover:text-green-300 cursor-pointer">
                   Product
                 </li>
               </NavLink>
               <NavLink to="/insight">
-                <li className="text-white hover:text-green-300 cursor-pointer">
+                <li className="text-black hover:text-green-300 cursor-pointer">
                   Insights
                 </li>
               </NavLink>
               <NavLink to="/BookACall">
                 <li>
-                  <button className="bg-green-500 px-3 py-1 rounded-md text-[14px] text-white ">
+                  <button className="bg-green-500 px-3 py-1 rounded-md text-[14px] text-black">
                     Book a call
                   </button>
                 </li>
               </NavLink>
             </ul>
             <div
-              className="flex s900:hidden text-white cursor-pointer"
+              className="flex s900:hidden text-black cursor-pointer"
               onClick={() => setShowModal(true)}
             >
               <CiMenuFries size={30} />
@@ -115,12 +115,12 @@ export default function Background() {
           </p> */}
             <p
               
-              className="mb-7 md:mt-16 mt-48 font-bold text-2xl md:text-4xl lg:text-6xl xl:text-10xl leading-10 md:leading-[70px] lg:leading-[75px]"
+              className="mb-7 text-black md:mt-16 mt-48 font-bold text-2xl md:text-4xl lg:text-6xl xl:text-10xl leading-10 md:leading-[70px] lg:leading-[75px]"
             >
               Unlocking African <br /> Healthcare
             </p>
 
-            <p className="mb-7 md:w-[60%] w-full flex text-sm md:text-base ">
+            <p className="mb-7 md:w-[60%] w-full flex text-sm md:text-base text-black">
               Infinity Health leverages technology to drive Market Access in
               Africa through innovative <br /> regulatory, and business support
               solutions.
