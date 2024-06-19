@@ -27,7 +27,7 @@ export default function Products() {
       {/* <SubscribeSection /> */}
       {/* <OnboardSection /> */}
       {/* <CommitmentSection /> */}
-      <FooterSections />
+      <FooterSections   />
     </div>
   );
 }

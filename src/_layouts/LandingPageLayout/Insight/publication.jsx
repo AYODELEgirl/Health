@@ -18,7 +18,7 @@ export default function publication() {
     {
       id:"2",
       info:"We want to redefine access to quality healthcare",
-      image:publicone,
+      image:public2,
       text:"Lorem ipsum dolor sit amet consectetur adipisicing elit Minus nemo laudantium nostrum modi quis! em quidem.",
       link:"/ReadMore",
       type:"Infographics",
@@ -26,7 +26,7 @@ export default function publication() {
     {
       id:"3",
       info:"We want to redefine access to quality healthcare",
-      image:publicone,
+      image:public3,
       text:"Lorem ipsum dolor sit amet consectetur adipisicing elit Minus nemo laudantium nostrum modi quis! em quidem.",
       link:"/ReadMore",
       type:"News",
@@ -42,7 +42,7 @@ export default function publication() {
     {
       id:"5",
       info:"We want to redefine access to quality healthcare",
-      image:publicone,
+      image:public2,
       text:"Lorem ipsum dolor sit amet consectetur adipisicing elit Minus nemo laudantium nostrum modi quis! em quidem.",
       link:"/ReadMore",
       type:"Infographics",
@@ -50,7 +50,7 @@ export default function publication() {
     {
       id:"6",
       info:"We want to redefine access to quality healthcare",
-      image:publicone,
+      image:public3,
       text:"Lorem ipsum dolor sit amet consectetur adipisicing elit Minus nemo laudantium nostrum modi quis! em quidem.",
       link:"/ReadMore",
       type:"News",
@@ -102,7 +102,7 @@ export default function publication() {
           return (
             <div className="flex lg:flex-row pb-10 flex-col ">
           
-            <div className=" ">
+            <div className=" gap-10">
     
               <div className=" absolute flex justify-between p-3">
                 <button className="bg-[#FFF6E5]  text-[#667085] p-2 mt-3 font-semibold z-10 backdrop-filter rounded-2xl px-4 text-[12px]">

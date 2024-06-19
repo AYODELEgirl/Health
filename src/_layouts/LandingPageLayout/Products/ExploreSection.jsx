@@ -64,7 +64,7 @@ export default function ExploreSection() {
             </p>
             <a href="/BookACall">
             <div className="flex flex-row  gap-4 mt-4 items-center">
-              <p className="text-red-400">Register a product</p>
+              <p className="text-red-400">Register a facility</p>
               <MdOutlineArrowOutward style={{ color: "#FF784B" }} />
             </div>
             </a>
@@ -91,7 +91,7 @@ export default function ExploreSection() {
             </p>
             <a href="/BookACall">
             <div className="flex flex-row  gap-4 mt-4 items-center">
-              <p className="text-red-400">Register a product</p>
+              <p className="text-red-400">Get started</p>
               <MdOutlineArrowOutward style={{ color: "#FF784B" }} />
             </div>
             </a>
@@ -118,7 +118,7 @@ export default function ExploreSection() {
             </p>
             <a href="/BookACall">
             <div className="flex flex-row  gap-4 mt-4 items-center">
-              <p className="text-red-400">Register a product</p>
+              <p className="text-red-400">Contact us </p>
               <MdOutlineArrowOutward style={{ color: "#FF784B" }} />
             </div>
             </a>

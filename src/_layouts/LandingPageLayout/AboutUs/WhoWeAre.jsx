@@ -29,7 +29,7 @@ export default function WhoWeAre() {
       <div className="mt-14 flex flex-col gap-8">
         <div className="">
           <p className="font-semibold text-[17px]">
-            More than Data, we're a partner
+          Join us in building a healthier Africa
           </p>
           <p>
             Are you a healthcare business poised to make a difference in Africa?
@@ -39,7 +39,7 @@ export default function WhoWeAre() {
             opportunities within the African healthcare market.
           </p>
         </div>
-        <div className="">
+        {/* <div className="">
           <p className="font-semibold text-[17px]">
             Join us in building a healthier Africa
           </p>
@@ -50,13 +50,8 @@ export default function WhoWeAre() {
             our solutions and how we can help you navigate the exciting
             opportunities within the African healthcare market.
           </p>
-          {/* <p>
-            {" "}
-            Join us as embark on this transformative journey to redefine access
-            to quality healthcare in Africa. Together, we can make a difference
-            and forge a brighter, healthier future for generations to come.
-          </p> */}
-        </div>
+          
+        </div> */}
       </div>
     </div>
   );
