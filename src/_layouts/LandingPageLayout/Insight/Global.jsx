@@ -1,6 +1,6 @@
 import React from "react";
 import price from "../../../assets/images/price.png";
-import charrt from "../../../assets/images/charrt.png";
+import pixxx from "../../../assets/images/pixxx.jpeg";
 import process from "../../../assets/images/process.png";
 import ca from "../../../assets/images/ca.png" 
 import market from "../../../assets/images/market.png"
@@ -92,7 +92,7 @@ export default function Global() {
               </div>
               <div>
                 <p className="text-[14px]">
-                  Macro and micro estimation models  <br />combining economic and
+                  Macro and micro estimation models combining economic and
                   industry data
                 </p>
               </div>
@@ -124,7 +124,7 @@ export default function Global() {
 
         <div className="sm:flex hidden">
           <figure>
-            <img src={charrt} alt="" />
+            <img src={pixxx} alt="" />
           </figure>
         </div>
       </div>

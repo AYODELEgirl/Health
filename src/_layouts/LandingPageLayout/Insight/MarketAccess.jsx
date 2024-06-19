@@ -1,5 +1,8 @@
 import React from "react";
 import cloud from "../../../assets/images/cloud.png";
+import Localexpertise from "../../../assets/images/Localexpertise.png"
+import actionn from "../../../assets/images/actionn.png"
+import research from "../../../assets/images/research.png"
 
 export default function MarketAccess() {
   return (
@@ -11,7 +14,7 @@ export default function MarketAccess() {
       <div className="bg-white h-[230px] flex flex-col  gap-4 w-auto rounded-xl p-5">
         <div>
           <figure>
-            <img src={cloud} alt="" width={50} />
+          <img src={Localexpertise} alt="" width={40} />
           </figure>
         </div>
         <div>
@@ -26,7 +29,7 @@ export default function MarketAccess() {
       <div className="bg-white h-[230px] flex flex-col gap-4 w-auto rounded-xl p-5">
         <div>
           <figure>
-            <img src={cloud} alt="" width={50} />
+          <img src={research} alt="" width={40} />
           </figure>
         </div>
         <div>
@@ -40,7 +43,7 @@ export default function MarketAccess() {
       <div className="bg-white h-[230px] flex flex-col gap-4 w-auto rounded-xl p-5">
         <div>
           <figure>
-            <img src={cloud} alt="" width={50} />
+          <img src={actionn} alt="" width={40} />
           </figure>
         </div>
         <div>
