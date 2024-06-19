@@ -24,7 +24,7 @@ export default function Onboard() {
           </div>
           <p className="font-medium text-2xl md:text-3xl lg:text-4xl mb-5 text-white">
             <span>REGULATORY COMPLIANCE.</span>{" "}
-            <span className="text-[#69BD45]">MADE EASY</span>
+            <span className="text-[#69BD45]">MADE EASY.</span>
           </p>
           <p className="text-white mb-5 text-lg">
             Navigate the complexities of market entry, expansion, and compliance
