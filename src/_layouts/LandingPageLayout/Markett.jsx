@@ -1,6 +1,6 @@
 import React from "react";
 import { LiaLongArrowAltRightSolid } from "react-icons/lia";
-import markett from "../../assets/images/markett.png";
+import insighttt from "../../assets/images/insighttt.jpg";
 import { NavLink } from "react-router-dom";
 import analyticsbackground from "../../assets/images/analyticsbackground.png";
 
@@ -34,11 +34,11 @@ export default function Market() {
             <LiaLongArrowAltRightSolid />
           </div>
         </div>
-        <div className="hidden md:flex md:w-1/2 mt-8 justify-center md:justify-end">
+        <div className="hidden md:flex md:w-1/2 mt-3 mb-6 p-5  justify-center md:justify-end">
           <figure>
             <img
-              src={markett}
-              alt="Market"
+              src={insighttt}
+              alt="insight"
               className="w-full h-auto max-w-xs md:max-w-none"
             />
           </figure>
