@@ -3,7 +3,7 @@ import abouta from "../../../assets/images/abouta.png";
 import aboutb from "../../../assets/images/aboutb.png";
 import bg from "../../../assets/images/brand.png";
 
-import FooterSection from "../FooterSection";
+import FooterSections from "../FooterSections";
 import team from "../../../assets/images/team.png";
 import pix1 from "../../../assets/images/pix1.png"
 import pix2 from "../../../assets/images/pix2.png"
@@ -173,7 +173,7 @@ export default function Vision() {
             </div>
           </div>
         </div> */}
-        <FooterSection />
+        <FooterSections />
       </div>
     </div>
   );

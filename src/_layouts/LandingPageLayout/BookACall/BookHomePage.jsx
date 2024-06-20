@@ -12,7 +12,7 @@ export default function BookHomePage() {
         className="w-full bg-cover bg-center relative"
       >
         <div className="absolute inset-0 flex flex-col justify-center items-start p-16">
-          <p className="font-bold text-[55px] text-white mb-2">
+          <p className="font-bold text-[55px] text-white mb-2 whitespace-nowrap">
             Contact Us
           </p>
           <p className="text-white text-[14px] mt-[16px]">

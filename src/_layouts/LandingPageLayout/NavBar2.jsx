@@ -13,7 +13,7 @@ export default function NavBar2() {
     };
   return (
     <div>
-      <nav className="overflow-x-hidden w-full z-10 pt-5 px-16 mb-1">
+      <nav className="overflow-x-hidden w-full z-10 pt-5 md:px-16 px-8 mb-1">
         <aside className="flex justify-between ">
           <NavLink to="/">
             <figure>

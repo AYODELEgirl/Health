@@ -2,19 +2,16 @@ import React from "react";
 
 export default function WhoWeAre() {
   return (
-    <div className="bg-[#F5FFF0] flex lg:flex-row flex-col gap-10 lg:h-[480px] p-10">
+    <div className="bg-[#F5FFF0]">
+    <p className="text-center pt-10 font-bold text-[25px]">Who we are</p>
+   
+    <div className=" flex lg:flex-row flex-col gap-10  p-10">
+       
       <div className=" flex flex-col gap-10 md:px-8 pt-5">
+        
         <div className="">
-          <p className="font-bold text-[27px] mb-5">Who we are</p>
-          <p>
-            At Infinity Health Africa, we are passionate about transforming
-            healthcare across the continent. We believe technology is the key to
-            unlocking a future where high-quality healthcare is accessible to
-            everyone.
-          </p>
-        </div>
-        <div className="">
-          <p className="font-semibold text-[17px]">
+          
+          <p className="font-semibold text-[17px] mb-3">
             Local Knowledge,Global impact
           </p>
           <p>
@@ -24,11 +21,20 @@ export default function WhoWeAre() {
             and strategies specifically tailored to the African context.
           </p>
         </div>
+        <div className="">
+
+          <p>
+            At Infinity Health Africa, we are passionate about transforming
+            healthcare across the continent. We believe technology is the key to
+            unlocking a future where high-quality healthcare is accessible to
+            everyone.
+          </p>
+        </div>
       </div>
 
-      <div className="mt-14 flex flex-col gap-8">
+      <div className="mt-5 flex flex-col gap-8">
         <div className="">
-          <p className="font-semibold text-[17px]">
+          <p className="font-semibold text-[17px] mb-3">
           Join us in building a healthier Africa
           </p>
           <p>
@@ -53,6 +59,7 @@ export default function WhoWeAre() {
           
         </div> */}
       </div>
+    </div>
     </div>
   );
 }
