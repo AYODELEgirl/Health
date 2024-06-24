@@ -12,7 +12,8 @@ export default function Market() {
           backgroundImage: `url(${analyticsbackground})`,
           
         }}
-        className="flex flex-col md:flex-row gap-10 md:gap-40 pt-5 px-8 bg-red-500"
+        className="flex flex-col md:flex-row gap-10 md:gap-40 md:p-6 bg-red-500"
+       
       >
         <div className="md:w-1/2 p-7 mt-8">
           <button className="bg-[#FF784B] text-white text-lg rounded-full py-2 px-5 mb-5">

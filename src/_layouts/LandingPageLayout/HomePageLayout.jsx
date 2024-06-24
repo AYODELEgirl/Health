@@ -19,7 +19,7 @@ export default function Background() {
   return (
       <div className="relative max-w-screen  sm:h-screen h-[100vh] ">
         {/*  */}
-        <nav className="absolute top-0 w-full z-20 pt-6 md:px-8 px:4" >
+        <nav className="absolute top-0 w-full z-20 pt-6 md:px-8 px:8 p-8" >
           <aside className="md:p-4 top-0 left-0 w-full flex justify-between">
             <figure>
               <img src={logo1} alt="" width={130} />
@@ -106,7 +106,7 @@ export default function Background() {
             </div>
           )}
 
-          <div className="text-white m-auto max-w-screen-xl px-8 sm:mt-40">
+          <div className="text-white m-auto max-w-screen-xl px-8 sm:mt-40 ">
             {/* <p
             style={{ lineHeight: "95px" }}
             className="mb-7 mt-20 font-bold text-[5rem] sm:text-sm"

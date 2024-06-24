@@ -39,7 +39,7 @@ export default function Vision() {
         <div className="flex lg:flex-row flex-col mt-5 gap-y-5 md:px-20 px-9">
           <div className="lg-w-[50%] w-full ">
             <figure>
-              <img src={pix2} alt="" />
+              <img src={pix2} alt=""  className="md:flex hidden"/>
             </figure>
           </div>
           <div className="lg-w-[50%] w-full lg:mt-28  mt-14  md:px-20 ">
@@ -85,7 +85,7 @@ export default function Vision() {
           <div className="flex lg:flex-row flex-col mt-5 gap-y-5 md:px-20 px-9">
             <div className="lg:w-[50%] w-full ">
               <figure>
-                <img src={charter} alt="" />
+                <img src={charter} alt="" className="md:flex hidden" />
               </figure>
             </div>
             <div className="lg:w-[50%] w-full mt-28 md:px-20 mb-3">

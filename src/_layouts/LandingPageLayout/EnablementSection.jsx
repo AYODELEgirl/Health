@@ -26,7 +26,7 @@ export default function EnablementSection() {
       </section>
       <section className="md:w-[50%] w-full">
         <figure>
-          <img src={hands} alt="" className="w-full h-[500px] object-cover" />
+          <img src={hands} alt="" className="w-full h-[500px] object-cover md:flex hidden" />
         </figure>
       </section>
     </div>

@@ -9,7 +9,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 export default function PublicationSection() {
   return (
     <div className="pt-5 px-8">
-      <div className="p-7">
+      <div className="p-1">
         <p className=" text-red-400 text-[12px]">What's new</p>
         <h2 className="font-bold text-[30px]">Recent Publications</h2>
         <p className="text-[14px] text-[#667085]">
@@ -18,7 +18,7 @@ export default function PublicationSection() {
         </p>
       </div>
 
-      <div className="p-7">
+      <div className="p-1">
         <div className="grid lg:grid-cols-3 gap-10 ">
           <div className=" absolute flex justify-between p-3">
             <button className="bg-[#FFF6E5]  text-[#667085] p-2 mt-3 font-semibold z-10 backdrop-filter rounded-2xl px-4 text-[12px]">

@@ -5,7 +5,7 @@ import third from "../../assets/images/third.png";
 
 export default function PictureAndTextGrid() {
   return (
-    <div className="mt-20 overflow-x-auto m-auto max-w-screen-xl">
+    <div className="mt-20 overflow-x-auto m-auto max-w-screen-xl p-5">
       {/* <p className="text-[12px] text-red-400 text-center">Our Mission</p> */}
       <p className="font-bold md:text-[28px] mt-5 md:mt-0 text-center">
         We want to redefine{" "}
