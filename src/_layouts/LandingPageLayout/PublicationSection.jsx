@@ -8,7 +8,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 // import iconn from "../../assets/images/iconn.png"
 export default function PublicationSection() {
   return (
-    <div className="pt-5 px-8">
+    <div className="pt-5 px-8 pb-10">
       <div className="p-1">
         <p className=" text-red-400 text-[12px]">What's new</p>
         <h2 className="font-bold text-[30px]">Recent Publications</h2>

@@ -106,7 +106,7 @@ export default function Background() {
             </div>
           )}
 
-          <div className="text-white m-auto max-w-screen-xl px-8 sm:mt-40 ">
+          <div className="text-white m-auto max-w-screen-xl sm:mt-40 ">
             {/* <p
             style={{ lineHeight: "95px" }}
             className="mb-7 mt-20 font-bold text-[5rem] sm:text-sm"

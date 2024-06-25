@@ -12,7 +12,7 @@ export default function RegulatorySection() {
           </figure>
         </div>
         <div>
-          <p className="md:text-[35px] text-[25px] text-[#3C592F] font-bold leading-[50px] mb-5">REGULATORY COMPLIANCE.  <br  className="hidden lg:block" /> <span className="text-[#69BD45]">MADE EASY</span></p>
+          <p className="md:text-[35px] text-[25px] text-[#3C592F] font-bold leading-[50px] mb-5">REGULATORY COMPLIANCE.  <br  className="hidden lg:block" /> <span className="text-[#69BD45]">MADE EASY.</span></p>
           <p className="text-[#757575] mb-5">
             Onboard helps healthcare and life sciences understand, navigate and comply
             with business and product regulatory standards.{" "}

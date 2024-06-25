@@ -32,8 +32,8 @@ function FooterSections({activeTab,setActiveTab}) {
                   placeholder="Enter your email"
                   className="text-[#757575] text-[12px] bg-white px-36 py-2 border border-gray-300 rounded"
                   style={{
-                    paddingLeft: "1rem", // Adjust this value as needed to align the placeholder text
-                    paddingRight: "9rem", // Adjust this value as needed to keep overall padding consistent
+                    paddingLeft: "1rem",
+                    paddingRight: "9rem", 
                   }}
                 />
               </div>
@@ -106,7 +106,7 @@ function FooterSections({activeTab,setActiveTab}) {
               2024 infinity health. All rights reserved
             </p>
           </div>
-          <div className=" lg:flex-row gap-10  sm:p-6 flex flex-col ">
+          <div className=" lg:flex-row gap-10 flex flex-col ">
             <p className="underline text-[12px] text-white">Privacy Policy</p>
             <p className="underline text-[12px] text-white">Terms of service</p>
             <p className="underline text-[12px] text-white">Cookies settings</p>

@@ -11,7 +11,7 @@ export default function infinityVideo() {
           height: "500px",
         }}
       >
-        <div className="mt-20 ml-10">
+        <div className="mt-20 md:ml-7">
           <p className="text-white font-bold lg:text-[55px] md:text-[40px] text-[20px] mb-8">
             Market access starts with <br /> right data
           </p>

@@ -27,7 +27,7 @@ export default function CommitmentSection() {
       </h1>
       <div className="flex relative justify-center pt-10">
         <div className=" absolute flex items-center justify-center h-full ">
-          {show && <FaCirclePlay size={120} style={{ color: "white" }}  className="md:size-96 size-14"/>}
+          {show && <FaCirclePlay style={{ color: "white" }}  className="md:size-32 size-14"/>}
         </div>
         <video
           ref={videoRef}

@@ -5,7 +5,7 @@ export default function EnablementSection() {
   return (
     <div className="flex md:flex-row flex-col">
       <section className="bg-[#E8FFDE] md:w-[50%] w-full px-8 pt-5">
-        <div className="mt-16 p-10">
+        <div className="md:mt-16 mt:8 md:p-10 pb-4">
           <p className="text-[15px]  text-red-400 mb-3">
             Health system enablers
           </p>
