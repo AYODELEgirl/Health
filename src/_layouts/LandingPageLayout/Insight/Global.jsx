@@ -31,8 +31,7 @@ export default function Global() {
               </div>
               <div>
                 <p className="text-[14px]">
-                  Trusted research backed by data, <br /> expertise and
-                  analytical rigour
+                Healthcare commodity and service price trends
                 </p>
               </div>
             </div>
@@ -45,7 +44,8 @@ export default function Global() {
               </div>
               <div>
                 <p className="text-[14px]">
-                  Proprietary & third-party data combined to simplify trends
+                Reliable Insights on regulatory compliance and market entry planning
+
                 </p>
               </div>
             </div>
@@ -58,7 +58,9 @@ export default function Global() {
               </div>
               <div>
                 <p className="text-[14px]">
-                  Economic datasets covering pricing, inflation, forex and more
+                Healthcare industry case studies for deep market understanding
+
+
                 </p>
               </div>
             </div>
@@ -78,8 +80,8 @@ export default function Global() {
               </div>
               <div>
                 <p className="text-[14px]">
-                  Trusted research backed by data, <br /> expertise and analytical
-                  rigour
+                On-demand African Market Insights accessible viaDashboards
+
                 </p>
               </div>
             </div>
@@ -92,8 +94,9 @@ export default function Global() {
               </div>
               <div>
                 <p className="text-[14px]">
-                  Macro and micro estimation models combining economic and
-                  industry data
+                Anonymised data and disease outcomes data for clinical trial planning
+
+
                 </p>
               </div>
             </div>
@@ -106,7 +109,7 @@ export default function Global() {
               </div>
               <div>
                 <p className="text-[14px]">
-                  Live briefings for management teams and decision makers
+                Epidemiological studies to guide new product development
                 </p>
               </div>
             </div>

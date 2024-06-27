@@ -5,10 +5,10 @@ import bg from "../../../assets/images/brand.png";
 
 import FooterSections from "../FooterSections";
 import team from "../../../assets/images/team.png";
-import pix1 from "../../../assets/images/pix1.png"
-import pix2 from "../../../assets/images/pix2.png"
-import pix3 from "../../../assets/images/pix3.png"
-import sis from "../../../assets/images/sis.jpg"
+import pix1 from "../../../assets/images/pix1.png";
+import pix2 from "../../../assets/images/pix2.png";
+import pix3 from "../../../assets/images/pix3.png";
+import sis from "../../../assets/images/sis.jpg";
 import charter from "../../../assets/images/charter.png";
 import footerlogo from "../../../assets/images/footerlogo.png";
 import { Link, NavLink } from "react-router-dom";
@@ -17,19 +17,20 @@ export default function Vision() {
   return (
     <div>
       <div>
-      <div className="flex lg:flex-row flex-col mt-0 gap-10 md:px-20 px-9">
-      <div className="lg:w-[50%] w-full lg:mt-28  mt-14">
+        <div className="flex lg:flex-row flex-col mt-0 gap-10 md:px-20 px-9">
+          <div className="lg:w-[50%] w-full lg:mt-28  mt-14">
             <p className="text-red-500">Our Vision</p>
             <p className="font-bold md:text-[35px] text-[25px] leading-10 mt-3">
               The Beacon for African <br /> Healthcare
             </p>
             <p className="text-[13px] text-[#757575] mt-6">
-            To be the leading digital ecosystem, empowering a thriving and <br />  accessible healthcare landscape across Africa.
+              To be the leading digital ecosystem, empowering a thriving and{" "}
+              <br /> accessible healthcare landscape across Africa.
             </p>
           </div>
           <div className="lg:w-[50%] w-full ">
             <figure>
-              <img src={pix1} alt=""/>
+              <img src={pix1} alt="" />
             </figure>
           </div>
         </div>
@@ -39,7 +40,7 @@ export default function Vision() {
         <div className="flex lg:flex-row flex-col mt-5 gap-y-5 md:px-20 px-9">
           <div className="lg-w-[50%] w-full ">
             <figure>
-              <img src={pix2} alt=""  className="md:flex hidden"/>
+              <img src={pix2} alt="" className="md:flex hidden" />
             </figure>
           </div>
           <div className="lg-w-[50%] w-full lg:mt-28  mt-14  md:px-20 ">
@@ -49,7 +50,7 @@ export default function Vision() {
             </p>
             <p className="text-[13px] text-[#757575] mt-6">
               To improve access to quality healthcare goods and services through
-              simplified access and market solutions.
+              simplified regulatory and market access solutions.
             </p>
           </div>
         </div>
@@ -68,10 +69,10 @@ export default function Vision() {
               know the challenges - fragmented systems, data gaps, and a complex
               regulatory environment.
             </p>
-            <NavLink to="/ReadMore"> 
-            <button className="text-white text-[13px] rounded-md bg-[#69BD45] p-2 px-5 mt-5">
-              Read more
-            </button>
+            <NavLink to="/ReadMore">
+              <button className="text-white text-[13px] rounded-md bg-[#69BD45] p-2 px-5 mt-5">
+                Read more
+              </button>
             </NavLink>
           </div>
           <div className="lg:w-[50%] w-full">
@@ -99,7 +100,6 @@ export default function Vision() {
                 ensuring healthcare businesses have the tools and support they
                 need to achieve success.
               </p>
-
             </div>
           </div>
         </div>
@@ -108,23 +108,24 @@ export default function Vision() {
             <div className="flex lg:flex-row items-center flex-col mt-0 gap-y-5 gap-x-5 p-[80px] md:px-20 px-9">
               <div className="lg:w-[50%] w-full">
                 <figure>
-                  <img src={sis} alt=""  />
+                  <img src={sis} alt="" />
                 </figure>
               </div>
               <div className="lg:w-[50%] w-full md:px-16  ">
-              <p className="text-red-500">Our team</p>
-            <p className="text-[13px] text-[#757575] mt-6">
-              Our  team led by Irene Nwaukwa and Uduak XXXXXX are healthcare
-              industry experts with 25 years experience between them in
-              regulatory compliance, market penetration, business growth &
-              development in healthcare across Africa.
-            </p>
-            <p className="text-[13px] text-[#757575] mt-6">
-              We have a demonstrable history of successfully guiding healthcare
-              businesses through product registration, clinical trial approvals
-              and new product launches using a streamlined  process that helps
-              them launch and scale quickly while minimizing risk.
-            </p>
+                <p className="text-red-500">Our team</p>
+                <p className="text-[13px] text-[#757575] mt-6">
+                  Our  team led by Irene Nwaukwa and Uduak XXXXXX are healthcare
+                  industry experts with 25 years experience between them in
+                  regulatory compliance, market penetration, business growth &
+                  development in healthcare across Africa.
+                </p>
+                <p className="text-[13px] text-[#757575] mt-6">
+                  We have a demonstrable history of successfully guiding
+                  healthcare businesses through product registration, clinical
+                  trial approvals and new product launches using a streamlined 
+                  process that helps them launch and scale quickly while
+                  minimizing risk.
+                </p>
                 {/* <button className="text-white text-[13px] rounded-md bg-[#69BD45] p-2 px-5 mt-5">
                   Read more
                 </button> */}

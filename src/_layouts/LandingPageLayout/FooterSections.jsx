@@ -23,7 +23,8 @@ function FooterSections({activeTab,setActiveTab}) {
           <div className="p-3 lg:w-[45%]">
             <img src={footerlogo} alt="" width={150} />
             <p className="text-white mb-10 mt-5">
-              Join our newsletter to get updated on the latest on African health
+            Join our newsletter to get updated on the latest developments in African health
+
             </p>
             <div className="flex flex-col lg:flex-row gap-3">
               <div className="relative inline-block">

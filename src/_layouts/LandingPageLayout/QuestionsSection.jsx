@@ -18,13 +18,17 @@ export default function QuestionsSection() {
       ans: "We offer flexible pricing packages to accommodate businesses of all sizes. From complimentary business reviews to comprehensive market analysis and sales strategy development, we have a solution to fit your needs and budget.",
     },
     {
-      name: "4. How can Infinity Health help my healthcare business? ",
-      ans: "Our tailored service address key challenges such as regulatory hurdles, market entry strategies, and sales optimisation. Whether you're a startup or an established enterprise , we provide the support needed to thrive in this dynamic market .",
+      name: "4. Can Infinity Health help with market research and data analysis?",
+      ans: "Yes, Infinity Health offers market research and data analysis services to provide you with valuable insights into market trends, competitive landscape, and customer needs. This information helps you make informed decisions and develop effective strategies for market entry and expansion .",
     },
     {
-      name: "5. What are the pricing options for Infinity Health's services? ",
-      ans: "We offer flexible pricing packages to accommodate businesses of all sizes. From complimentary business reviews to comprehensive market analysis and sales strategy development, we have a solution to fit your needs and budget.",
+      name: "5. How can I get started with Infinity Health's services?",
+      ans: "To get started with Infinity Health's services, you can sign up on our platform, create a request to receive a project proposal, and follow our streamlined process to prepare, submit, and track their applications with our support, ensuring successful market entry and compliance. For more information, contact us at registrations@infinityhealth.africa or +2349161680406.",
     },
+    {
+      name: "6. How can Infinity Health help my healthcare business succeed in Africa?",
+      ans: "Our tailored services address key challenges such as regulatory hurdles, market entry strategies, and sales optimisation. Whether you're a startup or an established enterprise, we provide the support needed to thrive in this dynamic market.",
+    }
    
 
   ];
@@ -34,7 +38,7 @@ export default function QuestionsSection() {
         <p className="text-red-500 text-[12px] mb-11">FAQ</p>
         <p className="text-[25px] font-bold mb-5">Frequently asked questions</p>
         <p className="text-[15px] text-[#757575] text-center">
-          Answers to question you may have. We're here to help you make an{" "}
+          Answers to questions you may have. We're here to help you make an{" "}
           <br className="hidden md:block"/> informed decision
         </p>
       </div>
