@@ -83,9 +83,9 @@ export default function NavBar2() {
                       Product
                     </li>
                   </NavLink>
-                  <NavLink to="/insight">
+                  <NavLink to="/insights">
                     <li className="text-gray-700 hover:text-green-500 cursor-pointer text-[23px]">
-                      Insight
+                      Insights
                     </li>
                   </NavLink>
                   <NavLink to="/BookACall">

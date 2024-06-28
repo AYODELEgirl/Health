@@ -8,7 +8,7 @@ import MarketAccess from '../_layouts/LandingPageLayout/Insight/MarketAccess'
 import Global from '../_layouts/LandingPageLayout/Insight/Global'
 
 
-export default function Insight() {
+export default function Insights() {
   return (
     <div>
         <Background />

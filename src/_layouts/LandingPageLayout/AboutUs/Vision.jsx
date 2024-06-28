@@ -114,17 +114,17 @@ export default function Vision() {
               <div className="lg:w-[50%] w-full md:px-16  ">
                 <p className="text-red-500">Our team</p>
                 <p className="text-[13px] text-[#757575] mt-6">
-                  Our  team led by Irene Nwaukwa and Uduak XXXXXX are healthcare
-                  industry experts with 25 years experience between them in
-                  regulatory compliance, market penetration, business growth &
-                  development in healthcare across Africa.
+                  Our team is led by Irene Nwaukwa who has over 15 years
+                  healthcare experience in regulatory compliance, market
+                  penetration, business growth & development in healthcare
+                  across Africa.
                 </p>
                 <p className="text-[13px] text-[#757575] mt-6">
                   We have a demonstrable history of successfully guiding
                   healthcare businesses through product registration, clinical
-                  trial approvals and new product launches using a streamlined 
+                  trial approvals and new product launches using a streamlined
                   process that helps them launch and scale quickly while
-                  minimizing risk.
+                  minimising risk.
                 </p>
                 {/* <button className="text-white text-[13px] rounded-md bg-[#69BD45] p-2 px-5 mt-5">
                   Read more

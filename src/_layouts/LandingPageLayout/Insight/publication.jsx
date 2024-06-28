@@ -69,7 +69,7 @@ export default function publication() {
 
   return (
 
-    <div className="p-16">
+    <div className="p-8">
       <div className="p-7">
         <p className=" text-red-400 text-[12px]">Insights and resources</p>
         <h2 className="font-bold md:text-[30px] text-[20px]">Latest Publications</h2>

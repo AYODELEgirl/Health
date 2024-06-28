@@ -43,7 +43,7 @@ export default function Background() {
                   Product
                 </li>
               </NavLink>
-              <NavLink to="/insight">
+              <NavLink to="/insights">
                 <li className="text-black hover:text-green-300 cursor-pointer">
                   Insights
                 </li>
@@ -89,9 +89,9 @@ export default function Background() {
                       Product
                     </li>
                   </NavLink>
-                  <NavLink to="/insight">
+                  <NavLink to="/insights">
                     <li className="text-gray-700 hover:text-green-500 cursor-pointer text-[23px]">
-                      Insight
+                      Insights
                     </li>
                   </NavLink>
                   <NavLink to="/BookACall">

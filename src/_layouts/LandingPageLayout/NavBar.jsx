@@ -29,7 +29,7 @@ export default function NavBar() {
               </li>
             </NavLink>
             <li className="text-white hover:text-green-700 cursor-pointer">
-              Insight
+              Insights
             </li>
             <li>
               <button className="bg-green-500 px-3 py-1 rounded-md text-[14px] text-white ">
