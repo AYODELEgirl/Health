@@ -28,7 +28,7 @@ export default function Background() {
               <li className="text-black hover:text-green-300 cursor-pointer">
                 Home
               </li>
-              <NavLink to="/aboutus">
+              <NavLink to="/about-us">
                 <li
                   className={`cursor-pointer ${
                     clicked ? "text-green-700" : "text-black"
@@ -48,7 +48,7 @@ export default function Background() {
                   Insights
                 </li>
               </NavLink>
-              <NavLink to="/BookACall">
+              <NavLink to="/book-a-call">
                 <li>
                   <button className="bg-green-500 px-3 py-1 rounded-md text-[14px] text-black">
                     Book a call
@@ -79,7 +79,7 @@ export default function Background() {
                   <li className="text-gray-700 hover:text-green-500 cursor-pointer text-[23px]">
                     Home
                   </li>
-                  <NavLink to="/aboutus">
+                  <NavLink to="/about-us">
                     <li className="text-gray-700 hover:text-green-500 cursor-pointer text-[23px]">
                       About Us
                     </li>
@@ -94,7 +94,7 @@ export default function Background() {
                       Insights
                     </li>
                   </NavLink>
-                  <NavLink to="/BookACall">
+                  <NavLink to="/book-a-call">
                     <li>
                       <button className="bg-green-500 px-3 py-1 rounded-md text-[23px] text-gray-700  ">
                         Book a call
@@ -129,7 +129,7 @@ export default function Background() {
               <button className="text-[13px] px-14 p-3 text-white rounded-md border-none bg-[#FF784B] w-full md:w-auto">
                 Watch video
               </button>
-              <NavLink to="/aboutus" className="text-[12px] font-bold flex items-center justify-center p-3 text-black rounded-md border-none bg-[#FFFFFF] w-full md:w-auto lg:px-14">
+              <NavLink to="/about-us" className="text-[12px] font-bold flex items-center justify-center p-3 text-black rounded-md border-none bg-[#FFFFFF] w-full md:w-auto lg:px-14">
                 <button >
                   More about us
                 </button>

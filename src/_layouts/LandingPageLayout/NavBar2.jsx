@@ -26,8 +26,8 @@ export default function NavBar2() {
                 Home
               </li>
             </NavLink>
-            <NavLink to="/aboutus">
-              <li className={`text-black hover:text-green-700 ${window.location.pathname === "/aboutus" ? "text-green-500":""}  cursor-pointer`}>
+            <NavLink to="/about-us">
+              <li className={`text-black hover:text-green-700 ${window.location.pathname === "/about-us" ? "text-green-500":""}  cursor-pointer`}>
                 About Us
               </li>
             </NavLink>
@@ -36,12 +36,12 @@ export default function NavBar2() {
                 Products
               </li>
             </NavLink>
-            <NavLink to="/insight">
+            <NavLink to="/insights">
             <li className={`text-black hover:text-green-700 ${window.location.pathname === "/insight" ? "text-green-500":""}  cursor-pointer`}>
                 Insights
               </li>
             </NavLink>
-            <NavLink to="/BookACall">
+            <NavLink to="/book-a-call">
             <li>
               <button className="bg-green-500 px-3 py-1 rounded-md text-[14px] text-white ">
                 Book a call
@@ -73,7 +73,7 @@ export default function NavBar2() {
                   <li className="text-gray-700 hover:text-green-500 cursor-pointer text-[23px]">
                     Home
                   </li>
-                  <NavLink to="/aboutus">
+                  <NavLink to="/about-us">
                     <li className="text-gray-700 hover:text-green-500 cursor-pointer text-[23px]">
                       About Us
                     </li>

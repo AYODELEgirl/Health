@@ -27,18 +27,13 @@ function FooterSections({activeTab,setActiveTab}) {
 
             </p>
             <div className="flex flex-col lg:flex-row gap-3">
-              <div className="relative inline-block">
                 <input
                   type="text"
                   placeholder="Enter your email"
-                  className="text-[#757575] text-[12px] bg-white px-36 py-2 border border-gray-300 rounded"
-                  style={{
-                    paddingLeft: "1rem",
-                    paddingRight: "9rem", 
-                  }}
+                  className="text-[#757575] text-[12px] outline-none md:w-[160%] bg-white px-2  py-2 border border-gray-300 rounded" 
+                   
                 />
-              </div>
-              <button className="bg-[#69BD45] text-white p-2 px-5 text-[12px] rounded ">
+              <button className="bg-[#69BD45] md:w-[40%] text-white p-2 px-5 text-[12px] rounded">
                 Subscribe
               </button>
             </div>
@@ -51,7 +46,7 @@ function FooterSections({activeTab,setActiveTab}) {
           <div className="w-[45%] sm:p-6 flex flex-col lg:flex-row gap-y-12 justify-between leading-10 mt-10">
             <div className="text-white">
               <h1 className="text-[21px] font-semibold">Company</h1>
-              <NavLink to="/aboutus">
+              <NavLink to="/about-us">
                 <p>About us</p>
               </NavLink>
               <a href="/products">

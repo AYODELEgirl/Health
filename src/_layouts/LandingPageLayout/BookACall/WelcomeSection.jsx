@@ -1,15 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import welcomeone from "../../../assets/images/welcomeone.png";
 import { AiOutlineDown } from "react-icons/ai";
 import styled from "styled-components";
-
+import { InlineWidget, PopupModal, PopupWidget } from "react-calendly";
 // import welcometwo from "../../../assets/images/welcometwo.png";
 // import welcomethree from "../../../assets/images/welcomethree.png";
 // import welcomefour from "../../../assets/images/welcomefour.png";
 
 export default function WelcomeSection() {
+  const [open, setOpen] = useState(false)
   return (
     <div className="flex justify-center mb-20 md:px-16 px-5">
+       <PopupModal
+        url="https://calendly.com/timimarvel93/meet-marvelous"
+        /*
+         * react-calendly uses React's Portal feature (https://reactjs.org/docs/portals.html) to render the popup modal. As a result, you'll need to
+         * specify the rootElement property to ensure that the modal is inserted into the correct domNode.
+         */
+        rootElement={document.getElementById("root")}
+        open={open}
+        onModalClose={() => {
+          setOpen(false)
+        }}
+      />
       <div
         className="bg-[#E8FFDE]  rounded-md mb-5 w-[100%] md:p-10 p-4 gap-16 "
         
@@ -119,7 +132,9 @@ export default function WelcomeSection() {
               <AiOutlineDown className="absolute top-0 right-0 m-2" />
             </div>
             <div>
-              <button className="bg-[#69BD45] text-white h-full py-3 px-24 rounded-md whitespace-nowrap">
+              <button onClick={() =>{
+                setOpen(true)
+              }} className="bg-[#69BD45] text-white h-full py-3 px-24 rounded-md whitespace-nowrap">
                 Book Appointment
               </button>
             </div>

@@ -16,7 +16,7 @@ export default function ExploreSection() {
           challenges  <br /> of doing business in Africa by
         </p>
       </div>
-      <div className="flex bg-red-500 flex-row gap-8 p-10">
+      <div className="flex flex-row gap-8 p-10">
         <section className="bg-[#69BD450A] rounded-3xl w-[424px] h-[382px]  items-center justify-center  flex flex-col gap-6 ">
           <div className="">
             <figure>

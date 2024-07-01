@@ -94,7 +94,7 @@ export default function Global() {
               </div>
               <div>
                 <p className="text-[14px]">
-                Anonymised data and disease outcomes data for clinical trial planning
+                Clinical data and disease outcomes data and insights
 
 
                 </p>

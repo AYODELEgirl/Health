@@ -8,7 +8,7 @@ import MarketAccess from '../_layouts/LandingPageLayout/Insight/MarketAccess'
 import Global from '../_layouts/LandingPageLayout/Insight/Global'
 
 
-export default function Insights() {
+export default function Insight() {
   return (
     <div>
         <Background />
@@ -18,7 +18,6 @@ export default function Insights() {
         {/* <PicsAndText /> */}
         <Publication />
         <CommitmentVideo />
-        
     </div>
   )
 }

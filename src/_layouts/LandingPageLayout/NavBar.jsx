@@ -17,7 +17,7 @@ export default function NavBar() {
                 Home
               </li>
             </NavLink>
-            <NavLink to="/aboutus">
+            <NavLink to="/about-us">
               <li className="text-white hover:text-green-700 cursor-pointer">
                 About Us
               </li>

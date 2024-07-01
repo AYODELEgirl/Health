@@ -50,7 +50,7 @@ export default function FooterSection() {
           <div className="w-[55%] flex lg:flex-row flex-col gap-32 leading-10 mt-10">
             <div className="text-white">
               <h1 className="text-[21px] font-semibold">Company</h1>
-              <NavLink to="/aboutus">
+              <NavLink to="/about-us">
                 <p>About us</p>
               </NavLink>
               <a href="/products">
@@ -64,7 +64,7 @@ export default function FooterSection() {
               <a href="#data">
                 <p>Onboard</p>
                 </a>
-                <a href="#insight">
+                <a href="#data">
                 <p>Insight</p>
                 </a>
                 <a href="#data">

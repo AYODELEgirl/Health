@@ -46,13 +46,13 @@ export default function QuestionsSection() {
       <div className="grid grid-cols-1 lg:w-1/2  w-full gap-10">
         {Question.slice(0,3).map((d, index) => {
           return (
-            <div className="gap-40  border-solid border-2 border-gainsboro-100 p-5 rounded-lg">
+            <div className="gap-40  border-solid border-2 border-gainsboro-100 p-5 rounded-lg cursor-pointer" onClick={() => setAnswer(answer === index ? !index : index)}>
               <div className="flex justify-between gap-5">
                 <h2 className="text-[16px] font-medium pb-3">{d.name}</h2>
                 <AiOutlineDown
                   style={{ cursor: "pointer" }}
                   size={19}
-                  onClick={() => setAnswer(answer === index ? !index : index)}
+                  // onClick={() => setAnswer(answer === index ? !index : index)}
                 />
               </div>
               {answer === index && (
@@ -66,7 +66,7 @@ export default function QuestionsSection() {
       <div className=" grid grid-cols-1 gap-10 lg:w-1/2 w-full">
         {Question.slice(3,6).map((d, index) => {
           return (
-            <div className="gap-40  border-solid border-2 border-gainsboro-100 p-5 rounded-lg">
+            <div className="gap-40  border-solid border-2 border-gainsboro-100 p-5 rounded-lg cursor-pointer" onClick={() => setAnswer(d.name)}>
               <div className="flex justify-between gap-5">
                 <h2 className="text-[16px] font-medium pb-3">{d.name}</h2>
                 <AiOutlineDown
