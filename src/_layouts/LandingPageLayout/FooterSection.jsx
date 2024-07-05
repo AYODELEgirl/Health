@@ -61,10 +61,10 @@ export default function FooterSection() {
               <h1 className="text-[21px] font-semibold whitespace-nowrap">
                 Our products
               </h1>
-              <a href="#data">
+              <a href="/products">
                 <p>Onboard</p>
                 </a>
-                <a href="#data">
+                <a href="/insights">
                 <p>Insight</p>
                 </a>
                 <a href="#data">

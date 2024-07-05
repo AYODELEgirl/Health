@@ -8,31 +8,30 @@ import { TbLetterX } from "react-icons/tb";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 
-function FooterSections({activeTab,setActiveTab}) {
+function FooterSections({ activeTab, setActiveTab }) {
   return (
     <div>
       <div
         className="pr-16 pl-11 px-8 pt-5 "
         style={{
           backgroundImage: `url(${analyticsbakground})`,
-          backgroundRepeat: 'no-repeat',
-          backgroundSize:'cover',
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
         }}
       >
         <div className="flex flex-col lg:flex-row justify-between border-b lg:h-[300px]">
           <div className="p-3 lg:w-[45%]">
             <img src={footerlogo} alt="" width={150} />
             <p className="text-white mb-10 mt-5">
-            Join our newsletter to get updated on the latest developments in African health
-
+              Join our newsletter to get updated on the latest developments in
+              African health
             </p>
             <div className="flex flex-col lg:flex-row gap-3">
-                <input
-                  type="text"
-                  placeholder="Enter your email"
-                  className="text-[#757575] text-[12px] outline-none md:w-[160%] bg-white px-2  py-2 border border-gray-300 rounded" 
-                   
-                />
+              <input
+                type="text"
+                placeholder="Enter your email"
+                className="text-[#757575] text-[12px] outline-none md:w-[160%] bg-white px-2  py-2 border border-gray-300 rounded"
+              />
               <button className="bg-[#69BD45] md:w-[40%] text-white p-2 px-5 text-[12px] rounded">
                 Subscribe
               </button>
@@ -57,41 +56,62 @@ function FooterSections({activeTab,setActiveTab}) {
               <h1 className="text-[21px] font-semibold whitespace-nowrap">
                 Our products
               </h1>
-            
-              <a href="#data" onClick={() =>{
-                setActiveTab("Regulatory Support")
-              }}>
+
+              <a href="products">
                 <p>Onboard</p>
-                </a>
-                <a href="#data" onClick={() => {
-                setActiveTab("Insights")
-                localStorage.setItem("current","market")}}>
+              </a>
+              <a href="/insights">
                 <p>Insights</p>
-                </a>
-                <a href="#data" onClick={() =>{
-                setActiveTab("Launch Support")
-              }}>
+              </a>
+              <a href="/book-a-call">
                 <p>Launch Support</p>
-                </a>
+              </a>
             </div>
             <div className="text-white">
               <h1 className="text-[21px] font-semibold">Follow us</h1>
-              <div className="flex items-center gap-4">
-                <FaFacebookF />
-                <p>Facebook</p>
-              </div>
-              <div className="flex items-center gap-4 mb-3">
-                <FaInstagram />
-                <p>Instagram</p>
-              </div>
-              <div className="flex items-center gap-4 mb-3">
-                <FaXTwitter />
-                <TbLetterX className="w-6" />
-              </div>
-              <div className="flex items-center gap-4 mb-3">
-                <IoLogoLinkedin />
-                <p>Linkedin</p>
-              </div>
+              <a
+                href="https://web.facebook.com/people/Infinity-Health/61553469129456/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="flex items-center gap-4">
+                  <FaFacebookF />
+                  <p>Facebook</p>
+                </div>
+              </a>
+
+              <a
+                href="https://www.instagram.com/infinityhealthafrica?igsh=emdvM3lueXhtNG1z"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="flex items-center gap-4 mb-3">
+                  <FaInstagram />
+                  <p>Instagram</p>
+                </div>
+              </a>
+
+              <a
+                href="https://x.com/InfinityHealthA?s=09"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="flex items-center gap-4 mb-3">
+                  <FaXTwitter />
+                  <TbLetterX className="w-6" />
+                </div>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/company/infinity-health-africa/posts/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="flex items-center gap-4 mb-3">
+                  <IoLogoLinkedin />
+                  <p>LinkedIn</p>
+                </div>
+              </a>
             </div>
           </div>
         </div>

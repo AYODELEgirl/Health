@@ -6,28 +6,37 @@ export default function QuestionsSection() {
   const [answer, setAnswer] = useState(null);
   const Question = [
     {
-      name: "1. what sets infinity health apart from other healthcare companies",
-      ans: "Infinity Health stands out for its deep understanding of the African healthcare landscape and its commitment to delivering practical, actionable solutions. We combine local insights with global expertise to drive meaningful impacts.  ",
+      name: "1. What sets Infinity Health apart from other healthcare companies ",
+      ans: ["Infinity Health has a profound understanding of the African healthcare landscape, robust regulatory expertise, and strategic partnerships with local stakeholders. Our team is a key strength, boasting over 50 years of combined experience building healthcare products, delivering services, and supporting regulatory needs across Africa. Our comprehensive approach ensures compliance with regulatory requirements while providing valuable insights and connections to help you succeed in the market."],
     },
     {
-      name: "2. How can Infinity Health help my healthcare business? ",
-      ans: "Our tailored service address key challenges such as regulatory hurdles, market entry strategies, and sales optimisation. Whether you're a startup or an established enterprise , we provide the support needed to thrive in this dynamic market .",
+      name: "2.What services does Infinity Health provide through Onboard? ",
+      ans:[ " Through its Onboard product, Infinity Health provides regulatory compliance guidance, market access strategies, product registration assistance, and support for expanding healthcare services across Africa. These services are designed to help healthcare businesses successfully navigate the African market."],
     },
     {
-      name: "3.What are the pricing options for Infinity Health's services? ",
-      ans: "We offer flexible pricing packages to accommodate businesses of all sizes. From complimentary business reviews to comprehensive market analysis and sales strategy development, we have a solution to fit your needs and budget.",
+      name: "3.What are the pricing options for Infinity Health's services?   ",
+      ans:[ "We offer flexible pricing packages to accommodate businesses of all sizes. From complimentary business reviews to comprehensive market analysis and sales strategy development, we have a solution to fit your needs and budget. Our pricing is based on your needs, stage of business, and specific regulatory area. Schedule a call to learn more and get the pricing tailored to your requirements.  Schedule a session with our consultant (Add Link to book a call page)."],
     },
     {
       name: "4. Can Infinity Health help with market research and data analysis?",
-      ans: "Yes, Infinity Health offers market research and data analysis services to provide you with valuable insights into market trends, competitive landscape, and customer needs. This information helps you make informed decisions and develop effective strategies for market entry and expansion .",
+      ans: [
+
+        "Using Infinity Health for market access provides numerous benefits:",
+        "Access to Local Market Insights: Leverage our profound understanding of the African healthcare landscape to gain valuable market insights.",
+        "Efficient Resource Allocation: Benefit from our efficient resource allocation to optimize your market entry and growth strategies.",
+        "Tailored Expansion Strategies: Receive customized expansion strategies that align with your business goals and the unique regulatory environment.",
+        "Connections with Key Stakeholders: Utilize our strategic partnerships with local stakeholders to establish crucial connections and enhance your market presence.",
+        "Regulatory Expertise: Navigate regulatory hurdles easily, thanks to our robust regulatory expertise and over 50 years of combined experience in the African health sector.",
+        "Comprehensive Support: Our approach ensures you meet all regulatory requirements while providing the support needed to thrive in the market.",
+        ] 
     },
     {
       name: "5. How can I get started with Infinity Health's services?",
-      ans: "To get started with Infinity Health's services, you can sign up on our platform, create a request to receive a project proposal, and follow our streamlined process to prepare, submit, and track their applications with our support, ensuring successful market entry and compliance. For more information, contact us at registrations@infinityhealth.africa or +2349161680406.",
+      ans: ["To get started with Infinity Health's services, simply sign up on our platform and create a request to receive a project proposal. Follow our streamlined process to prepare, submit, and track your applications with our support, ensuring successful market entry and compliance. For more information, contact us at registrations@infinityhealth.africa or +234 916 168 0406."],
     },
     {
-      name: "6. How can Infinity Health help my healthcare business succeed in Africa?",
-      ans: "Our tailored services address key challenges such as regulatory hurdles, market entry strategies, and sales optimisation. Whether you're a startup or an established enterprise, we provide the support needed to thrive in this dynamic market.",
+      name: "6. Can Infinity Health help with market research and data analysis?",
+      ans: ["Infinity Health offers market research and data analysis services to provide valuable insights into market trends, the competitive landscape, and customer needs. This information enables you to make informed decisions and develop effective market entry and expansion strategies."],
     }
    
 
@@ -56,7 +65,11 @@ export default function QuestionsSection() {
                 />
               </div>
               {answer === index && (
-                <h2  className=" leading-6 w-[80%] text-[15px] text-[#667085]">{d.ans}</h2>
+                d.ans?.map((item) => {
+                  return (
+                    <h2  className=" leading-6 w-[80%] text-[15px] mb-4 text-[#667085]">{item}</h2>
+                  )
+                })
               )}
             </div>
           );
@@ -76,7 +89,11 @@ export default function QuestionsSection() {
                 />
               </div>
               {answer === d.name && (
-                <h2  className=" leading-6 w-[80%] text-[15px] text-[#667085]">{d.ans}</h2>
+                d.ans?.map((item) => {
+                  return (
+                    <h2  className=" leading-6 w-[80%] text-[15px] mb-4 text-[#667085]">{item}</h2>
+                  )
+                })
               )}
             </div>
           );

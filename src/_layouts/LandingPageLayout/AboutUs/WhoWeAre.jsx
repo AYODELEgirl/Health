@@ -16,8 +16,8 @@ export default function WhoWeAre() {
               healthcare across the continent. We understand the complexities of
               African healthcare systems. Our team of seasoned experts brings a
               wealth of experience and local knowledge to the table. This allows
-              us to provide actionable data and strategies specifically tailored
-              to the African context.
+              us to provide regulatory and market access support tailored to
+              healthcare businesses looking to thrive in Africa.
             </p>
           </div>
           {/* <div className="">

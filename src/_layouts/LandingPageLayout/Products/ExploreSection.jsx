@@ -114,7 +114,8 @@ export default function ExploreSection() {
               Regulatory Compliance Support
             </p>
             <p className="mb-5 text-[14px]">
-              Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+            Comprehensive support to help you set up and maintain internal regulatory processes
+
             </p>
             <a href="/BookACall">
             <div className="flex flex-row  gap-4 mt-4 items-center">

@@ -78,7 +78,7 @@ export default function publication() {
           African Healthcare market
         </p>
       </div>
-      <div className="hidden flex-row justify-between p-3 px-8 sm:flex">
+      <div className="hidden flex-row justify-between md:p-3 md:px-8 sm:flex p-1">
         <div className="flex flex-row gap-8 cursor-pointer">
           <p className="text-[14px] text-[#667085]" onClick={() => setDetails(data)}>All posts</p>
           <p className="text-[14px] text-[#667085]" onClick={ () => handleFilter("Case studies")}>Case studies</p>
@@ -95,7 +95,7 @@ export default function publication() {
         </div>
       </div>
    
-      <div className="bg-[#F5F6F9] md:p-7 p-2 grid s900:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[2rem]">
+      <div className="bg-[#F5F6F9] md:p-7 p-4 grid s900:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[2rem]">
 
       
          {details && details?.map(data => {
@@ -112,7 +112,7 @@ export default function publication() {
               </div>
               <div className="">
                 <figure>
-                  <img src={data?.image} alt="" width={350} className="mb-5 w-full" />
+                  <img src={data?.image} alt="" width={400} className="mb-5 w-full" />
                 </figure>
                 <div className="flex flex-row gap-1">
                   <div className="flex jusify-between">

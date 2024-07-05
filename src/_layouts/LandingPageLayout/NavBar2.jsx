@@ -14,13 +14,13 @@ export default function NavBar2() {
   return (
     <div>
       <nav className="overflow-x-hidden w-full z-10 pt-5 md:px-16 px-8 mb-1">
-        <aside className="flex justify-between ">
+        <aside className="flex justify-between align-middle ">
           <NavLink to="/">
             <figure>
               <img src={logo1} alt="" width={130} />
             </figure>
           </NavLink>
-          <ul className="hidden justify-between s900:flex  gap-20">
+          <ul className="hidden justify-between s900:flex  gap-20 p-3" >
             <NavLink to="/">
             <li className={`text-black hover:text-green-700 ${window.location.pathname === "/home" ? "text-green-500":""}  cursor-pointer`}>
                 Home
@@ -70,9 +70,12 @@ export default function NavBar2() {
                 </div>
 
                 <ul className="flex flex-col gap-16 p-8">
+                  <NavLink to="/">
                   <li className="text-gray-700 hover:text-green-500 cursor-pointer text-[23px]">
                     Home
                   </li>
+
+                  </NavLink>
                   <NavLink to="/about-us">
                     <li className="text-gray-700 hover:text-green-500 cursor-pointer text-[23px]">
                       About Us
