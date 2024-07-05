@@ -7,14 +7,14 @@ export default function PictureAndTextGrid() {
   return (
     <div className="mt-20 overflow-x-auto m-auto max-w-screen-xl p-5">
       {/* <p className="text-[12px] text-red-400 text-center">Our Mission</p> */}
-      <p className="font-bold md:text-[28px] mt-5 md:mt-0 text-center">
+      <p className="font-bold md:text-[28px] mt-5 md:mt-0 text-center" data-aos="fade-down">
         We want to redefine{" "}
         <span className="text-[#69BD45]"> access to quality healthcare</span>{" "}
         with <br />
         local insights, regulatory and business support
       </p>
       <div className="m-auto flex gap-7 pt-5 justify-center items-center flex-col md:flex-row">
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5" data-aos="fade-right">
           <div className="bg-[#F9FDFF] max-w-[600px] lg:h-[330px]  flex flex-col gap-7 pt-8 px-16 pb-2">
             <div>
               <figure>
@@ -22,7 +22,7 @@ export default function PictureAndTextGrid() {
               </figure>
             </div>
             <div>
-              <p className="text-red-500 text-[14px] mb-3">
+              <p className="text-red-500 text-[14px] mb-3" >
                 Quality Healthcare across board
               </p>
               <p className="font-bold text-2xl mb-5  lg:text-[32px]">
@@ -54,7 +54,7 @@ export default function PictureAndTextGrid() {
             </div>
           </div>
         </div>
-        <div className="bg-[#F6FFF2] max-w-[600px] lg:h-[680px] pt-8 px-12 pb-2">
+        <div className="bg-[#F6FFF2] max-w-[600px] lg:h-[680px] pt-8 px-12 pb-2" data-aos="fade-left">
           <div className="mb-11">
             <figure>
               <img src={third} alt="" width={60} />
