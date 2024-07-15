@@ -11,7 +11,7 @@ export default function NavBar() {
               <img src={logo1} alt="" width={150} />
             </figure>
           </NavLink>
-          <ul className="flex justify-between  gap-8">
+          <ul className="flex  justify-between  gap-8">
             <NavLink to="/">
               <li className="text-white hover:text-green-700 cursor-pointer">
                 Home

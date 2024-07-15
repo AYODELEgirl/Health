@@ -72,7 +72,7 @@ export default function Background() {
 
               <ul className="flex flex-col gap-16 p-8">
                 <li className="text-gray-700 hover:text-green-500 cursor-pointer text-[23px]">
-                  Homes
+                  Home
                 </li>
                 <NavLink to="/about-us">
                   <li className="text-gray-700 hover:text-green-500 cursor-pointer text-[23px]">

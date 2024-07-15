@@ -21,7 +21,7 @@ export default function CommitmentSection() {
 
   return (
     <div className="max-w-screen-xl px-4 mx-auto overflow-x-auto m-auto">
-      <h1 className="font-bold flex flex-col md:gap-10  items-center justify-center lg:text-[2rem] text-lg text-center mt-24 md:leading-[10px]">
+      <h1 data-aos="fade-down"  className="font-bold flex flex-col md:gap-10  items-center justify-center lg:text-[2rem] text-lg text-center mt-24 md:leading-[10px]">
         We are committed to expanding healthcare access <br />{" "}
         <span> in Africa with our market access solutions </span>
       </h1>
