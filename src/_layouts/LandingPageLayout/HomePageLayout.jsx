@@ -18,7 +18,7 @@ export default function Background() {
   return (
     <div className="relative max-w-screen  sm:h-screen h-[100vh] ">
       {/*  */}
-      <nav className="absolute top-0 w-full z-20 pt-6 md:px-8 px:8 p-8">
+      <nav className="absolute top-0 w-full z-20 pt-6 md:px-8 px:8 p-8 " style={{zIndex:"9999"}}>
         <aside className="md:p-4 top-0 left-0 w-full flex align-middle justify-between">
           <figure>
             <img src={logo1} alt="" width={130} />
@@ -81,7 +81,7 @@ export default function Background() {
                 </NavLink>
                 <NavLink to="/products">
                   <li className="text-gray-700 hover:text-green-500 cursor-pointer  text-[23px] ">
-                    Product
+                    Products
                   </li>
                 </NavLink>
                 <NavLink to="/insights">
