@@ -64,7 +64,7 @@ export default function Background() {
         </aside>
 
         {showModal && (
-          <div className="bg-[rgba(0,0,0,0.3)] fixed h-[100vh] w-[100vw] top-0 left-0 bottom-0 right-0 flex justify-end  items-center " style={{transition: 'ease-in'}}>
+          <div className="bg-[rgba(0,0,0,0.3)] fixed h-[100vh] w-[100vw] top-0 left-0 bottom-0 right-0 flex justify-end  items-center " style={{transition: 'ease-in', zIndex:"9999"}}>
             <div className="bg-white w-[55%] h-full " data-aos="fade-left">
               <div onClick={() => setShowModal(false)}>
                 <LiaTimesSolid className="ml-5 pt-5 " size={70} color="green" />
