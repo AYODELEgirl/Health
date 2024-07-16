@@ -38,13 +38,14 @@ export default function CommitmentSection() {
             height: "auto", // Maintain aspect ratio
             borderRadius: "15px", // Added border radius for aesthetics
           }}
+          data-aos="fade-right"
           className="rounded-xl"
           onClick={handlePlay}
         >
           <source src={orientationvideo} type="video/mp4" />
         </video>
       </div>
-      <div className="text-center mt-20 ">
+      <div  data-aos="fade-down" className="text-center mt-20 ">
         <h1 className="font-bold md:text-[2rem] text-[1.5rem] mb-3">
           Our Commitment to Transformation
         </h1>
@@ -56,8 +57,8 @@ export default function CommitmentSection() {
           join us as we forge a better future for all
         </p>
       </div>
-      <div className="flex md:flex-row pt-20 pb-24 justify-between flex-col  gap-4 items-center">
-        <section className="bg-[#69BD450A] rounded-3xl w-[350px] h-[280px]  items-center justify-center flex flex-col gap-6 ">
+      <div data-aos="fade-down" className="flex md:flex-row pt-20 pb-24 justify-between flex-col  gap-4 items-center">
+        <section  className="bg-[#69BD450A] rounded-3xl w-[350px] h-[280px]  items-center justify-center flex flex-col gap-6 ">
           <div className="">
             <figure>
               <img src={actionn} alt="" width={40} />

@@ -14,7 +14,7 @@ export default function Background() {
   const handleClick = () => {
     setClicked(!clicked);
   };
-
+  
   return (
     <div className="relative max-w-screen  sm:h-screen h-[100vh] ">
       {/*  */}
@@ -112,7 +112,7 @@ export default function Background() {
             Unlocking African <br /> Healthcare
           </p>
 
-          <p className="mb-7 md:w-[60%] w-full flex text-sm md:text-base text-black">
+          <p  data-aos="fade-left" className="mb-7 md:w-[60%] w-full flex text-sm md:text-base text-black">
             Infinity Health leverages technology to drive Market Access in
             Africa through innovative <br /> regulatory, and business support
             solutions.
