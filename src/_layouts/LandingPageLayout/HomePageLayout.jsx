@@ -14,10 +14,8 @@ export default function Background() {
   const handleClick = () => {
     setClicked(!clicked);
   };
-  
   return (
     <div className="relative max-w-screen  sm:h-screen h-[100vh] ">
-      {/*  */}
       <nav className="absolute top-0 w-full z-20 pt-6 md:px-8 px:8 p-8 " style={{zIndex:"9999"}}>
         <aside className="md:p-4 top-0 left-0 w-full flex align-middle justify-between">
           <figure>
@@ -49,7 +47,7 @@ export default function Background() {
             </NavLink>
             <NavLink to="/book-a-call">
               <li>
-                <button className="bg-green-500 px-3 py-1 rounded-md text-[14px] text-black">
+                <button className="bg-green-500 px-3 py-1 rounded-md text-[14px] text-black whitespace-nowrap">
                   Book a call
                 </button>
               </li>
@@ -91,7 +89,7 @@ export default function Background() {
                 </NavLink>
                 <NavLink to="/book-a-call">
                   <li>
-                    <button className="bg-green-500 px-3 py-1 rounded-md text-[23px] text-gray-700  ">
+                    <button className="bg-green-500 px-3 py-1 rounded-md text-[23px] text-gray-700 whitespace-nowrap">
                       Book a call
                     </button>
                   </li>
