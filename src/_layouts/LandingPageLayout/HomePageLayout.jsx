@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo1 from "../../assets/images/logo1.png";
 import { Link, NavLink } from "react-router-dom";
 import NavBar from "./NavBar";
@@ -15,11 +15,37 @@ export default function Background() {
     setClicked(!clicked);
   };
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > window.innerHeight * 0.9) {
+        setIsScrolled(true); 
+      } else {
+        setIsScrolled(false);
+      }
+    };
+// test commemt push
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="relative max-w-screen  sm:h-screen h-[100vh] ">
       {/*  */}
-      <nav className="absolute top-0 w-full z-20 pt-6 md:px-8 px:8 p-8 " style={{zIndex:"9999"}}>
-        <aside className="md:p-4 top-0 left-0 w-full flex align-middle justify-between">
+      <nav
+        className={`absolute top-0 w-full z-20 pt-6 md:px-8 px:8 p-8`}
+        style={{ zIndex: "9999" }}
+      >
+        <aside
+          className={`md:p-4 top-0  left-0 flex align-middle justify-between items-center ${
+            isScrolled ? "scrolled" : "scrolledNo"
+          }`}
+          // data-aos="fade-down"
+        >
           <figure>
             <img src={logo1} alt="" width={130} />
           </figure>
@@ -64,7 +90,10 @@ export default function Background() {
         </aside>
 
         {showModal && (
-          <div className="bg-[rgba(0,0,0,0.3)] fixed h-[100vh] w-[100vw] top-0 left-0 bottom-0 right-0 flex justify-end  items-center " style={{transition: 'ease-in', zIndex:"9999"}}>
+          <div
+            className="bg-[rgba(0,0,0,0.3)] fixed h-[100vh] w-[100vw] top-0 left-0 bottom-0 right-0 flex justify-end  items-center "
+            style={{ transition: "ease-in", zIndex: "9999" }}
+          >
             <div className="bg-white w-[55%] h-full " data-aos="fade-left">
               <div onClick={() => setShowModal(false)}>
                 <LiaTimesSolid className="ml-5 pt-5 " size={70} color="green" />
@@ -108,11 +137,14 @@ export default function Background() {
           >
             Unlocking African <br /> Healthcare
           </p> */}
-          <p data-aos="fade-right" className="mb-7 text-black md:mt-16 mt-48 font-bold text-2xl md:text-4xl lg:text-6xl xl:text-10xl leading-10 md:leading-[70px] lg:leading-[75px]">
+          <p
+            data-aos="fade-right"
+            className="mb-7 text-black md:mt-16 mt-48 font-bold text-2xl md:text-4xl lg:text-6xl xl:text-10xl leading-10 md:leading-[70px] lg:leading-[75px]"
+          >
             Unlocking African <br /> Healthcare
           </p>
 
-          <p className="mb-7 md:w-[60%] w-full flex text-sm md:text-base text-black">
+          <p  data-aos="fade-left" className="mb-7 md:w-[60%] w-full flex text-sm md:text-base text-black">
             Infinity Health leverages technology to drive Market Access in
             Africa through innovative <br /> regulatory, and business support
             solutions.
