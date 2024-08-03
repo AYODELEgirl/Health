@@ -90,7 +90,7 @@ export default function NavBar2() {
             </NavLink>
             <NavLink to="/book-a-call">
               <li>
-                <button className="bg-green-500 px-3 py-1 rounded-md text-[14px] text-white ">
+                <button className="bg-green-500 px-3 py-1 rounded-md text-[14px] text-white whitespace-nowrap ">
                   Book a call
                 </button>
               </li>
@@ -104,10 +104,11 @@ export default function NavBar2() {
             <CiMenuFries size={30} className="text-green-600" />
           </div>
         </aside>
-      
 
-        {showModal && (
-          <div className="bg-[rgba(0,0,0,0.3)] z-[900] fixed h-[100vh] w-[100vw] top-0 left-0 bottom-0 right-0 flex justify-end  items-center ">
+        {/* {showModal && ( */}
+          <div className={`transition-all duration-500 ease-in-out transform z-50 ${
+            showModal ? 'opacity-100 translate-x-0 pointer-events-auto' : 'opacity-0 translate-x-full pointer-events-none'
+          } fixed h-full w-full top-0 left-0 flex justify-end items-center bg-[rgba(0,0,0,0.3)]`}>
             <div className="bg-white w-[55%] h-full ">
               <div onClick={() => setShowModal(false)}>
                 <LiaTimesSolid className="ml-5 pt-5 " size={70} color="green" />
@@ -144,7 +145,7 @@ export default function NavBar2() {
               </ul>
             </div>
           </div>
-        )}
+        
       </nav>
     </div>
   );

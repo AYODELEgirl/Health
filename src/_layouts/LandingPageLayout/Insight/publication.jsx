@@ -3,8 +3,9 @@ import publicone from "../../../assets/images/publicone.jpg";
 import iconwrap from "../../../assets/images/Iconwrap.png";
 import public3 from "../../../assets/images/public3.jpg";
 import public2 from "../../../assets/images/public2.jpg";
+import rightarrow from "../../../assets/images/rightarrow.png";
 import { MdOutlineArrowOutward } from "react-icons/md";
-export default function publication() {
+export default function publication({setMorePublication}) {
   // const [details,setDetails] = useState([])
   const data = [
     {
@@ -191,11 +192,13 @@ export default function publication() {
               </div> */}
             </div>
     
-            
+
             
           </div>
           )
     })}
+  
+
         {/* <div className="flex lg:flex-row pb-10 flex-col gap-6">
           
         <div className="grid lg:grid-cols-3 gap-10">
@@ -375,6 +378,16 @@ export default function publication() {
             </div>
           </div> 
              </div> */}
+               <div className="bg-[#F5F6F9] pb-10 flex justify-center">
+
+<button className="px-9 py-2 flex items-center rounded-md text-red-400 border border-red-400" onClick={()=>{
+  setMorePublication(true)
+}}>See More Publications 
+
+  <img src={rightarrow} alt=""/>
+</button>
+
+</div>
         </div>
     // </div>
   );
