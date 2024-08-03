@@ -52,10 +52,10 @@ export default function QuestionsSection() {
         </p>
       </div>
       <div className="flex items-start px-16 gap-10 flex-col lg:flex-row pt-8">
-      <div className="grid grid-cols-1 lg:w-1/2  w-full gap-10">
+      <div className="grid grid-cols-1 lg:w-1/2 md:p-0 w-full gap-10">
         {Question.slice(0,3).map((d, index) => {
           return (
-            <div className="gap-40  border-solid border-2 border-gainsboro-100 p-5 rounded-lg cursor-pointer" onClick={() => setAnswer(answer === index ? !index : index)}>
+            <div className="gap-40  border-solid border-2 border-gainsboro-100 md:p-5 p-2 rounded-lg cursor-pointer" onClick={() => setAnswer(answer === index ? !index : index)}>
               <div className="flex justify-between gap-5">
                 <h2 className="text-[16px] font-medium pb-3">{d.name}</h2>
                 <AiOutlineDown

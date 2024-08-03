@@ -23,7 +23,7 @@ export default function Vision() {
             <p className="font-bold md:text-[35px] text-[25px] leading-10 mt-3">
               The Beacon for African <br /> Healthcare
             </p>
-            <p className="text-[13px] text-[#757575] mt-6">
+            <p className="text-[15spx] text-[#757575] mt-6">
               To be the leading digital ecosystem, empowering a thriving and{" "}
               <br /> accessible healthcare landscape across Africa.
             </p>
@@ -48,7 +48,7 @@ export default function Vision() {
             <p className="md:text-[35px] text-[25px] font-bold leading-10 mt-3">
               Improving Healthcare penetration in Africa
             </p>
-            <p className="text-[13px] text-[#757575] mt-6">
+            <p className="text-[15px] text-[#757575] mt-6">
               To improve access to quality healthcare goods and services through
               simplified regulatory and market access solutions.
             </p>
@@ -59,7 +59,7 @@ export default function Vision() {
           <div className="lg:w-[50%] w-full lg:mt-28  mt-14">
             <p className="text-red-500">About us</p>
             <p className="text-[35px] font-bold">Why us?</p>
-            <p className="text-[13px] text-[#757575] mt-5">
+            <p className="text-[15px] text-[#757575] mt-5">
               Imagine a future where Africa thrives, not just in economic
               strength, but in the vibrant health of its communities. At
               Infinity Health Africa, this isn’t just a dream, it’s the driving
@@ -93,7 +93,7 @@ export default function Vision() {
               <p className="text-[35px] font-bold leading-10 mt-3">
                 Our Charter
               </p>
-              <p className="text-[13px] text-[#757575] mt-6">
+              <p className="text-[15px] text-[#757575] mt-6">
                 We envision ourselves as the leading digital ecosystem that
                 fosters a thriving and accessible healthcare landscape across
                 Africa. We are committed to driving innovation and progress,
@@ -113,13 +113,13 @@ export default function Vision() {
               </div>
               <div className="lg:w-[50%] w-full md:px-16  ">
                 <p className="text-red-500">Our team</p>
-                <p className="text-[13px] text-[#757575] mt-6">
+                <p className="text-[15px] text-[#757575] mt-6">
                   Our team is led by Irene Nwaukwa who has over 15 years
                   healthcare experience in regulatory compliance, market
                   penetration, business growth & development in healthcare
                   across Africa.
                 </p>
-                <p className="text-[13px] text-[#757575] mt-6">
+                <p className="text-[15px] text-[#757575] mt-6">
                   We have a demonstrable history of successfully guiding
                   healthcare businesses through product registration, clinical
                   trial approvals and new product launches using a streamlined

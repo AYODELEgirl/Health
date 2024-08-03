@@ -12,6 +12,7 @@ import PublicationDetails from "./PublicationDetails";
 import { LiaTimesSolid } from "react-icons/lia";
 
 function MorePublication({ setMorePublication }) {
+  //
   const [publicationDetails, setPublicationDetails] = useState(false);
   const PPublicationdata = [
     {
@@ -286,9 +287,9 @@ function MorePublication({ setMorePublication }) {
                                   />
                                 </div>
                               </div>
-                              <p className="text-[13px]">{p.text}</p>
+                              <p className="text-[13px]">{p.text?.slice(0, 50)}...</p>
                               <div className="flex flex-row  gap-4 mt-4 items-center">
-                                <p className="text-red-400">Learn more</p>
+                                <p className="text-red-400">Read more</p>
                                 <MdOutlineArrowOutward
                                   style={{ color: "#FF784B" }}
                                 />
@@ -314,7 +315,7 @@ function MorePublication({ setMorePublication }) {
                       <section className="flex justify-between gap-[2rem]">
                         <aside className="w-[40%]">
                           <div>
-                            <img src={itemValue.zzzzzzzz} alt="" width={"100%"} />
+                            <img src={publications} alt="" width={"100%"} />
                            
                           </div>
                         </aside>
@@ -322,7 +323,7 @@ function MorePublication({ setMorePublication }) {
                           <div className="font-semibold text-[1.8rem]">
                             {itemValue.info}
                           </div>
-                          <div className="bg-[red]">{itemValue.text2}</div>
+                          <div>{itemValue.text2}</div>
                         </aside>
                       </section>
                     </div>

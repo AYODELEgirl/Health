@@ -15,3 +15,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body{
+  overflow-x: hidden;
+}
+
+.scrolled{
+  background-color: white;
+  margin: 1.5rem 0;
+  box-shadow: 0px 0px 10px #ccc;
+  position: fixed;
+  width: 85%;
+  padding: .7rem 2rem;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 3rem;
+  transition: all .5s;
+}
+
+.scrolledNo{
+  /* background-color: blue; */
+  position: static;
+  width: 100%;
+}

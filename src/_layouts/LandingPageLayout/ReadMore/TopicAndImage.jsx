@@ -9,12 +9,13 @@ export default function TopicAndImage() {
       <div className="flex flex-row gap-3 items-center">
         <FaArrowLeftLong />
         <NavLink to="/products">
-        <p>Back</p>
+          <p>Back</p>
         </NavLink>
       </div>
       <div>
-        <p className="font-bold md:text-[30px] text-[20px] mb-5">Why choose Infinity Healthcare</p>
-
+        <p className="font-bold md:text-[30px] text-[20px] mb-5">
+          Why choose Infinity Healthcare ?
+        </p>
       </div>
       <div>
         <figure>
@@ -22,19 +23,15 @@ export default function TopicAndImage() {
         </figure>
       </div>
       <div>
-        <p className="text-[#757575] leading-10">
-          Imagine a future where Africa thrives, not just in economic strength,
-          but in the vibrant health of its communities. At Infinity Health
-          Africa, <br /> this isn’t just a dream, it’s the driving force behind
-          everything we do. We believe that healthcare is a right, not a
-          privilege. We see the <br /> potential for a vibrant continent where
-          everyone has access to quality care. But we also know the challenges -
-          fragmented systems, <br /> data gaps, and a complex regulatory
-          environment.
+        <p className="text-[#757575] ">
+          Imagine a future where Africa thrives, not just in economic strength 
+          but in the vibrant health of its communities. At Infinity Health <br />
+          Africa, We see the potential for a vibrant continent where everyone 
+          has access to quality care despite the systemic challenges. That is <br />
+          the driving force for all we do. .
         </p>
         <p className="md:text-[23px] text-[19px] font-bold mt-8 mb-8">
-          That’s why we’re here to help you navigate it. Here’s why you should
-          choose us:
+          Here’s why you should choose us:
         </p>
 
         <ul className="list-disc pl-5 text-left inline-block">
@@ -99,7 +96,7 @@ export default function TopicAndImage() {
           </li>
         </ul>
 
-        <p className="text-[#69BD45] text-[16px] leading-10">
+        <p className="text-[#757575]  text-[16px] mt-2">
           Choose Infinity Health, and let’s work together to unlock your
           healthcare business’s full <br /> potential in Africa. With our
           expertise and your ambitions, the possibilities are infinite. <br />{" "}

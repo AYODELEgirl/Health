@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo1 from "../../assets/images/logo1.png";
 import { Link, NavLink } from "react-router-dom";
 import NavBar from "./NavBar";
@@ -6,6 +6,7 @@ import theVideo from "../../assets/videos/theVideo.mp4";
 import { CiMenuFries } from "react-icons/ci";
 import { LiaTimesSolid } from "react-icons/lia";
 import styled from "styled-components";
+import Signin from "./Signin/Signin";
 
 export default function Background() {
   const [showModal, setShowModal] = useState(false);
@@ -14,47 +15,268 @@ export default function Background() {
   const handleClick = () => {
     setClicked(!clicked);
   };
+
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > window.innerHeight * 0.9) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    // test commemt push
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  const [modal, setModal] = useState(false);
+  const [modal2, setModal2] = useState(false);
+  const [modal3, setModal3] = useState(false);
+
   return (
     <div className="relative max-w-screen  sm:h-screen h-[100vh] ">
+      {/*  */}
+      <Signin modal={modal} setModal={setModal}>
+        <>
+          <div
+            className="flex justify-end cursor-pointer"
+            onClick={() => setModal(false)}
+          >
+            <LiaTimesSolid size={30} />
+          </div>
+          <p className="font-bold text-[30px] items-center text-center mb-2">
+            Log in to your account
+          </p>
+          <p className="text-[#667085] text-[15px] mb-3 text-center">
+            Create an account and get unlimited access to our publications on
+            developments in African healthcare.
+          </p>
+          <form>
+            <label for="name" class="block text-sm font-normal mb-1">
+              Email Address
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-[90%] p-2 border rounded-md shadow-sm"
+              placeholder="Enter your email"
+            />
+
+            <label for="name" class="block text-sm font-normal mt-4 ">
+              Password
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-[90%] p-2 border rounded-md shadow-sm"
+              placeholder="Show"
+            />
+
+            <p className="ml-80 mt-3 text-[12px] text-[#69BD45] cursor-pointer">
+              Forget password?
+            </p>
+
+            <button className="bg-[#69BD45] items-center text-white w-[90%] rounded-md mt-7 py-2">
+              Next
+            </button>
+
+            <p className="mt-5 text-center">
+              Don't have an account?{" "}
+              <span
+                className="text-[#FF784B] cursor-pointer "
+                onClick={() => {
+                  setModal2(true);
+                  setModal(false);
+                }}
+              >
+                {" "}
+                Sign up
+              </span>
+            </p>
+          </form>
+        </>
+      </Signin>
+
+      <Signin modal={modal2} setModal={setModal2}>
+        <>
+          <p className="font-bold text-[35px] items-center text-center mb-2">
+            Hold in to your account
+          </p>
+          <p className="text-[#667085] text-[16px] mb-3 text-center">
+            Create an account and get unlimited access to our publications on
+            developments in African healthcare.
+          </p>
+          <form>
+            <label for="name" class="block text-sm font-normal mb-1">
+              Email Address
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-[90%] p-2 border rounded-md shadow-sm"
+              placeholder="Enter your email"
+            />
+
+            <label for="name" class="block text-sm font-normal mt-4 ">
+              Password
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-[90%] p-2 border rounded-md shadow-sm"
+              placeholder="Show"
+            />
+
+            <p className="ml-80 mt-3 text-[12px] text-[#69BD45] cursor-pointer">
+              Forget password?
+            </p>
+
+            <div
+              className="bg-[#69BD45] items-center text-center text-white w-[90%] rounded-md mt-7 py-2"
+              onClick={() => {
+                setModal3(true);
+                setModal2(false);
+                console.log('hello');
+              }}
+            >
+              Next
+            </div>
+
+            <p className="mt-5 text-center">
+              Already have an account?{" "}
+              <span
+                className="text-[#FF784B] cursor-pointer "
+                onClick={() => {
+                  setModal(true);
+                  setModal2(false);
+                }}
+              >
+                {" "}
+                Log in{" "}
+              </span>
+            </p>
+          </form>
+        </>
+      </Signin>
+
+      <Signin modal={modal3} setModal={setModal3}>
+        <>
+          <p className="font-bold text-[35px] items-center text-center mb-2">
+            Sign in to your account
+          </p>
+          <p className="text-[#667085] text-[16px] mb-3 text-center">
+            Create an account and get unlimited access to our publications on
+            developments in African healthcare.
+          </p>
+          <form>
+            <label for="name" class="block text-sm font-normal mb-1">
+              Email Address
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-[90%] p-2 border rounded-md shadow-sm"
+              placeholder="Enter your email"
+            />
+
+            <label for="name" class="block text-sm font-normal mt-4 ">
+              Password
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-[90%] p-2 border rounded-md shadow-sm"
+              placeholder="Show"
+            />
+
+            <p className="ml-80 mt-3 text-[12px] text-[#69BD45] cursor-pointer">
+              Forget password?
+            </p>
+
+            <button className="bg-[#69BD45] items-center text-white w-[90%] rounded-md mt-7 py-2">
+              Next
+            </button>
+
+            <p className="mt-5 text-center">
+              Already have an account?{" "}
+              <span
+                className="text-[#FF784B] cursor-pointer "
+                onClick={() => {
+                  setModal(true);
+                  setModal2(false);
+                }}
+              >
+                {" "}
+                Log in{" "}
+              </span>
+            </p>
+          </form>
+        </>
+      </Signin>
+
       <nav
-        className="absolute top-0 w-full z-20 pt-6 md:px-8 px:8 p-8 "
+        className={`absolute top-0 w-full z-20 pt-6 md:px-8 px:8 p-8`}
         style={{ zIndex: "9999" }}
       >
-        <aside className="md:p-4 top-0 left-0 w-full flex align-middle justify-between">
+        <aside
+          className={`md:p-4 top-0  left-0 flex align-middle justify-between items-center ${
+            isScrolled ? "scrolled" : "scrolledNo"
+          }`}
+          // data-aos="fade-down"
+        >
           <figure>
             <img src={logo1} alt="" width={130} />
           </figure>
           <ul className="hidden justify-between pt-3 s900:flex gap-20">
-            <li className="text-black hover:text-green-300 cursor-pointer">
+            <li className="text-black hover:text-green-700 cursor-pointer font-normal">
               Home
             </li>
             <NavLink to="/about-us">
               <li
                 className={`cursor-pointer ${
                   clicked ? "text-green-700" : "text-black"
-                } hover:text-green-500`}
+                } hover:text-green-500 font-normal`}
                 onClick={handleClick}
               >
                 About Us
               </li>
             </NavLink>
             <NavLink to="/products">
-              <li className="text-black hover:text-green-300 cursor-pointer">
+              <li className="text-black hover:text-green-700 cursor-pointe  font-normal">
                 Product
               </li>
             </NavLink>
             <NavLink to="/insights">
-              <li className="text-black hover:text-green-300 cursor-pointer">
+              <li className="text-black hover:text-green-700 cursor-pointer  font-normal">
                 Insights
               </li>
             </NavLink>
             <NavLink to="/book-a-call">
               <li>
-                <button className="bg-green-500 px-3 py-1 rounded-md text-[14px] text-black whitespace-nowrap">
+                <button className="bg-green-500 px-3 py-1 rounded-xl text-[14px]  font-normal text-black">
                   Book a call
                 </button>
               </li>
             </NavLink>
+
+            <li
+              onClick={() => {
+                setModal(true);
+              }}
+              className="text-black hover:text-green-700 cursor-pointer  font-normal"
+            >
+              Sign in
+            </li>
           </ul>
           <div
             className="flex s900:hidden text-black cursor-pointer"
@@ -64,12 +286,13 @@ export default function Background() {
           </div>
         </aside>
 
-        {showModal && (
+        {/* {showModal && (
           <div
-            className="bg-[rgba(0,0,0,0.3)] fixed h-[100vh] w-[100vw] top-0 left-0 bottom-0 right-0 flex justify-end  items-center "
+            className={`bg-[rgba(0,0,0,0.3)] fixed h-[100vh] w-[100vw] top-0 left-0 bottom-0 right-0 flex justify-end  items-center transition-all duration-500 ease-in-out ${showModal ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}
+            // className={`transition-all duration-500 ease-in-out transform ${showModal ? 'opacity-100 scale-100' : 'opacity-0 scale-95'} md:opacity-100 md:scale-100 md:flex md:items-center`}
             style={{ transition: "ease-in", zIndex: "9999" }}
           >
-            <div className="bg-white w-[55%] h-full " data-aos="fade-left">
+            <div className="bg-white w-[55%] h-full ">
               <div onClick={() => setShowModal(false)}>
                 <LiaTimesSolid className="ml-5 pt-5 " size={70} color="green" />
               </div>
@@ -103,7 +326,51 @@ export default function Background() {
               </ul>
             </div>
           </div>
-        )}
+        )} */}
+
+        <>
+          <div
+            className={`transition-all duration-500 ease-in-out transform ${
+              showModal
+                ? "opacity-100 translate-x-0 pointer-events-auto"
+                : "opacity-0 translate-x-full pointer-events-none"
+            } fixed h-full w-full top-0 left-0 flex justify-end items-center bg-[rgba(0,0,0,0.3)]`}
+            style={{ zIndex: 9999 }}
+          >
+            <div className="bg-white w-[55%] h-full">
+              <div onClick={() => setShowModal(false)}>
+                <LiaTimesSolid className="ml-5 pt-5" size={70} color="green" />
+              </div>
+              <ul className="flex flex-col gap-16 p-8">
+                <li className="text-gray-700 hover:text-green-500 cursor-pointer text-[23px]">
+                  Home
+                </li>
+                <NavLink to="/about-us">
+                  <li className="text-gray-700 hover:text-green-500 cursor-pointer text-[23px]">
+                    About Us
+                  </li>
+                </NavLink>
+                <NavLink to="/products">
+                  <li className="text-gray-700 hover:text-green-500 cursor-pointer text-[23px]">
+                    Products
+                  </li>
+                </NavLink>
+                <NavLink to="/insights">
+                  <li className="text-gray-700 hover:text-green-500 cursor-pointer text-[23px]">
+                    Insights
+                  </li>
+                </NavLink>
+                <NavLink to="/book-a-call">
+                  <li>
+                    <button className="bg-green-500 px-3 py-1 rounded-md text-[23px] text-gray-700">
+                      Book a call
+                    </button>
+                  </li>
+                </NavLink>
+              </ul>
+            </div>
+          </div>
+        </>
 
         <div className="text-white m-auto max-w-screen-xl sm:mt-40 ">
           {/* <p
