@@ -16,6 +16,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+  overflow-x: hidden;
+}
 
 .scrolled{
   background-color: white;

@@ -1,22 +1,26 @@
-import React,{useState} from 'react'
-import NavBar from './NavBar'
-import NavBar2 from './NavBar2'
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai'
+import React, { useEffect, useState } from "react";
+import NavBar from "./NavBar";
+import NavBar2 from "./NavBar2";
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import publicone from "../../assets/images/publicone.jpg";
 import public2 from "../../assets/images/public2.jpg";
 import public3 from "../../assets/images/public3.jpg";
 import rightarrow from "../../assets/images/rightarrow.png";
-import { MdOutlineArrowOutward } from 'react-icons/md';
-import PublicationDetails from './PublicationDetails';
+import publications from "../../assets/images/publications.svg";
+import { MdOutlineArrowOutward } from "react-icons/md";
+import PublicationDetails from "./PublicationDetails";
+import { LiaTimesSolid } from "react-icons/lia";
 
-function MorePublication({setMorePublication}) {
-  const [publicationDetails, setPublicationDetails] = useState(false)
+function MorePublication({ setMorePublication }) {
+  const [publicationDetails, setPublicationDetails] = useState(false);
   const PPublicationdata = [
     {
       id: "1",
       info: "Impact of Data Paucity on Market Access in Healthcare",
       image: publicone,
       text: "This paper examines the issue of data paucity and its profound impact on market access within the African healthcare sector.",
+      text2:
+        "This paper examines the issue of data paucity and its profound impact on market access within the African healthcare sector. In Africa, the scarcity of comprehensive and high-quality health data has far-reaching implications for decision-making, healthcare investments, and the entry of healthcare companies into the market. The continent, burdened by high disease prevalence and under-resourced healthcare systems, faces challenges in understanding health trends and efficiently allocating resources due to a lack of reliable data.",
       link: "/ReadMore",
       type: "Whitepapers",
     },
@@ -140,137 +144,193 @@ function MorePublication({setMorePublication}) {
       link: "/ReadMore",
       type: "Case studies",
     },
-    
   ];
 
   const [details, setDetails] = useState(PPublicationdata);
+
+  const [navTab, setNavTab] = useState("All posts");
+
+  const [searchValue, setSearchValue] = useState("");
+  const [openModal, setOpenModal] = useState(false);
+
+  const [itemValue, setItemValue] = useState("");
+
+  console.log(itemValue);
+
   const handleFilter = (name) => {
-    const filtered = details.filter(
+    const filtered = PPublicationdata.filter(
       (item) => item.type.toLowerCase() === name.toLowerCase()
     );
     console.log(filtered);
     setDetails(filtered);
-    // Now you can do something with the filtered data, like updating the state
-    // setDetails(filtered);
   };
+
+  const NavLink = [
+    { name: "All posts", click: setDetails, value: PPublicationdata },
+    { name: "Case studies", click: handleFilter, value: "Case studies" },
+    { name: "Infographics", click: handleFilter, value: "Infographics" },
+    { name: "Whitepapers", click: handleFilter, value: "Whitepapers" },
+    { name: "Market Reports", click: handleFilter, value: "Market Reports" },
+    { name: "Review Articles", click: handleFilter, value: "Review Articles" },
+  ];
+
+  const handleSearch = (event) => {
+    const value = event.target.value;
+    setSearchValue(value);
+    const filtered = PPublicationdata.filter((item) =>
+      item.info.toLowerCase().includes(value.toLowerCase())
+    );
+    setDetails(filtered);
+  };
+
   return (
-    <div > 
-    {publicationDetails ?  <PublicationDetails/> :
-      <>
-      <NavBar2/>
-    <div className='p-8'>
-        <p className='flex items-center pl-6 gap-4 cursor-pointer'  onClick={()=>{
-          setMorePublication(false)
-        }}> <p>Back to insight</p>
-          <AiOutlineArrowRight/>
-        </p>
-      <div className="p-7">
-        <p className=" text-red-400 text-[12px]">Insights and resources</p>
-        <h2 className="font-bold md:text-[30px] text-[20px]">
-          Latest Publications
-        </h2>
-        <p className="text-[14px] text-[#667085]">
-          We're constantly curating the insight you need to understand the
-          African Healthcare market
-        </p>
-      </div>
-      <div className="hidden flex-row justify-between md:p-3 md:px-8 sm:flex p-1">
-        <div className="flex flex-row gap-8 cursor-pointer">
-          <p
-            className="text-[14px] text-[#667085]"
-            onClick={() => setDetails(PPublicationdata)}
-          >
-            All posts
-          </p>
-          <p
-            className="text-[14px] text-[#667085]"
-            onClick={() => handleFilter("Case studies")}
-          >
-            Case studies
-          </p>
-          <p
-            className="text-[14px] text-[#667085]"
-            onClick={() => handleFilter("Infographics")}
-          >
-            Infographics
-          </p>
-          <p
-            className="text-[14px] text-[#667085]"
-            onClick={() => handleFilter("News")}
-          >
-            Whitepapers
-          </p>
-          <p
-            className="text-[14px] text-[#667085]"
-            onClick={() => handleFilter("Market report")}
-          >
-            Market Reports
-          </p>
-          <p
-            className="text-[14px] text-[#667085]"
-            onClick={() => handleFilter("Market report")}
-          >
-            Review Articles
-          </p>
-        </div>
-        <div>
-          <input
-            type="text"
-            placeholder="Search"
-            className="p-1 px-11  rounded border border-gray-200 text-start sm:flex hidden"
-          />
-        </div>
-      </div>
-
-      <div className="bg-[#F5F6F9] md:p-7 p-4 grid s900:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[2rem]">
-    
-    {details && details?.map((p) => {
-            return (
-              <div className="flex lg:flex-row pb-10 flex-col " onClick={()=>{
-                setPublicationDetails(true)
-              }}>
-                <div className=" gap-10">
-                  <div className=" absolute flex justify-between p-3">
-                    <button className="bg-[#FFF6E5]  text-[#667085] p-2 mt-3 font-semibold z-10 backdrop-filter rounded-2xl px-4 text-[12px]">
-                      {/* Case Studies */}
-                      {p?.type}
-                    </button>
-                  </div>
-                  <div className="">
-                    <figure>
-                      <img
-                        src={p?.image}
-                        alt=""
-                        width={400}
-                        className="mb-5 w-full"
-                      />
-                    </figure>
-                    <div className="flex flex-row gap-1">
-                      <div className="flex jusify-between">
-                        <p className="font-bold text-lg md:text-[24px] mb-3">
-                          {p.info}
-                        </p>
-                        <MdOutlineArrowOutward
-                          style={{ color: "black" }}
-                          size={20}
-                        />
-                      </div>
+    <div>
+      {publicationDetails ? (
+        <PublicationDetails />
+      ) : (
+        <>
+          <NavBar2 />
+          <div className="p-8">
+            <p
+              className="flex items-center pl-6 gap-4 cursor-pointer"
+              onClick={() => {
+                setMorePublication(false);
+              }}
+            >
+              {" "}
+              <p>Back to insight</p>
+              <AiOutlineArrowRight />
+            </p>
+            <div className="p-7">
+              <p className=" text-red-400 text-[12px]">
+                Insights and resources
+              </p>
+              <h2 className="font-bold md:text-[30px] text-[20px]">
+                Latest Publications
+              </h2>
+              <p className="text-[14px] text-[#667085]">
+                We're constantly curating the insight you need to understand the
+                African Healthcare market
+              </p>
+            </div>
+            <div className="hidden flex-row justify-between items-center md:p-3 md:px-8 sm:flex p-1">
+              <div className="flex flex-row gap-8 cursor-pointer px-2">
+                {NavLink?.map((e) => {
+                  return (
+                    <div
+                      className="text-[14px] "
+                      style={{
+                        borderBottom:
+                          e?.name === navTab ? "2px solid #ccc" : "",
+                        color: e?.name === navTab ? "#69BD45" : "#667085",
+                      }}
+                      onClick={() => {
+                        e.click(e.value);
+                        setNavTab(e?.name);
+                      }}
+                    >
+                      {e?.name}
                     </div>
-                    <p className="text-[13px]">
-                      {p.text}
-                    </p>
-                    <div className="flex flex-row  gap-4 mt-4 items-center">
-                      <p className="text-red-400">Learn more</p>
-                      <MdOutlineArrowOutward style={{ color: "#FF784B" }} />
-                    </div>
-                  </div>
-
-        
-                </div>
+                  );
+                })}
               </div>
-            );
-          })}
-        {/* <div className="flex lg:flex-row pb-10 flex-col gap-6">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Search by topics or description"
+                  className="p-1 px-[.8rem] w-[300px]  rounded border outline-none border-gray-200 text-start sm:flex hidden placeholder:text-[.9rem]"
+                  onChange={handleSearch}
+                />
+              </div>
+            </div>
+
+            <div className="bg-[#F5F6F9] md:p-7 p-4 gap-[2rem]">
+              {details?.length === 0 ? (
+                <div className="text-center">No Data</div>
+              ) : (
+                <div className="md:p-7 p-4 grid s900:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[2rem]">
+                  {details &&
+                    details?.map((p) => {
+                      return (
+                        <div
+                          className="flex lg:flex-row pb-10 flex-col "
+                          onClick={() => {
+                            setItemValue(p);
+                            setOpenModal(true);
+                          }}
+                        >
+                          <div className=" gap-10">
+                            <div className=" absolute flex justify-between p-3">
+                              <button className="bg-[#FFF6E5]  text-[#667085] p-2 mt-3 font-semibold z-10 backdrop-filter rounded-2xl px-4 text-[12px]">
+                                {/* Case Studies */}
+                                {p?.type}
+                              </button>
+                            </div>
+                            <div className="">
+                              <figure>
+                                <img
+                                  src={p?.image}
+                                  alt=""
+                                  width={400}
+                                  className="mb-5 w-full"
+                                />
+                              </figure>
+                              <div className="flex flex-row gap-1">
+                                <div className="flex jusify-between">
+                                  <p className="font-bold text-lg md:text-[24px] mb-3">
+                                    {p.info}
+                                  </p>
+                                  <MdOutlineArrowOutward
+                                    style={{ color: "black" }}
+                                    size={20}
+                                  />
+                                </div>
+                              </div>
+                              <p className="text-[13px]">{p.text?.slice(0, 50)}...</p>
+                              <div className="flex flex-row  gap-4 mt-4 items-center">
+                                <p className="text-red-400">Read more</p>
+                                <MdOutlineArrowOutward
+                                  style={{ color: "#FF784B" }}
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      );
+                    })}
+                </div>
+              )}
+
+              {openModal && (
+                <div>
+                  <section className="fixed top-0 left-0 w-[100vw] h-[100vh] bg-[rgba(0,0,0,0.3)] flex justify-center items-center z-20">
+                    <div className="bg-white p-[2rem] w-[60%] ">
+                      <div
+                        onClick={() => setOpenModal(false)}
+                        className="cursor-pointer flex justify-end"
+                      >
+                        <LiaTimesSolid />
+                      </div>
+                      <section className="flex justify-between gap-[2rem]">
+                        <aside className="w-[40%]">
+                          <div>
+                            <img src={publications} alt="" width={"100%"} />
+                           
+                          </div>
+                        </aside>
+                        <aside className="w-[60%]">
+                          <div className="font-semibold text-[1.8rem]">
+                            {itemValue.info}
+                          </div>
+                          <div>{itemValue.text2}</div>
+                        </aside>
+                      </section>
+                    </div>
+                  </section>
+                </div>
+              )}
+
+              {/* <div className="flex lg:flex-row pb-10 flex-col gap-6">
           
         <div className="grid lg:grid-cols-3 gap-10">
 
@@ -331,7 +391,7 @@ function MorePublication({setMorePublication}) {
             </div>
           </div> */}
 
-        {/* <div>
+              {/* <div>
             <div className=" absolute flex justify-between p-3">
               <button className="bg-[#FFF6E5]  text-[#667085] p-2 mt-3 font-semibold z-10 backdrop-filter rounded-2xl px-4 text-[12px]">
                 News
@@ -358,10 +418,10 @@ function MorePublication({setMorePublication}) {
               </div>
             </div>
           </div> */}
-      </div>
+            </div>
 
-      {/* </div> */}
-      {/* <div className="grid lg:grid-cols-3 gap-10">
+            {/* </div> */}
+            {/* <div className="grid lg:grid-cols-3 gap-10">
           <div className=" absolute flex justify-between p-3">
             <button className="bg-[#FFF6E5]  text-[#667085] p-2 mt-3 font-semibold z-10 backdrop-filter rounded-2xl px-4 text-[12px]">
               Case Studies
@@ -419,7 +479,7 @@ function MorePublication({setMorePublication}) {
             </div>
           </div> */}
 
-      {/* <div>
+            {/* <div>
             <div className=" absolute flex justify-between p-3">
               <button className="bg-[#FFF6E5]  text-[#667085] p-2 mt-3 font-semibold z-10 backdrop-filter rounded-2xl px-4 text-[12px]">
                 News
@@ -447,7 +507,7 @@ function MorePublication({setMorePublication}) {
             </div>
           </div> 
              </div> */}
-      {/* <div className="bg-[#F5F6F9] pb-10 flex justify-center">
+            {/* <div className="bg-[#F5F6F9] pb-10 flex justify-center">
         <button
           className="px-9 py-2 flex items-center rounded-md text-red-400 border border-red-400"
           onClick={() => {
@@ -458,10 +518,11 @@ function MorePublication({setMorePublication}) {
           <img src={rightarrow} alt="" />
         </button>
       </div> */}
+          </div>
+        </>
+      )}
     </div>
-      </>}
-    </div>
-  )
+  );
 }
 
-export default MorePublication
+export default MorePublication;
