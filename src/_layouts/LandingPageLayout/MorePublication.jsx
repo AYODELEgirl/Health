@@ -12,6 +12,7 @@ import PublicationDetails from "./PublicationDetails";
 import { LiaTimesSolid } from "react-icons/lia";
 
 function MorePublication({ setMorePublication }) {
+  //
   const [publicationDetails, setPublicationDetails] = useState(false);
   const PPublicationdata = [
     {
