@@ -27,14 +27,21 @@ function FooterSections({ activeTab, setActiveTab }) {
               African health
             </p>
             <div className="flex flex-col lg:flex-row gap-3">
-              <input
+              {/* <input
                 type="text"
                 placeholder="Enter your email"
                 className="text-[#757575] text-[12px] outline-none bg-white px-2  py-2 border border-gray-300 rounded"
-              />
-              <button className="bg-[#69BD45] md:w-[40%] text-white p-2 px-5 text-[12px] rounded">
+              /> */}
+               <a
+                    href="https://zcsub-cmpzourl.maillist-manage.com/ua/Optin?od=11287ecca17c46&zx=132ea5900&tD=111d869c7b0cf17a9&sD=111d869c7b0d030c3
+"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+              <button className="bg-[#69BD45] md:w-[100%] text-white p-2 px-5 text-[12px] rounded">
                 Subscribe
               </button>
+              </a>
             </div>
             <p className="text-white text-[12px] mt-3">
               By subscribing you agree with our privacy policy and provide

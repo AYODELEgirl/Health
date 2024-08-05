@@ -26,9 +26,7 @@ export default function VideoSection() {
          <span>services they need</span>
         </p>
         <p className="text-white md:text-[14px] text-xs lg:mt-10">
-          We're on a mission to change that international conference
-          report,"Executive summary: The state of universal health converge in
-          Africa,(2021)
+          We're on a mission to change that.
         </p>
       </div>
       <div className="absolute lg:top-80 top-28 lg:mt-20 py-[90px] px-5 lg:p-20">

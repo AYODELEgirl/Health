@@ -46,18 +46,20 @@ export default function Vision() {
           <div className="lg-w-[50%] w-full lg:mt-28  mt-14  md:px-20 ">
             <p className="text-red-500">Our Mission</p>
             <p className="md:text-[35px] text-[25px] font-bold leading-10 mt-3">
-              Improving Healthcare penetration in Africa
+              Empowering Healthcare Businesses to Thrive in Africa
             </p>
             <p className="text-[15px] text-[#757575] mt-6">
-              To improve access to quality healthcare goods and services through
-              simplified regulatory and market access solutions.
+              Our mission is to empower healthcare businesses by providing them
+              with the tools and resources to flourish and scale in the dynamic
+              African healthcare market. We do this by developing innovative
+              tech solutions to address critical industry challenges.
             </p>
           </div>
         </div>
 
         <div className="flex lg:flex-row flex-col mt-5 gap-10 md:px-20 px-9">
           <div className="lg:w-[50%] w-full lg:mt-28  mt-14">
-            <p className="text-red-500">About us</p>
+            {/* <p className="text-red-500">About us</p> */}
             <p className="text-[35px] font-bold">Why us?</p>
             <p className="text-[15px] text-[#757575] mt-5">
               Imagine a future where Africa thrives, not just in economic

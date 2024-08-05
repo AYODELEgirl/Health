@@ -5,13 +5,13 @@ export default function NavBar() {
   return (
     <div>
       <nav className="absolute overflow-x-hidden w-full z-10">
-        <aside className="px-10 flex justify-between p-4 ">
+        <aside className="px-10 flex justify-between p-2 ">
           <NavLink to="/">
             <figure>
               <img src={logo1} alt="" width={150} />
             </figure>
           </NavLink>
-          <ul className="flex  justify-between  gap-8">
+          <ul className="flex justify-between">
             <NavLink to="/">
               <li className="text-white hover:text-green-700 cursor-pointer">
                 Home

@@ -8,7 +8,7 @@ import { LiaTimesSolid } from "react-icons/lia";
 import styled from "styled-components";
 import Signin from "./Signin/Signin";
 
-export default function Background() {
+export default function NavBar3() {
   const [showModal, setShowModal] = useState(false);
   const [clicked, setClicked] = useState(false);
 
@@ -41,9 +41,9 @@ export default function Background() {
   const [modal3, setModal3] = useState(false);
 
   return (
-    <div className="relative max-w-screen  sm:h-screen h-[100vh] ">
+    <div className="">
       {/*  */}
-      
+
       <Signin modal={modal} setModal={setModal}>
         <>
           <div
@@ -55,7 +55,7 @@ export default function Background() {
           <p className="font-bold text-[30px] items-center text-center mb-12">
             Log in to your account
           </p>
-          
+
           <form>
             <label for="name" class="block text-sm font-normal mb-1">
               Email Address
@@ -104,16 +104,16 @@ export default function Background() {
         </>
       </Signin>
 
-       <Signin modal={modal2}  setModal={setModal2}>
+      <Signin modal={modal2} setModal={setModal2}>
         <>
           <p className="font-bold text-[35px] items-center text-center mb-2">
-            Sign up on Infinity Health Africa 
+            Sign up on Infinity Health Africa
           </p>
           <p className="text-[#667085] text-[16px] mb-3 text-center">
             Create an account and get unlimited access to our publications in
             developments in African healthcare.
           </p>
-           <form>
+          <form>
             <label for="name" class="block text-sm font-normal mb-1">
               Name
             </label>
@@ -207,10 +207,9 @@ export default function Background() {
                 Log in{" "}
               </span>
             </p>
-          </form> 
+          </form>
         </>
       </Signin>
-
 
       <Signin modal={modal3} setModal={setModal3}>
         <>
@@ -269,10 +268,7 @@ export default function Background() {
         </>
       </Signin>
 
-      <nav
-        className={`absolute top-0 w-full z-20 pt-6 md:px-8 px:8 p-8`}
-        
-      >
+      <nav className={``}>
         <aside
           className={`md:px-4 top-0  left-0 flex align-middle justify-between items-center ${
             isScrolled ? "scrolled" : "scrolledNo"
@@ -284,9 +280,9 @@ export default function Background() {
             <img src={logo1} alt="" width={100} />
           </figure>
           <ul className="hidden justify-between pt-3 s900:flex gap-10">
-            <li className="text-black hover:text-green-700 cursor-pointer font-normal">
+            <NavLink to="/" className="text-black hover:text-green-700 cursor-pointer font-normal">
               Home
-            </li>
+            </NavLink>
             <NavLink to="/about-us">
               <li
                 className={`cursor-pointer ${
@@ -331,139 +327,7 @@ export default function Background() {
             <CiMenuFries size={30} />
           </div>
         </aside>
-
-        {/* {showModal && (
-          <div
-            className={`bg-[rgba(0,0,0,0.3)] fixed h-[100vh] w-[100vw] top-0 left-0 bottom-0 right-0 flex justify-end  items-center transition-all duration-500 ease-in-out ${showModal ? 'opacity-100 scale-100' : 'opacity-0 scale-95'}`}
-            // className={`transition-all duration-500 ease-in-out transform ${showModal ? 'opacity-100 scale-100' : 'opacity-0 scale-95'} md:opacity-100 md:scale-100 md:flex md:items-center`}
-            style={{ transition: "ease-in", zIndex: "9999" }}
-          >
-            <div className="bg-white w-[55%] h-full ">
-              <div onClick={() => setShowModal(false)}>
-                <LiaTimesSolid className="ml-5 pt-5 " size={70} color="green" />
-              </div>
-
-              <ul className="flex flex-col gap-16 p-8">
-                <li className="text-gray-700 hover:text-green-500 cursor-pointer text-[23px]">
-                  Home
-                </li>
-                <NavLink to="/about-us">
-                  <li className="text-gray-700 hover:text-green-500 cursor-pointer text-[23px]">
-                    About Us
-                  </li>
-                </NavLink>
-                <NavLink to="/products">
-                  <li className="text-gray-700 hover:text-green-500 cursor-pointer  text-[23px] ">
-                    Products
-                  </li>
-                </NavLink>
-                <NavLink to="/insights">
-                  <li className="text-gray-700 hover:text-green-500 cursor-pointer text-[23px]">
-                    Insights
-                  </li>
-                </NavLink>
-                <NavLink to="/book-a-call">
-                  <li>
-                    <button className="bg-green-500 px-3 py-1 rounded-md text-[23px] text-gray-700 whitespace-nowrap">
-                      Book a call
-                    </button>
-                  </li>
-                </NavLink>
-              </ul>
-            </div>
-          </div>
-        )} */}
-
-        <>
-          <div
-            className={`transition-all duration-500 ease-in-out transform ${
-              showModal
-                ? "opacity-100 translate-x-0 pointer-events-auto"
-                : "opacity-0 translate-x-full pointer-events-none"
-            } fixed h-full w-full top-0 left-0 flex justify-end items-center bg-[rgba(0,0,0,0.3)]`}
-            style={{ zIndex: 9999 }}
-          >
-            <div className="bg-white w-[55%] h-full">
-              <div onClick={() => setShowModal(false)}>
-                <LiaTimesSolid className="ml-5 pt-5" size={70} color="green" />
-              </div>
-              <ul className="flex flex-col gap-16 p-8">
-                <li className="text-gray-700 hover:text-green-500 cursor-pointer text-[23px]">
-                  Home
-                </li>
-                <NavLink to="/about-us">
-                  <li className="text-gray-700 hover:text-green-500 cursor-pointer text-[23px]">
-                    About Us
-                  </li>
-                </NavLink>
-                <NavLink to="/products">
-                  <li className="text-gray-700 hover:text-green-500 cursor-pointer text-[23px]">
-                    Products
-                  </li>
-                </NavLink>
-                <NavLink to="/insights">
-                  <li className="text-gray-700 hover:text-green-500 cursor-pointer text-[23px]">
-                    Insights
-                  </li>
-                </NavLink>
-                <NavLink to="/book-a-call">
-                  <li>
-                    <button className="bg-green-500 px-3 py-1 rounded-md text-[23px] text-gray-700">
-                      Book a call
-                    </button>
-                  </li>
-                </NavLink>
-              </ul>
-            </div>
-          </div>
-        </>
-
-        <div className="text-white m-auto max-w-screen-xl sm:mt-40 ">
-          {/* <p
-            style={{ lineHeight: "95px" }}
-            className="mb-7 mt-20 font-bold text-[5rem] sm:text-sm"
-          >
-            Unlocking African <br /> Healthcare
-          </p> */}
-          <p
-            data-aos="fade-right"
-            className="mb-7 text-black md:mt-16 mt-48 font-bold text-2xl md:text-4xl lg:text-6xl xl:text-10xl leading-10 md:leading-[70px] lg:leading-[75px]"
-          >
-            Unlocking African <br /> Healthcare
-          </p>
-
-          <p
-            data-aos="fade-left"
-            className="mb-7 md:w-[60%] w-full flex text-sm md:text-base text-black"
-          >
-            Infinity Health leverages technology to drive Market Access in
-            Africa through innovative <br /> regulatory, and business support
-            solutions.
-          </p>
-          <div className="flex items-center gap-7 flex-col lg:flex-row  ">
-            <button className="text-[13px] px-14 p-3 text-white rounded-md border-none bg-[#FF784B] w-full md:w-auto">
-              Watch video
-            </button>
-            <NavLink
-              to="/about-us"
-              className="text-[12px] font-bold flex items-center justify-center p-3 text-black rounded-md border-none bg-[#FFFFFF] w-full md:w-auto lg:px-14"
-            >
-              <button>More about us</button>
-            </NavLink>
-          </div>
-        </div>
       </nav>
-
-      {/* Video and overlay container */}
-      <div className="absolute w-full h-full top-0 left-0 z-10">
-        {/* Dark overlay */}
-        {/* <div className="absolute w-full h-full bg-black opacity-50"></div> */}
-        {/* Video element */}
-        <video autoPlay loop muted className="h-full w-full object-cover">
-          <source src={theVideo} type="video/mp4" />
-          {/* Add additional source tags for different video formats if needed */}
-        </video>
-      </div>
     </div>
   );
 }

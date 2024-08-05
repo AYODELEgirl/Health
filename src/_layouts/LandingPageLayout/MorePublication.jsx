@@ -30,6 +30,8 @@ function MorePublication({ setMorePublication }) {
       info: "Catalyzing Transformation: The Imperative of Homegrown Innovation in Africa",
       image: public2,
       text: "Across the African continent, a paradigm shift is underway, .",
+      text2 :
+      "Across the African continent, a paradigm shift is underway, driven by a growing recognition that sustainable progress in health outcomes cannot be achieved through a one-size-fits-all approach imposed from the outside. For too long, the African healthcare landscape has been shaped by external influences, from the legacies of colonialism to the importation of foreign technologies and interventions that fail to adequately address the nuanced contexts and challenges diverse populations face. This top-down approach has perpetuated dependency on foreign aid and expertise, hindering the cultivation of self-reliance and local ownership. In response, there is an urgent need to nurture and scale homegrown solutions",
       link: "/ReadMore",
       type: "Whitepapers",
     },
@@ -38,6 +40,8 @@ function MorePublication({ setMorePublication }) {
       info: "Harnessing Technology to Transform African Healthcare: The Top 5 Impactful Innovations",
       image: public3,
       text: "Technology has emerged as a powerful catalyst for transforming .",
+      text2:
+      "Technology has emerged as a powerful catalyst for transforming healthcare systems worldwide, offering innovative solutions to address longstanding challenges. In Africa, adopting technology in healthcare has the potential to bridge the gaps in access, affordability, and quality of care. By leveraging technological advancements, African nations can leapfrog traditional barriers and accelerate progress toward achieving universal health coverage and the Sustainable Development Goals (SDGs) related to health.",
       link: "/ReadMore",
       type: "Case studies",
     },
@@ -46,6 +50,8 @@ function MorePublication({ setMorePublication }) {
       info: "Building Sustainable Digital Health Startups in Africa: A Case for Data and Regulatory Support",
       image: publicone,
       text: "The digital health landscape in Africa is on the cusp of",
+      text2:
+      "The digital health landscape in Africa is on the cusp of significant growth, with projections indicating a market value of $6.93 billion by 2029. Digital health, broadly defined as the use of information and communication technologies to improve healthcare delivery and outcomes, encompasses a wide range of solutions from telemedicine to health informatics and wearable devices. This paper aims to understand the current state of Africa's digital health market, comparing it to global trends and analyzing the economic factors influencing its development. We'll examine the unique challenges confronting African health tech startups",
       link: "/ReadMore",
       type: "Whitepapers",
     },
@@ -54,6 +60,8 @@ function MorePublication({ setMorePublication }) {
       info: "Building Sustainable Digital Health Startups in Africa: Infographic Report",
       image: public2,
       text: "The digital health landscape in Africa is on the cusp of.",
+      text2:
+      "The digital health landscape in Africa is on the cusp of significant growth, with projections indicating a market value of $6.93 billion by 2029. This report highlights the current state of Africa's digital health market, comparing it to global trends and analyzing the economic factors influencing its development as well as the unique challenges confronting African health tech startups.",
       link: "/ReadMore",
       type: "Infographics",
     },
@@ -62,6 +70,8 @@ function MorePublication({ setMorePublication }) {
       info: "Repositioning Nigerian SMEs for Regulatory Compliance and Business Success",
       image: public3,
       text: "In Nigeria, Small and Medium-sized Enterprises (SMEs) have.",
+      text2:
+      "In Nigeria, Small and Medium-sized Enterprises (SMEs) have been identified as vital catalysts for sustained economic development, rapid industrialization, poverty alleviation, and job creation (Central Bank of Nigeria, 2015). These entities not only contribute significantly to the Gross Domestic Product (GDP), making up 48% of Nigeria's GDP, but also employ more than 80% of the workforce, showcasing their pivotal role in the nation's economy (Nosike and Udekwesili, 2022; This Day, 2023). SMEs are instrumental in fostering self-reliant industrialization using local raw materials, enhancing employment, ensuring an equitable distribution of industrial development, and facilitating the expansion of non-oil exports. Despite their critical role, the sector faces considerable challenges. A decline from 41 million SMEs in 2017 to 39 million in 2021",
       link: "/ReadMore",
       type: "Whitepapers",
     },
@@ -70,6 +80,8 @@ function MorePublication({ setMorePublication }) {
       info: "The Importance of Vaccination in Preventing Hepatitis in Nigeria",
       image: public3,
       text: "World Hepatitis Week serves as a critical reminder of the  global fight against hepatitis, a group of viral infections  that pose",
+      text2:
+      "World Hepatitis Week serves as a critical reminder of the  global fight against hepatitis, a group of viral infections  that pose significant public health challenges. In Nigeria,  hepatitis B and C are prevalent yet often overshadowed by  the extensive campaigns and awareness programs dedicated  to HIV/AIDS. Despite hepatitis B being as serious as, if not  more serious than, HIV/AIDS, its prevention and treatment  options remain under-discussed. This oversight is concerning,  given that hepatitis B is both deadly and preventable  through vaccination.",
       link: "/ReadMore",
       type: "Case studies",
     },
@@ -78,6 +90,8 @@ function MorePublication({ setMorePublication }) {
       info: "The Rise of Digital Health in Africa and Regulatory Considerations",
       image: public3,
       text: "The digital health revolution is transforming healthcare  systems.",
+      text2:
+      "The digital health revolution is transforming healthcare  systems globally, and Africa is no exception. As the continent  grapples with challenges like limited access to healthcare, a  shortage of healthcare professionals, and a high burden of  infectious diseases, digital health solutions offer innovative  ways to bridge gaps and improve health outcomes. This surge  in innovation, however, presents a unique challenge: how to  ensure these digital tools are safe, effective, and meet the  specific needs of African contexts. This article explores the  rise of digital health in Africa, its transformative impact, and  the crucial regulatory considerations that accompany this  technological evolution. ",
       link: "/ReadMore",
       type: "Whitepapers",
     },
@@ -86,6 +100,8 @@ function MorePublication({ setMorePublication }) {
       info: "Cholera Outbreak in Nigeria: A Case for Urgent Action and Sustainable Solutions",
       image: public3,
       text: "Nigeria is in the middle of a cholera crisis. As of June 24.",
+      text2:
+      "Nigeria is in the middle of a cholera crisis. As of June 24, 2024, the Nigeria Centre for Disease Control and Prevention (NCDC) declared a national cholera emergency (1). According to the NCDC, 1,528 suspected cases and 53 deaths have been recorded across 31 states and 107 local government areas with a case fatality rate of 3.5 per cent since the beginning of the year (1). with over 1,528 suspected cases reported across 31 states. Lagos State, the country's commercial hub, has been notably impacted, recording 579 suspected cases and 29 deaths",
       link: "/ReadMore",
       type: "Case studies",
     },
@@ -94,6 +110,8 @@ function MorePublication({ setMorePublication }) {
       info: "World Hypertension Day 2024",
       image: public3,
       text: "Hypertension is a leading cause of death, globally. Many countries in Sub Saharan Africa have seen little improvement in hypertension detection, treatment, and control over the past 30 .",
+      text2:
+      "Hypertension is a leading cause of death, globally. Many countries in Sub Saharan Africa have seen little improvement in hypertension detection, treatment,and control over the past 30 years.",
       link: "/ReadMore",
       type: "Infographics",
     },
@@ -102,6 +120,8 @@ function MorePublication({ setMorePublication }) {
       info: "Menstrual Hygiene Day 2024",
       image: public3,
       text: "Sanitary pad prices have increased by 40-75%, forcing many to switch to cheaper, less preferred products. This affects the dignity and health of women and girls across Africa.",
+      text2:
+      "Sanitary pad prices have increased by 40-75%, forcing many to switch to cheaper, less preferred products. This affects the dignity and health of women and girls across Africa",
       link: "/ReadMore",
       type: "Infographics",
     },
@@ -110,6 +130,8 @@ function MorePublication({ setMorePublication }) {
       info: "Hepatitis in Africa",
       image: public3,
       text: " 63% of new hepatitis B infections globally occur in Africa. 10 countries, including Nigeria and Ethiopia, bear nearly two-thirds of the hepatitis burden in Africa. 4 million children under five .",
+      text2:
+      "63% of new hepatitis B infections globally occur in Africa. 10 countries, including Nigeria and Ethiopia, bear nearly two-thirds of the hepatitis burden in Africa. 4 million children under five with hepatitis B in Sub-Saharan Africa.",
       link: "/ReadMore",
       type: "Infographics",
     },
@@ -118,6 +140,8 @@ function MorePublication({ setMorePublication }) {
       info: "Access to Healthcare in Africa vs population growth",
       image: public3,
       text: "Africa's population is growing at a rapid pace, outstripping the development of healthcare infrastructure. Nigeria Five countries.",
+      text2:
+      "Africa's population is growing at a rapid pace, outstripping the development of healthcare infrastructure. Nigeria Five countries—Nigeria, Ethiopia, Democratic Republic of Congo, Tanzania, and South Africa—account for 45% of Africa's population, presenting unique healthcare challenges.",
       link: "/ReadMore",
       type: "Infographics",
     },
@@ -126,6 +150,8 @@ function MorePublication({ setMorePublication }) {
       info: "Global Impact of Unsafe Food",
       image: public3,
       text: "Africa's population is growing at a rapid pace, outstripping the development of healthcare infrastructure. Nigeria Five countries.",
+      text2:
+      "Every day, about 1.6 million people around the world become sick from eating unsafe food, many of them small children. Safe food is critical for public health and requires global attention and action.",
       link: "/ReadMore",
       type: "Infographics",
     },
@@ -134,6 +160,8 @@ function MorePublication({ setMorePublication }) {
       info: "Medical Device Registration",
       image: public3,
       text: "A medical device is defined as 'An article, in- strument, apparatus or machine that is used in the prevention, diagnosis or treatment of illness or disease  or for detecting, measuring.",
+      text2:
+      "A medical device is defined as 'An article, in- strument, apparatus or machine that is used in the prevention, diagnosis or treatment of illness or disease, or for detecting, measur- ing, restoring, correcting or modifying the structure or function of the body for some health purpose.",
       link: "/ReadMore",
       type: "News",
     },
@@ -142,6 +170,8 @@ function MorePublication({ setMorePublication }) {
       info: "We want to redefine access to quality healthcare",
       image: public3,
       text: "Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget?.",
+      text2:
+      "Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget?.",
       link: "/ReadMore",
       type: "Case studies",
     },

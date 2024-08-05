@@ -31,7 +31,7 @@ export default function Launch() {
             </p>
           </p>
           <div className="flex gap-2 items-center text-[#69BD45]">
-            <a href="/BookACall">
+            <a href="/book-a-call">
               <p>Contact Us</p>
             </a>
             <LiaLongArrowAltRightSolid />

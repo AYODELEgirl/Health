@@ -35,7 +35,11 @@ export default function ExploreSection() {
               Navigate regulatory hurdles and get your products to market
               faster.
             </p>
-            <a href="/BookACall">
+            <a
+                    href="https://www.getonboard.africa/product-registration-request"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
               <div className="flex flex-row  gap-4 mt-4 items-center">
                 <p className="text-red-400">Register a product </p>
                 <MdOutlineArrowOutward style={{ color: "#FF784B" }} />
@@ -62,7 +66,11 @@ export default function ExploreSection() {
             <p className="mb-5 text-[14px]">
               Ensure Compliance and operational efficiency with ease.
             </p>
-            <a href="/BookACall">
+            <a
+                    href="https://www.getonboard.africa/facility-registration-request"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
             <div className="flex flex-row  gap-4 mt-4 items-center">
               <p className="text-red-400">Register a facility</p>
               <MdOutlineArrowOutward style={{ color: "#FF784B" }} />
@@ -89,7 +97,11 @@ export default function ExploreSection() {
             <p className="mb-5 text-[14px]">
               Get support for clinical trial projects with local expertise.
             </p>
-            <a href="/BookACall">
+            <a
+                    href="https://www.getonboard.africa/clinical-trials-permits-request"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
             <div className="flex flex-row  gap-4 mt-4 items-center">
               <p className="text-red-400">Get started</p>
               <MdOutlineArrowOutward style={{ color: "#FF784B" }} />
@@ -117,7 +129,11 @@ export default function ExploreSection() {
             Comprehensive support to help you set up and maintain internal regulatory processes
 
             </p>
-            <a href="/BookACall">
+            <a
+                    href="https://www.getonboard.africa/contact-us"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
             <div className="flex flex-row  gap-4 mt-4 items-center">
               <p className="text-red-400">Contact us </p>
               <MdOutlineArrowOutward style={{ color: "#FF784B" }} />

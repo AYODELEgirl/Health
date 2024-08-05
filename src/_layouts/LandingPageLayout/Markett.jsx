@@ -29,8 +29,8 @@ export default function Market() {
             strategic planning, and growth.
           </p>
           <div className="flex gap-2 items-center text-[#69BD45]">
-          <a href="/BookACall">
-              <p>Contact Us</p>
+          <a href="/insights">
+              <p>View Insights</p>
             </a>
             <LiaLongArrowAltRightSolid />
           </div>
