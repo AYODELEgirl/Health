@@ -1,8 +1,11 @@
 import React from "react";
 import iconwrap from "../../assets/images/Iconwrap.png";
 import publicone from "../../assets/images/publicone.jpg";
-import public3 from "../../assets/images/public3.jpg";
 import public2 from "../../assets/images/public2.jpg";
+// import public4 from "../../assets/images/public4.jpg";
+import public4 from "../../assets/images/public4.jpg";
+import public5 from "../../assets/images/public5.jpg";
+// import public6 from "../../assets/images/public6.jpg";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 // import iconn from "../../assets/images/iconn.png"
@@ -32,19 +35,19 @@ export default function PublicationSection() {
             <div className="flex flex-row gap-1">
               <div className="flex jusify-between">
                 <p className="font-bold text-xl md:text-[24px] mb-3">
-                  We want to redefine access to quality healthcare
+                  Medical Device Registration
                 </p>
-            <MdOutlineArrowOutward style={{color:"black"}} size={20}/>
+                <MdOutlineArrowOutward style={{ color: "black" }} size={20} />
               </div>
-               
             </div>
             <p className="text-[13px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />{" "}
-              Minus nemo laudantium nostrum modi quis! em quidem.
+              A medical device is defined as 'An article, in- strument,
+              apparatus or machine that is used in the prevention, diagnosis or
+              treatment...
             </p>
             <div className="flex flex-row  gap-4 mt-4 items-center">
               <p className="text-red-400">Learn more</p>
-              <MdOutlineArrowOutward style={{ color: "#FF784B" }} />
+              <MdOutlineArrowOutward style={{ color: "#FF784B" }} size={20} />
             </div>
           </div>
 
@@ -59,19 +62,19 @@ export default function PublicationSection() {
             </figure>
             <div className="flex justify-between">
               <p className="font-bold md:text-[24px] text-lg mb-3">
-                We want to redefine access to quality healthcare
+                Global Impact of Unsafe Food
               </p>
-              <MdOutlineArrowOutward style={{color:"black"}} size={20}/>
+              <MdOutlineArrowOutward style={{ color: "black" }} size={20} />
               {/* <figure>
                 <img src={iconwrap} alt="" />
               </figure> */}
             </div>
             <p className="text-[13px]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />{" "}
-              Minus nemo laudantium nostrum modi quis! em quidem.
+              Every day, about 1.6 million people around the world become sick
+              from eating unsafe food, many of them small children. Safe...
             </p>
-            <div className="flex flex-row mt-4  gap-4 items-center">
-              <p className="text-red-400 ">Learn more</p>
+            <div className="flex flex-row mt-4 gap-4 items-center">
+              <p className="text-red-400  ">Learn more</p>
               <MdOutlineArrowOutward style={{ color: "#FF784B" }} />
               <figure></figure>
             </div>
@@ -85,18 +88,18 @@ export default function PublicationSection() {
             </div>
             <div>
               <figure>
-                <img src={public3} alt="" width={350} className="mb-5 w-full" />
+                <img src={public4} alt="" width={350} className="mb-5 w-full" />
               </figure>
               <div className="flex justify-between">
                 <p className="font-bold md:text-[24px] text-lg mb-3">
-                  We want to redefine access to quality healthcare
+                  Menstrual Hygiene Day 2024
                 </p>
-                <MdOutlineArrowOutward style={{color:"black"}} size={20}/>
-               
+                <MdOutlineArrowOutward style={{ color: "black" }} size={20} />
               </div>
               <p className="text-[13px]">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />{" "}
-                Minus nemo laudantium nostrum modi quis! em quidem.
+                Sanitary pad prices have increased by 40-75%, forcing many to
+                switch to cheaper, less preferred products. This affects the
+                dignity...
               </p>
               <div className="flex flex-row gap-4 items-center mt-4">
                 <p className="text-red-400">Learn more</p>

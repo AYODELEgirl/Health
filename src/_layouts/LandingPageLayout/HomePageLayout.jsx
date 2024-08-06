@@ -106,6 +106,12 @@ export default function Background() {
 
        <Signin modal={modal2}  setModal={setModal2}>
         <>
+        <div
+            className="flex justify-end cursor-pointer"
+            onClick={() => setModal(false)}
+          >
+            <LiaTimesSolid size={30} />
+          </div>
           <p className="font-bold text-[35px] items-center text-center mb-2">
             Sign up on Infinity Health Africa 
           </p>
@@ -214,6 +220,12 @@ export default function Background() {
 
       <Signin modal={modal3} setModal={setModal3}>
         <>
+        <div
+            className="flex justify-end cursor-pointer"
+            onClick={() => setModal(false)}
+          >
+            <LiaTimesSolid size={30} />
+          </div>
           <p className="font-bold text-[35px] items-center text-center mb-2">
             Sign in to your account
           </p>

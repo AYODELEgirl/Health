@@ -1,58 +1,62 @@
 import React, { useState } from "react";
 import publicone from "../../../assets/images/publicone.jpg";
 import iconwrap from "../../../assets/images/Iconwrap.png";
-import public3 from "../../../assets/images/public3.jpg";
+// import public3 from "../../../assets/images/public3.jpg";
 import public2 from "../../../assets/images/public2.jpg";
+import public3 from "../../../assets/images/public3.jpg";
+import public5 from "../../../assets/images/public5.jpg";
+import public7 from "../../../assets/images/public7.jpg";
 import rightarrow from "../../../assets/images/rightarrow.png";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import { public4 } from "../../../assets/images";
 export default function publication({ setMorePublication }) {
   // const [details,setDetails] = useState([])
   const data = [
     {
       id: "1",
-      info: "We want to redefine access to quality healthcare",
+      info: " Medical Device Registration",
       image: publicone,
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit Minus nemo laudantium nostrum modi quis! em quidem.",
+      text: "A medical device is defined as 'An article, in- strument, apparatus or machine that is used in the prevention, diagnosis...",
       link: "/ReadMore",
       type: "Case studies",
     },
     {
       id: "2",
-      info: "We want to redefine access to quality healthcare",
+      info: "Global Impact of Unsafe Food",
       image: public2,
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit Minus nemo laudantium nostrum modi quis! em quidem.",
+      text: "Every day, about 1.6 million people around the world become sick from eating unsafe food, many of them small children. Safe...",
       link: "/ReadMore",
       type: "Infographics",
     },
     {
       id: "3",
-      info: "We want to redefine access to quality healthcare",
-      image: public3,
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit Minus nemo laudantium nostrum modi quis! em quidem.",
+      info: "Menstrual Hygiene Day 2024",
+      image: public4,
+      text: "Sanitary pad prices have increased by 40-75%, forcing many to switch to cheaper, less preferred products. This affects...",
       link: "/ReadMore",
       type: "News",
     },
     {
       id: "4",
-      info: "We want to redefine access to quality healthcare",
-      image: publicone,
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit Minus nemo laudantium nostrum modi quis! em quidem.",
+      info: "Building Sustainable Digital Health Startups in Africa: Infographic Report",
+      image: public5,
+      text: "The digital health landscape in Africa is on the cusp of significant growth, with projections indicating a market value...",
       link: "/ReadMore",
       type: "case studies",
     },
     {
       id: "5",
-      info: "We want to redefine access to quality healthcare",
-      image: public2,
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit Minus nemo laudantium nostrum modi quis! em quidem.",
+      info: "World Hypertension Day 2024",
+      image: public7,
+      text: "Hypertension is a leading cause of death, globally. Many countries in Sub Saharan Africa have seen little improvement...",
       link: "/ReadMore",
       type: "Infographics",
     },
     {
       id: "6",
-      info: "We want to redefine access to quality healthcare",
+      info: "Hepatitis in Africa",
       image: public3,
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit Minus nemo laudantium nostrum modi quis! em quidem.",
+      text: "63% of new hepatitis B infections globally occur in Africa. 10 countries, including Nigeria and Ethiopia, bear nearly...",
       link: "/ReadMore",
       type: "News",
     },
@@ -136,18 +140,17 @@ export default function publication({ setMorePublication }) {
                     </button>
                   </div>
                   <div className="">
-                    <figure>
+                    <figure className="w-full h-[300px]">
                       <img
                         src={data?.image}
                         alt=""
-                        width={400}
-                        className="mb-5 w-full"
+                        className="mb-5 w-full h-full"
                       />
                     </figure>
                     <div className="flex flex-row gap-1">
                       <div className="flex jusify-between">
                         <p className="font-bold text-lg md:text-[24px] mb-3">
-                          We want to redefine access to quality healthcare
+                          {data.info}
                         </p>
                         <MdOutlineArrowOutward
                           style={{ color: "black" }}
@@ -156,10 +159,9 @@ export default function publication({ setMorePublication }) {
                       </div>
                     </div>
                     <p className="text-[13px]">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
-                      <br /> Minus nemo laudantium nostrum modi quis! em quidem.
+                    {data.text}
                     </p>
-                    <div className="flex flex-row  gap-4 mt-4 items-center">
+                    <div className="flex flex-row  gap-4 mt-7 items-center">
                       <p className="text-red-400">Learn more</p>
                       <MdOutlineArrowOutward style={{ color: "#FF784B" }} />
                     </div>
