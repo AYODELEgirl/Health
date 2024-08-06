@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { AiOutlineDown } from "react-icons/ai";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 // import minus from "../../assets/images/minus.png";
-
 export default function QuestionsSection() {
+  const navigate = useNavigate()
   const [answer, setAnswer] = useState(null);
   const Question = [
     {
@@ -18,15 +18,14 @@ export default function QuestionsSection() {
     },
     {
       name: "3.What are the pricing options for Infinity Health's services?   ",
-      ans:[{desc : "We offer flexible pricing packages to accommodate businesses of all sizes. From complimentary business reviews to comprehensive market analysis and sales strategy development, we have a solution to fit your needs and budget. Our pricing is based on your needs, stage of business, and specific regulatory area. Schedule a call to learn more and get the pricing tailored to your requirements.  Schedule a session with our consultant"}],
-      
-    },
+      ans:[{desc : `We offer flexible pricing packages to accommodate businesses of all sizes. From complimentary business reviews to comprehensive market analysis and sales strategy development, we have a solution to fit your needs and budget. Our pricing is based on your needs, stage of business, and specific regulatory area. Schedule a call to learn more and get the pricing tailored to your requirements.`, linkText:"Schedule a session with our consultant",}],
+          },
     {
       name: "4. Can Infinity Health help with market research and data analysis?",
       ans: [
 
        { desc :"Using Infinity Health for market access provides numerous benefits:"},
-       {title:'Access to Local Market Insights:' ,desc : "Leverage our profound understanding of the African healthcare landscape to gain valuable market insights."},
+       {title:'Access to Local Market Insights:' ,desc : "Leverage our profound understanding of the African healthcare landscape to gain valuable market insights.",linkText:"Schedule a session with our consultant",},
         {title:'Efficient Resource Allocation:' ,desc : "Benefit from our efficient resource allocation to optimize your market entry and growth strategies."},
        {title: 'Tailored Expansion Strategies:'  ,desc: "Receive customized expansion strategies that align with your business goals and the unique regulatory environment."},
         {title: 'Connections with Key Stakeholders:' ,desc :  "Utilize our strategic partnerships with local stakeholders to establish crucial connections and enhance your market presence."},
@@ -81,7 +80,9 @@ export default function QuestionsSection() {
                
                d.ans?.map((item) => {
                   return (
-                    <h2  className=" leading-6 w-[80%] text-[15px] mb-4 text-[#667085]"> <b>{item?.title}</b>{item?.desc}</h2>
+                    <h2  className=" leading-6 w-[80%] text-[15px] mb-4 text-[#667085]"> <b>{item?.title}</b>{item?.desc}{" "}<span style={{color:"red"}} onClick={()=>{
+                      navigate("/book-a-call")
+                    }}>{item?.linkText}</span></h2>
                   )
                 })
               )}

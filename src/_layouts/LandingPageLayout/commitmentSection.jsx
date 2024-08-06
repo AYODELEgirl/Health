@@ -29,7 +29,7 @@ export default function CommitmentSection() {
         <div className=" absolute flex items-center justify-center h-full ">
           {show && <FaCirclePlay style={{ color: "white" }}  className="md:size-32 size-14 mb-12"/>}
         </div>
-        <video
+    {/*     <video
           ref={videoRef}
           loop
           muted
@@ -43,7 +43,17 @@ export default function CommitmentSection() {
           onClick={handlePlay}
         >
           <source src={orientationvideo} type="video/mp4" />
-        </video>
+        </video> */}
+
+        <iframe  style={{
+            maxWidth: "98%", // Adjusted to fit within the container
+            height: "700px", // Maintain aspect ratio
+            borderRadius: "15px", // Added border radius for aesthetics
+          }}
+          data-aos="fade-right"
+          className="rounded-xl"  width="100%" 
+src="https://www.youtube.com/embed/EIgahN6Gn_k">
+</iframe>
       </div>
       <div  data-aos="fade-down" className="text-center mt-20 ">
         <h1 className="font-bold md:text-[2rem] text-[1.5rem] mb-3">

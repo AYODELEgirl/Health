@@ -15,6 +15,7 @@ export default function NavBar2({ isScrolled = true }) {
   return (
     <div>
       <nav
+      style={{backgroundColor:"#E8FFDE"}}
         className={`overflow-hidden z-10 pt-10 md:px-16 px-8 mb-1 ${
           isScrolled ? "scrolled" : "scrolledNo"
         } `}

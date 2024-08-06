@@ -28,22 +28,27 @@ export default function CommitmentVideo() {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           {show && <FaCirclePlay style={{ color: "white" }} className="md:size-40 size-14" />}
         </div>
-        <video
-          ref={videoRef}
-          loop
-          muted
-          style={{
-            width: "90%",
+        <iframe  style={{
+            maxWidth: "98%", // Adjusted to fit within the container
+            height: "700px", // Maintain aspect ratio
+            borderRadius: "15px", // Added border radius for aesthetics
           }}
-          className="rounded-xl"
-          onClick={handlePlay}
-        >
-          <source
-            src={orientationvideo}
-            type="video/mp4"
-          />
-        </video>
+          data-aos="fade-right"
+          className="rounded-xl"  width="100%" 
+src="https://www.youtube.com/embed/LC3Tr6V9QpA">
+</iframe>
       </div>
+
+      {/* <iframe  style={{
+            maxWidth: "98%", // Adjusted to fit within the container
+            height: "700px", // Maintain aspect ratio
+            borderRadius: "15px", // Added border radius for aesthetics
+          }}
+          data-aos="fade-right"
+          className="rounded-xl"  width="100%" 
+src="https://www.youtube.com/embed/EIgahN6Gn_k">
+https://youtu.be/EIgahN6Gn_k
+</iframe> */}
       <div className="mt-14">
 
       <FooterSections />

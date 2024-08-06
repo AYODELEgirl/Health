@@ -289,7 +289,7 @@ export default function Background() {
           className={`md:px-4 top-0  left-0 flex align-middle justify-between items-center ${
             isScrolled ? "scrolled" : "scrolledNo"
           }`}
-          style={{ zIndex: "9999" }}
+          style={{ zIndex: "9999", backgroundColor:"#E8FFDE" }}
           // data-aos="fade-down"
         >
           <figure>

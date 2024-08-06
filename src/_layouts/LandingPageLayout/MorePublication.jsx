@@ -13,6 +13,7 @@ import publications from "../../assets/images/publications.svg";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import PublicationDetails from "./PublicationDetails";
 import { LiaTimesSolid } from "react-icons/lia";
+import NavBar3 from "./Navbar3";
 
 function MorePublication({ setMorePublication }) {
   //
@@ -223,7 +224,7 @@ function MorePublication({ setMorePublication }) {
         <PublicationDetails />
       ) : (
         <>
-          <NavBar2 />
+          <NavBar3 />
           <div>
 
             <div className="flex flex-row gap-x-96">
@@ -244,7 +245,7 @@ function MorePublication({ setMorePublication }) {
 
             <div>
             <p
-              className="flex items-center pl-6 gap-4 cursor-pointer mt-24"
+              className="flex items-center pl-6 gap-4 cursor-pointer mt-36"
               onClick={() => {
                 setMorePublication(false);
               }}
@@ -325,6 +326,7 @@ function MorePublication({ setMorePublication }) {
                                   <MdOutlineArrowOutward
                                     style={{ color: "black" }}
                                     size={20}
+                                    className="mt-5"
                                   />
                                 </div>
                               </div>

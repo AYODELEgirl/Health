@@ -10,6 +10,8 @@ import rightarrow from "../../../assets/images/rightarrow.png";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import { public4 } from "../../../assets/images";
 export default function publication({ setMorePublication }) {
+  const [navTab, setNavTab] = useState("All posts");
+
   // const [details,setDetails] = useState([])
   const data = [
     {
@@ -72,6 +74,14 @@ export default function publication({ setMorePublication }) {
     // Now you can do something with the filtered data, like updating the state
     // setDetails(filtered);
   };
+  const NavLink = [
+    { name: "All posts", click: setDetails, value: data },
+    { name: "Case studies", click: handleFilter, value: "Case studies" },
+    { name: "Infographics", click: handleFilter, value: "Infographics" },
+    { name: "Whitepapers", click: handleFilter, value: "Whitepapers" },
+    { name: "Market Reports", click: handleFilter, value: "Market Reports" },
+    { name: "Review Articles", click: handleFilter, value: "Review Articles" },
+  ];
 
   return (
     <div className="p-8">
@@ -81,12 +91,30 @@ export default function publication({ setMorePublication }) {
           Latest Publications
         </h2>
         <p className="text-[14px] text-[#667085]">
-          We're constantly curating the insight you need to understand the
+          We're constantly curating the Insight you need to understand the
           African Healthcare market
         </p>
       </div>
-      <div className="hidden flex-row justify-between md:p-3 md:px-8 sm:flex p-1">
+      {/* <div className="hidden flex-row justify-between md:p-3 md:px-8 sm:flex p-1">
         <div className="flex flex-row gap-8 cursor-pointer">
+        {NavLink?.map((e) => {
+                  return (
+                    <div
+                      className="text-[14px] "
+                      style={{
+                        borderBottom:
+                          e?.name === navTab ? "2px solid #ccc" : "",
+                        color: e?.name === navTab ? "#69BD45" : "#667085",
+                      }}
+                      onClick={() => {
+                        e.click(e.value);
+                        setNavTab(e?.name);
+                      }}
+                    >
+                      {e?.name}
+                    </div>
+                  );
+                })}
           <p
             className="text-[14px] text-[#667085]"
             onClick={() => setDetails(data)}
@@ -125,7 +153,37 @@ export default function publication({ setMorePublication }) {
             className="p-1 px-11  rounded border border-gray-200 text-start sm:flex hidden"
           />
         </div>
-      </div>
+      </div> */}
+              <div className="hidden flex-row justify-between items-center md:p-3 md:px-8 sm:flex p-1">
+              <div className="flex flex-row gap-8 cursor-pointer px-2">
+                {NavLink?.map((e) => {
+                  return (
+                    <div
+                      className="text-[14px] "
+                      style={{
+                        borderBottom:
+                          e?.name === navTab ? "2px solid #ccc" : "",
+                        color: e?.name === navTab ? "#69BD45" : "#667085",
+                      }}
+                      onClick={() => {
+                        e.click(e.value);
+                        setNavTab(e?.name);
+                      }}
+                    >
+                      {e?.name}
+                    </div>
+                  );
+                })}
+              </div>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Search by topics or description"
+                  className="p-1 px-[.8rem] w-[300px]  rounded border outline-none border-gray-200 text-start sm:flex hidden placeholder:text-[.9rem]"
+                  // onChange={handleSearch}
+                />
+              </div>
+            </div>
 
       <div className="bg-[#F5F6F9] md:p-7 p-4 grid s900:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[2rem]">
         {details &&
@@ -162,7 +220,7 @@ export default function publication({ setMorePublication }) {
                     {data.text}
                     </p>
                     <div className="flex flex-row  gap-4 mt-7 items-center">
-                      <p className="text-red-400">Learn more</p>
+                      <p className="text-red-400">Read more</p>
                       <MdOutlineArrowOutward style={{ color: "#FF784B" }} />
                     </div>
                   </div>

@@ -41,7 +41,7 @@ export default function NavBar3() {
   const [modal3, setModal3] = useState(false);
 
   return (
-    <div className="">
+    <div className="bg-[#E8FFDE]">
       {/*  */}
 
       <Signin modal={modal} setModal={setModal}>
@@ -273,7 +273,7 @@ export default function NavBar3() {
           className={`md:px-4 top-0  left-0 flex align-middle justify-between items-center ${
             isScrolled ? "scrolled" : "scrolledNo"
           }`}
-          style={{ zIndex: "9999" }}
+          style={{ zIndex: "9999", backgroundColor:"#E8FFDE" }}
           // data-aos="fade-down"
         >
           <figure>

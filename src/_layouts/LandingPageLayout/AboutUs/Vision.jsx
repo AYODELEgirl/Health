@@ -115,7 +115,7 @@ export default function Vision() {
                 <div className=" w-full">
                   <div className="w-[50%]">
 
-                  <p className="text-red-500">Our team</p>
+                  <p className="text-[35px] font-bold leading-10 mt-3">Our team</p>
                   <p className="text-[15px] text-[#757575] mt-6">
                     Our team is led by Irene Nwaukwa who has over 15 years
                     healthcare experience in regulatory compliance, market
@@ -146,7 +146,7 @@ export default function Vision() {
                       </p>
                       <div className="flex flex-row gap-5 mt-4">
                         <a
-                          href="https://x.com/InfinityHealthA?s=09"
+                          href="https://x.com/irenenwaukwa?s=21&t=bdgcUlrFa861spv-9kAJLQ"
                           target="_blank"
                           rel="noopener noreferrer"
                         >
@@ -156,7 +156,7 @@ export default function Vision() {
                         </a>
 
                         <a
-                          href="https://www.linkedin.com/company/infinity-health-africa/posts/"
+                          href=" https://www.linkedin.com/in/irene-nwaukwa "
                           target="_blank"
                           rel="noopener noreferrer"
                         >
