@@ -17,7 +17,7 @@ export default function VideoSection() {
   };
 
   return (
-    <div className="relative flex h-screen mt-10 lg:mt-2 md:mt-2">
+    <div className="relative flex h-screen">
       <div className="relative z-10 pointer-events-none inset-0 lg:p-20 p-5 md:mt-20 mt-48 px-8 pt-5">
         <p className="text-[13px] text-orange-500 md:mb-8 mb-3 pt-5">About Us</p>
         <p className="lg:text-[50px] text-lg font-bold text-white mb-4 flex flex-col lg:gap-1">

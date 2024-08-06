@@ -7,6 +7,7 @@ import CommitmentVideo from '../_layouts/LandingPageLayout/Insight/CommitmentVid
 import MarketAccess from '../_layouts/LandingPageLayout/Insight/MarketAccess'
 import Global from '../_layouts/LandingPageLayout/Insight/Global'
 import MorePublication from '../_layouts/LandingPageLayout/MorePublication'
+import Cholera from '../_layouts/LandingPageLayout/Insight/Cholera'
 
 
 export default function Insight() {
@@ -22,6 +23,7 @@ export default function Insight() {
         <Global />
         {/* <PicsAndText /> */}
         <Publication setMorePublication={setMorePublication}/>
+        <Cholera />
         <CommitmentVideo />
       </div>}
     </div>

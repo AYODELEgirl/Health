@@ -31,7 +31,7 @@ export default function WhoWeAre() {
         </div>
 
         <div className="mt-5 flex flex-col gap-8">
-          <div className=" bg-white p-7 mr-10">
+          <div className=" bg-white p-7 mr-10 pb-11">
             <p className="font-semibold text-[17px] mb-3">
               Join us in building a Healthier Africa
             </p>

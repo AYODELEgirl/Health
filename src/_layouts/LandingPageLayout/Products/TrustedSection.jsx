@@ -18,7 +18,7 @@ export default function TrustedSection() {
               Read more
             </button>
           </a>
-          <a href="/BookACall">
+          <a href="/book-a-call">
             <button className="bg-[#FF784B] text-white lg:p-2 p-1 lg:px-5 px-3 lg:text-[12px] text-[11px]  whitespace-nowrap rounded">
               Request demo
             </button>

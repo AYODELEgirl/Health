@@ -8,10 +8,13 @@ import team from "../../../assets/images/team.png";
 import pix1 from "../../../assets/images/pix1.png";
 import pix2 from "../../../assets/images/pix2.png";
 import pix3 from "../../../assets/images/pix3.png";
-import sis from "../../../assets/images/sis.jpg";
+import image0 from "../../../assets/images/image0.png";
 import charter from "../../../assets/images/charter.png";
 import footerlogo from "../../../assets/images/footerlogo.png";
 import { Link, NavLink } from "react-router-dom";
+import { FaXTwitter } from "react-icons/fa6";
+import { TbLetterX } from "react-icons/tb";
+import { IoLogoLinkedin } from "react-icons/io5";
 
 export default function Vision() {
   return (
@@ -106,31 +109,65 @@ export default function Vision() {
           </div>
         </div>
         <div className="bg-[#F9F9F9] h-auto p-24px">
-          <div>
-            <div className="flex lg:flex-row items-center flex-col mt-0 gap-y-5 gap-x-5 p-[80px] md:px-20 px-9">
-              <div className="lg:w-[50%] w-full">
-                <figure>
-                  <img src={sis} alt="" />
-                </figure>
-              </div>
-              <div className="lg:w-[50%] w-full md:px-16  ">
-                <p className="text-red-500">Our team</p>
-                <p className="text-[15px] text-[#757575] mt-6">
-                  Our team is led by Irene Nwaukwa who has over 15 years
-                  healthcare experience in regulatory compliance, market
-                  penetration, business growth & development in healthcare
-                  across Africa.
-                </p>
-                <p className="text-[15px] text-[#757575] mt-6">
-                  We have a demonstrable history of successfully guiding
-                  healthcare businesses through product registration, clinical
-                  trial approvals and new product launches using a streamlined
-                  process that helps them launch and scale quickly while
-                  minimising risk.
-                </p>
-                {/* <button className="text-white text-[13px] rounded-md bg-[#69BD45] p-2 px-5 mt-5">
+          <div className="flex flex-row ">
+            <div className="flex lg:flex-col flex-col mt-0 gap-y-5 gap-x-5 p-[80px] md:px-20 px-9">
+              <div className="flex flex-col">
+                <div className=" w-full">
+                  <div className="w-[50%]">
+
+                  <p className="text-red-500">Our team</p>
+                  <p className="text-[15px] text-[#757575] mt-6">
+                    Our team is led by Irene Nwaukwa who has over 15 years
+                    healthcare experience in regulatory compliance, market
+                    penetration, business growth & development in healthcare
+                    across Africa.
+                  </p>
+                  <p className="text-[15px] text-[#757575] mt-6">
+                    We have a demonstrable history of successfully guiding
+                    healthcare businesses through product registration, clinical
+                    trial approvals and new product launches using a streamlined
+                    process that helps them launch and scale quickly while
+                    minimising risk.
+                  </p>
+                  </div>
+
+                  {/* <button className="text-white text-[13px] rounded-md bg-[#69BD45] p-2 px-5 mt-5">
                   Read more
-                </button> */}
+                  </button> */}
+                  <div className="grid grid-cols-2 mt-7 gap-6">
+                        <img src={image0} alt=""  />
+                    <div className="">
+                      <p className="font-bold text-[22px]">Irene Nwaukwa</p>
+                      <p className="text-[20px] mt-2">Founder/CEO</p>
+                      <p className="text-[15px] mt-2">
+                        Healthcare business expert with over 15 years in market
+                        penetration, regulatory affairs, business growth &
+                        development in healthcare across Africa.
+                      </p>
+                      <div className="flex flex-row gap-5 mt-4">
+                        <a
+                          href="https://x.com/InfinityHealthA?s=09"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <div className="flex items-center gap-4 mb-3">
+                            <FaXTwitter size={25} />
+                          </div>
+                        </a>
+
+                        <a
+                          href="https://www.linkedin.com/company/infinity-health-africa/posts/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <div className="flex items-center gap-4 mb-3">
+                            <IoLogoLinkedin size={25} />
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
