@@ -5,15 +5,15 @@ import { NavLink } from "react-router-dom";
 
 export default function TopicAndImage() {
   return (
-    <div className="md:p-14 p-6 items-center text-center">
-      <div className="flex flex-row gap-3 items-center">
+    <div className="md:p-14  p-6 items-center text-center">
+      <div className="flex flex-row gap-3 items-center mt-20 px-28 mb-5">
         <FaArrowLeftLong />
         <NavLink to="/products">
           <p>Back</p>
         </NavLink>
       </div>
       <div>
-        <p className="font-bold md:text-[30px] text-[20px] mb-5">
+        <p className="font-bold md:text-[30px] text-[20px] mb-9 flex justify-start px-28">
           Why choose Infinity Healthcare ?
         </p>
       </div>
@@ -23,13 +23,17 @@ export default function TopicAndImage() {
         </figure>
       </div>
       <div>
-        <p className="text-[#757575] ">
-          Imagine a future where Africa thrives, not just in economic strength 
-          but in the vibrant health of its communities. At Infinity Health <br />
-          Africa, We see the potential for a vibrant continent where everyone 
-          has access to quality care despite the systemic challenges. That is <br />
-          the driving force for all we do. .
+        <div className="flex justify-center" width={1000}>
+        <p className="text-[#757575] bg-[#E8FFDE] flex justify-center rounded-md px-16 py-10">
+          Imagine a future where Africa thrives, not just in economic strength,
+          but in the vibrant health of its communities. <br /> At Infinity Health
+          Africa, this isn’t just a dream, it’s the driving force behind
+          everything we do. We believe that <br />healthcare is a right, not a
+          privilege. We see the potential for a vibrant continent where everyone
+          has access <br /> to quality care. But we also know the challenges -
+          fragmented systems, data gaps, and a complex regulatory environment.
         </p>
+        </div>
         <p className="md:text-[23px] text-[19px] font-bold mt-8 mb-8">
           Here’s why you should choose us:
         </p>
@@ -95,13 +99,15 @@ export default function TopicAndImage() {
             solutions and actionable insights.
           </li>
         </ul>
+        <div className="text-left">
 
-        <p className="text-[#757575]  text-[16px] mt-2">
+        <p className="text-black  text-[18px] mt-5 font-bold pl-32">
           Choose Infinity Health, and let’s work together to unlock your
-          healthcare business’s full <br /> potential in Africa. With our
-          expertise and your ambitions, the possibilities are infinite. <br />{" "}
+          healthcare business’s full potential in Africa. With our <br />
+          expertise and your ambitions, the possibilities are infinite.{" "}
           Reach out to us today, and let’s embark on this journey together.
         </p>
+        </div>
       </div>
     </div>
   );
