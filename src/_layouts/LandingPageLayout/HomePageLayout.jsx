@@ -552,7 +552,7 @@ export default function Background() {
           </p>
           <div className="flex items-center gap-7 flex-col lg:flex-row  ">
             <a href="#video-section">
-              <button className="text-[13px] px-14 p-3 text-white rounded-md border-none bg-[#FF784B] w-full md:w-auto">
+              <button className="text-[13px] px-24 p-3 text-white rounded-md border-none bg-[#FF784B] w-full md:w-auto items-center justify-center lg:px-14">
                 Watch video
               </button>
             </a>
