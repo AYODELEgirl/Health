@@ -19,11 +19,14 @@ export default function Signin({ modal, setModal, children }) {
         onClick={(e) => {
           e.stopPropagation();
         }}
-        className="bg-white my-24 mt-96 w-[90%] md:w-[55%] s960:w-[45%]  rounded-lg"
+        className="bg-white  w-[90%] md:w-[55%] s960:w-[45%]  rounded-lg overflow-auto overflow-x-hidden"
+        style={{maxHeight: '34rem'}}
       >
         {/* <SigninNavbar /> */}
         <div className={``}>
-          <div className="items-center p-6 s900:p-10 s1100:p-16">{children}</div>
+          <div className="items-center p-6 s900:p-10 s1100:p-16">
+            {children}
+          </div>
         </div>
       </div>
     </div>

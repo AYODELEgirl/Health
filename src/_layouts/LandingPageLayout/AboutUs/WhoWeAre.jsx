@@ -3,7 +3,7 @@ import React from "react";
 export default function WhoWeAre() {
   return (
     <div className="bg-[#F5FFF0]">
-      <p className="text-center pt-10 font-bold text-[25px]">Who we are</p>
+      <p className="text-center pt-10 font-bold text-[25px]">Who We Are</p>
 
       <div className=" flex lg:flex-row flex-col p-10 items-center">
         <div className=" flex flex-col gap-10 md:px-8 pt-5">
@@ -33,7 +33,7 @@ export default function WhoWeAre() {
         <div className="mt-5 flex flex-col gap-8">
           <div className=" bg-white p-7 mr-10 pb-11">
             <p className="font-semibold text-[17px] mb-3">
-              Join us in building a Healthier Africa
+              Join Us In Building a Healthier Africa
             </p>
             <p>
             Are you a healthcare business poised to make a difference in Africa?

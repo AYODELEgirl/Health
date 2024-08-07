@@ -23,12 +23,22 @@ export default function RegulatorySection() {
             business.
           </p>
           <div className="flex flex-row gap-4 mb-5">
+          <a
+                    href="https://www.getonboard.africa/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
             <button className="bg-[#69BD45] text-white p-2 px-5 text-[12px] rounded ">
               How it works
             </button>
-            <a href="/BookACall">
+          </a>
+          <a
+                  href="https://www.getonboard.africa/services"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
             <button className="text-[#69BD45] bg-white p-2 px-5 text-[12px] rounded border border-solid border-[#69BD45]">
-              create a request
+              Create request
             </button>
             </a>
           </div>

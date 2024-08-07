@@ -7,13 +7,16 @@ import Products from "./Pages/Products";
 import BookACall from "./Pages/BookACall";
 import ReadMore from "./Pages/ReadMore";
 import Signin from "./_layouts/LandingPageLayout/Signin/Signin";
+import ScrollToTop from "./hooks/Scrolltotop";
 
 
 export default function App() {
   return (
     <div>
       <BrowserRouter>
+      <ScrollToTop/>
         <Routes>
+
           <Route>
             <Route path="/" element={<LandingPage />} />
             <Route path="/about-us" element={<AboutUs />} />

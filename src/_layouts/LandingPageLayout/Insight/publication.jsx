@@ -40,9 +40,9 @@ export default function publication({ setMorePublication }) {
     },
     {
       id: "4",
-      info: "Building Sustainable Digital Health Startups in Africa: Infographic Report",
+      info: "Building Sustainable Digital Health Startups in Africa:",
       image: public5,
-      text: "The digital health landscape in Africa is on the cusp of significant growth, with projections indicating a market value...",
+      text: "The digital health landscape in Africa is on the cusp of...",
       link: "/ReadMore",
       type: "case studies",
     },
@@ -66,7 +66,7 @@ export default function publication({ setMorePublication }) {
 
   const [details, setDetails] = useState(data);
   const handleFilter = (name) => {
-    const filtered = details.filter(
+    const filtered = data.filter(
       (item) => item.type.toLowerCase() === name.toLowerCase()
     );
     console.log(filtered);
@@ -81,6 +81,7 @@ export default function publication({ setMorePublication }) {
     { name: "Whitepapers", click: handleFilter, value: "Whitepapers" },
     { name: "Market Reports", click: handleFilter, value: "Market Reports" },
     { name: "Review Articles", click: handleFilter, value: "Review Articles" },
+    { name: "News", click: handleFilter, value: "News" },
   ];
 
   return (
@@ -91,7 +92,7 @@ export default function publication({ setMorePublication }) {
           Latest Publications
         </h2>
         <p className="text-[14px] text-[#667085]">
-          We're constantly curating the Insight you need to understand the
+          We're constantly curating the Insights you need to understand the
           African Healthcare market
         </p>
       </div>

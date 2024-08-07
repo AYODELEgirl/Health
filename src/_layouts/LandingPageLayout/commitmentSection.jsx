@@ -45,7 +45,9 @@ export default function CommitmentSection() {
           <source src={orientationvideo} type="video/mp4" />
         </video> */}
 
-        <iframe  style={{
+        <iframe 
+        id="video-section"
+        style={{
             maxWidth: "98%", // Adjusted to fit within the container
             height: "700px", // Maintain aspect ratio
             borderRadius: "15px", // Added border radius for aesthetics

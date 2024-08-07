@@ -8,7 +8,7 @@ import team from "../../../assets/images/team.png";
 import pix1 from "../../../assets/images/pix1.png";
 import pix2 from "../../../assets/images/pix2.png";
 import pix3 from "../../../assets/images/pix3.png";
-import image0 from "../../../assets/images/image0.png";
+import IMAGEEE from "../../../assets/images/IMAGEEE.png";
 import charter from "../../../assets/images/charter.png";
 import footerlogo from "../../../assets/images/footerlogo.png";
 import { Link, NavLink } from "react-router-dom";
@@ -115,7 +115,7 @@ export default function Vision() {
                 <div className=" w-full">
                   <div className="w-[50%]">
 
-                  <p className="text-[35px] font-bold leading-10 mt-3">Our team</p>
+                  <p className="text-[35px] font-bold leading-10 mt-3">Our Team</p>
                   <p className="text-[15px] text-[#757575] mt-6">
                     Our team is led by Irene Nwaukwa who has over 15 years
                     healthcare experience in regulatory compliance, market
@@ -135,7 +135,7 @@ export default function Vision() {
                   Read more
                   </button> */}
                   <div className="grid grid-cols-2 mt-7 gap-6">
-                        <img src={image0} alt=""  />
+                        <img src={IMAGEEE} alt=""  />
                     <div className="">
                       <p className="font-bold text-[22px]">Irene Nwaukwa</p>
                       <p className="text-[20px] mt-2">Founder/CEO</p>

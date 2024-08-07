@@ -36,7 +36,7 @@ export default function ExploreSection() {
               faster.
             </p>
             <a
-                    href="https://www.getonboard.africa/product-registration-request"
+                    href="https://www.getonboard.africa/services?id=productDevice"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -67,7 +67,7 @@ export default function ExploreSection() {
               Ensure Compliance and operational efficiency with ease.
             </p>
             <a
-                    href="https://www.getonboard.africa/facility-registration-request"
+                    href="https://www.getonboard.africa/services?id=permitLicense"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -98,7 +98,7 @@ export default function ExploreSection() {
               Get support for clinical trial projects with local expertise.
             </p>
             <a
-                    href="https://www.getonboard.africa/clinical-trials-permits-request"
+                    href="https://www.getonboard.africa/services?id=trialLicense"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -125,16 +125,16 @@ export default function ExploreSection() {
             <p className="text-[15px] font-bold mb-3">
               Regulatory Compliance Support
             </p>
-            <p className="mb-5 text-[14px]">
+            <p className="mb-1 text-[14px]">
             Comprehensive support to help you set up and maintain internal regulatory processes
 
             </p>
             <a
-                    href="https://www.getonboard.africa/contact-us"
+                    href="https://www.getonboard.africa/services?id=complianceSupport"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-            <div className="flex flex-row  gap-4 mt-4 items-center">
+            <div className="flex flex-row  gap-4 items-center">
               <p className="text-red-400">Contact us </p>
               <MdOutlineArrowOutward style={{ color: "#FF784B" }} />
             </div>

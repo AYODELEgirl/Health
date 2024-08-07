@@ -43,7 +43,7 @@ export default function Background() {
   return (
     <div className="relative max-w-screen  sm:h-screen h-[100vh] ">
       {/*  */}
-      
+
       <Signin modal={modal} setModal={setModal}>
         <>
           <div
@@ -55,7 +55,7 @@ export default function Background() {
           <p className="font-bold text-[30px] items-center text-center mb-12">
             Log in to your account
           </p>
-          
+
           <form>
             <label for="name" class="block text-sm font-normal mb-1">
               Email Address
@@ -104,22 +104,22 @@ export default function Background() {
         </>
       </Signin>
 
-       <Signin modal={modal2}  setModal={setModal2}>
+      <Signin modal={modal2} setModal={setModal2}>
         <>
-        <div
+          <div
             className="flex justify-end cursor-pointer"
             onClick={() => setModal(false)}
           >
             <LiaTimesSolid size={30} />
           </div>
           <p className="font-bold text-[35px] items-center text-center mb-2">
-            Sign up on Infinity Health Africa 
+            Sign up on Infinity Health Africa
           </p>
           <p className="text-[#667085] text-[16px] mb-3 text-center">
             Create an account and get unlimited access to our publications in
             developments in African healthcare.
           </p>
-           <form>
+          <form>
             <label for="name" class="block text-sm font-normal mb-1">
               Name
             </label>
@@ -213,14 +213,13 @@ export default function Background() {
                 Log in{" "}
               </span>
             </p>
-          </form> 
+          </form>
         </>
       </Signin>
 
-
       <Signin modal={modal3} setModal={setModal3}>
         <>
-        <div
+          <div
             className="flex justify-end cursor-pointer"
             onClick={() => setModal(false)}
           >
@@ -281,15 +280,12 @@ export default function Background() {
         </>
       </Signin>
 
-      <nav
-        className={`absolute top-0 w-full z-20 pt-6 md:px-8 px:8 p-8`}
-        
-      >
+      <nav className={`absolute top-0 w-full z-20 pt-6 md:px-8 px:8 p-8`}>
         <aside
           className={`md:px-4 top-0  left-0 flex align-middle justify-between items-center ${
             isScrolled ? "scrolled" : "scrolledNo"
           }`}
-          style={{ zIndex: "9999", backgroundColor:"#E8FFDE" }}
+          style={{ zIndex: "9999", backgroundColor: "#E8FFDE" }}
           // data-aos="fade-down"
         >
           <figure>
@@ -338,7 +334,10 @@ export default function Background() {
           </ul>
           <div
             className="flex s900:hidden text-black cursor-pointer"
-            onClick={() => setShowModal(true)}
+            onClick={() => {
+              setShowModal(true);
+              console.log(showModal);
+            }}
           >
             <CiMenuFries size={30} />
           </div>
@@ -396,7 +395,12 @@ export default function Background() {
             style={{ zIndex: 9999 }}
           >
             <div className="bg-white w-[55%] h-full">
-              <div onClick={() => setShowModal(false)}>
+              <div
+                onClick={() => {
+                  setShowModal(false);
+                  console.log(showModal);
+                }}
+              >
                 <LiaTimesSolid className="ml-5 pt-5" size={70} color="green" />
               </div>
               <ul className="flex flex-col gap-16 p-8">
@@ -453,9 +457,11 @@ export default function Background() {
             solutions.
           </p>
           <div className="flex items-center gap-7 flex-col lg:flex-row  ">
+            <a href="#video-section">
             <button className="text-[13px] px-14 p-3 text-white rounded-md border-none bg-[#FF784B] w-full md:w-auto">
               Watch video
             </button>
+            </a>
             <NavLink
               to="/about-us"
               className="text-[12px] font-bold flex items-center justify-center p-3 text-black rounded-md border-none bg-[#FFFFFF] w-full md:w-auto lg:px-14"

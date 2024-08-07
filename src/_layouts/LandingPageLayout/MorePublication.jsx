@@ -207,6 +207,7 @@ function MorePublication({ setMorePublication }) {
     { name: "Whitepapers", click: handleFilter, value: "Whitepapers" },
     { name: "Market Reports", click: handleFilter, value: "Market Reports" },
     { name: "Review Articles", click: handleFilter, value: "Review Articles" },
+    { name: "News", click: handleFilter, value: "News" },
   ];
 
   const handleSearch = (event) => {
