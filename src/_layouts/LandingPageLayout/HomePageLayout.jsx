@@ -544,10 +544,10 @@ export default function Background() {
 
           <p
             data-aos="fade-left"
-            className="mb-7 md:w-[60%] w-full flex text-sm md:text-base text-black"
+            className="mb-7 md:w-[60%] w-full flex text-sm md:text-base text-black "
           >
             Infinity Health leverages technology to drive Market Access in
-            Africa through innovative <br /> regulatory, and business support
+            Africa through innovative <br className="lg:inline hidden"/> regulatory, and business support
             solutions.
           </p>
           <div className="flex items-center gap-7 flex-col lg:flex-row  ">
