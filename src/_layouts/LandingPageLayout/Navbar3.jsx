@@ -357,9 +357,11 @@ export default function NavBar3() {
                 <LiaTimesSolid className="ml-5 pt-5" size={70} color="green" />
               </div>
               <ul className="flex flex-col gap-10 p-8">
+              <NavLink to="/">
                 <li className="text-gray-700 hover:text-green-500 cursor-pointer text-[23px]">
                   Home
                 </li>
+                </NavLink>
                 <NavLink to="/about-us">
                   <li className="text-gray-700 hover:text-green-500 cursor-pointer text-[23px]">
                     About Us
