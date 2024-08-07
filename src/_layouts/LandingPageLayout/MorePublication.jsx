@@ -321,14 +321,14 @@ function MorePublication({ setMorePublication }) {
                               </figure>
                               <div className="flex flex-row gap-1">
                                 <div className="flex jusify-between">
-                                  <p className="font-bold text-lg md:text-[24px] mb-3">
+                                  <p className="font-bold text-lg md:text-[24px] mt-4">
                                     {p.info}
                                   </p>
-                                  <MdOutlineArrowOutward
+                                  {/* <MdOutlineArrowOutward
                                     style={{ color: "black" }}
                                     size={20}
                                     className="mt-5"
-                                  />
+                                  /> */}
                                 </div>
                               </div>
                               <p className="text-[13px]">{p.text?.slice(0, 50)}...</p>

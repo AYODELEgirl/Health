@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import OtpInput from "react-otp-input";
 import logo1 from "../../assets/images/logo1.png";
 import { Link, NavLink } from "react-router-dom";
 import NavBar from "./NavBar";
@@ -7,10 +8,13 @@ import { CiMenuFries } from "react-icons/ci";
 import { LiaTimesSolid } from "react-icons/lia";
 import styled from "styled-components";
 import Signin from "./Signin/Signin";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 export default function Background() {
+  const [otp, setOtp] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [clicked, setClicked] = useState(false);
+  const [loading, setLoading] = useState(false)
 
   const handleClick = () => {
     setClicked(!clicked);
@@ -40,10 +44,74 @@ export default function Background() {
   const [modal2, setModal2] = useState(false);
   const [modal3, setModal3] = useState(false);
 
+  const [signup, setSignup] = useState(
+    {
+      name:"",
+          email:"",
+          password:"",
+          country:"",
+          phone:"",
+          organization:"",
+          role_:""
+  }
+  )
+  const [login, setLogin] = useState(
+    {
+      email:"",
+      password:""
+}
+  )
+
+
+  async function SignUpHandler(){
+    // setModal3(true);
+    // setModal2(false);
+    // console.log("hello");
+ setLoading(true)
+    const response = await fetch(`http://89.38.135.41:3002/api/v1/auth/register`,{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify(signup)
+    })
+    const server = await response.json()
+    console.log(server)
+    if(response?.status === 200){
+      toast.success(server?.msg)
+      setLoading(false)
+    }else{
+      toast.error(server?.msg)
+      setLoading(false)
+    }
+
+  }
+
+
+  async function logInHandler(e){
+    e.preventDefault();
+    // setModal3(true);
+    // setModal2(false);
+    // console.log("hello");
+ setLoading(true)
+    const response = await fetch(`http://89.38.135.41:3002/api/v1/auth/login`,{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify(login)
+    })
+    const server = await response.json()
+    console.log(server)
+    if(response?.status === 200){
+      toast.success(server?.msg)
+      setLoading(false)
+    }else{
+      toast.error(server?.msg)
+      setLoading(false)
+    }
+  }
+
   return (
     <div className="relative max-w-screen  sm:h-screen h-[100vh] ">
       {/*  */}
-
+      <ToastContainer/>
       <Signin modal={modal} setModal={setModal}>
         <>
           <div
@@ -55,7 +123,6 @@ export default function Background() {
           <p className="font-bold text-[30px] items-center text-center mb-12">
             Log in to your account
           </p>
-
           <form>
             <label for="name" class="block text-sm font-normal mb-1">
               Email Address
@@ -66,6 +133,12 @@ export default function Background() {
               name="name"
               class="w-[90%] p-2 border rounded-md shadow-sm"
               placeholder="Enter your email"
+              onChange={(e)=>{
+                setLogin((prev)=>{
+                  return {...prev, email:e.target.value}
+                })
+              }}
+     
             />
 
             <label for="name" class="block text-sm font-normal mt-4 ">
@@ -76,14 +149,19 @@ export default function Background() {
               id="name"
               name="name"
               class="w-[90%] p-2 border rounded-md shadow-sm"
-              placeholder="Show"
+              onChange={(e)=>{
+                setLogin((prev)=>{
+                  return {...prev, password:e.target.value}
+                })
+              }}
+              // placeholder="Show"
             />
 
             <p className="ml-80 mt-3 text-[12px] text-[#69BD45] cursor-pointer">
               Forget password?
             </p>
 
-            <button className="bg-[#69BD45] items-center text-white w-[90%] rounded-md mt-7 py-2">
+            <button className="bg-[#69BD45] items-center text-white w-[90%] rounded-md mt-7 py-2" onClick={logInHandler}>
               Next
             </button>
 
@@ -108,7 +186,7 @@ export default function Background() {
         <>
           <div
             className="flex justify-end cursor-pointer"
-            onClick={() => setModal(false)}
+            onClick={() => setModal2(false)}
           >
             <LiaTimesSolid size={30} />
           </div>
@@ -129,6 +207,11 @@ export default function Background() {
               name="name"
               class="w-[90%] p-2 border rounded-md shadow-sm"
               placeholder="Enter your name"
+              onChange={(e)=>{
+                setSignup((prev)=>{
+                  return {...prev, name:e.target.value}
+                })
+              }}
             />
 
             <label for="email" class="block text-sm font-normal mt-4 ">
@@ -140,6 +223,11 @@ export default function Background() {
               name="email"
               class="w-[90%] p-2 border rounded-md shadow-sm"
               placeholder="Enter your email"
+              onChange={(e)=>{
+                setSignup((prev)=>{
+                  return {...prev, email:e.target.value}
+                })
+              }}
             />
             <label for="email" class="block text-sm font-normal mt-4 ">
               Country
@@ -149,6 +237,11 @@ export default function Background() {
               id="name"
               class="w-[90%] p-2 border rounded-md shadow-sm"
               placeholder="Enter your country"
+              onChange={(e)=>{
+                setSignup((prev)=>{
+                  return {...prev, country:e.target.value}
+                })
+              }}
             />
 
             <label for="email" class="block text-sm font-normal mt-4 ">
@@ -159,6 +252,11 @@ export default function Background() {
               id="name"
               class="w-[90%] p-2 border rounded-md shadow-sm"
               placeholder="Enter your phone number"
+              onChange={(e)=>{
+                setSignup((prev)=>{
+                  return {...prev, phone:e.target.value}
+                })
+              }}
             />
             <label for="email" class="block text-sm font-normal mt-4 ">
               Organization
@@ -167,6 +265,11 @@ export default function Background() {
               type="text"
               id="name"
               class="w-[90%] p-2 border rounded-md shadow-sm"
+              onChange={(e)=>{
+                setSignup((prev)=>{
+                  return {...prev, organization:e.target.value}
+                })
+              }}
             />
             <label for="email" class="block text-sm font-normal mt-4 ">
               Role
@@ -177,6 +280,11 @@ export default function Background() {
               name="email"
               class="w-[90%] p-2 border rounded-md shadow-sm"
               placeholder="Enter your role"
+              onChange={(e)=>{
+                setSignup((prev)=>{
+                  return {...prev, role_:e.target.value}
+                })
+              }}
             />
             <label for="email" class="block text-sm font-normal mt-4 ">
               Password
@@ -187,17 +295,18 @@ export default function Background() {
               name="password"
               class="w-[90%] p-2 border rounded-md shadow-sm"
               placeholder="Enter your password"
+              onChange={(e)=>{
+                setSignup((prev)=>{
+                  return {...prev, password:e.target.value}
+                })
+              }}
             />
 
             <div
               className="bg-[#69BD45] items-center text-center text-white w-[90%] rounded-md mt-7 py-2"
-              onClick={() => {
-                setModal3(true);
-                setModal2(false);
-                console.log("hello");
-              }}
+              onClick={SignUpHandler}
             >
-              Next
+              {loading ? "Loading...." :"Next"}
             </div>
 
             <p className="mt-5 text-center">
@@ -221,66 +330,43 @@ export default function Background() {
         <>
           <div
             className="flex justify-end cursor-pointer"
-            onClick={() => setModal(false)}
+            onClick={() => setModal3(false)}
           >
             <LiaTimesSolid size={30} />
           </div>
           <p className="font-bold text-[35px] items-center text-center mb-2">
-            Sign in to your account
+            OTP Sent
           </p>
-          <p className="text-[#667085] text-[16px] mb-3 text-center">
-            Create an account and get unlimited access to our publications on
-            developments in African healthcare.
+          <p className="text-[#667085] text-[14px] mb-3 text-center">
+            An OTP was sent to test****@email.com
           </p>
-          <form>
-            <label for="name" class="block text-sm font-normal mb-1">
-              Email Address
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              class="w-[90%] p-2 border rounded-md shadow-sm"
-              placeholder="Enter your email"
+          <div className="w-fit mx-auto">
+            <OtpInput
+              value={otp}
+              onChange={setOtp}
+              numInputs={6}
+              renderSeparator={<span>&nbsp;&nbsp;&nbsp;</span>}
+              renderInput={(props) => (
+                <input
+                  {...props}
+                  className="p-6 w-full h-10  border rounded-md shadow-sm"
+                />
+              )}
             />
+            <br />
+          </div>
+          <button className="bg-[#69BD45] p-3 px-48 text-white rounded-md">
+            Sign Up
+          </button>
 
-            <label for="name" class="block text-sm font-normal mt-4 ">
-              Password
-            </label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              class="w-[90%] p-2 border rounded-md shadow-sm"
-              placeholder="Show"
-            />
-
-            <p className="ml-80 mt-3 text-[12px] text-[#69BD45] cursor-pointer">
-              Forget password?
-            </p>
-
-            <button className="bg-[#69BD45] items-center text-white w-[90%] rounded-md mt-7 py-2">
-              Next
-            </button>
-
-            <p className="mt-5 text-center">
-              Already have an account?{" "}
-              <span
-                className="text-[#FF784B] cursor-pointer "
-                onClick={() => {
-                  setModal(true);
-                  setModal2(false);
-                }}
-              >
-                {" "}
-                Log in{" "}
-              </span>
-            </p>
-          </form>
+          <p className="text-[19px] mt-5 flex justify-center text-[#71717A]">
+            Didn’t receive OTP?{" "}
+            <span className="text-[#FF784B] text-[17px] ml-1">Resend</span>
+          </p>
         </>
       </Signin>
 
-      <nav className={`absolute top-0 w-full z-20 pt-6 md:px-8 px:8 p-8`}>
+      <nav className={`absolute top-0 w-[80%] lg:w-full z-20 pt-6 md:px-8 px:8 p-8`}>
         <aside
           className={`md:px-4 top-0  left-0 flex align-middle justify-between items-center ${
             isScrolled ? "scrolled" : "scrolledNo"
@@ -291,7 +377,7 @@ export default function Background() {
           <figure>
             <img src={logo1} alt="" width={100} />
           </figure>
-          <ul className="hidden justify-between pt-3 s900:flex gap-10">
+          <ul className="hidden justify-between pt-3 s900:flex gap-5">
             <li className="text-black hover:text-green-700 cursor-pointer font-normal">
               Home
             </li>
@@ -403,7 +489,7 @@ export default function Background() {
               >
                 <LiaTimesSolid className="ml-5 pt-5" size={70} color="green" />
               </div>
-              <ul className="flex flex-col gap-16 p-8">
+              <ul className="flex flex-col gap-10 p-8">
                 <li className="text-gray-700 hover:text-green-500 cursor-pointer text-[23px]">
                   Home
                 </li>
@@ -429,6 +515,14 @@ export default function Background() {
                     </button>
                   </li>
                 </NavLink>
+                <li
+                  onClick={() => {
+                    setModal(true);
+                  }}
+                  className="text-black hover:text-green-700 cursor-pointer text-[23px] font-normal"
+                >
+                  Sign in
+                </li>
               </ul>
             </div>
           </div>
@@ -458,9 +552,9 @@ export default function Background() {
           </p>
           <div className="flex items-center gap-7 flex-col lg:flex-row  ">
             <a href="#video-section">
-            <button className="text-[13px] px-14 p-3 text-white rounded-md border-none bg-[#FF784B] w-full md:w-auto">
-              Watch video
-            </button>
+              <button className="text-[13px] px-14 p-3 text-white rounded-md border-none bg-[#FF784B] w-full md:w-auto">
+                Watch video
+              </button>
             </a>
             <NavLink
               to="/about-us"

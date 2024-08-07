@@ -37,7 +37,7 @@ export default function PublicationSection() {
                 <p className="font-bold text-xl md:text-[24px] mb-3">
                   Medical Device Registration
                 </p>
-                <MdOutlineArrowOutward style={{ color: "black" }} size={20} />
+                {/* <MdOutlineArrowOutward style={{ color: "black" }} size={20} /> */}
               </div>
             </div>
             <p className="text-[13px]">
@@ -64,7 +64,7 @@ export default function PublicationSection() {
               <p className="font-bold md:text-[24px] text-lg mb-3">
                 Global Impact of Unsafe Food
               </p>
-              <MdOutlineArrowOutward style={{ color: "black" }} size={20} />
+              {/* <MdOutlineArrowOutward style={{ color: "black" }} size={20} /> */}
               {/* <figure>
                 <img src={iconwrap} alt="" />
               </figure> */}
@@ -94,7 +94,7 @@ export default function PublicationSection() {
                 <p className="font-bold md:text-[24px] text-lg mb-3">
                   Menstrual Hygiene Day 2024
                 </p>
-                <MdOutlineArrowOutward style={{ color: "black" }} size={20} />
+                {/* <MdOutlineArrowOutward style={{ color: "black" }} size={20} /> */}
               </div>
               <p className="text-[13px]">
                 Sanitary pad prices have increased by 40-75%, forcing many to

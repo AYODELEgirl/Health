@@ -21,8 +21,7 @@ export default function CommitmentVideo() {
   return (
     <div>
       <h1 className="font-bold flex flex-col gap-10 items-center justify-center lg:text-[2rem] md:text-[1.5rem] text-[1rem] text-center mt-24">
-        We are commited to expanding healthcare access <br/> in africa with our
-        market access solution
+      We are committed to expanding healthcare access  <br /> in Africa with our market access solutions
       </h1>
       <div className="flex relative justify-center pt-10">
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">

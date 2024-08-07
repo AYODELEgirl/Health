@@ -66,7 +66,7 @@ export default function publication({ setMorePublication }) {
 
   const [details, setDetails] = useState(data);
   const handleFilter = (name) => {
-    const filtered = data.filter(
+    const filtered = details.filter(
       (item) => item.type.toLowerCase() === name.toLowerCase()
     );
     console.log(filtered);
@@ -211,10 +211,10 @@ export default function publication({ setMorePublication }) {
                         <p className="font-bold text-lg md:text-[24px] mb-3">
                           {data.info}
                         </p>
-                        <MdOutlineArrowOutward
+                        {/* <MdOutlineArrowOutward
                           style={{ color: "black" }}
                           size={20}
-                        />
+                        /> */}
                       </div>
                     </div>
                     <p className="text-[13px]">

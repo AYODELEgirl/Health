@@ -6,7 +6,7 @@ import SigninNavbar from "./SigninNavbar";
 export default function Signin({ modal, setModal, children }) {
   return (
     <div
-      className={`bg-[#0b0b0b9e] fixed top-0 left-0 w-full h-screen overflow-hidden overflow-y-scroll z-[10000] flex justify-center items-center transition ease-in-out delay-500 transform ${
+      className={`bg-[#0b0b0b9e] fixed top-0 left-0 w-full h-screen overflow-hidden overflow-y-scroll z-[8000] flex justify-center items-center transition ease-in-out delay-500 transform ${
         modal
           ? "translate-y-0 pointer-events-auto"
           : "-translate-y-full pointer-events-none"
