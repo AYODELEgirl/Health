@@ -20,7 +20,6 @@ export default function PublicationSection() {
           African Healthcare market
         </p>
       </div>
-
       <div className="p-1">
         <div className="grid lg:grid-cols-3 gap-10 ">
           <div className=" absolute flex justify-between p-3">
@@ -46,7 +45,7 @@ export default function PublicationSection() {
               treatment...
             </p>
             <div className="flex flex-row  gap-4 mt-4 items-center">
-              <p className="text-red-400 cursor-pointer">Learn more</p>
+              <p className="text-red-400 cursor-pointer">Read more</p>
               <MdOutlineArrowOutward style={{ color: "#FF784B" }} size={20} />
             </div>
           </div>
@@ -74,7 +73,7 @@ export default function PublicationSection() {
               from eating unsafe food, many of them small children. Safe...
             </p>
             <div className="flex flex-row mt-4 gap-4 items-center">
-              <p className="text-red-400 cursor-pointer ">Learn more</p>
+              <p className="text-red-400 cursor-pointer ">Read more</p>
               <MdOutlineArrowOutward style={{ color: "#FF784B" }} />
               <figure></figure>
             </div>
@@ -102,7 +101,7 @@ export default function PublicationSection() {
                 dignity...
               </p>
               <div className="flex flex-row gap-4 items-center mt-4">
-                <p className="text-red-400 cursor-pointer">Learn more</p>
+                <p className="text-red-400 cursor-pointer">Read more</p>
                 <MdOutlineArrowOutward style={{ color: "#FF784B" }} />
               </div>
             </div>

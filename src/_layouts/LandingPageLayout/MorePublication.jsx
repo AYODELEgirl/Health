@@ -7,12 +7,14 @@ import public2 from "../../assets/images/public2.jpg";
 import public3 from "../../assets/images/public3.jpg";
 import public4 from "../../assets/images/public4.jpg";
 import public5 from "../../assets/images/public5.jpg";
-import public7  from "../../assets/images/public7.jpg";
+import public7 from "../../assets/images/public7.jpg";
 import rightarrow from "../../assets/images/rightarrow.png";
 import publications from "../../assets/images/publications.svg";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import PublicationDetails from "./PublicationDetails";
 import { LiaTimesSolid } from "react-icons/lia";
+import share from "../../assets/images/share.png";
+import download from "../../assets/images/download.png";
 import NavBar3 from "./Navbar3";
 
 function MorePublication({ setMorePublication }) {
@@ -34,8 +36,8 @@ function MorePublication({ setMorePublication }) {
       info: "Global Impact of Unsafe Food",
       image: public2,
       text: "Africa's population is growing at a rapid pace, outstripping the development of healthcare infrastructure. Nigeria Five countries.",
-      text2 :
-      "Across the African continent, a paradigm shift is underway, driven by a growing recognition that sustainable progress in health outcomes cannot be achieved through a one-size-fits-all approach imposed from the outside. For too long, the African healthcare landscape has been shaped by external influences, from the legacies of colonialism to the importation of foreign technologies and interventions that fail to adequately address the nuanced contexts and challenges diverse populations face. This top-down approach has perpetuated dependency on foreign aid and expertise, hindering the cultivation of self-reliance and local ownership. In response, there is an urgent need to nurture and scale homegrown solutions",
+      text2:
+        "Across the African continent, a paradigm shift is underway, driven by a growing recognition that sustainable progress in health outcomes cannot be achieved through a one-size-fits-all approach imposed from the outside. For too long, the African healthcare landscape has been shaped by external influences, from the legacies of colonialism to the importation of foreign technologies and interventions that fail to adequately address the nuanced contexts and challenges diverse populations face. This top-down approach has perpetuated dependency on foreign aid and expertise, hindering the cultivation of self-reliance and local ownership. In response, there is an urgent need to nurture and scale homegrown solutions",
       link: "/ReadMore",
       type: "Whitepapers",
     },
@@ -45,7 +47,7 @@ function MorePublication({ setMorePublication }) {
       image: public5,
       text: "Technology has emerged as a powerful catalyst for transforming .",
       text2:
-      "Technology has emerged as a powerful catalyst for transforming healthcare systems worldwide, offering innovative solutions to address longstanding challenges. In Africa, adopting technology in healthcare has the potential to bridge the gaps in access, affordability, and quality of care. By leveraging technological advancements, African nations can leapfrog traditional barriers and accelerate progress toward achieving universal health coverage and the Sustainable Development Goals (SDGs) related to health.",
+        "Technology has emerged as a powerful catalyst for transforming healthcare systems worldwide, offering innovative solutions to address longstanding challenges. In Africa, adopting technology in healthcare has the potential to bridge the gaps in access, affordability, and quality of care. By leveraging technological advancements, African nations can leapfrog traditional barriers and accelerate progress toward achieving universal health coverage and the Sustainable Development Goals (SDGs) related to health.",
       link: "/ReadMore",
       type: "Case studies",
     },
@@ -55,7 +57,7 @@ function MorePublication({ setMorePublication }) {
       image: public4,
       text: "Sanitary pad prices have increased by 40-75%, forcing many to switch to cheaper, less preferred products. This affects the dignity and health of women and girls across Africa.",
       text2:
-      "The digital health landscape in Africa is on the cusp of significant growth, with projections indicating a market value of $6.93 billion by 2029. Digital health, broadly defined as the use of information and communication technologies to improve healthcare delivery and outcomes, encompasses a wide range of solutions from telemedicine to health informatics and wearable devices. This paper aims to understand the current state of Africa's digital health market, comparing it to global trends and analyzing the economic factors influencing its development. We'll examine the unique challenges confronting African health tech startups",
+        "The digital health landscape in Africa is on the cusp of significant growth, with projections indicating a market value of $6.93 billion by 2029. Digital health, broadly defined as the use of information and communication technologies to improve healthcare delivery and outcomes, encompasses a wide range of solutions from telemedicine to health informatics and wearable devices. This paper aims to understand the current state of Africa's digital health market, comparing it to global trends and analyzing the economic factors influencing its development. We'll examine the unique challenges confronting African health tech startups",
       link: "/ReadMore",
       type: "Whitepapers",
     },
@@ -65,7 +67,7 @@ function MorePublication({ setMorePublication }) {
       image: public3,
       text: "World Hepatitis Week serves as a critical reminder of the  global fight against hepatitis, a group of viral infections  that pose",
       text2:
-      "The digital health landscape in Africa is on the cusp of significant growth, with projections indicating a market value of $6.93 billion by 2029. This report highlights the current state of Africa's digital health market, comparing it to global trends and analyzing the economic factors influencing its development as well as the unique challenges confronting African health tech startups.",
+        "The digital health landscape in Africa is on the cusp of significant growth, with projections indicating a market value of $6.93 billion by 2029. This report highlights the current state of Africa's digital health market, comparing it to global trends and analyzing the economic factors influencing its development as well as the unique challenges confronting African health tech startups.",
       link: "/ReadMore",
       type: "Infographics",
     },
@@ -75,7 +77,7 @@ function MorePublication({ setMorePublication }) {
       image: public7,
       text: "Hypertension is a leading cause of death, globally. Many countries in Sub Saharan Africa have seen little improvement in hypertension detection, treatment, and control over the past 30 .",
       text2:
-      "In Nigeria, Small and Medium-sized Enterprises (SMEs) have been identified as vital catalysts for sustained economic development, rapid industrialization, poverty alleviation, and job creation (Central Bank of Nigeria, 2015). These entities not only contribute significantly to the Gross Domestic Product (GDP), making up 48% of Nigeria's GDP, but also employ more than 80% of the workforce, showcasing their pivotal role in the nation's economy (Nosike and Udekwesili, 2022; This Day, 2023). SMEs are instrumental in fostering self-reliant industrialization using local raw materials, enhancing employment, ensuring an equitable distribution of industrial development, and facilitating the expansion of non-oil exports. Despite their critical role, the sector faces considerable challenges. A decline from 41 million SMEs in 2017 to 39 million in 2021",
+        "In Nigeria, Small and Medium-sized Enterprises (SMEs) have been identified as vital catalysts for sustained economic development, rapid industrialization, poverty alleviation, and job creation (Central Bank of Nigeria, 2015). These entities not only contribute significantly to the Gross Domestic Product (GDP), making up 48% of Nigeria's GDP, but also employ more than 80% of the workforce, showcasing their pivotal role in the nation's economy (Nosike and Udekwesili, 2022; This Day, 2023). SMEs are instrumental in fostering self-reliant industrialization using local raw materials, enhancing employment, ensuring an equitable distribution of industrial development, and facilitating the expansion of non-oil exports. Despite their critical role, the sector faces considerable challenges. A decline from 41 million SMEs in 2017 to 39 million in 2021",
       link: "/ReadMore",
       type: "Whitepapers",
     },
@@ -85,7 +87,7 @@ function MorePublication({ setMorePublication }) {
       image: public3,
       text: "World Hepatitis Week serves as a critical reminder of the  global fight against hepatitis, a group of viral infections  that pose",
       text2:
-      "World Hepatitis Week serves as a critical reminder of the  global fight against hepatitis, a group of viral infections  that pose significant public health challenges. In Nigeria,  hepatitis B and C are prevalent yet often overshadowed by  the extensive campaigns and awareness programs dedicated  to HIV/AIDS. Despite hepatitis B being as serious as, if not  more serious than, HIV/AIDS, its prevention and treatment  options remain under-discussed. This oversight is concerning,  given that hepatitis B is both deadly and preventable  through vaccination.",
+        "World Hepatitis Week serves as a critical reminder of the  global fight against hepatitis, a group of viral infections  that pose significant public health challenges. In Nigeria,  hepatitis B and C are prevalent yet often overshadowed by  the extensive campaigns and awareness programs dedicated  to HIV/AIDS. Despite hepatitis B being as serious as, if not  more serious than, HIV/AIDS, its prevention and treatment  options remain under-discussed. This oversight is concerning,  given that hepatitis B is both deadly and preventable  through vaccination.",
       link: "/ReadMore",
       type: "Case studies",
     },
@@ -95,7 +97,7 @@ function MorePublication({ setMorePublication }) {
       image: publicone,
       text: "The digital health revolution is transforming healthcare  systems.",
       text2:
-      "The digital health revolution is transforming healthcare  systems globally, and Africa is no exception. As the continent  grapples with challenges like limited access to healthcare, a  shortage of healthcare professionals, and a high burden of  infectious diseases, digital health solutions offer innovative  ways to bridge gaps and improve health outcomes. This surge  in innovation, however, presents a unique challenge: how to  ensure these digital tools are safe, effective, and meet the  specific needs of African contexts. This article explores the  rise of digital health in Africa, its transformative impact, and  the crucial regulatory considerations that accompany this  technological evolution. ",
+        "The digital health revolution is transforming healthcare  systems globally, and Africa is no exception. As the continent  grapples with challenges like limited access to healthcare, a  shortage of healthcare professionals, and a high burden of  infectious diseases, digital health solutions offer innovative  ways to bridge gaps and improve health outcomes. This surge  in innovation, however, presents a unique challenge: how to  ensure these digital tools are safe, effective, and meet the  specific needs of African contexts. This article explores the  rise of digital health in Africa, its transformative impact, and  the crucial regulatory considerations that accompany this  technological evolution. ",
       link: "/ReadMore",
       type: "Whitepapers",
     },
@@ -105,7 +107,7 @@ function MorePublication({ setMorePublication }) {
       image: publicone,
       text: "Nigeria is in the middle of a cholera crisis. As of June 24.",
       text2:
-      "Nigeria is in the middle of a cholera crisis. As of June 24, 2024, the Nigeria Centre for Disease Control and Prevention (NCDC) declared a national cholera emergency (1). According to the NCDC, 1,528 suspected cases and 53 deaths have been recorded across 31 states and 107 local government areas with a case fatality rate of 3.5 per cent since the beginning of the year (1). with over 1,528 suspected cases reported across 31 states. Lagos State, the country's commercial hub, has been notably impacted, recording 579 suspected cases and 29 deaths",
+        "Nigeria is in the middle of a cholera crisis. As of June 24, 2024, the Nigeria Centre for Disease Control and Prevention (NCDC) declared a national cholera emergency (1). According to the NCDC, 1,528 suspected cases and 53 deaths have been recorded across 31 states and 107 local government areas with a case fatality rate of 3.5 per cent since the beginning of the year (1). with over 1,528 suspected cases reported across 31 states. Lagos State, the country's commercial hub, has been notably impacted, recording 579 suspected cases and 29 deaths",
       link: "/ReadMore",
       type: "Case studies",
     },
@@ -115,7 +117,7 @@ function MorePublication({ setMorePublication }) {
       image: publicone,
       text: "Hypertension is a leading cause of death, globally. Many countries in Sub Saharan Africa have seen little improvement in hypertension detection, treatment, and control over the past 30 .",
       text2:
-      "Hypertension is a leading cause of death, globally. Many countries in Sub Saharan Africa have seen little improvement in hypertension detection, treatment,and control over the past 30 years.",
+        "Hypertension is a leading cause of death, globally. Many countries in Sub Saharan Africa have seen little improvement in hypertension detection, treatment,and control over the past 30 years.",
       link: "/ReadMore",
       type: "Infographics",
     },
@@ -125,7 +127,7 @@ function MorePublication({ setMorePublication }) {
       image: publicone,
       text: "Sanitary pad prices have increased by 40-75%, forcing many to switch to cheaper, less preferred products. This affects the dignity and health of women and girls across Africa.",
       text2:
-      "Sanitary pad prices have increased by 40-75%, forcing many to switch to cheaper, less preferred products. This affects the dignity and health of women and girls across Africa",
+        "Sanitary pad prices have increased by 40-75%, forcing many to switch to cheaper, less preferred products. This affects the dignity and health of women and girls across Africa",
       link: "/ReadMore",
       type: "Infographics",
     },
@@ -135,7 +137,7 @@ function MorePublication({ setMorePublication }) {
       image: publicone,
       text: " 63% of new hepatitis B infections globally occur in Africa. 10 countries, including Nigeria and Ethiopia, bear nearly two-thirds of the hepatitis burden in Africa. 4 million children under five .",
       text2:
-      "63% of new hepatitis B infections globally occur in Africa. 10 countries, including Nigeria and Ethiopia, bear nearly two-thirds of the hepatitis burden in Africa. 4 million children under five with hepatitis B in Sub-Saharan Africa.",
+        "63% of new hepatitis B infections globally occur in Africa. 10 countries, including Nigeria and Ethiopia, bear nearly two-thirds of the hepatitis burden in Africa. 4 million children under five with hepatitis B in Sub-Saharan Africa.",
       link: "/ReadMore",
       type: "Infographics",
     },
@@ -145,7 +147,7 @@ function MorePublication({ setMorePublication }) {
       image: publicone,
       text: "Africa's population is growing at a rapid pace, outstripping the development of healthcare infrastructure. Nigeria Five countries.",
       text2:
-      "Africa's population is growing at a rapid pace, outstripping the development of healthcare infrastructure. Nigeria Five countries—Nigeria, Ethiopia, Democratic Republic of Congo, Tanzania, and South Africa—account for 45% of Africa's population, presenting unique healthcare challenges.",
+        "Africa's population is growing at a rapid pace, outstripping the development of healthcare infrastructure. Nigeria Five countries—Nigeria, Ethiopia, Democratic Republic of Congo, Tanzania, and South Africa—account for 45% of Africa's population, presenting unique healthcare challenges.",
       link: "/ReadMore",
       type: "Infographics",
     },
@@ -155,7 +157,7 @@ function MorePublication({ setMorePublication }) {
       image: publicone,
       text: "Africa's population is growing at a rapid pace, outstripping the development of healthcare infrastructure. Nigeria Five countries.",
       text2:
-      "Every day, about 1.6 million people around the world become sick from eating unsafe food, many of them small children. Safe food is critical for public health and requires global attention and action.",
+        "Every day, about 1.6 million people around the world become sick from eating unsafe food, many of them small children. Safe food is critical for public health and requires global attention and action.",
       link: "/ReadMore",
       type: "Infographics",
     },
@@ -165,7 +167,7 @@ function MorePublication({ setMorePublication }) {
       image: publicone,
       text: "A medical device is defined as 'An article, in- strument, apparatus or machine that is used in the prevention, diagnosis or treatment of illness or disease  or for detecting, measuring.",
       text2:
-      "A medical device is defined as 'An article, in- strument, apparatus or machine that is used in the prevention, diagnosis or treatment of illness or disease, or for detecting, measur- ing, restoring, correcting or modifying the structure or function of the body for some health purpose.",
+        "A medical device is defined as 'An article, in- strument, apparatus or machine that is used in the prevention, diagnosis or treatment of illness or disease, or for detecting, measur- ing, restoring, correcting or modifying the structure or function of the body for some health purpose.",
       link: "/ReadMore",
       type: "News",
     },
@@ -175,7 +177,7 @@ function MorePublication({ setMorePublication }) {
       image: publicone,
       text: "Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget?.",
       text2:
-      "Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget?.",
+        "Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget?.",
       link: "/ReadMore",
       type: "Case studies",
     },
@@ -189,8 +191,6 @@ function MorePublication({ setMorePublication }) {
   const [openModal, setOpenModal] = useState(false);
 
   const [itemValue, setItemValue] = useState("");
-
-  console.log(itemValue);
 
   const handleFilter = (name) => {
     const filtered = PPublicationdata.filter(
@@ -219,6 +219,10 @@ function MorePublication({ setMorePublication }) {
     setDetails(filtered);
   };
 
+  console.log(details);
+
+  console.log(itemValue);
+
   return (
     <div>
       {publicationDetails ? (
@@ -227,35 +231,32 @@ function MorePublication({ setMorePublication }) {
         <>
           <NavBar3 />
           <div>
-
             <div className="flex flex-row gap-x-96">
+              <div className="p-7">
+                <p className=" text-red-400 text-[12px] mt-20">
+                  Insights and resources
+                </p>
+                <h2 className="font-bold md:text-[30px] text-[20px]">
+                  Latest Publications
+                </h2>
+                <p className="text-[14px] text-[#667085]">
+                  We're constantly curating the insight you need to understand
+                  the African Healthcare market
+                </p>
+              </div>
 
-            
-            <div className="p-7">
-              <p className=" text-red-400 text-[12px] mt-20">
-                Insights and resources
-              </p>
-              <h2 className="font-bold md:text-[30px] text-[20px]">
-                Latest Publications
-              </h2>
-              <p className="text-[14px] text-[#667085]">
-                We're constantly curating the insight you need to understand the
-                African Healthcare market
-              </p>
-            </div>
-
-            <div>
-            <p
-              className="flex items-center pl-6 gap-4 cursor-pointer mt-36"
-              onClick={() => {
-                setMorePublication(false);
-              }}
-            >
-              {" "}
-              <p>Back to Insights</p>
-              <AiOutlineArrowRight />
-            </p> 
-            </div>
+              <div>
+                <p
+                  className="flex items-center pl-6 gap-4 cursor-pointer mt-36"
+                  onClick={() => {
+                    setMorePublication(false);
+                  }}
+                >
+                  {" "}
+                  <p>Back to Insights</p>
+                  <AiOutlineArrowRight />
+                </p>
+              </div>
             </div>
             <div className="hidden flex-row justify-between items-center md:p-3 md:px-8 sm:flex p-1">
               <div className="flex flex-row gap-8 cursor-pointer px-2">
@@ -331,7 +332,9 @@ function MorePublication({ setMorePublication }) {
                                   /> */}
                                 </div>
                               </div>
-                              <p className="text-[13px]">{p.text?.slice(0, 50)}...</p>
+                              <p className="text-[13px]">
+                                {p.text?.slice(0, 50)}...
+                              </p>
                               <div className="flex flex-row  gap-4 mt-4 items-center">
                                 <p className="text-red-400">Read more</p>
                                 <MdOutlineArrowOutward
@@ -348,28 +351,49 @@ function MorePublication({ setMorePublication }) {
 
               {openModal && (
                 <div>
-                  <section className="fixed top-0 left-0 w-[100vw] h-[100vh] bg-[rgba(0,0,0,0.3)] flex justify-center items-center z-20">
-                    <div className="bg-white p-[2rem] w-[60%] ">
+                  <section className="fixed top-0 left-0 w-[100vw] h-[100vh] bg-[rgba(0,0,0,0.3)] flex justify-center items-center z-20 mt-10">
+                    <div className="bg-white p-[1rem] px-10 w-[82%] ">
                       <div
                         onClick={() => setOpenModal(false)}
                         className="cursor-pointer flex justify-end"
                       >
-                        <LiaTimesSolid />
+                        <LiaTimesSolid size={25}/>
                       </div>
-                      <section className="flex justify-between gap-[2rem]">
+                      <section className="flex justify-center gap-[2rem]">
                         <aside className="w-[40%]">
                           <div>
-                            <img src={publications} alt="" width={"100%"} />
-                           
+                            <img
+                              src={itemValue.image}
+                              width={1000}
+                              className="mt-12"
+                            />
                           </div>
                         </aside>
                         <aside className="w-[60%]">
-                          <div className="font-semibold text-[1.8rem]">
+                          <div className="font-semibold text-[1.8rem] mt-9 mb-4">
                             {itemValue.info}
                           </div>
                           <div>{itemValue.text2}</div>
                         </aside>
                       </section>
+                      <aside className="flex justify-center pl-11">
+                        {/* <div className="">
+                          <img src={share} alt="" width={40} />
+                          <p className="text-[#667085]">Share</p>
+                        </div> */}
+                        <div className=" mb-12 mt-5 ">
+                          <a
+                            href="https://drive.google.com/file/d/1oiy-p2nmrQBIvL9hlb-QvApHj_53gJfm/view"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <img src={download} alt="" width={40} className="inline-block mr-6 " />
+                            <p className="text-[#FF784B] inline-block">
+                              Download Full Report
+                            </p>
+                          </a>
+                        </div>
+                      </aside>
                     </div>
                   </section>
                 </div>
