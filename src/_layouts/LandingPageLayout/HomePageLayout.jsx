@@ -16,7 +16,6 @@ export default function Background() {
   const [clicked, setClicked] = useState(false);
   const [loading, setLoading] = useState(false)
   const [email, setEmail] = useState()
-  const [token, setToken] = useState()
 
   const handleClick = () => {
     setClicked(!clicked);
@@ -45,6 +44,7 @@ export default function Background() {
   const [modal, setModal] = useState(false);
   const [modal2, setModal2] = useState(false);
   const [modal3, setModal3] = useState(false);
+  const [verifyLoading, setVeryloading] = useState()
   const [signup, setSignup] = useState(
     {
       name:"",
@@ -63,7 +63,8 @@ export default function Background() {
 }
   )
 
-
+const userToken = localStorage.getItem("token")
+console.log(userToken)
   async function SignUpHandler(){
     // setModal3(true);
     // setModal2(false);
@@ -79,6 +80,7 @@ export default function Background() {
     if(response?.status === 200){
       toast.success(server?.msg)
       console.log(server?.data?.token)
+      localStorage.setItem("token", server?.data?.token)
       setLoading(false)
       setModal2(false)
       setModal3(true)
@@ -86,7 +88,7 @@ export default function Background() {
       toast.error(server?.msg)
       setLoading(false)
     }
-  SendOtp()
+  // SendOtp()
   }
 
 
@@ -112,64 +114,69 @@ export default function Background() {
       setLoading(false)
     }
   }
-  async function SendOtp() {
+  // async function SendOtp() {
 
-    const response3 = await fetch(`http://89.38.135.41:3002/api/v1/auth/login`,{
-      method:"POST",
-      headers:{"Content-Type":"application/json"},
-      body:JSON.stringify(
-        {
-          email:"user.0@gmail.com",
-          password:"User#0"
-  }
-      )
-    })
-
-
-
-    const server3 = await response3.json()
-    setToken(server3?.data?.token)
-    console.log('==================')
-    console.log(server3)
+  //   const response3 = await fetch(`http://89.38.135.41:3002/api/v1/auth/login`,{
+  //     method:"POST",
+  //     headers:{"Content-Type":"application/json"},
+  //     body:JSON.stringify(
+  //       {
+  //         email:"user.0@gmail.com",
+  //         password:"User#0"
+  // }
+  //     )
+  //   })
 
 
 
-     const response = await fetch (`http://89.38.135.41:3002/api/v1/auth/sendOTP`,{
-      method:"POST",
+  //   const server3 = await response3.json()
+  //   // setToken(server3?.data?.token)
+  //   console.log('==================')
+  //   console.log(server3)
+
+
+
+  //    const response = await fetch (`http://89.38.135.41:3002/api/v1/auth/sendOTP`,{
+  //     method:"POST",
+  //     headers:{
+  //       "Content-Type":"application/json",
+  //       Authorization:`Bearer ${userToken}`
+  //     },
+  //     body:JSON.stringify({email:email})
+  //    })
+
+  //    const server = await response.json()
+  //    console.log(server)
+  // }
+  async function VerifyOtp(){
+ setVeryloading(true)
+    const response = await fetch(`http://89.38.135.41:3002/api/v1/auth/verifyOTP`,{
+      method:"PUT",
       headers:{
         "Content-Type":"application/json",
-        Authorization:`Bearer ${server3.data.token}`
+        Authorization:`Bearer ${userToken}`,
+
       },
-      body:JSON.stringify({email:email})
-     })
-
-     const server = await response.json()
-     console.log(server)
-  }
-  async function VerifyOtp(){
-   console.log(otp)
-//  setLoading(true)
-//     const response = await fetch(`http://89.38.135.41:3002/api/v1/auth/verifyOTP`,{
-//       method:"PUT",
-//       headers:{"Content-Type":"application/json"},
-//       body:JSON.stringify({
-//         otp
-//       })
-//     })
-//     const server = await response.json()
-//     console.log(server)
-//     if(response?.status === 200){
-//       toast.success(server?.msg)
-//       console.log(server?.data?.token)
-//       setTimeout(() => {
+      body:JSON.stringify({
+        otp:otp,
+        email:email
+      })
+    })
+    const server = await response.json()
+    console.log(server)
+    if(response?.status === 200){
+      toast.success(server?.msg)
+      setVeryloading(false)
+      console.log(server?.data?.token)
+      setTimeout(() => {
         
-//         setModal3(false)
-//       }, 1000);
-//     }else{
-//       toast.error(server?.msg)
-//     }
+        setModal3(false)
+      }, 1000);
+    }else{
+      toast.error(server?.msg)
+      setVeryloading(false)
+    }
   }
-
   return (
     <div className="relative max-w-screen  sm:h-screen h-[100vh] ">
       {/*  */}
@@ -407,21 +414,24 @@ export default function Background() {
             <OtpInput
               value={otp}
               onChange={(e)=>{
-                setOtp(e?.target?.value)
+                setOtp(e)
               }}
               numInputs={4}
               renderSeparator={<span>&nbsp;&nbsp;&nbsp;</span>}
               renderInput={(props) => (
                 <input
                   {...props}
-                  className="p-6 w-full text-black h-10  border rounded-md shadow-sm"
+                  className="p-6 text-black w-[70%] h-10  border rounded-md shadow-sm"
+                  style={{
+                    color: '#000',
+                  }}
                 />
               )}
             />
             <br />
           </div>
           <button onClick={VerifyOtp} className="bg-[#69BD45] p-3 px-48 text-white rounded-md">
-            Sign Up
+           {verifyLoading ? "loading...": "Sign Up"}
           </button>
 
           <p className="text-[19px] mt-5 flex justify-center text-[#71717A]">
