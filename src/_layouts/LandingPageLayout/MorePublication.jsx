@@ -336,7 +336,7 @@ function MorePublication({ setMorePublication }) {
                                 {p.text?.slice(0, 50)}...
                               </p>
                               <div className="flex flex-row  gap-4 mt-4 items-center">
-                                <p className="text-red-400">Read more</p>
+                                <p className="text-red-400 cursor-pointer">Read more</p>
                                 <MdOutlineArrowOutward
                                   style={{ color: "#FF784B" }}
                                 />

@@ -242,7 +242,7 @@ export default function publication({ setMorePublication }) {
                     </div>
                     <p className="text-[13px]">{data.text}</p>
                     <div className="flex flex-row  gap-4 mt-7 items-center">
-                      <p className="text-red-400">Read more</p>
+                      <p className="text-red-400 cursor-pointer">Read more</p>
                       <MdOutlineArrowOutward style={{ color: "#FF784B" }} />
                     </div>
                   </div>

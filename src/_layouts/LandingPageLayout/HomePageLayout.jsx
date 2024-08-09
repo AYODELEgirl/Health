@@ -8,6 +8,13 @@ import { CiMenuFries } from "react-icons/ci";
 import { LiaTimesSolid } from "react-icons/lia";
 import styled from "styled-components";
 import Signin from "./Signin/Signin";
+import { MdArrowDropDown } from "react-icons/md";
+import { Dropdown, Avatar } from "rsuite";
+import "rsuite/dist/rsuite.min.css" 
+// import iconnn from "../../assets/images/iconnn.png"
+import { CgProfile } from "react-icons/cg";
+
+import drop from "../../assets/images/drop.png"
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 export default function Background() {
@@ -22,6 +29,14 @@ export default function Background() {
   };
 
   const [isScrolled, setIsScrolled] = useState(true);
+
+  const renderToggle = (props) => (
+   <div className="flex flex-row cursor-pointer">
+
+     <Avatar circle {...props} src={<CgProfile size={7} />} size="" />
+     <MdArrowDropDown size={23} className="mt-1"/>
+     </div> 
+  );
 
   // useEffect(() => {
   //   const handleScroll = () => {
@@ -45,6 +60,7 @@ export default function Background() {
   const [modal2, setModal2] = useState(false);
   const [modal3, setModal3] = useState(false);
   const [verifyLoading, setVeryloading] = useState()
+  const [changeProfile, setChangeProfile] = useState(false)
   const [signup, setSignup] = useState(
     {
       name:"",
@@ -166,6 +182,7 @@ console.log(userToken)
     console.log(server)
     if(response?.status === 200){
       toast.success(server?.msg)
+      setChangeProfile(true)
       setVeryloading(false)
       console.log(server?.data?.token)
       setTimeout(() => {
@@ -484,14 +501,27 @@ console.log(userToken)
               </li>
             </NavLink>
 
-            <li
+            
+            {changeProfile ? "":<li
               onClick={() => {
                 setModal(true);
               }}
               className="text-black hover:text-green-700 cursor-pointer  font-normal"
             >
               Sign in
-            </li>
+            </li>}
+           {changeProfile && <div className="">
+
+            {/* <CgProfile size={30} /> */}
+            <Dropdown renderToggle={renderToggle}>
+          <Dropdown.Item onClick={() => {
+            setChangeProfile(false)
+          }}>
+            Sign Out
+          </Dropdown.Item>
+        </Dropdown>
+
+            </div>}
           </ul>
           <div
             className="flex s900:hidden text-black cursor-pointer"
