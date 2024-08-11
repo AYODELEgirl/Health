@@ -1,5 +1,5 @@
 import React from "react";
-import hands from "../../assets/images/hands.png";
+import mainHelp from "../../assets/images/mainHelp.jpg";
 import { NavLink } from "react-router-dom";
 export default function EnablementSection() {
   return (
@@ -26,7 +26,7 @@ export default function EnablementSection() {
       </section>
       <section className="md:w-[50%] w-full">
         <figure>
-          <img src={hands} alt="" className="w-full h-[500px] object-cover md:flex hidden" />
+          <img src={mainHelp} alt="" className="w-full h-[500px] object-cover md:flex hidden" />
         </figure>
       </section>
     </div>

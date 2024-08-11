@@ -9,8 +9,10 @@ import pix1 from "../../../assets/images/pix1.png";
 import pix2 from "../../../assets/images/pix2.png";
 import pix3 from "../../../assets/images/pix3.png";
 import IMAGEEE from "../../../assets/images/IMAGEEE.png";
-import charter from "../../../assets/images/charter.png";
-import footerlogo from "../../../assets/images/footerlogo.png";
+// import mainRead from "../../../assets/images/mainRead.jpg";
+// import mainCharter from "../../../assets/images/mainCharter.jpg";
+import mainRead from "../../../assets/images/mainRead .jpg";
+import mainCharter from "../../../assets/images/mainCharter.jpg";
 import { Link, NavLink } from "react-router-dom";
 import { FaXTwitter } from "react-icons/fa6";
 import { TbLetterX } from "react-icons/tb";
@@ -82,7 +84,7 @@ export default function Vision() {
           </div>
           <div className="lg:w-[50%] w-full">
             <figure>
-              <img src={pix3} alt="" />
+              <img src={mainRead} alt="" />
             </figure>
           </div>
         </div>
@@ -91,7 +93,7 @@ export default function Vision() {
           <div className="flex lg:flex-row flex-col mt-5 gap-y-5 md:px-20 px-9">
             <div className="lg:w-[50%] w-full ">
               <figure>
-                <img src={charter} alt="" className="md:flex hidden" />
+                <img src={mainCharter} alt="" className="md:flex hidden" />
               </figure>
             </div>
             <div className="lg:w-[50%] w-full mt-28 md:px-20 mb-3">

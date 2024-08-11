@@ -10,19 +10,19 @@ import styled from "styled-components";
 import Signin from "./Signin/Signin";
 import { MdArrowDropDown } from "react-icons/md";
 import { Dropdown, Avatar } from "rsuite";
-import "rsuite/dist/rsuite.min.css" 
+import "rsuite/dist/rsuite.min.css";
 // import iconnn from "../../assets/images/iconnn.png"
 import { CgProfile } from "react-icons/cg";
 
-import drop from "../../assets/images/drop.png"
+import drop from "../../assets/images/drop.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 export default function Background() {
   const [otp, setOtp] = useState();
   const [showModal, setShowModal] = useState(false);
   const [clicked, setClicked] = useState(false);
-  const [loading, setLoading] = useState(false)
-  const [email, setEmail] = useState()
+  const [loading, setLoading] = useState(false);
+  const [email, setEmail] = useState();
 
   const handleClick = () => {
     setClicked(!clicked);
@@ -31,12 +31,11 @@ export default function Background() {
   const [isScrolled, setIsScrolled] = useState(true);
 
   const renderToggle = (props) => (
-   <div className="flex flex-row cursor-pointer">
-
-     <Avatar circle {...props} src={<CgProfile size={7} />} size="" />
-     <MdArrowDropDown size={23} className="mt-1"/>
-     </div> 
-  );
+    <div className="flex flex-row cursor-pointer">
+      <Avatar circle {...props} src={<CgProfile size={7} />} size="" />
+      <MdArrowDropDown size={23} className="mt-1" />
+    </div>
+  );
 
   // useEffect(() => {
   //   const handleScroll = () => {
@@ -59,75 +58,71 @@ export default function Background() {
   const [modal, setModal] = useState(false);
   const [modal2, setModal2] = useState(false);
   const [modal3, setModal3] = useState(false);
-  const [verifyLoading, setVeryloading] = useState()
-  const [changeProfile, setChangeProfile] = useState(false)
-  const [signup, setSignup] = useState(
-    {
-      name:"",
-          email:"",
-          password:"",
-          country:"",
-          phone:"",
-          organization:"",
-          role_:""
-  }
-  )
-  const [login, setLogin] = useState(
-    {
-      email:"",
-      password:""
-}
-  )
+  const [otpModal, setOPTModal] = useState(false);
+  const [verifyLoading, setVeryloading] = useState();
+  const [changeProfile, setChangeProfile] = useState(false);
+  const [signup, setSignup] = useState({
+    name: "",
+    email: "",
+    password: "",
+    country: "",
+    phone: "",
+    organization: "",
+    role_: "",
+  });
+  const [login, setLogin] = useState({
+    email: "",
+    password: "",
+  });
 
-const userToken = localStorage.getItem("token")
-console.log(userToken)
-  async function SignUpHandler(){
+  const userToken = localStorage.getItem("token");
+  console.log(userToken);
+  async function SignUpHandler() {
     // setModal3(true);
     // setModal2(false);
     // console.log("hello");
- setLoading(true)
-    const response = await fetch(`http://89.38.135.41:3002/api/v1/auth/register`,{
-      method:"POST",
-      headers:{"Content-Type":"application/json"},
-      body:JSON.stringify(signup)
-    })
-    const server = await response.json()
-    console.log(server)
-    if(response?.status === 200){
-      toast.success(server?.msg)
-      console.log(server?.data?.token)
-      localStorage.setItem("token", server?.data?.token)
-      setLoading(false)
-      setModal2(false)
-      setModal3(true)
-    }else{
-      toast.error(server?.msg)
-      setLoading(false)
+    setLoading(true);
+    const response = await fetch(
+      `http://89.38.135.41:3002/api/v1/auth/register`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(signup),
+      }
+    );
+    const server = await response.json();
+    console.log(server);
+    if (response?.status === 200) {
+      toast.success(server?.msg);
+      console.log(server?.data?.token);
+      localStorage.setItem("token", server?.data?.token);
+      setLoading(false);
+      setModal2(false);
+      setModal3(true);
+    } else {
+      toast.error(server?.msg);
+      setLoading(false);
     }
-  // SendOtp()
+    // SendOtp()
   }
 
-
-  async function logInHandler(e){
+  async function logInHandler(e) {
     e.preventDefault();
-    // setModal3(true);
-    // setModal2(false);
-    // console.log("hello");
- setLoading(true)
-    const response = await fetch(`http://89.38.135.41:3002/api/v1/auth/login`,{
-      method:"POST",
-      headers:{"Content-Type":"application/json"},
-      body:JSON.stringify(login)
-    })
-    const server = await response.json()
-    console.log(server)
-    if(response?.status === 200){
-      toast.success(server?.msg)
-  
-      setLoading(false)
-    }else{
-      toast.error(server?.msg)
-      setLoading(false)
+    setLoading(true);
+    const response = await fetch(`http://89.38.135.41:3002/api/v1/auth/login`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(login),
+    });
+    const server = await response.json();
+    console.log(server);
+    if (response?.status === 200) {
+      toast.success(server?.msg);
+
+      setLoading(false);
+    } else {
+      toast.error(server?.msg);
+      setLoading(false);
     }
   }
   // async function SendOtp() {
@@ -143,14 +138,10 @@ console.log(userToken)
   //     )
   //   })
 
-
-
   //   const server3 = await response3.json()
   //   // setToken(server3?.data?.token)
   //   console.log('==================')
   //   console.log(server3)
-
-
 
   //    const response = await fetch (`http://89.38.135.41:3002/api/v1/auth/sendOTP`,{
   //     method:"POST",
@@ -164,40 +155,149 @@ console.log(userToken)
   //    const server = await response.json()
   //    console.log(server)
   // }
-  async function VerifyOtp(){
- setVeryloading(true)
-    const response = await fetch(`http://89.38.135.41:3002/api/v1/auth/verifyOTP`,{
-      method:"PUT",
-      headers:{
-        "Content-Type":"application/json",
-        Authorization:`Bearer ${userToken}`,
-
-      },
-      body:JSON.stringify({
-        otp:otp,
-        email:email
-      })
-    })
-    const server = await response.json()
-    console.log(server)
-    if(response?.status === 200){
-      toast.success(server?.msg)
-      setChangeProfile(true)
-      setVeryloading(false)
-      console.log(server?.data?.token)
+  async function VerifyOtp() {
+    setVeryloading(true);
+    const response = await fetch(
+      `http://89.38.135.41:3002/api/v1/auth/verifyOTP`,
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${userToken}`,
+        },
+        body: JSON.stringify({
+          otp: otp,
+          email: email,
+        }),
+      }
+    );
+    const server = await response.json();
+    console.log(server);
+    if (response?.status === 200) {
+      toast.success(server?.msg);
+      setChangeProfile(true);
+      setVeryloading(false);
+      console.log(server?.data?.token);
       setTimeout(() => {
-        
-        setModal3(false)
+        setModal3(false);
       }, 1000);
-    }else{
-      toast.error(server?.msg)
-      setVeryloading(false)
+    } else {
+      toast.error(server?.msg);
+      setVeryloading(false);
     }
   }
+
+  console.log(login.email);
+
+  async function verifyEmailHandler() {
+    setVeryloading(true);
+
+    try {
+      const response = await fetch(
+        `http://89.38.135.41:3002/api/v1/auth/sendOTP`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${userToken}`,
+          },
+          body: JSON.stringify({ email: login.email }),
+        }
+      );
+
+      const server = await response.json();
+
+      if (response.ok) {
+        // Using response.ok is more concise for checking if the status is 200-299
+        toast.success(server?.msg);
+        setOPTModal(false);
+        setModal3(true);
+        console.log(server?.data?.token);
+
+        // Hide modal after 1 second
+        // setTimeout(() => {
+        //   setModal3(false);
+        // }, 1000);
+      } else {
+        toast.error(server?.msg);
+      }
+    } catch (error) {
+      console.error("Error sending OTP:", error);
+      toast.error("An error occurred while sending the OTP. Please try again.");
+    } finally {
+      setVeryloading(false);
+    }
+  }
+
   return (
     <div className="relative max-w-screen  sm:h-screen h-[100vh] ">
       {/*  */}
-      <ToastContainer/>
+      <ToastContainer />
+      <Signin modal={otpModal} setModal={setOPTModal}>
+        <>
+          <div
+            className="flex justify-end cursor-pointer"
+            onClick={() => setOPTModal(false)}
+          >
+            <LiaTimesSolid size={30} />
+          </div>
+          <p className="font-bold text-[30px] items-center text-center mb-12">
+            Enter your Email
+          </p>
+          <form>
+            <label for="name" class="block text-sm font-normal mb-1">
+              Email Address
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-[90%] p-2 border rounded-md shadow-sm"
+              placeholder="Enter your email"
+              onChange={(e) => {
+                setLogin((prev) => {
+                  return { ...prev, email: e.target.value };
+                });
+              }}
+            />
+
+            <div
+              className="bg-[#69BD45] items-center flex justify-center cursor-pointer text-white w-[90%] rounded-md mt-7 py-2 "
+              onClick={verifyEmailHandler}
+            >
+              Next
+            </div>
+
+            {/* <p className=" text-center">
+              Don't have an account?{" "}
+              <span
+                className="text-[#FF784B] cursor-pointer "
+                onClick={() => {
+                  setModal(false);
+                  setModal2(true);
+                }}
+              >
+                {" "}
+                Sign up
+              </span>
+            </p> */}
+            <p className="text-[12px] mt-5 text-center ] ">
+              Back to
+              <span
+                className="text-[#FF784B] cursor-pointer"
+                onClick={() => {
+                  setModal(true);
+                  setOPTModal(false);
+                }}
+              >
+                {" "}
+                Login
+              </span>{" "}
+            </p>
+          </form>
+        </>
+      </Signin>
+
       <Signin modal={modal} setModal={setModal}>
         <>
           <div
@@ -219,26 +319,26 @@ console.log(userToken)
               name="name"
               class="w-[90%] p-2 border rounded-md shadow-sm"
               placeholder="Enter your email"
-              onChange={(e)=>{
-                setLogin((prev)=>{
-                  return {...prev, email:e.target.value}
-                })
+              onChange={(e) => {
+                setLogin((prev) => {
+                  return { ...prev, email: e.target.value };
+                });
               }}
-     
             />
 
             <label for="name" class="block text-sm font-normal mt-4 ">
               Password
             </label>
             <input
-              type="text"
+              type="password"
               id="name"
               name="name"
               class="w-[90%] p-2 border rounded-md shadow-sm"
-              onChange={(e)=>{
-                setLogin((prev)=>{
-                  return {...prev, password:e.target.value}
-                })
+              placeholder="Enter your password"
+              onChange={(e) => {
+                setLogin((prev) => {
+                  return { ...prev, password: e.target.value };
+                });
               }}
               // placeholder="Show"
             />
@@ -247,8 +347,11 @@ console.log(userToken)
               Forget password?
             </p>
 
-            <button className="bg-[#69BD45] items-center text-white w-[90%] rounded-md mt-7 py-2" onClick={logInHandler}>
-              Next
+            <button
+              className="bg-[#69BD45] items-center text-white w-[90%] rounded-md mt-7 py-2"
+              onClick={logInHandler}
+            >
+              Log in 
             </button>
 
             <p className="mt-5 text-center">
@@ -263,6 +366,19 @@ console.log(userToken)
                 {" "}
                 Sign up
               </span>
+            </p>
+            <p className="text-[12px] text-center ] ">
+              Email not verified?
+              <span
+                className="text-[#FF784B] cursor-pointer"
+                onClick={() => {
+                  setModal(false);
+                  setOPTModal(true);
+                }}
+              >
+                {" "}
+                Send OTP
+              </span>{" "}
             </p>
           </form>
         </>
@@ -293,10 +409,10 @@ console.log(userToken)
               name="name"
               class="w-[90%] p-2 border rounded-md shadow-sm"
               placeholder="Enter your name"
-              onChange={(e)=>{
-                setSignup((prev)=>{
-                  return {...prev, name:e.target.value}
-                })
+              onChange={(e) => {
+                setSignup((prev) => {
+                  return { ...prev, name: e.target.value };
+                });
               }}
             />
 
@@ -309,11 +425,11 @@ console.log(userToken)
               name="email"
               class="w-[90%] p-2 border rounded-md shadow-sm"
               placeholder="Enter your email"
-              onChange={(e)=>{
-                setSignup((prev)=>{
-                  return {...prev, email:e.target.value}
-                })
-                setEmail(e.target.value)
+              onChange={(e) => {
+                setSignup((prev) => {
+                  return { ...prev, email: e.target.value };
+                });
+                setEmail(e.target.value);
               }}
             />
             <label for="email" class="block text-sm font-normal mt-4 ">
@@ -324,10 +440,10 @@ console.log(userToken)
               id="name"
               class="w-[90%] p-2 border rounded-md shadow-sm"
               placeholder="Enter your country"
-              onChange={(e)=>{
-                setSignup((prev)=>{
-                  return {...prev, country:e.target.value}
-                })
+              onChange={(e) => {
+                setSignup((prev) => {
+                  return { ...prev, country: e.target.value };
+                });
               }}
             />
 
@@ -339,10 +455,10 @@ console.log(userToken)
               id="name"
               class="w-[90%] p-2 border rounded-md shadow-sm"
               placeholder="Enter your phone number"
-              onChange={(e)=>{
-                setSignup((prev)=>{
-                  return {...prev, phone:e.target.value}
-                })
+              onChange={(e) => {
+                setSignup((prev) => {
+                  return { ...prev, phone: e.target.value };
+                });
               }}
             />
             <label for="email" class="block text-sm font-normal mt-4 ">
@@ -350,12 +466,13 @@ console.log(userToken)
             </label>
             <input
               type="text"
+              placeholder="Enter your organization name"
               id="name"
               class="w-[90%] p-2 border rounded-md shadow-sm"
-              onChange={(e)=>{
-                setSignup((prev)=>{
-                  return {...prev, organization:e.target.value}
-                })
+              onChange={(e) => {
+                setSignup((prev) => {
+                  return { ...prev, organization: e.target.value };
+                });
               }}
             />
             <label for="email" class="block text-sm font-normal mt-4 ">
@@ -366,26 +483,26 @@ console.log(userToken)
               id="name"
               name="email"
               class="w-[90%] p-2 border rounded-md shadow-sm"
-              placeholder="Enter your role"
-              onChange={(e)=>{
-                setSignup((prev)=>{
-                  return {...prev, role_:e.target.value}
-                })
+              placeholder="Enter your role in your organization"
+              onChange={(e) => {
+                setSignup((prev) => {
+                  return { ...prev, role_: e.target.value };
+                });
               }}
             />
             <label for="email" class="block text-sm font-normal mt-4 ">
               Password
             </label>
             <input
-              type="text"
+              type="password"
               id="name"
               name="password"
               class="w-[90%] p-2 border rounded-md shadow-sm"
               placeholder="Enter your password"
-              onChange={(e)=>{
-                setSignup((prev)=>{
-                  return {...prev, password:e.target.value}
-                })
+              onChange={(e) => {
+                setSignup((prev) => {
+                  return { ...prev, password: e.target.value };
+                });
               }}
             />
 
@@ -393,7 +510,7 @@ console.log(userToken)
               className="bg-[#69BD45] items-center text-center text-white w-[90%] rounded-md mt-7 py-2"
               onClick={SignUpHandler}
             >
-              {loading ? "Loading...." :"Next"}
+              {loading ? "Loading...." : "Next"}
             </div>
 
             <p className="mt-5 text-center">
@@ -430,8 +547,8 @@ console.log(userToken)
           <div className="w-fit mx-auto">
             <OtpInput
               value={otp}
-              onChange={(e)=>{
-                setOtp(e)
+              onChange={(e) => {
+                setOtp(e);
               }}
               numInputs={4}
               renderSeparator={<span>&nbsp;&nbsp;&nbsp;</span>}
@@ -440,15 +557,18 @@ console.log(userToken)
                   {...props}
                   className="p-6 text-black w-[70%] h-10  border rounded-md shadow-sm"
                   style={{
-                    color: '#000',
+                    color: "#000",
                   }}
                 />
               )}
             />
             <br />
           </div>
-          <button onClick={VerifyOtp} className="bg-[#69BD45] p-3 px-48 text-white rounded-md">
-           {verifyLoading ? "loading...": "Sign Up"}
+          <button
+            onClick={VerifyOtp}
+            className="bg-[#69BD45] p-3 px-48 text-white rounded-md"
+          >
+            {verifyLoading ? "loading..." : "Sign Up"}
           </button>
 
           <p className="text-[19px] mt-5 flex justify-center text-[#71717A]">
@@ -458,7 +578,9 @@ console.log(userToken)
         </>
       </Signin>
 
-      <nav className={`absolute top-0 w-[80%] lg:w-full z-20 pt-6 md:px-8 px:8 p-8`}>
+      <nav
+        className={`absolute top-0 w-[80%] lg:w-full z-20 pt-6 md:px-8 px:8 p-8`}
+      >
         <aside
           className={`md:px-4 top-0  left-0 flex align-middle justify-between items-center ${
             isScrolled ? "scrolled" : "scrolledNo"
@@ -501,27 +623,33 @@ console.log(userToken)
               </li>
             </NavLink>
 
-            
-            {changeProfile ? "":<li
-              onClick={() => {
-                setModal(true);
-              }}
-              className="text-black hover:text-green-700 cursor-pointer  font-normal"
-            >
-              Sign in
-            </li>}
-           {changeProfile && <div className="">
-
-            {/* <CgProfile size={30} /> */}
-            <Dropdown renderToggle={renderToggle}>
-          <Dropdown.Item onClick={() => {
-            setChangeProfile(false)
-          }}>
-            Sign Out
-          </Dropdown.Item>
-        </Dropdown>
-
-            </div>}
+            {changeProfile ? (
+              ""
+            ) : (
+              <li
+                onClick={() => {
+                  setModal(true);
+                }}
+                className="text-black hover:text-green-700 cursor-pointer  font-normal"
+              >
+                Sign in
+              </li>
+            )}
+            {changeProfile && (
+              <div className="">
+                {/* <CgProfile size={30} /> */}
+                <Dropdown renderToggle={renderToggle}>
+                  <Dropdown.Item
+                    onClick={() => {
+                      setChangeProfile(false);
+                    }}
+                  >
+                    Sign Out
+                  </Dropdown.Item>
+                       
+                </Dropdown>
+              </div>
+            )}
           </ul>
           <div
             className="flex s900:hidden text-black cursor-pointer"
@@ -652,8 +780,8 @@ console.log(userToken)
             className="mb-7 md:w-[60%] w-full flex text-sm md:text-base text-black "
           >
             Infinity Health leverages technology to drive Market Access in
-            Africa through innovative <br className="lg:inline hidden"/> regulatory, and business support
-            solutions.
+            Africa through innovative <br className="lg:inline hidden" />{" "}
+            regulatory, and business support solutions.
           </p>
           <div className="flex items-center gap-7 flex-col lg:flex-row  ">
             <a href="#video-section">

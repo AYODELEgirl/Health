@@ -8,13 +8,13 @@ export default function TopicAndImage() {
     <div className="md:p-14  p-6 items-center text-center">
       <div className="flex flex-row gap-3 items-center mt-20 px-28 mb-5">
         <FaArrowLeftLong />
-        <NavLink to="/products">
+        <NavLink to="/about-us">
           <p>Back</p>
         </NavLink>
       </div>
       <div>
         <p className="font-bold md:text-[30px] text-[20px] mb-9 flex justify-start px-28">
-          Why choose Infinity Healthcare ?
+          Why choose Infinity Health?
         </p>
       </div>
       <div>
@@ -24,15 +24,17 @@ export default function TopicAndImage() {
       </div>
       <div>
         <div className="flex justify-center" width={1000}>
-        <p className="text-[#757575] bg-[#E8FFDE] flex justify-center rounded-md px-16 py-10">
-          Imagine a future where Africa thrives, not just in economic strength,
-          but in the vibrant health of its communities. <br /> At Infinity Health
-          Africa, this isn’t just a dream, it’s the driving force behind
-          everything we do. We believe that <br />healthcare is a right, not a
-          privilege. We see the potential for a vibrant continent where everyone
-          has access <br /> to quality care. But we also know the challenges -
-          fragmented systems, data gaps, and a complex regulatory environment.
-        </p>
+        <p className="text-[#757575] bg-[#E8FFDE] flex justify-evenly rounded-md px-16 py-10 text-justify max-w-5xl">
+  Imagine a future where Africa thrives, not just in economic strength,
+  but in the vibrant health of its communities. At Infinity Health
+  Africa, this isn’t just a dream, it’s the driving force behind
+  everything we do. We believe that healthcare is a right, not a
+  privilege. We see the potential for a vibrant continent where everyone
+  has access to quality care. But we also know the challenges -
+  fragmented systems, data gaps, and a complex regulatory environment.
+</p>
+
+
         </div>
         <p className="md:text-[23px] text-[19px] font-bold mt-8 mb-8">
           Here’s why you should choose us:

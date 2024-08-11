@@ -74,7 +74,7 @@ export default function NavBar3() {
               Password
             </label>
             <input
-              type="text"
+              type="password"
               id="name"
               name="name"
               class="w-[90%] p-2 border rounded-md shadow-sm"
@@ -86,7 +86,7 @@ export default function NavBar3() {
             </p>
 
             <button className="bg-[#69BD45] items-center text-white w-[90%] rounded-md mt-7 py-2">
-              Next
+              Log in
             </button>
 
             <p className="mt-5 text-center">
@@ -184,7 +184,7 @@ export default function NavBar3() {
               Password
             </label>
             <input
-              type="text"
+              type="password"
               id="name"
               name="password"
               class="w-[90%] p-2 border rounded-md shadow-sm"
@@ -244,7 +244,7 @@ export default function NavBar3() {
               Password
             </label>
             <input
-              type="text"
+              type="Password"
               id="name"
               name="name"
               class="w-[90%] p-2 border rounded-md shadow-sm"
