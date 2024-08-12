@@ -29,7 +29,7 @@ function MorePublication({ setMorePublication }) {
       text2:
         "This paper examines the issue of data paucity and its profound impact on market access within the African healthcare sector. In Africa, the scarcity of comprehensive and high-quality health data has far-reaching implications for decision-making, healthcare investments, and the entry of healthcare companies into the market. The continent, burdened by high disease prevalence and under-resourced healthcare systems, faces challenges in understanding health trends and efficiently allocating resources due to a lack of reliable data.",
       link: "/ReadMore",
-      type: "Whitepapers",
+      type: "Infographics",
     },
     {
       id: "2",
@@ -39,7 +39,7 @@ function MorePublication({ setMorePublication }) {
       text2:
         "Across the African continent, a paradigm shift is underway, driven by a growing recognition that sustainable progress in health outcomes cannot be achieved through a one-size-fits-all approach imposed from the outside. For too long, the African healthcare landscape has been shaped by external influences, from the legacies of colonialism to the importation of foreign technologies and interventions that fail to adequately address the nuanced contexts and challenges diverse populations face. This top-down approach has perpetuated dependency on foreign aid and expertise, hindering the cultivation of self-reliance and local ownership. In response, there is an urgent need to nurture and scale homegrown solutions",
       link: "/ReadMore",
-      type: "Whitepapers",
+      type: "Infographics",
     },
     {
       id: "3",
@@ -49,7 +49,7 @@ function MorePublication({ setMorePublication }) {
       text2:
         "Technology has emerged as a powerful catalyst for transforming healthcare systems worldwide, offering innovative solutions to address longstanding challenges. In Africa, adopting technology in healthcare has the potential to bridge the gaps in access, affordability, and quality of care. By leveraging technological advancements, African nations can leapfrog traditional barriers and accelerate progress toward achieving universal health coverage and the Sustainable Development Goals (SDGs) related to health.",
       link: "/ReadMore",
-      type: "Case studies",
+      type: "Infographics",
     },
     {
       id: "4",
@@ -59,7 +59,7 @@ function MorePublication({ setMorePublication }) {
       text2:
         "The digital health landscape in Africa is on the cusp of significant growth, with projections indicating a market value of $6.93 billion by 2029. Digital health, broadly defined as the use of information and communication technologies to improve healthcare delivery and outcomes, encompasses a wide range of solutions from telemedicine to health informatics and wearable devices. This paper aims to understand the current state of Africa's digital health market, comparing it to global trends and analyzing the economic factors influencing its development. We'll examine the unique challenges confronting African health tech startups",
       link: "/ReadMore",
-      type: "Whitepapers",
+      type: "Infographics",
     },
     {
       id: "5",
@@ -69,7 +69,7 @@ function MorePublication({ setMorePublication }) {
       text2:
         "The digital health landscape in Africa is on the cusp of significant growth, with projections indicating a market value of $6.93 billion by 2029. This report highlights the current state of Africa's digital health market, comparing it to global trends and analyzing the economic factors influencing its development as well as the unique challenges confronting African health tech startups.",
       link: "/ReadMore",
-      type: "Infographics",
+      type: "Review Articles",
     },
     {
       id: "6",
@@ -79,17 +79,17 @@ function MorePublication({ setMorePublication }) {
       text2:
         "In Nigeria, Small and Medium-sized Enterprises (SMEs) have been identified as vital catalysts for sustained economic development, rapid industrialization, poverty alleviation, and job creation (Central Bank of Nigeria, 2015). These entities not only contribute significantly to the Gross Domestic Product (GDP), making up 48% of Nigeria's GDP, but also employ more than 80% of the workforce, showcasing their pivotal role in the nation's economy (Nosike and Udekwesili, 2022; This Day, 2023). SMEs are instrumental in fostering self-reliant industrialization using local raw materials, enhancing employment, ensuring an equitable distribution of industrial development, and facilitating the expansion of non-oil exports. Despite their critical role, the sector faces considerable challenges. A decline from 41 million SMEs in 2017 to 39 million in 2021",
       link: "/ReadMore",
-      type: "Whitepapers",
+      type: "Infographics",
     },
     {
       id: "7",
-      info: "The Importance of Vaccination in Preventing Hepatitis in Nigeria",
+      info: "Impact of Data Paucity on Market Access in Healthcare ",
       image: public3,
-      text: "World Hepatitis Week serves as a critical reminder of the  global fight against hepatitis, a group of viral infections  that pose",
+      text: "This paper examines the issue of data paucity and its profound impact on market access within the African healthcare sector.",
       text2:
-        "World Hepatitis Week serves as a critical reminder of the  global fight against hepatitis, a group of viral infections  that pose significant public health challenges. In Nigeria,  hepatitis B and C are prevalent yet often overshadowed by  the extensive campaigns and awareness programs dedicated  to HIV/AIDS. Despite hepatitis B being as serious as, if not  more serious than, HIV/AIDS, its prevention and treatment  options remain under-discussed. This oversight is concerning,  given that hepatitis B is both deadly and preventable  through vaccination.",
+        "This paper examines the issue of data paucity and its profound impact on market access within the African healthcare sector. In Africa, the scarcity of comprehensive and high-quality health data has far-reaching implications for decision-making, healthcare investments, and the entry of healthcare companies into the market. The continent, burdened by high disease prevalence and under-resourced healthcare systems, faces challenges in understanding health trends and efficiently allocating resources due to a lack of reliable data.",
       link: "/ReadMore",
-      type: "Case studies",
+      type: "Whitepapers",
     },
     {
       id: "8",
@@ -109,27 +109,27 @@ function MorePublication({ setMorePublication }) {
       text2:
         "Nigeria is in the middle of a cholera crisis. As of June 24, 2024, the Nigeria Centre for Disease Control and Prevention (NCDC) declared a national cholera emergency (1). According to the NCDC, 1,528 suspected cases and 53 deaths have been recorded across 31 states and 107 local government areas with a case fatality rate of 3.5 per cent since the beginning of the year (1). with over 1,528 suspected cases reported across 31 states. Lagos State, the country's commercial hub, has been notably impacted, recording 579 suspected cases and 29 deaths",
       link: "/ReadMore",
-      type: "Case studies",
+      type: "Review Articles",
     },
     {
       id: "10",
-      info: "World Hypertension Day 2024",
+      info: "Repositioning Nigerian SMEs for Regulatory Compliance and Business Success",
       image: publicone,
-      text: "Hypertension is a leading cause of death, globally. Many countries in Sub Saharan Africa have seen little improvement in hypertension detection, treatment, and control over the past 30 .",
+      text: "In Nigeria, Small and Medium-sized Enterprises (SMEs) have been identified as vital catalysts for sustained economic development.",
       text2:
-        "Hypertension is a leading cause of death, globally. Many countries in Sub Saharan Africa have seen little improvement in hypertension detection, treatment,and control over the past 30 years.",
+        "In Nigeria, Small and Medium-sized Enterprises (SMEs) have been identified as vital catalysts for sustained economic development, rapid industrialization, poverty alleviation, and job creation (Central Bank of Nigeria, 2015). These entities not only contribute significantly to the Gross Domestic Product (GDP), making up 48% of Nigeria's GDP, but also employ more than 80% of the workforce, showcasing their pivotal role in the nation's economy (Nosike and Udekwesili, 2022; This Day, 2023). SMEs are instrumental in fostering self-reliant industrialization using local raw materials, enhancing employment, ensuring an equitable distribution of industrial development, and facilitating the expansion of non-oil exports.Despite their critical role, the sector faces considerable challenges. A decline from 41 million SMEs in 2017 to 39 million in 2021",
       link: "/ReadMore",
-      type: "Infographics",
+      type: "Whitepapers",
     },
     {
       id: "11",
-      info: "Menstrual Hygiene Day 2024",
+      info: "Building Sustainable Digital Health Startups in Africa: A Case for Data and Regulatory Support",
       image: publicone,
-      text: "Sanitary pad prices have increased by 40-75%, forcing many to switch to cheaper, less preferred products. This affects the dignity and health of women and girls across Africa.",
+      text: "The digital health landscape in Africa is on the cusp of significant growth, with projections indicating a market value of $6.93 billion by 2029.",
       text2:
-        "Sanitary pad prices have increased by 40-75%, forcing many to switch to cheaper, less preferred products. This affects the dignity and health of women and girls across Africa",
+        "The digital health landscape in Africa is on the cusp of significant growth, with projections indicating a market value of $6.93 billion by 2029. Digital health, broadly defined as the use of information and communication technologies to improve healthcare delivery and outcomes, encompasses a wide range of solutions from telemedicine to health informatics and wearable devices.This paper aims to understand the current state of Africa's digital health market, comparing it to global trends and analyzing the economic factors influencing its development. We'll examine the unique challenges confronting African health tech startups",
       link: "/ReadMore",
-      type: "Infographics",
+      type: "Whitepapers",
     },
     {
       id: "12",
@@ -153,31 +153,31 @@ function MorePublication({ setMorePublication }) {
     },
     {
       id: "14",
-      info: "Global Impact of Unsafe Food",
+      info: "Harnessing Technology to Transform African Healthcare: The Top 5 Impactful Innovations",
       image: publicone,
-      text: "Africa's population is growing at a rapid pace, outstripping the development of healthcare infrastructure. Nigeria Five countries.",
+      text: "Technology has emerged as a powerful catalyst for transforming healthcare systems worldwide, offering innovative solutions to address longstanding challenges.",
       text2:
-        "Every day, about 1.6 million people around the world become sick from eating unsafe food, many of them small children. Safe food is critical for public health and requires global attention and action.",
+        "Technology has emerged as a powerful catalyst for transforming healthcare systems worldwide, offering innovative solutions to address longstanding challenges. In Africa, adopting technology in healthcare has the potential to bridge the gaps in access, affordability, and quality of care. By leveraging technological advancements, African nations can leapfrog traditional barriers and accelerate progress toward achieving universal health coverage and the Sustainable Development Goals (SDGs) related to health.",
       link: "/ReadMore",
-      type: "Infographics",
+      type: "Case Studies",
     },
     {
       id: "15",
-      info: "Medical Device Registration",
+      info: "Catalyzing Transformation: The Imperative of Homegrown Innovation in Africa",
       image: publicone,
-      text: "A medical device is defined as 'An article, in- strument, apparatus or machine that is used in the prevention, diagnosis or treatment of illness or disease  or for detecting, measuring.",
+      text: "The digital health landscape in Africa is on the cusp of significant growth, with projections indicating a market value of $6.93 billion by 2029.",
       text2:
-        "A medical device is defined as 'An article, in- strument, apparatus or machine that is used in the prevention, diagnosis or treatment of illness or disease, or for detecting, measur- ing, restoring, correcting or modifying the structure or function of the body for some health purpose.",
+        "The digital health langnificant growth, with projecea s, encompalth informatics and wearable devices.This paper aims to understand the current state of Africa's digital health market, comparing it to global trends and analyzing the economic factors influencing its development. We'll examine the unique challenges confronting African health tech startups.",
       link: "/ReadMore",
-      type: "News",
+      type: "Whitepapers",
     },
     {
       id: "16",
-      info: "We want to redefine access to quality healthcare",
+      info: "Breaking Down the Barriers: Overcoming Challenges to Breastfeeding",
       image: publicone,
-      text: "Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget?.",
+      text: "Many women still encounter significant challenges when trying to initiate or continue breastfeeding.",
       text2:
-        "Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget?.",
+        "Many women still encounter significant challenges when trying to initiate or continue breastfeeding. In sub-Saharan Africa, where malnutrition is prevalent, exclusive breastfeeding is under 37%. In Nigeria, exclusive breastfeeding is around 17%. These figures are lower than the minimum 60% coverage recommended by UNICEF and WHO. In this article, we will discuss the barriers to exclusive breastfeeding in Nigeria, and recommend strategies that mothers, healthcare professionals, and policymakers can adopt to address these barriers.",
       link: "/ReadMore",
       type: "Case studies",
     },

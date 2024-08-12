@@ -591,7 +591,7 @@ export default function Background() {
           <figure>
             <img src={logo1} alt="" width={100} />
           </figure>
-          <ul className="hidden justify-between pt-3 s900:flex gap-5">
+          <ul className="hidden justify-between pt-3 s900:flex gap-8 items-center text-center">
             <li className="text-black hover:text-green-700 cursor-pointer font-normal">
               Home
             </li>
@@ -617,7 +617,7 @@ export default function Background() {
             </NavLink>
             <NavLink to="/book-a-call">
               <li>
-                <button className="bg-green-500 px-3 py-1 rounded-xl text-[14px] mb-2  font-normal text-black">
+                <button className="bg-green-500 px-3 py-1 rounded-xl text-[14px] font-normal text-black">
                   Book a call
                 </button>
               </li>
@@ -630,7 +630,7 @@ export default function Background() {
                 onClick={() => {
                   setModal(true);
                 }}
-                className="text-black hover:text-green-700 cursor-pointer  font-normal"
+                className="text-black hover:text-green-700 cursor-pointer mt-1 font-normal"
               >
                 Sign in
               </li>

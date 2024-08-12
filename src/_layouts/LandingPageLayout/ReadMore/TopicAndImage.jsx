@@ -17,11 +17,11 @@ export default function TopicAndImage() {
           Why choose Infinity Health?
         </p>
       </div>
-      <div>
+      {/* <div>
         <figure>
           <img src={Read} alt="Reading" className="mx-auto mb-8" width={1000} />
         </figure>
-      </div>
+      </div> */}
       <div>
         <div className="flex justify-center" width={1000}>
         <p className="text-[#757575] bg-[#E8FFDE] flex justify-evenly rounded-md px-16 py-10 text-justify max-w-5xl">

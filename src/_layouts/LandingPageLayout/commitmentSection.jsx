@@ -44,18 +44,21 @@ export default function CommitmentSection() {
         >
           <source src={orientationvideo} type="video/mp4" />
         </video> */}
+<div className="bg-black w-full p-10 flex justify-center items-center rounded-2xl">
 
         <iframe 
         id="video-section"
         style={{
-            maxWidth: "98%", // Adjusted to fit within the container
-            height: "700px", // Maintain aspect ratio
-            borderRadius: "15px", // Added border radius for aesthetics
+            // maxWidth: "98%", 
+            width:"80%",
+            height: "700px", 
+            borderRadius: "15px", 
           }}
           data-aos="fade-right"
           className="rounded-xl"  width="100%" 
 src="https://www.youtube.com/embed/EIgahN6Gn_k">
 </iframe>
+</div>
       </div>
       <div  data-aos="fade-down" className="text-center mt-20 ">
         <h1 className="font-bold md:text-[2rem] text-[1.5rem] mb-3">

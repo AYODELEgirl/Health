@@ -287,7 +287,7 @@ export default function NavBar3() {
           <figure>
             <img src={logo1} alt="" width={100} />
           </figure>
-          <ul className="hidden justify-between pt-3 s900:flex gap-10">
+          <ul className="hidden justify-between pt-3 s900:flex gap-8 items-center text-center">
             <NavLink to="/" className="text-black hover:text-green-700 cursor-pointer font-normal">
               Home
             </NavLink>
@@ -313,7 +313,7 @@ export default function NavBar3() {
             </NavLink>
             <NavLink to="/book-a-call">
               <li>
-                <button className="bg-green-500 px-3 py-1 rounded-xl text-[14px] mb-2  font-normal text-black">
+                <button className="bg-green-500 px-3 py-1 rounded-xl text-[14px] font-normal text-black">
                   Book a call
                 </button>
               </li>
