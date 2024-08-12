@@ -16,7 +16,6 @@ import { CgProfile } from "react-icons/cg";
 import { IoEyeOffOutline } from "react-icons/io5";
 import { IoEyeOutline } from "react-icons/io5";
 
-
 import drop from "../../assets/images/drop.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -28,12 +27,12 @@ export default function Background() {
   const [email, setEmail] = useState();
   const [toggleEye, setToggleEye] = useState("password");
   const handleToggler = () => {
-    if(toggleEye === "password"){
-      setToggleEye("text")
-    }else{
-      setToggleEye("password")
+    if (toggleEye === "password") {
+      setToggleEye("text");
+    } else {
+      setToggleEye("password");
     }
-  }
+  };
 
   const handleClick = () => {
     setClicked(!clicked);
@@ -354,7 +353,14 @@ export default function Background() {
                 }}
                 // placeholder="Show"
               />
-              <div className="cursor-pointer"    onClick={handleToggler}>show</div>
+              <div className="cursor-pointer" onClick={handleToggler}>
+                {" "}
+                {toggleEye === "password" ? (
+                  <IoEyeOutline size={18}/>
+                ) : (
+                  <IoEyeOffOutline size={18}/>
+                )}
+              </div>
             </div>
 
             <p className="ml-80 mt-3 text-[12px] text-[#69BD45] cursor-pointer">
@@ -507,20 +513,20 @@ export default function Background() {
             <label for="email" class="block text-sm font-normal mt-4 ">
               Password
             </label>
-            <div  className="w-[90%] border rounded-md shadow-sm flex items-center">
-            <input
-              type={toggleEye}
-              id="name"
-              name="password"
-              class="w-[90%] p-2 border-none rounded-md outline-none"
-              placeholder="Enter your password"
-              onChange={(e) => {
-                setSignup((prev) => {
-                  return { ...prev, password: e.target.value };
-                });
-              }}
-            />
-             <div className="cursor-pointer"    onClick={handleToggler}>show</div>
+            <div className="w-[90%] border rounded-md shadow-sm flex items-center">
+              <input
+                type={'password'}
+                id="name"
+                name="password"
+                class="w-[90%] p-2 border-none rounded-md outline-none"
+                placeholder="Enter your password"
+                onChange={(e) => {
+                  setSignup((prev) => {
+                    return { ...prev, password: e.target.value };
+                  });
+                }}
+              />
+              <div className="cursor-pointer" onClick={handleToggler}></div>
             </div>
 
             <div
