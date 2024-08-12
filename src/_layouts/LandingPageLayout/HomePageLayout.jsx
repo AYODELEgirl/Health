@@ -13,6 +13,9 @@ import { Dropdown, Avatar } from "rsuite";
 import "rsuite/dist/rsuite.min.css";
 // import iconnn from "../../assets/images/iconnn.png"
 import { CgProfile } from "react-icons/cg";
+import { IoEyeOffOutline } from "react-icons/io5";
+import { IoEyeOutline } from "react-icons/io5";
+
 
 import drop from "../../assets/images/drop.png";
 import { ToastContainer, toast } from "react-toastify";
@@ -23,6 +26,14 @@ export default function Background() {
   const [clicked, setClicked] = useState(false);
   const [loading, setLoading] = useState(false);
   const [email, setEmail] = useState();
+  const [toggleEye, setToggleEye] = useState("password");
+  const handleToggler = () => {
+    if(toggleEye === "password"){
+      setToggleEye("text")
+    }else{
+      setToggleEye("password")
+    }
+  }
 
   const handleClick = () => {
     setClicked(!clicked);
@@ -317,7 +328,7 @@ export default function Background() {
               type="text"
               id="name"
               name="name"
-              class="w-[90%] p-2 border rounded-md shadow-sm"
+              class="w-[90%] p-2 border rounded-md shadow-sm outline-none"
               placeholder="Enter your email"
               onChange={(e) => {
                 setLogin((prev) => {
@@ -329,19 +340,22 @@ export default function Background() {
             <label for="name" class="block text-sm font-normal mt-4 ">
               Password
             </label>
-            <input
-              type="password"
-              id="name"
-              name="name"
-              class="w-[90%] p-2 border rounded-md shadow-sm"
-              placeholder="Enter your password"
-              onChange={(e) => {
-                setLogin((prev) => {
-                  return { ...prev, password: e.target.value };
-                });
-              }}
-              // placeholder="Show"
-            />
+            <div className="w-[90%] border rounded-md shadow-sm flex items-center">
+              <input
+                type={toggleEye}
+                id="name"
+                name="name"
+                className="w-[90%] p-2 border-none rounded-md outline-none"
+                placeholder="Enter your password"
+                onChange={(e) => {
+                  setLogin((prev) => {
+                    return { ...prev, password: e.target.value };
+                  });
+                }}
+                // placeholder="Show"
+              />
+              <div className="cursor-pointer"    onClick={handleToggler}>show</div>
+            </div>
 
             <p className="ml-80 mt-3 text-[12px] text-[#69BD45] cursor-pointer">
               Forget password?
@@ -351,7 +365,7 @@ export default function Background() {
               className="bg-[#69BD45] items-center text-white w-[90%] rounded-md mt-7 py-2"
               onClick={logInHandler}
             >
-              Log in 
+              Log in
             </button>
 
             <p className="mt-5 text-center">
@@ -493,11 +507,12 @@ export default function Background() {
             <label for="email" class="block text-sm font-normal mt-4 ">
               Password
             </label>
+            <div  className="w-[90%] border rounded-md shadow-sm flex items-center">
             <input
-              type="password"
+              type={toggleEye}
               id="name"
               name="password"
-              class="w-[90%] p-2 border rounded-md shadow-sm"
+              class="w-[90%] p-2 border-none rounded-md outline-none"
               placeholder="Enter your password"
               onChange={(e) => {
                 setSignup((prev) => {
@@ -505,6 +520,8 @@ export default function Background() {
                 });
               }}
             />
+             <div className="cursor-pointer"    onClick={handleToggler}>show</div>
+            </div>
 
             <div
               className="bg-[#69BD45] items-center text-center text-white w-[90%] rounded-md mt-7 py-2"

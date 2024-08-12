@@ -9,6 +9,7 @@ export default function CommitmentSection() {
   const videoRef = useRef(null);
   const [show, setShow] = useState(true);
 
+
   const handlePlay = () => {
     if (videoRef.current.paused) {
       videoRef.current.play();
