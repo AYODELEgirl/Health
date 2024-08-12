@@ -13,7 +13,7 @@ export default function ProductsHomePage() {
       >
         <div className="absolute inset-0 flex flex-col justify-center items-start md:px-16 px-10 pt-5">
           <p className="font-bold text-xl lg:text-[45px] md:text-[30px] xl-text-[60px]  text-white mb-4 md:leading-[65px]">
-            Unlocking Opportunities with Infinity <br /> health's solution
+            Unlocking Opportunities With Infinity <br /> Health's Solution
           </p>
           <p className="text-white lg:text-[14px] md:text-[12px] xl-text-10xl text-xs mt-[28px]">
             Explore how our comprehensive suite of services can transform your

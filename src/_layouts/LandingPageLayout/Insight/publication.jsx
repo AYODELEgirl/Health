@@ -22,7 +22,7 @@ export default function publication({ setMorePublication }) {
       image: publicone,
       text: "A medical device is defined as 'An article, in- strument, apparatus or machine that is used in the prevention, diagnosis...",
       text2:
-        "This paper examines the issue of data paucity and its profound impact on market access within the African healthcare sector. In Africa, the scarcity of comprehensive and high-quality health data has far-reaching implications for decision-making, healthcare investments, and the entry of healthcare companies into the market. The continent, burdened by high disease prevalence and under-resourced healthcare systems, faces challenges in understanding health trends and efficiently allocating resources due to a lack of reliable data.",
+      "A medical device is defined as 'An article, in- strument, apparatus or machine that is used in the prevention, diagnosis or treatment of illness or disease, or for detecting, measur- ing, restoring, correcting or modifying the structure or function of the body for some health purpose.",   
       link: "/ReadMore",
       type: "Case studies",
     },

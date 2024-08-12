@@ -17,7 +17,7 @@ export default function EnablementSection() {
             actionable data and strategies specifically tailored to the
             African context
           </p>
-          <a href="/BookACall">
+          <a href="/book-a-call">
             <button className="bg-[#69BD45] p-3 px-7 text-[12px] text-white rounded-md">
               Contact us
             </button>

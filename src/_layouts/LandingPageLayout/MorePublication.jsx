@@ -37,8 +37,8 @@ function MorePublication({ setMorePublication }) {
       image: public2,
       text: "Africa's population is growing at a rapid pace, outstripping the development of healthcare infrastructure. Nigeria Five countries.",
       text2:
-        "Across the African continent, a paradigm shift is underway, driven by a growing recognition that sustainable progress in health outcomes cannot be achieved through a one-size-fits-all approach imposed from the outside. For too long, the African healthcare landscape has been shaped by external influences, from the legacies of colonialism to the importation of foreign technologies and interventions that fail to adequately address the nuanced contexts and challenges diverse populations face. This top-down approach has perpetuated dependency on foreign aid and expertise, hindering the cultivation of self-reliance and local ownership. In response, there is an urgent need to nurture and scale homegrown solutions",
-      link: "/ReadMore",
+      "Every day, about 1.6 million people around the world become sick from eating unsafe food, many of them small children. Safe food is critical for public health and requires global attention and action.", 
+       link: "/ReadMore",
       type: "Infographics",
     },
     {

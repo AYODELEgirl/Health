@@ -605,7 +605,7 @@ export default function Background() {
         className={`absolute top-0 w-[80%] lg:w-full z-20 pt-6 md:px-8 px:8 p-8`}
       >
         <aside
-          className={`md:px-4 top-0  left-0 flex align-middle justify-between items-center ${
+          className={` top-0  left-0 flex align-middle justify-between items-center ${
             isScrolled ? "scrolled" : "scrolledNo"
           }`}
           style={{ zIndex: "9999", backgroundColor: "#E8FFDE" }}

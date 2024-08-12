@@ -22,14 +22,14 @@ body{
 
 .scrolled{
   background-color: white;
-  margin: 1rem 0;
-  box-shadow: 0px 0px 10px #959595;
+  /* margin: 1rem 0; */
+  box-shadow: 0px 0px 10px #c4c4c4;
   position: fixed;
-  width: 85%;
-  padding: .5rem 2rem;
+  width: 100%;
+  padding: .7rem 2rem;
   left: 50%;
   transform: translate(-50%);
-  border-radius: 1rem;
+  /* border-radius: 1rem; */
   transition: all .5s;
 }
 

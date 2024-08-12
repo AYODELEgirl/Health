@@ -9,7 +9,6 @@ export default function CommitmentSection() {
   const videoRef = useRef(null);
   const [show, setShow] = useState(true);
 
-
   const handlePlay = () => {
     if (videoRef.current.paused) {
       videoRef.current.play();
@@ -22,15 +21,23 @@ export default function CommitmentSection() {
 
   return (
     <div className="max-w-screen-xl px-4 mx-auto overflow-x-auto m-auto">
-      <h1 data-aos="fade-down"  className="font-bold flex flex-col md:gap-10  items-center justify-center lg:text-[2rem] text-lg text-center mt-24 md:leading-[10px]">
+      <h1
+        data-aos="fade-down"
+        className="font-bold flex flex-col md:gap-10  items-center justify-center lg:text-[2rem] text-lg text-center mt-24 md:leading-[10px]"
+      >
         We are committed to expanding healthcare access <br />{" "}
         <span> in Africa with our market access solutions </span>
       </h1>
       <div className="flex relative justify-center pt-10">
         <div className=" absolute flex items-center justify-center h-full ">
-          {show && <FaCirclePlay style={{ color: "white" }}  className="md:size-32 size-14 mb-12"/>}
+          {show && (
+            <FaCirclePlay
+              style={{ color: "white" }}
+              className="md:size-32 size-14 mb-12"
+            />
+          )}
         </div>
-    {/*     <video
+        {/*     <video
           ref={videoRef}
           loop
           muted
@@ -45,23 +52,20 @@ export default function CommitmentSection() {
         >
           <source src={orientationvideo} type="video/mp4" />
         </video> */}
-<div className="bg-black w-full p-10 flex justify-center items-center rounded-2xl">
-
-        <iframe 
-        id="video-section"
-        style={{
-            // maxWidth: "98%", 
-            width:"80%",
-            height: "700px", 
-            borderRadius: "15px", 
-          }}
-          data-aos="fade-right"
-          className="rounded-xl"  width="100%" 
-src="https://www.youtube.com/embed/EIgahN6Gn_k">
-</iframe>
-</div>
+        <div className="bg-black w-[80%] flex justify-center items-center rounded-2xl">
+          <div className="w-full ">
+            <iframe
+              data-aos="fade-right"
+              className="w-full h-full rounded-2xl aspect-[6/3]"
+              src="https://www.youtube.com/embed/EIgahN6Gn_k"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
       </div>
-      <div  data-aos="fade-down" className="text-center mt-20 ">
+      <div data-aos="fade-down" className="text-center mt-20 ">
         <h1 className="font-bold md:text-[2rem] text-[1.5rem] mb-3">
           Our Commitment to Transformation
         </h1>
@@ -73,8 +77,11 @@ src="https://www.youtube.com/embed/EIgahN6Gn_k">
           join us as we forge a better future for all
         </p>
       </div>
-      <div data-aos="fade-down" className="flex md:flex-row pt-20 pb-24 justify-between flex-col  gap-4 items-center">
-        <section  className="bg-[#69BD450A] rounded-3xl w-[350px] h-[280px]  items-center justify-center flex flex-col gap-6 ">
+      <div
+        data-aos="fade-down"
+        className="flex md:flex-row pt-20 pb-24 justify-between flex-col  gap-4 items-center"
+      >
+        <section className="bg-[#69BD450A] rounded-3xl w-[350px] h-[280px]  items-center justify-center flex flex-col gap-6 ">
           <div className="">
             <figure>
               <img src={actionn} alt="" width={40} />
