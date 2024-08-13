@@ -8,6 +8,7 @@ import BookACall from "./Pages/BookACall";
 import ReadMore from "./Pages/ReadMore";
 import Signin from "./_layouts/LandingPageLayout/Signin/Signin";
 import ScrollToTop from "./hooks/Scrolltotop";
+import CholeraMain from "./Pages/CholeraMain";
 
 
 export default function App() {
@@ -25,6 +26,7 @@ export default function App() {
             <Route path="/book-a-call"element={<BookACall/>} />
             <Route path="/ReadMore"element={<ReadMore />} />
             <Route path="/Signin"element={<Signin />} />
+            <Route path="/CholeraMain"element={<CholeraMain />} />
           
           </Route>
         </Routes>

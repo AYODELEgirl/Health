@@ -7,17 +7,13 @@ import { CiMenuFries } from "react-icons/ci";
 import { LiaTimesSolid } from "react-icons/lia";
 import styled from "styled-components";
 import Signin from "./Signin/Signin";
-
 export default function NavBar3() {
   const [showModal, setShowModal] = useState(false);
   const [clicked, setClicked] = useState(false);
-
   const handleClick = () => {
     setClicked(!clicked);
   };
-
   console.log(showModal);
-
   const [isScrolled, setIsScrolled] = useState(true);
 
   // useEffect(() => {
@@ -37,15 +33,14 @@ export default function NavBar3() {
   // }, []);
 
   // console.log(window.scrollY, window.innerHeight * 0.4);
-
   const [modal, setModal] = useState(false);
+
   const [modal2, setModal2] = useState(false);
   const [modal3, setModal3] = useState(false);
 
   return (
     <div className="bg-[#E8FFDE]">
       {/*  */}
-
       <Signin modal={modal} setModal={setModal}>
         <>
           <div
@@ -157,7 +152,7 @@ export default function NavBar3() {
               Phone Number
             </label>
             <input
-              type="number"
+              type=""
               id="name"
               class="w-[90%] p-2 border rounded-md shadow-sm"
               placeholder="Enter your phone number"
@@ -284,9 +279,11 @@ export default function NavBar3() {
           style={{ zIndex: "9999", backgroundColor:"#E8FFDE" }}
           // data-aos="fade-down"
         >
+          <NavLink to="/" >
           <figure>
             <img src={logo1} alt="" width={100} />
           </figure>
+          </NavLink>
           <ul className="hidden justify-between pt-3 s900:flex gap-8 items-center text-center">
             <NavLink to="/" className="text-black hover:text-green-700 cursor-pointer font-normal">
               Home

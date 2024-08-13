@@ -59,7 +59,7 @@ export default function PublicationSection() {
                         </div> */}
                 <div className=" mb-12 pr-20 ">
                   <a
-                    href="https://drive.google.com/file/d/1oiy-p2nmrQBIvL9hlb-QvApHj_53gJfm/view"
+                    href="https://drive.google.com/file/d/1iuKBg75zWyx7XVFpykL3dwkpvybcdchO/view?usp=drive_link"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -107,19 +107,10 @@ export default function PublicationSection() {
                     Global Impact Of Unsafe Food.
                   </div>
                   <div>
-                    Across the African continent, a paradigm shift is underway,
-                    driven by a growing recognition that sustainable progress in
-                    health outcomes cannot be achieved through a
-                    one-size-fits-all approach imposed from the outside. For too
-                    long, the African healthcare landscape has been shaped by
-                    external influences, from the legacies of colonialism to the
-                    importation of foreign technologies and interventions that
-                    fail to adequately address the nuanced contexts and
-                    challenges diverse populations face. This top-down approach
-                    has perpetuated dependency on foreign aid and expertise,
-                    hindering the cultivation of self-reliance and local
-                    ownership. In response, there is an urgent need to nurture
-                    and scale homegrown solutions
+                    Every day, about 1.6 million people around the world become
+                    sick from eating unsafe food, many of them small children.
+                    Safe food is critical for public health and requires global
+                    attention and action.
                   </div>
                 </aside>
               </section>
@@ -130,7 +121,7 @@ export default function PublicationSection() {
                         </div> */}
                 <div className=" mb-12 pr-20 ">
                   <a
-                    href="https://drive.google.com/file/d/1oiy-p2nmrQBIvL9hlb-QvApHj_53gJfm/view"
+                    href="https://drive.google.com/file/d/15j-uY50dFmbcAfK4dgap3J7hQN0-KYOB/view?usp=drive_link"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -157,10 +148,7 @@ export default function PublicationSection() {
         </div>
       )}
 
-
-
-
-{openModal3 && (
+      {openModal3 && (
         <div>
           <section className="fixed top-0 left-0 w-[100vw] h-[100vh] bg-[rgba(0,0,0,0.3)] flex justify-center items-center z-20 ">
             <div className="bg-white p-[1rem] px-10 w-[82%] ">
@@ -181,7 +169,9 @@ export default function PublicationSection() {
                     Menstrual Hygiene Day.
                   </div>
                   <div>
-                  Sanitary pad prices have increased by 40-75%, forcing many to switch to cheaper, less preferred products. This affects the dignity and health of women and girls across Africa.
+                    Sanitary pad prices have increased by 40-75%, forcing many
+                    to switch to cheaper, less preferred products. This affects
+                    the dignity and health of women and girls across Africa.
                   </div>
                 </aside>
               </section>
@@ -192,7 +182,7 @@ export default function PublicationSection() {
                         </div> */}
                 <div className=" mb-12 pr-20 ">
                   <a
-                    href="https://drive.google.com/file/d/1oiy-p2nmrQBIvL9hlb-QvApHj_53gJfm/view"
+                    href="https://drive.google.com/file/d/1KNXLAo9SB1-kBYSS4BmZ98rM1ejaw3yX/view?usp=drive_link"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -218,12 +208,6 @@ export default function PublicationSection() {
           </section>
         </div>
       )}
-
-
-
-
-
-
 
       <div className="pt-5 px-8 pb-10">
         <div className="p-1">
@@ -280,33 +264,41 @@ export default function PublicationSection() {
                   Infographics
                 </button>
               </div>
-              <div className=""
-              onClick={() => {
-                setOpenModal2(true);
-              }}>
-              <figure className="flex">
-                <img src={public2} alt="" width={350} className="mb-5 w-full" />
-              </figure>
-              <div className="flex justify-between" >
-                <p className="font-bold md:text-[24px] text-lg mb-3">
-                  Global Impact of Unsafe Food
-                </p>
-                {/* <MdOutlineArrowOutward style={{ color: "black" }} size={20} /> */}
-                {/* <figure>
+              <div
+                className=""
+                onClick={() => {
+                  setOpenModal2(true);
+                }}
+              >
+                <figure className="flex">
+                  <img
+                    src={public2}
+                    alt=""
+                    width={350}
+                    className="mb-5 w-full"
+                  />
+                </figure>
+                <div className="flex justify-between">
+                  <p className="font-bold md:text-[24px] text-lg mb-3">
+                    Global Impact of Unsafe Food
+                  </p>
+                  {/* <MdOutlineArrowOutward style={{ color: "black" }} size={20} /> */}
+                  {/* <figure>
                 <img src={iconwrap} alt="" />
               </figure> */}
-              </div>
-              <p className="text-[13px]">
-                Every day, about 1.6 million people around the world become sick
-                from eating unsafe food, many of them small children. Safe...
-              </p>
-              <div className="flex flex-row mt-4 gap-4 items-center">
-                <p className="text-red-400 cursor-pointer ">Read more</p>
-                <MdOutlineArrowOutward style={{ color: "#FF784B" }} />
-                <figure></figure>
+                </div>
+                <p className="text-[13px]">
+                  Every day, about 1.6 million people around the world become
+                  sick from eating unsafe food, many of them small children.
+                  Safe...
+                </p>
+                <div className="flex flex-row mt-4 gap-4 items-center">
+                  <p className="text-red-400 cursor-pointer ">Read more</p>
+                  <MdOutlineArrowOutward style={{ color: "#FF784B" }} />
+                  <figure></figure>
+                </div>
               </div>
             </div>
-           </div>
 
             <div>
               <div className=" absolute flex justify-between p-3">
@@ -315,35 +307,37 @@ export default function PublicationSection() {
                 </button>
               </div>
               <div>
-                <div className=""
-              onClick={() => {
-                setOpenModal3(true);
-              }}>  
-                <figure>
-                  <img
-                    src={public4}
-                    alt=""
-                    width={350}
-                    className="mb-5 w-full"
-                  />
-                </figure>
-                <div className="flex justify-between">
-                  <p className="font-bold md:text-[24px] text-lg mb-3">
-                    Menstrual Hygiene Day 2024
+                <div
+                  className=""
+                  onClick={() => {
+                    setOpenModal3(true);
+                  }}
+                >
+                  <figure>
+                    <img
+                      src={public4}
+                      alt=""
+                      width={350}
+                      className="mb-5 w-full"
+                    />
+                  </figure>
+                  <div className="flex justify-between">
+                    <p className="font-bold md:text-[24px] text-lg mb-3">
+                      Menstrual Hygiene Day 2024
+                    </p>
+                    {/* <MdOutlineArrowOutward style={{ color: "black" }} size={20} /> */}
+                  </div>
+                  <p className="text-[13px]">
+                    Sanitary pad prices have increased by 40-75%, forcing many
+                    to switch to cheaper, less preferred products. This affects
+                    the dignity...
                   </p>
-                  {/* <MdOutlineArrowOutward style={{ color: "black" }} size={20} /> */}
-                </div>
-                <p className="text-[13px]">
-                  Sanitary pad prices have increased by 40-75%, forcing many to
-                  switch to cheaper, less preferred products. This affects the
-                  dignity...
-                </p>
-                <div className="flex flex-row gap-4 items-center mt-4">
-                  <p className="text-red-400 cursor-pointer">Read more</p>
-                  <MdOutlineArrowOutward style={{ color: "#FF784B" }} />
+                  <div className="flex flex-row gap-4 items-center mt-4">
+                    <p className="text-red-400 cursor-pointer">Read more</p>
+                    <MdOutlineArrowOutward style={{ color: "#FF784B" }} />
+                  </div>
                 </div>
               </div>
-            </div>
             </div>
           </div>
         </div>
