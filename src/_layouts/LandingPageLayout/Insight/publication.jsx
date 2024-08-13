@@ -24,6 +24,7 @@ export default function publication({ setMorePublication }) {
       text2:
       "A medical device is defined as 'An article, in- strument, apparatus or machine that is used in the prevention, diagnosis or treatment of illness or disease, or for detecting, measur- ing, restoring, correcting or modifying the structure or function of the body for some health purpose.",   
       link: "/ReadMore",
+      link2:"https://drive.google.com/file/d/1iuKBg75zWyx7XVFpykL3dwkpvybcdchO/view?usp=drive_link",
       type: "Case studies",
     },
     {
@@ -34,6 +35,7 @@ export default function publication({ setMorePublication }) {
       text2:
       "Across the African continent, a paradigm shift is underway, driven by a growing recognition that sustainable progress in health outcomes cannot be achieved through a one-size-fits-all approach imposed from the outside. For too long, the African healthcare landscape has been shaped by external influences, from the legacies of colonialism to the importation of foreign technologies and interventions that fail to adequately address the nuanced contexts and challenges diverse populations face. This top-down approach has perpetuated dependency on foreign aid and expertise, hindering the cultivation of self-reliance and local ownership. In response, there is an urgent need to nurture and scale homegrown solutions",
       link: "/ReadMore",
+      link2: "https://drive.google.com/file/d/15j-uY50dFmbcAfK4dgap3J7hQN0-KYOB/view?usp=drive_link",
       type: "Infographics",
     },
     {
@@ -44,6 +46,7 @@ export default function publication({ setMorePublication }) {
       text2:
         "The digital health landscape in Africa is on the cusp of significant growth, with projections indicating a market value of $6.93 billion by 2029. Digital health, broadly defined as the use of information and communication technologies to improve healthcare delivery and outcomes, encompasses a wide range of solutions from telemedicine to health informatics and wearable devices. This paper aims to understand the current state of Africa's digital health market, comparing it to global trends and analyzing the economic factors influencing its development. We'll examine the unique challenges confronting African health tech startups",
       link: "/ReadMore",
+      link2: "https://drive.google.com/file/d/1KNXLAo9SB1-kBYSS4BmZ98rM1ejaw3yX/view?usp=drive_link",
       type: "News",
     },
     {
@@ -54,6 +57,7 @@ export default function publication({ setMorePublication }) {
       text2:
       "Technology has emerged as a powerful catalyst for transforming healthcare systems worldwide, offering innovative solutions to address longstanding challenges. In Africa, adopting technology in healthcare has the potential to bridge the gaps in access, affordability, and quality of care. By leveraging technological advancements, African nations can leapfrog traditional barriers and accelerate progress toward achieving universal health coverage and the Sustainable Development Goals (SDGs) related to health.",
       link: "/ReadMore",
+      link2: "https://drive.google.com/file/d/1GMoQWt3B5QYZge786HZ-_9Y5tRB8sTdr/view?usp=drive_link",
       type: "case studies",
     },
     {
@@ -64,6 +68,7 @@ export default function publication({ setMorePublication }) {
       text2:
       "Hypertension is a leading cause of death, globally. Many countries in Sub Saharan Africa have seen little improvement in hypertension detection, treatment,and control over the past 30 years.",
       link: "/ReadMore",
+      link2: "https://drive.google.com/file/d/1HOtfSHbB-RUAJRc7Pkq7uVQU1JbJiAQd/view?usp=drive_link",
       type: "Infographics",
     },
     {
@@ -74,6 +79,7 @@ export default function publication({ setMorePublication }) {
       text2:
       "63% of new hepatitis B infections globally occur in Africa. 10 countries, including Nigeria and Ethiopia, bear nearly two-thirds of the hepatitis burden in Africa. 4 million children under five with hepatitis B in Sub-Saharan Africa.",
       link: "/ReadMore",
+      link2: "https://drive.google.com/file/d/1inmS30-eGL0uPPgJXJ13_oImw6cue3US/view?usp=drive_link",
       type: "News",
     },
   ];
@@ -100,7 +106,7 @@ export default function publication({ setMorePublication }) {
     { name: "News", click: handleFilter, value: "News" },
   ];
 
-  console.log(itemValue);
+  console.log(itemValue, details);
 
   return (
     <div className="p-8">
@@ -426,7 +432,7 @@ export default function publication({ setMorePublication }) {
             </div> */}
               <div className=" mb-12 mt-5 ">
                 <a
-                  href="https://drive.google.com/file/d/1oiy-p2nmrQBIvL9hlb-QvApHj_53gJfm/view"
+                  href={itemValue?.link2}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

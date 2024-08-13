@@ -4,6 +4,7 @@ import Find from '../_layouts/LandingPageLayout/CholeraMain/Find'
 import Steps from '../_layouts/LandingPageLayout/CholeraMain/Steps'
 import TextAndImage from '../_layouts/LandingPageLayout/CholeraMain/TextAndImage'
 import FooterSections from '../_layouts/LandingPageLayout/FooterSections'
+import Table from '../_layouts/LandingPageLayout/CholeraMain/Table'
 
 export default function CholeraMain() {
   return (
@@ -12,6 +13,7 @@ export default function CholeraMain() {
         <Find />
         <Steps />
         <TextAndImage />
+        <Table />
         <FooterSections />
     </div>
   )
