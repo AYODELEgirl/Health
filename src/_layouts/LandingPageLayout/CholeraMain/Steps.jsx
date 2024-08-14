@@ -54,7 +54,7 @@ export default function Steps() {
     ]
   return (
     <div className='bg-[#F5FFF0]'>
-        <p className='flex justify-center text-[20px] font-medium '>Steps</p>
+        <p className='flex justify-center text-[20px] font-medium pt-6 '>Steps</p>
         <div className='flex flex-row justify-center gap-10 p-16'>
 
         {
