@@ -272,6 +272,63 @@ export default function Table() {
         <td className="py-2 px-4 border-b border-gray-300">16500</td>
         <td className="py-2 px-4 border-b border-gray-300">Festac Town</td>
       </tr>
+
+      <tr>
+        <th className="py-2 px-4 border-b-2 border-gray-300">24.</th>
+        <td className="py-2 px-4 border-b border-gray-300">Prettyhealth Care Ltd </td>
+        <td className="py-2 px-4 border-b border-gray-300">08037789220</td>
+        <td className="py-2 px-4 border-b border-gray-300">stephen@prettyhealthcare.com.ng </td>
+        <td className="py-2 px-4 border-b border-gray-300">79/81 Obafemi Awolowo Way, Trinity Mall, Ikeja</td>
+        <td className="py-2 px-4 border-b border-gray-300">Monday to Saturday 8am-5pm</td>
+        <td className="py-2 px-4 border-b border-gray-300">16500</td>
+        <td className="py-2 px-4 border-b border-gray-300">Prettyhealth Care Ltd Ikeja. Labitrix Hospitals Arepo</td>
+      </tr>
+
+
+      <tr>
+        <th className="py-2 px-4 border-b-2 border-gray-300">25.</th>
+        <td className="py-2 px-4 border-b border-gray-300">GoodGrace Healthcare Services, a subsidiary of Ensacom Global Limited</td>
+        <td className="py-2 px-4 border-b border-gray-300">08155572743</td>
+        <td className="py-2 px-4 border-b border-gray-300">aronufrancis@gmail.com</td>
+        <td className="py-2 px-4 border-b border-gray-300">No 7 Adekunle Araba Street, Ire Akari, Isolo,Oshodi Isolo Local Government Area, Lagos State, Nigeria.</td>
+        <td className="py-2 px-4 border-b border-gray-300">Monday to Saturday 9am-5pm</td>
+        <td className="py-2 px-4 border-b border-gray-300">18,000.00 per dose</td>
+        <td className="py-2 px-4 border-b border-gray-300">Isolo, Lagos Nigeria</td>
+      </tr>
+
+
+      <tr>
+        <th className="py-2 px-4 border-b-2 border-gray-300">26.</th>
+        <td className="py-2 px-4 border-b border-gray-300">Mediccy Pharmacy</td>
+        <td className="py-2 px-4 border-b border-gray-300">07066661991</td>
+        <td className="py-2 px-4 border-b border-gray-300">martins.momah@lokalbroda.com</td>
+        <td className="py-2 px-4 border-b border-gray-300">1, Falilat Shomade Street, Beside Nicon Town Estate, Lekki, Lagos3B, Durbar Road, Beside Shoprite, Amuwo-Odofin, Lagos</td>
+        <td className="py-2 px-4 border-b border-gray-300"></td>
+        <td className="py-2 px-4 border-b border-gray-300">#18,000 per dose (subject to change)        </td>
+        <td className="py-2 px-4 border-b border-gray-300">Lekki, Amuwo-Odofin</td>
+      </tr>
+
+      <tr>
+        <th className="py-2 px-4 border-b-2 border-gray-300">27.</th>
+        <td className="py-2 px-4 border-b border-gray-300">LB Pharmacy</td>
+        <td className="py-2 px-4 border-b border-gray-300">08134640395</td>
+        <td className="py-2 px-4 border-b border-gray-300">martins.momah@lokalbroda.com</td>
+        <td className="py-2 px-4 border-b border-gray-300">23B, Ajao Road, Adjacent Jolly Friends Hotel, Off Adeniyi Jones, Ikeja, Lagos.  <br /> House 1, 5th Avenue, 52Rd Junction, Festac Town, Lagos</td>
+        <td className="py-2 px-4 border-b border-gray-300"></td>
+        <td className="py-2 px-4 border-b border-gray-300">#18,000 per dose</td>
+        <td className="py-2 px-4 border-b border-gray-300">Ikeja; Festac</td>
+      </tr>
+
+      <tr>
+        <th className="py-2 px-4 border-b-2 border-gray-300">28.</th>
+        <td className="py-2 px-4 border-b border-gray-300">LB Pharmacy Ltd, Ikeja</td>
+        <td className="py-2 px-4 border-b border-gray-300">09011111991</td>
+        <td className="py-2 px-4 border-b border-gray-300">christinayusuf32@gmail.com</td>
+        <td className="py-2 px-4 border-b border-gray-300">25B AJAO ROAD, OFF AMENITIES JONES, OPP. JOLLY FRIENDS HOTEL,IKEJA.</td>
+        <td className="py-2 px-4 border-b border-gray-300"></td>
+        <td className="py-2 px-4 border-b border-gray-300">#18,000</td>
+        <td className="py-2 px-4 border-b border-gray-300">LB PHARMACY, IKEJA</td>
+      </tr>
     </tbody>
   </table>
 </div>
