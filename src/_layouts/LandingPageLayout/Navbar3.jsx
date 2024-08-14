@@ -273,7 +273,7 @@ export default function NavBar3() {
 
       <nav className={``}>
         <aside
-          className={`md:px-4 top-0  left-0 flex align-middle justify-between items-center ${
+          className={`md:px-16 top-0  left-0 flex align-middle justify-between items-center ${
             isScrolled ? "scrolled" : "scrolledNo"
           }`}
           style={{ zIndex: "9999", backgroundColor:"#E8FFDE" }}
